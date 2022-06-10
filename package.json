@@ -25,6 +25,19 @@
   ],
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-imagemin": "^5.0.0"
-  }
+    "gulp-imagemin": "^5.0.0",
+    "tailwindcss": "^3.1.2"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-f-r-a-h/the-small-green-studio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/i-f-r-a-h/the-small-green-studio/issues"
+  },
+  "homepage": "https://github.com/i-f-r-a-h/the-small-green-studio#readme"
 }
