@@ -12,6 +12,7 @@ const cssnano = require('cssnano');
 const babel = require('gulp-babel');
 const terser = require('gulp-terser');
 const imagemin = require("gulp-imagemin");
+const gulpFont = require("gulp-font");
 const browsersync = require('browser-sync').create();
 
 
@@ -26,7 +27,7 @@ function imgTask() {
 			verbose: true
 		}))
 		.pipe(dest('dist', {
-			sourcemaps: '/images'
+			sourcemaps: './images'
 		}));
 }
 
@@ -56,6 +57,17 @@ function jsTask() {
 		}));
 }
 
+function fontTask() {
+	return src('app/assets/fonts/*', {
+			sourcemaps: true
+		})
+		.pipe(dest('dist/assets/.'));
+}
+
+
+
+
+
 // Browsersync
 function browserSyncServe(cb) {
 	browsersync.init({
@@ -72,6 +84,8 @@ function browserSyncServe(cb) {
 	cb();
 }
 
+
+
 function browserSyncReload(cb) {
 	browsersync.reload();
 	cb();
@@ -81,10 +95,10 @@ function browserSyncReload(cb) {
 function watchTask() {
 	watch('*.html', browserSyncReload);
 	watch(
-		['app/assets/image/*', 'app/scss/**/*.scss', 'app/**/*.js'],
-		series(imgTask, scssTask, jsTask, browserSyncReload)
+		['app/assets/image/*', 'app/scss/**/*.scss', 'app/**/*.js', 'app/assets/fonts/*}'],
+		series(imgTask, scssTask, jsTask, fontTask, browserSyncReload, )
 	);
 }
 
 // Default Gulp Task
-exports.default = series(imgTask, scssTask, jsTask, browserSyncServe, watchTask);
+exports.default = series(imgTask, scssTask, jsTask, fontTask, browserSyncServe, watchTask);
