@@ -18,7 +18,7 @@ const browsersync = require('browser-sync').create();
 
 //image minimizer
 function imgTask() {
-	return src('app/assets/images/*/**/*')
+	return src('app/assets/images/*')
 		.pipe(imagemin({
 			optimizationLevel: 5,
 			progressive: true,
@@ -27,7 +27,7 @@ function imgTask() {
 			verbose: true
 		}))
 		.pipe(dest('dist', {
-			sourcemaps: './images'
+			sourcemaps: '/images'
 		}));
 }
 
