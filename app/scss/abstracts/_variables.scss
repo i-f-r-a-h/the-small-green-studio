@@ -1,7 +1,9 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /// Regular font family
 /// @type List
 $font-outfit: 'font-outfit', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;

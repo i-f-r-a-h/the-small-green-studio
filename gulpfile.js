@@ -5,15 +5,21 @@ const {
 	watch,
 	series
 } = require('gulp');
+const del = require('del'); //For Cleaning build/dist for fresh export
+const options = require("./config"); //paths and other options from config.js
+const browsersync = require('browser-sync').create();
+
+
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const babel = require('gulp-babel');
+const concat = require('gulp-concat'); //For Concatinating js,css files
 const terser = require('gulp-terser');
 const imagemin = require("gulp-imagemin");
-const gulpFont = require("gulp-font");
-const browsersync = require('browser-sync').create();
+const purgecss = require('gulp-purgecss');
+const tailwindcss = require('tailwindcss');
 
 
 //image minimizer
@@ -33,11 +39,14 @@ function imgTask() {
 
 // Sass Task
 function scssTask() {
-	return src('app/scss/style.scss', {
+	return src('app/scss/*.scss', {
 			sourcemaps: true
 		})
-		.pipe(sass())
-		.pipe(postcss([autoprefixer(), cssnano()]))
+		.pipe(sass().on('error', sass.logError))
+		.pipe(postcss([tailwindcss(options.config.tailwindjs), autoprefixer(), cssnano()]))
+		.pipe(concat({
+			path: 'style.css'
+		}))
 		.pipe(dest('dist', {
 			sourcemaps: '.'
 		}));
