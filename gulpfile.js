@@ -32,8 +32,8 @@ function imgTask() {
 		}, {
 			verbose: true
 		}))
-		.pipe(dest('dist', {
-			sourcemaps: '/images'
+		.pipe(dest('dist/assets/images', {
+			sourcemaps: '.'
 		}));
 }
 
@@ -70,7 +70,7 @@ function fontTask() {
 	return src('app/assets/fonts/*', {
 			sourcemaps: true
 		})
-		.pipe(dest('dist/assets/.'));
+		.pipe(dest('dist/assets/fonts'));
 }
 
 
