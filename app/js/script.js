@@ -20,4 +20,3 @@ a.forEach(item => {
 		navbar.classList.remove('change');
 	});
 });
-
