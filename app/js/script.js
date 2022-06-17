@@ -5,6 +5,7 @@ const test = () => {
 	console.log('this is a test');
 };
 
+
 const menuIcon = document.querySelector('.hamburger-menu');
 const navbar = document.querySelector('.navbar');
 const menuLink = document.querySelector('.navbar__list-link');
@@ -19,3 +20,4 @@ a.forEach(item => {
 		navbar.classList.remove('change');
 	});
 });
+
