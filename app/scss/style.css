@@ -482,4 +482,51 @@ body {
 .change {
   opacity: 1;
 }
+
+.marquee {
+  position: relative;
+  width: 10000px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+div[class^="content_"] {
+  white-space: nowrap;
+  will-change: transform;
+  -webkit-animation: marquee 100s linear infinite both;
+          animation: marquee 100s linear infinite both;
+  color: #195B3E;
+}
+
+.content_2 {
+  animation-direction: reverse !important;
+}
+
+.hero-overflow video {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+@-webkit-keyframes marquee {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
 /*# sourceMappingURL=style.css.map */

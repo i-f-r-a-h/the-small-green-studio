@@ -63,7 +63,6 @@
 						<path
 							d="M47.3009 6.11528C39.448 5.4595 31.8609 7.03966 25.0124 8.56538C16.5028 10.4612 5.16168 13.7454 2.12454 19.9626C-0.911974 26.1786 7.96299 31.9421 15.9692 35.2653C29.8766 41.038 47.5516 42.7498 61.6241 41.7195C73.7422 40.8322 86.9601 38.2824 95.3907 32.8118C100.802 29.3008 104.127 23.6189 100.119 17.7355C95.1275 10.408 84.4785 6.24188 74.0985 4.29637C55.2361 0.761023 36.2723 1.74063 18.1935 2.31607"
 							stroke="white" stroke-width="3" stroke-linecap="round" />
-
 					</svg>
 					<p class="z-10 absolute inset-x-0 top-4 ">menu</p>
 				</button>
@@ -71,10 +70,39 @@
 			<div class="menu__layout w-full h-screen block flex-grow ">
 				<nav class="navbar">
 					<ul class="navbar__list">
-						<li class="navbar__list__items"><a href="#">Who are we</a></li>
-						<li class="navbar__list__items"><a href="#">Get in touch</a></li>
-						<li class="navbar__list__items"><a href="#">How we can help</a></li>
-						<li class="navbar__list__items"><a href="#">Purpose led projects</a></li>
+						<li class="navbar__list__items"><a>Who are we
+								<svg width="589" height="570" viewBox="0 0 589 570" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M103.535 18.3018C111.37 -19.3942 156.551 -35.1463 186.124 -10.4925L570.371 309.838C600.82 335.222 591.936 384.118 554.504 397.168L68.4511 566.626C31.0192 579.677 -6.33847 546.903 1.72888 508.09L103.535 18.3018Z"
+										fill="#FFF9EB" />
+								</svg>
+
+							</a></li>
+						<li class="navbar__list__items"><a href="#">Get in touch
+								<svg width="626" height="391" viewBox="0 0 626 391" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M17.7113 52.4583C5.04535 54.03 -2.94066 66.9155 2.06769 78.655C21.6351 124.521 50.7219 168.362 88.012 208.064C131.53 254.397 185.25 294.062 245.701 324.494C306.151 354.926 371.985 375.448 438.945 384.732C497.028 392.785 554.837 392.228 609.561 383.151C622.306 381.037 629.057 367.212 623.462 355.567L458.155 11.5314C454.436 3.79006 446.189 -0.712157 437.665 0.345528L17.7113 52.4583Z"
+										fill="#2A4D4C" />
+								</svg>
+							</a></li>
+						<li class="navbar__list__items"><a href="#">How we can help
+								<svg width="552" height="465" viewBox="0 0 552 465" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<ellipse cx="276" cy="232.5" rx="276" ry="232.5" fill="#FFF9EB" />
+								</svg>
+
+							</a></li>
+						<li class="navbar__list__items"><a href="#">Purpose led projects
+								<svg width="416" height="497" viewBox="0 0 416 497" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M0 10C0 4.47716 4.47715 0 10 0H208C322.875 0 416 93.1248 416 208V497H26C11.6406 497 0 485.359 0 471V10Z"
+										fill="#FFF9EB" />
+								</svg>
+
+							</a></li>
 					</ul>
 				</nav>
 				<div class="header__menu__socials">
@@ -93,19 +121,46 @@
 	<main>
 
 		<!--Hero-->
-		<section name="hero">
+		<section name="hero relative">
 			<!-- video -->
 			<div class="hero-overflow">
-				<video autoplay loop playsinline muted class="hero-video">
-					<source src="img/hero.mp4" type="video/mp4">
+				<video autoplay loop playsinline muted
+					class="hero-video rounded-lg origin-center scale-50 absolute z-10 left-1/2 ">
+					<source src="/dist/assets/videos/hero.mp4" type="video/mp4">
 				</video>
 			</div>
 			<!-- marquee -->
-			<div class="hero-marquee">
-				<div class="marquee-inner"></div>
-				<div class="marquee-inner"></div>
-				<div class="marquee-inner"></div>
+			<div class="marquee">
+				<div class="track">
+					<div class="content_1 text-5xl lg:text-9xl font-bold py-5">films for good — pictures with purpose —
+						stories for
+						change — films
+						for good
+						— pictures with purpose — stories for change</div>
+					<div class="content_2 text-5xl lg:text-9xl font-bold py-5">films for good — pictures with purpose —
+						stories
+						for
+						change — films
+						for good
+						— pictures with purpose — stories for change</div>
+					<div class="content_3 text-5xl lg:text-9xl font-bold py-5">films for good — pictures with purpose —
+						stories
+						for
+						change — films
+						for good
+						— pictures with purpose — stories for change</div>
+				</div>
 			</div>
+			<!-- <div class="hero-marquee">
+				<div class="marquee-inner">films for good — pictures with purpose — stories for change — films for good
+					— pictures with purpose — stories for change </div>
+				<div class="marquee-inner">films for good — pictures with purpose — stories for change — films for good
+					— pictures
+					with purpose — stories for change</div>
+				<div class="marquee-inner">films for good — pictures with purpose — stories for change — films for good
+					— pictures
+					with purpose — stories for change</div>
+			</div> -->
 
 			<!-- hero content -->
 			<div class="hero__reveal">
@@ -219,7 +274,7 @@
 
 		</section>
 
-	
+
 
 		<!--Call to Action-->
 		<section class="call_to_action">

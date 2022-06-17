@@ -9,6 +9,6 @@ menuIcon.addEventListener('click', () => {
 //when a link is clicked, menu closes
 a.forEach(item => {
 	item.addEventListener('click', () => {
-		navbar.classList.remove('nav__menu');
+		navbar.classList.remove('change');
 	});
 });
