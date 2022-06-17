@@ -1,12 +1,4 @@
-import 'tw-elements';
-console.log('HELLO');
-
-const test = () => {
-	console.log('this is a test');
-};
-
-
-const menuIcon = document.querySelector('.hamburger-menu');
+const menuIcon = document.querySelector('.nav__menu');
 const navbar = document.querySelector('.navbar');
 const menuLink = document.querySelector('.navbar__list-link');
 const a = document.querySelectorAll('a');
