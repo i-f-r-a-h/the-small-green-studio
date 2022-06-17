@@ -1,3 +1,44 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+body{
+    background-color: 1D1D1D;
+}
+footer {
+    padding: 80px 0;
+    background-color: 1D1D1D;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+footer:after {
+    width: 100%;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 10%;
+    -webkit-transform: skewY(-4deg);
+    -moz-transform: skewY(-4deg);
+    -ms-transform: skewY(-4deg);
+    -o-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+    background-color: black;
+    z-index: 2;
+    color: white;
+}
+
+
+.fa-linkedin{
+    color: black;
+}
+
+.fa-instagram{
+    color: black;
+}
+
+.fa-youtube{
+    color: black;
+}
