@@ -4,7 +4,7 @@ const menuLink = document.querySelector('.navbar__list-link');
 const a = document.querySelectorAll('a');
 //when the hamburger is clicked, menu opens
 menuIcon.addEventListener('click', () => {
-	navbar.classList.toggle('nav__menu');
+	navbar.classList.toggle('change');
 });
 //when a link is clicked, menu closes
 a.forEach(item => {
