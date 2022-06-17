@@ -1,3 +1,4 @@
+import 'tw-elements';
 console.log('HELLO');
 
 const test = () => {
