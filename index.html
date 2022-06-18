@@ -27,9 +27,9 @@
 <body>
 	<!--Header-->
 	<header>
-		<nav class="flex items-center justify-between flex-wrap bg-black py-4 px-6">
-			<div class="flex items-center flex-shrink-0 text-white mr-6">
-				<svg width="25" height="35" viewBox="0 0 25 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<nav class="flex items-center justify-between flex-wrap bg-black py-2  z-50 fixed-top">
+			<div class="flex items-center flex-shrink-0 text-white  ml-6">
+				<svg width="35" height="45" viewBox="0 0 25 35" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g style="mix-blend-mode:hard-light">
 						<ellipse cx="6.79195" cy="17.308" rx="6.79195" ry="7.05602" fill="#C5FFD5"
 							fill-opacity="0.64" />
@@ -47,318 +47,106 @@
 						d="M12.3173 22.0456C12.5309 21.7893 17.2272 24.3374 17.2272 24.3374L15.235 27.819C15.235 27.819 15.315 24.1389 12.8088 23.1901C10.3025 22.2413 12.1038 22.3019 12.3173 22.0456Z"
 						fill="#D77706" />
 				</svg>
-				<span class="font-semibold text-xl tracking-tight">The Small Green Studio</span>
+				<span class="font-semibold text-sm tracking-tight ml-1 hidden md:block">The Small Green Studio</span>
 			</div>
 
-			<div class="flex items-center">
+			<div class="flex items-center mr-6 ">
 				<div class="hidden md:block">
-					<a href="#" class="inline-block px-6 py-2.5 bg-yellow-500 text-white font-medium text-xs leading-tight uppercase
+					<a href="#" class="inline-block px-6 py-2.5 bg-yellow-500 text-white font-medium text-sm leading-tight 
 						rounded-full shadow-md hover:bg-yellow-600 hover:shadow-lg focus:bg-yellow-600 focus:shadow-lg focus:outline-none
 						focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out">Contact
 						Us</a>
 				</div>
-				<button class="nav__menu relative font-boldflex items-center px-3 py-2 border rounded text-teal-200 border-teal-400
+				<button class="nav__menu relative font-boldflex items-center px-3 py-2 border
 				hover:text-white hover:border-white">
 					<svg width="104" height="44" viewBox="0 0 104 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M47.3009 6.11528C39.448 5.4595 31.8609 7.03966 25.0124 8.56538C16.5028 10.4612 5.16168 13.7454 2.12454 19.9626C-0.911974 26.1786 7.96299 31.9421 15.9692 35.2653C29.8766 41.038 47.5516 42.7498 61.6241 41.7195C73.7422 40.8322 86.9601 38.2824 95.3907 32.8118C100.802 29.3008 104.127 23.6189 100.119 17.7355C95.1275 10.408 84.4785 6.24188 74.0985 4.29637C55.2361 0.761023 36.2723 1.74063 18.1935 2.31607"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
+							stroke="white" stroke-width="2" stroke-linecap="round" />
 					</svg>
-					<p class="z-10 absolute inset-x-0 top-4 ">menu</p>
+					<p class="z-10 absolute text-base inset-x-0 top-4  font-thin">menu</p>
 				</button>
 			</div>
-			<div class="menu__layout w-full h-screen block flex-grow ">
-				<nav class="navbar">
-					<ul class="navbar__list">
-						<li class="navbar__list__items"><a>Who are we
-								<svg width="589" height="570" viewBox="0 0 589 570" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M103.535 18.3018C111.37 -19.3942 156.551 -35.1463 186.124 -10.4925L570.371 309.838C600.82 335.222 591.936 384.118 554.504 397.168L68.4511 566.626C31.0192 579.677 -6.33847 546.903 1.72888 508.09L103.535 18.3018Z"
-										fill="#FFF9EB" />
-								</svg>
+		</nav>
+		<!-- menu -->
+		<div
+			class="menu__layout w-full h-screen  overflow-y-scroll overflow-x-hidden justify-between flex-col z-50 bg-black pt-20">
+			<nav class="navbar relative ">
+				<ul class="navbar__list grid grid-cols-2 grid-flow-row">
+					<li class="navbar__list__items  -left-2 -top-20  ">
+						<a class="relative">
+							<svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 589 570" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M103.535 18.3018C111.37 -19.3942 156.551 -35.1463 186.124 -10.4925L570.371 309.838C600.82 335.222 591.936 384.118 554.504 397.168L68.4511 566.626C31.0192 579.677 -6.33847 546.903 1.72888 508.09L103.535 18.3018Z"
+									fill="#FFF9EB" />
+							</svg>
+							<p
+								class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black md:text-5xl  lg:text-6xl font-bold text-3xl w-max">
+								Who
+								are we</p>
+						</a>
+					</li>
+					<li class="navbar__list__items  left-96 -top-4 flex "><a class="relative" href="#">
+							<svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 626 391" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M17.7113 52.4583C5.04535 54.03 -2.94066 66.9155 2.06769 78.655C21.6351 124.521 50.7219 168.362 88.012 208.064C131.53 254.397 185.25 294.062 245.701 324.494C306.151 354.926 371.985 375.448 438.945 384.732C497.028 392.785 554.837 392.228 609.561 383.151C622.306 381.037 629.057 367.212 623.462 355.567L458.155 11.5314C454.436 3.79006 446.189 -0.712157 437.665 0.345528L17.7113 52.4583Z"
+									fill="#2A4D4C" />
+							</svg>
+							<p
+								class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black md:text-5xl  lg:text-6xl font-bold text-3xl w-max">
+								Who
+								are we</p>
+						</a></li>
+					<li class="navbar__list__items  -left-1/4 -top-4 flex"><a class="relative" href="#">
+							<svg class="w-full h-full" preserveAspectRatio="none" viewBox=" 0 0 552 465" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<ellipse cx="276" cy="232.5" rx="276" ry="232.5" fill="#FFF9EB" />
+								<text x="50%" y="50%" fill="black" dominant-baseline="middle" text-anchor="middle">How
+									we can help</text>
+							</svg>
+							<p
+								class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black md:text-5xl  lg:text-6xl font-bold text-3xl w-max">
+								Who
+								are we</p>
 
-							</a></li>
-						<li class="navbar__list__items"><a href="#">Get in touch
-								<svg width="626" height="391" viewBox="0 0 626 391" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M17.7113 52.4583C5.04535 54.03 -2.94066 66.9155 2.06769 78.655C21.6351 124.521 50.7219 168.362 88.012 208.064C131.53 254.397 185.25 294.062 245.701 324.494C306.151 354.926 371.985 375.448 438.945 384.732C497.028 392.785 554.837 392.228 609.561 383.151C622.306 381.037 629.057 367.212 623.462 355.567L458.155 11.5314C454.436 3.79006 446.189 -0.712157 437.665 0.345528L17.7113 52.4583Z"
-										fill="#2A4D4C" />
-								</svg>
-							</a></li>
-						<li class="navbar__list__items"><a href="#">How we can help
-								<svg width="552" height="465" viewBox="0 0 552 465" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<ellipse cx="276" cy="232.5" rx="276" ry="232.5" fill="#FFF9EB" />
-								</svg>
+						</a></li>
 
-							</a></li>
-						<li class="navbar__list__items"><a href="#">Purpose led projects
-								<svg width="416" height="497" viewBox="0 0 416 497" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M0 10C0 4.47716 4.47715 0 10 0H208C322.875 0 416 93.1248 416 208V497H26C11.6406 497 0 485.359 0 471V10Z"
-										fill="#FFF9EB" />
-								</svg>
+					<li class="navbar__list__items -left-1/4 -top-4 flex"><a class="relative" href="#">
+							<svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 416 497" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0 10C0 4.47716 4.47715 0 10 0H208C322.875 0 416 93.1248 416 208V497H26C11.6406 497 0 485.359 0 471V10Z"
+									fill="#FFF9EB" />
+								<text x="50%" y="50%" fill="black" dominant-baseline="middle"
+									text-anchor="middle">Purpose led projects</text>
+							</svg>
+							<p
+								class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black md:text-5xl  lg:text-6xl font-bold text-3xl w-max">
+								Who
+								are we</p>
 
-							</a></li>
-					</ul>
-				</nav>
-				<div class="header__menu__socials">
-					<p class="header__menu__socials__title">Let's work together</p>
-					<ul>
-						<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-					</ul>
-				</div>
+						</a></li>
+				</ul>
+			</nav>
+			<div class="header__menu__socials">
+				<p class="header__menu__socials__title">Let's work together</p>
+				<ul>
+					<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+				</ul>
 			</div>
-			</div>
+		</div>
+		</div>
 		</nav>
 	</header>
 
-	<main>
-
-		<!--Hero-->
-		<section name="hero relative">
-			<!-- video -->
-			<div class="hero-overflow">
-				<video autoplay loop playsinline muted
-					class="hero-video rounded-lg origin-center scale-50 absolute z-10 left-1/2 ">
-					<source src="/dist/assets/videos/hero.mp4" type="video/mp4">
-				</video>
-			</div>
-			<!-- marquee -->
-			<div class="marquee">
-				<div class="track">
-					<div class="content_1 text-5xl lg:text-9xl font-bold py-5">films for good — pictures with purpose —
-						stories for
-						change — films
-						for good
-						— pictures with purpose — stories for change</div>
-					<div class="content_2 text-5xl lg:text-9xl font-bold py-5">films for good — pictures with purpose —
-						stories
-						for
-						change — films
-						for good
-						— pictures with purpose — stories for change</div>
-					<div class="content_3 text-5xl lg:text-9xl font-bold py-5">films for good — pictures with purpose —
-						stories
-						for
-						change — films
-						for good
-						— pictures with purpose — stories for change</div>
-				</div>
-			</div>
-			<!-- <div class="hero-marquee">
-				<div class="marquee-inner">films for good — pictures with purpose — stories for change — films for good
-					— pictures with purpose — stories for change </div>
-				<div class="marquee-inner">films for good — pictures with purpose — stories for change — films for good
-					— pictures
-					with purpose — stories for change</div>
-				<div class="marquee-inner">films for good — pictures with purpose — stories for change — films for good
-					— pictures
-					with purpose — stories for change</div>
-			</div> -->
-
-			<!-- hero content -->
-			<div class="hero__reveal">
-				<h1 class="text-9xl">The Purpose led Production Collective</h1>
-				<p>From a simple photo to building your whole story, let's make it happen.</p>
-				<button>View work</button>
-				<button>Get in touch</button>
-				<button>Color Change</button>
-				<button>Get in touch</button>
-			</div>
-
-		</section>
-
-		<!--Introduction-->
-
-		<section name="introduction">
-			<div class="introduction__wrapper">
-				<p>Hello! Happy <span>Date through js</span></p>
-				<h2>We are a small studio <span><img src="" alt="" srcset=""></span>which </h2>
-			</div>
-		</section>
-
-		<!--How We Work-->
-
-		<section class="how-we-work">
-
-			<div class="projects_wrapper">
-
-				<main
-					class="flex justify-center items-center p-4 h-screen w-full bg-gradient-to-r from-green-100 to-blue-100">
-					<div class="bg-white w-full sm:w-1/2 lg:w-96 border border-gray-200 divide-y divide-gray-200">
-						<details>
-							<summary class="question py-3 px-4 cursor-pointer select-none w-full outline-none">How is
-								this made?</summary>
-							<p class="pt-1 pb-3 px-4">With the HTML5 <code class="text-sm text-red-500">details</code>
-								element and some Tailwind for showcase.</pre>
-						</details>
-						<details>
-							<summary class="question py-3 px-4 cursor-pointer select-none w-full">Can I use it?
-							</summary>
-							<p class="pt-1 pb-3 px-4">Of course. It's yours to use wherever and whenever you like.</p>
-						</details>
-					</div>
-			</div>
-
-
-
-		</section>
-
-
-		<!--Video Reel-->
-
-		<section name="video_reel">
-
-		</section>
-
-		<!-- how we can help -->
-		<section class="how-we-can-help">
-			<h2 class="title">How we can help</h2>
-			<div class="categories">
-				<div class="categories__gallery">
-					<div class="categories__gallery__wrapper">
-						<a href="#" class="categories__gallery__link" data-index="0">
-							<figure class="categories__gallery__media">
-								<img src="" alt="" class="categories__gallery__media__image">
-							</figure>
-						</a>
-					</div>
-				</div>
-				<div class="categories__content">
-					<article class="categories__article">
-						<h2 class="categories__article__title"></h2>
-						<p class="categories__article__description"></p>
-					</article>
-				</div>
-			</div>
-
-		</section>
-
-		<!--Purpose Projects-->
-
-		<section name="purpose_projects">
-
-
-			<div class="box-border h-32 w-64 bg-white">
-				<div class="box-border__inner">
-					<div class="box-border__inner__content">
-						<h3>Project 1</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-					</div>
-
-				</div>
-
-				<div class="box-border h-32 w-64 bg-black justify-center">
-					<div class="box-border__inner">
-						<div class="box-border__inner__content">
-							<h3>Project 2</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-						</div>
-
-					</div>
-
-		</section>
-
-		<!--Team Small-->
-
-		<section name="team_small">
 
 
 
 
-		</section>
-
-
-
-		<!--Call to Action-->
-		<section class="call_to_action">
-			<div class="cta__wrapper  ml-8 mt-72 mb-72">
-				<div class="cta__text">
-					<h2 class="text-9xl font-semibold ">
-						<span>That's it for now,</span>
-						<span><img src="" alt=""></span>
-						<span>so have</span>
-						<span><img src="" alt=""></span>
-						<span>we sparked</span>
-						<span>your</span>
-						<span>curiosity?</span>
-					</h2>
-				</div>
-				<div class="cta__blob flex justify-end relative">
-					<a class="absolute z-10" href="mailto:dostuff@thesmallgreenstudio.com">
-						<svg width="216" height="224" viewBox="0 0 216 224" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd"
-								d="M103.136 0.620796C132.552 -0.935111 164.334 -1.04249 186.201 18.695C208.832 39.1218 216.778 71.3156 215.188 101.76C213.677 130.68 197.6 155.303 177.953 176.577C157.241 199.004 133.568 220.677 103.136 223.093C70.6862 225.668 36.2564 214.485 15.4183 189.478C-4.26522 165.856 -0.42015 132.41 2.03238 101.76C4.22255 74.389 9.0033 46.4604 28.4161 27.0407C47.8318 7.61801 75.7111 2.07135 103.136 0.620796Z"
-								fill="#D9B138" />
-							<text class="z-10 fill-white" x="50%" y="50%" dominant-baseline="middle"
-								text-anchor="middle">Get
-								in touch</text>
-						</svg></a>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<!--Footer-->
-	<footer class="w-full">
-		<div class="footer__wrapper flex flex-col">
-			<div class="flex flex-wrap flex-col text-center mb-72">
-				<h3 class="text-5xl font-bold">Ready?<br>Let's Get Started</h3>
-				<p>have a project or just want a quick chat?</p>
-				<button class="w-48 h-12 rounded-lg text-black font-semibold
-				bg-white m-auto">Contact Us</button>
-			</div>
-
-			<div class="flex justify-between m-10 ">
-				<div class="flex flex-wrap flex-col">
-					<p class="font-bold">Links</p>
-					<a href="url">Who are we</a>
-					<a href="url">Our team</a>
-					<a href="url">Things we can do</a>
-					<a href="url">Things we have done</a>
-					<a href="url">Contacts</a>
-				</div>
-
-				<div class="emails-wrapper">
-					<div class="flex flex-wrap flex-col text-center">
-						<p class="font-bold">Send a not so serious email</p>
-						<a href="mailto:dostuff@thesmallgreenstudio.com">Send Email</a>
-					</div>
-
-
-					<div class="flex flex-wrap flex-col">
-						<p class="font-bold">Socials</p>
-						<div class="icon-wrapper">
-							<button class="btn mr-4	"><i class="fa-brands fa-instagram"></i></button>
-							<button class="btn mr-4"><i class="fa-brands fa-youtube"></i></button>
-							<button class="btn mr-4"><i class="fa-brands fa-linkedin"></i></button>
-						</div>
-					</div>
-				</div>
-				<div class="call-wrapper">
-					<div class="flex flex-wrap flex-col">
-						<p class="font-bold">give us a ring</p>
-						<p>07397616938</p>
-					</div>
-
-					<div class="flex flex-wrap flex-col">
-						<p class="font-bold">Just because</p>
-						<p>51.5072 N, 0.1276 W</p>
-						<p>Current Time</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-		</div>
-	</footer>
 
 	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 	<script>

@@ -1,6 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+//marquee
 .marquee {
     position: relative;
     width: 10000px;
@@ -21,10 +22,10 @@ div[class^="content_"] {
 }
 
 .hero-overflow{
-    video{
-          transform: translate(-50%,-50%);
+
+          transform: translate(-50%,-50%) scale(.5);
            top: 50%;
-    }
+    
 }
 
 @keyframes marquee {

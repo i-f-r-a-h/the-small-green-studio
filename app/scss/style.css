@@ -474,13 +474,20 @@ body {
 }
 
 .menu__layout {
-  opacity: 0;
+  display: none;
   -webkit-transition: ease-in-out 2s;
   transition: ease-in-out 2s;
 }
 
 .change {
-  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.who-are-we {
+  -webkit-transform: rotate(52.68);
+          transform: rotate(52.68);
 }
 
 .marquee {
@@ -502,9 +509,9 @@ div[class^="content_"] {
   animation-direction: reverse !important;
 }
 
-.hero-overflow video {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.hero-overflow {
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+          transform: translate(-50%, -50%) scale(0.5);
   top: 50%;
 }
 

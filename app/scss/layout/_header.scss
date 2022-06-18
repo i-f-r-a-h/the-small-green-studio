@@ -4,10 +4,13 @@
 
 
 .menu__layout{
-  opacity: 0;
+display: none;
   transition: ease-in-out 2s;
 }
 
 .change{
-  opacity: 1;
+  display: flex;
+}
+.who-are-we{
+  transform: rotate(52.68) ;
 }
