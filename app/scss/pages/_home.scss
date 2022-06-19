@@ -3,17 +3,20 @@
 // -----------------------------------------------------------------------------
 //marquee
 .marquee {
-    position: relative;
+    position: fixed;
     width: 10000px;
     max-width: 100%;
+    display: flex;
+    align-items: center;
     overflow-x: hidden;
+    top: 0;
 }
 
 
 div[class^="content_"] {
     white-space: nowrap;
     will-change: transform;
-    animation: marquee 100s linear infinite both;
+    animation: marquee 32s linear infinite both;
     color: #195B3E;
 }
 
@@ -21,11 +24,11 @@ div[class^="content_"] {
     animation-direction: reverse !important;
 }
 
-.hero-overflow{
+.hero-overflow {
 
-          transform: translate(-50%,-50%) scale(.5);
-           top: 50%;
-    
+    transform: translate(-50%, -50%) scale(.5);
+    top: 50%;
+
 }
 
 @keyframes marquee {
@@ -34,6 +37,26 @@ div[class^="content_"] {
     }
 
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
+    }
+}
+
+
+// hero title 
+
+//REPLACE WITH SELF-HOSTING OPTION
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+
+.hero__title {
+
+    font-family: 'Rubik Mono One', sans-serif;
+    letter-spacing: -6%;
+
+    span {
+        &:nth-child(2) {
+            font-family: $highlight-font-stack;
+            color: #195B3E;
+        }
     }
 }

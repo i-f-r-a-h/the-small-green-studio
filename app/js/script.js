@@ -34,6 +34,11 @@ const tl = gsap.timeline({
 	})
 
 	.from(".orange", {
-		scale: 0.2,
+		scale: 0.3,
+		ease: "none"
+	})
+
+	.to(".marquee", {
+		opacity: 0,
 		ease: "none"
 	})

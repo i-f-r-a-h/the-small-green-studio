@@ -142,47 +142,57 @@
 	</header>
 
 	<main>
-		<div class="panel orangeWrapper">
-			<section class="panel orange">
 
-				<video class="scale-110 pt-28 object-cover h-full" autoplay loop playsinline muted>
-					<source src="/dist/assets/videos/hero.mp4" type="video/mp4">
-				</video>
-			</section>
+		<!-- hero section -->
+		<div>
+			<div class="hero__reveal fixed z-20 flex flex-row h-full align-bottom w-full">
+				<div class="flex flex-col basis-1/2 justify-center ml-20">
+					<h1 class="hero__title lg:text-7xl max-w-0"><span class="block">The</span><span
+							class="uppercase">Purpose</span>led Production Collective
+					</h1>
+					<p class="text-lg -mt-10">From a simple photo to building your whole story, let's make it happen.
+					</p>
+					<div class="hero__cta flex flex-row gap-7 mt-10">
+						<a href="#how-we-can-help" class="text-lg px-6 py-2.5 border-solid border-2 border-white text-white font-medium text-sm leading-tight 
+						rounded-full shadow-md  hover:shadow-lgt">View work</a>
+						<a href="mailto:dostuff@thesmallgreenstudio.com" class="text-lg px-6 py-2.5 bg-green-900 text-white font-medium text-sm leading-tight 
+						rounded-full shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none
+						focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">Get in touch</a>
+					</div>
+				</div>
 
-		</div>
-
-		<section class="panel purple">
-
-		</section>
-
-
-
-		<section class="panel gray">
-			DONE!
-		</section>
-
-		<!--Hero-->
-		<section name="hero relative">
+				<!-- <button>Color Change</button> -->
+				<button>Get in touch</button>
+			</div>
 			<!-- video -->
-			<div class="hero-overflow rounded-lg  scale-75 absolute z-10 left-1/2 ">
+			<div class="panel orangeWrapper">
+				<!-- hero content -->
+				<section class="panel orange">
+
+					<video class="scale-110 rounded-lg  object-cover h-full z-10 " autoplay loop playsinline muted>
+						<source src="/dist/assets/videos/SiteLoop_1.webm" type="video/mp4">
+					</video>
+				</section>
 
 			</div>
 			<!-- marquee -->
-			<div class="marquee pt-20 h-screen">
+			<div class="marquee h-screen -z-10">
 				<div class="track">
-					<div class="content_1 text-5xl lg:text-9xl font-bold py-5">films for good — pictures with purpose —
+					<div class="content_1 text-7xl lg:text-9xl font-bold py-5">films for good — pictures with
+						purpose —
 						stories for
 						change — films
 						for good
 						— pictures with purpose — stories for change</div>
-					<div class="content_2 text-5xl lg:text-9xl font-bold py-5">films for good — pictures with purpose —
+					<div class="content_2 text-7xl lg:text-9xl font-bold py-5">films for good — pictures with
+						purpose —
 						stories
 						for
 						change — films
 						for good
 						— pictures with purpose — stories for change</div>
-					<div class="content_3 text-5xl lg:text-9xl font-bold py-5">films for good — pictures with purpose —
+					<div class="content_3 text-7xl lg:text-9xl font-bold py-5">films for good — pictures with
+						purpose —
 						stories
 						for
 						change — films
@@ -190,51 +200,42 @@
 						— pictures with purpose — stories for change</div>
 				</div>
 			</div>
-			<!-- <div class="hero-marquee">
-				<div class="marquee-inner">films for good — pictures with purpose — stories for change — films for good
-					— pictures with purpose — stories for change </div>
-				<div class="marquee-inner">films for good — pictures with purpose — stories for change — films for good
-					— pictures
-					with purpose — stories for change</div>
-				<div class="marquee-inner">films for good — pictures with purpose — stories for change — films for good
-					— pictures
-					with purpose — stories for change</div>
-			</div> -->
-
-			<!-- hero content -->
-			<div class="hero__reveal">
-				<h1 class="text-2xl">The Purpose led Production Collective</h1>
-				<p>From a simple photo to building your whole story, let's make it happen.</p>
-				<button>View work</button>
-				<button>Get in touch</button>
-				<button>Color Change</button>
-				<button>Get in touch</button>
-			</div>
-
-		</section>
-		<!--Introduction-->
 
 
+			<!--Hero-->
+			<section name="hero relative">
+				<!-- video -->
+				<div class="hero-overflow rounded-lg  scale-75 absolute z-10 left-1/2 ">
+				</div>
+
+				<!-- hero content -->
+				<div class="hero__reveal">
+					<h1 class="text-2xl">The <span></span> Purpose led Production Collective</h1>
+					<p>From a simple photo to building your whole story, let's make it happen.</p>
+					<button>View work</button>
+					<button>Get in touch</button>
+					<button>Color Change</button>
+					<button>Get in touch</button>
+				</div>
+			</section>
 
 
-
-
-		<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-		<script>
-			window.ga = function () {
-				ga.q.push(arguments)
-			};
-			ga.q = [];
-			ga.l = +new Date;
-			ga('create', 'UA-XXXXX-Y', 'auto');
-			ga('set', 'anonymizeIp', true);
-			ga('set', 'transport', 'beacon');
-			ga('send', 'pageview')
-		</script>
-		<script src="https://www.google-analytics.com/analytics.js" async></script>
-		<script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
-		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
-		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js?v=3.3.0-3"></script>
+			<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+			<script>
+				window.ga = function () {
+					ga.q.push(arguments)
+				};
+				ga.q = [];
+				ga.l = +new Date;
+				ga('create', 'UA-XXXXX-Y', 'auto');
+				ga('set', 'anonymizeIp', true);
+				ga('set', 'transport', 'beacon');
+				ga('send', 'pageview')
+			</script>
+			<script src="https://www.google-analytics.com/analytics.js" async></script>
+			<script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+			<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+			<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js?v=3.3.0-3"></script>
 
 </body>
 
