@@ -42,3 +42,8 @@ const tl = gsap.timeline({
 		opacity: 0,
 		ease: "none"
 	})
+
+	.to(".hero__content", {
+		opacity: 1,
+		ease: "none"
+	})
