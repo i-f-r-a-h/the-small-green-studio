@@ -27,7 +27,7 @@
 <body>
 	<!--Header-->
 	<header>
-		<nav class="flex items-center justify-between flex-wrap bg-black py-2  z-50 fixed-top">
+		<nav class="site-nav-js flex items-center justify-between flex-wrap bg-black py-2  z-50 fixed-top">
 			<div class="flex items-center flex-shrink-0 text-white  ml-6">
 				<svg width="35" height="45" viewBox="0 0 25 35" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g style="mix-blend-mode:hard-light">
@@ -70,8 +70,8 @@
 		</nav>
 		<!-- menu -->
 		<div
-			class="menu__layout w-full h-screen  overflow-y-scroll overflow-x-hidden justify-between flex-col z-50 bg-black pt-20">
-			<nav class="navbar relative ">
+			class="fixed menu__layout w-full h-screen  overflow-y-scroll overflow-x-hidden justify-between flex-col lg:flex-row z-40 bg-green-300 pt-20">
+			<nav class="navbar relative lg:basis-9/12">
 				<ul class="navbar__list grid grid-cols-2 grid-flow-row">
 					<li class="navbar__list__items  -left-2 -top-20  ">
 						<a class="relative">
@@ -96,46 +96,44 @@
 							</svg>
 							<p
 								class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black md:text-5xl  lg:text-6xl font-bold text-3xl w-max">
-								Who
-								are we</p>
+								Get in touch</p>
 						</a></li>
 					<li class="navbar__list__items  -left-1/4 -top-4 flex"><a class="relative" href="#">
 							<svg class="w-full h-full" preserveAspectRatio="none" viewBox=" 0 0 552 465" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
 								<ellipse cx="276" cy="232.5" rx="276" ry="232.5" fill="#FFF9EB" />
-								<text x="50%" y="50%" fill="black" dominant-baseline="middle" text-anchor="middle">How
-									we can help</text>
 							</svg>
 							<p
 								class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black md:text-5xl  lg:text-6xl font-bold text-3xl w-max">
-								Who
-								are we</p>
+								How
+								we can help</p>
 
 						</a></li>
 
-					<li class="navbar__list__items -left-1/4 -top-4 flex"><a class="relative" href="#">
+					<li class="navbar__list__items -left-1/4 -top-4 flex "><a class="relative" href="#">
 							<svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 416 497" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
 								<path
 									d="M0 10C0 4.47716 4.47715 0 10 0H208C322.875 0 416 93.1248 416 208V497H26C11.6406 497 0 485.359 0 471V10Z"
 									fill="#FFF9EB" />
-								<text x="50%" y="50%" fill="black" dominant-baseline="middle"
-									text-anchor="middle">Purpose led projects</text>
 							</svg>
 							<p
 								class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black md:text-5xl  lg:text-6xl font-bold text-3xl w-max">
-								Who
-								are we</p>
+								Purpose led projects</p>
 
 						</a></li>
 				</ul>
 			</nav>
-			<div class="header__menu__socials">
-				<p class="header__menu__socials__title">Let's work together</p>
-				<ul>
-					<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+			<div class="header__menu__socials pl-7 pb-7 lg:mt-auto lg:p-12">
+				<p class="header__menu__socials__title">Let's work together &#8594</p>
+				<ul class="flex flex-row gap-4 mt-4">
+					<li class="bg-white flex justify-center items-center w-10 h-10 rounded-full drop-shadow-xl"><a
+							href="#"><i class="fa-brands fa-instagram text-black text-2xl"></i></a>
+					</li>
+					<li class="bg-white flex justify-center items-center  w-10 h-10 rounded-full"><a href="#"><i
+								class="fa-brands fa-youtube text-black text-2xl"></i></a></li>
+					<li class="bg-white flex justify-center items-center  w-10 h-10 rounded-full"><a href="#"><i
+								class="fa-brands fa-linkedin text-black text-2xl"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -143,25 +141,100 @@
 		</nav>
 	</header>
 
+	<main>
+		<div class="panel orangeWrapper">
+			<section class="panel orange">
+
+				<video class="scale-110 pt-28 object-cover h-full" autoplay loop playsinline muted>
+					<source src="/dist/assets/videos/hero.mp4" type="video/mp4">
+				</video>
+			</section>
+
+		</div>
+
+		<section class="panel purple">
+
+		</section>
+
+
+
+		<section class="panel gray">
+			DONE!
+		</section>
+
+		<!--Hero-->
+		<section name="hero relative">
+			<!-- video -->
+			<div class="hero-overflow rounded-lg  scale-75 absolute z-10 left-1/2 ">
+
+			</div>
+			<!-- marquee -->
+			<div class="marquee pt-20 h-screen">
+				<div class="track">
+					<div class="content_1 text-5xl lg:text-9xl font-bold py-5">films for good — pictures with purpose —
+						stories for
+						change — films
+						for good
+						— pictures with purpose — stories for change</div>
+					<div class="content_2 text-5xl lg:text-9xl font-bold py-5">films for good — pictures with purpose —
+						stories
+						for
+						change — films
+						for good
+						— pictures with purpose — stories for change</div>
+					<div class="content_3 text-5xl lg:text-9xl font-bold py-5">films for good — pictures with purpose —
+						stories
+						for
+						change — films
+						for good
+						— pictures with purpose — stories for change</div>
+				</div>
+			</div>
+			<!-- <div class="hero-marquee">
+				<div class="marquee-inner">films for good — pictures with purpose — stories for change — films for good
+					— pictures with purpose — stories for change </div>
+				<div class="marquee-inner">films for good — pictures with purpose — stories for change — films for good
+					— pictures
+					with purpose — stories for change</div>
+				<div class="marquee-inner">films for good — pictures with purpose — stories for change — films for good
+					— pictures
+					with purpose — stories for change</div>
+			</div> -->
+
+			<!-- hero content -->
+			<div class="hero__reveal">
+				<h1 class="text-2xl">The Purpose led Production Collective</h1>
+				<p>From a simple photo to building your whole story, let's make it happen.</p>
+				<button>View work</button>
+				<button>Get in touch</button>
+				<button>Color Change</button>
+				<button>Get in touch</button>
+			</div>
+
+		</section>
+		<!--Introduction-->
 
 
 
 
 
-	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-	<script>
-		window.ga = function () {
-			ga.q.push(arguments)
-		};
-		ga.q = [];
-		ga.l = +new Date;
-		ga('create', 'UA-XXXXX-Y', 'auto');
-		ga('set', 'anonymizeIp', true);
-		ga('set', 'transport', 'beacon');
-		ga('send', 'pageview')
-	</script>
-	<script src="https://www.google-analytics.com/analytics.js" async></script>
-	<script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+
+		<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+		<script>
+			window.ga = function () {
+				ga.q.push(arguments)
+			};
+			ga.q = [];
+			ga.l = +new Date;
+			ga('create', 'UA-XXXXX-Y', 'auto');
+			ga('set', 'anonymizeIp', true);
+			ga('set', 'transport', 'beacon');
+			ga('send', 'pageview')
+		</script>
+		<script src="https://www.google-analytics.com/analytics.js" async></script>
+		<script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js?v=3.3.0-3"></script>
 
 </body>
 
