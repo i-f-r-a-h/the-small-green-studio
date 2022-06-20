@@ -3,7 +3,23 @@
 // -----------------------------------------------------------------------------
 
 
-.nav__menu{
+.menu__layout{
+display: none;
+opacity: 0;
+    transition:opacity ease-in-out 2s;
+}
+
+.change{
+  display: flex;
   opacity: 1;
-  transition: ease-in-out 2s;
+    transition:opacity ease-in-out 2s;
+  
+}
+
+.change-nav{
+    background-color: transparent;
+    mix-blend-mode: difference;
+}
+.who-are-we{
+  transform: rotate(52.68) ;
 }
