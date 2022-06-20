@@ -29,35 +29,45 @@
 	<!--Header-->
 	<header>
 		<nav class="site-nav-js flex items-center justify-between flex-wrap bg-black py-2  z-50 fixed-top">
-			<div class="flex items-center flex-shrink-0 text-white  ml-6">
-				<svg width="35" height="45" viewBox="0 0 25 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<g style="mix-blend-mode:hard-light">
-						<ellipse cx="6.79195" cy="17.308" rx="6.79195" ry="7.05602" fill="#C5FFD5"
-							fill-opacity="0.64" />
-					</g>
-					<ellipse cx="16.0893" cy="10.947" rx="8.69478" ry="8.65595" fill="#33FF00" fill-opacity="0.59" />
-					<path d="M12.0148 21.832L11.5371 22.364L12.64 22.0922L12.0148 21.832Z" fill="#D77706" />
-					<g style="mix-blend-mode:hard-light">
-						<ellipse cx="8.98189" cy="8.65595" rx="8.69478" ry="8.65595" fill="#5BDDBE"
-							fill-opacity="0.82" />
-					</g>
-					<path
-						d="M15.2148 24.5704L16.1197 22.0831L16.6323 19.5171L17.7079 19.4551V34.002H15.2148V29.2862V24.5704Z"
-						fill="#D77706" />
-					<path
-						d="M12.3173 22.0456C12.5309 21.7893 17.2272 24.3374 17.2272 24.3374L15.235 27.819C15.235 27.819 15.315 24.1389 12.8088 23.1901C10.3025 22.2413 12.1038 22.3019 12.3173 22.0456Z"
-						fill="#D77706" />
-				</svg>
-				<span class="font-semibold text-sm tracking-tight ml-1 hidden md:block">The Small Green Studio</span>
-			</div>
+			<!-- logo -->
+			<a href="index.html">
+				<div class="flex items-center flex-shrink-0 text-white  ml-6">
+					<svg width="35" height="45" viewBox="0 0 25 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g style="mix-blend-mode:hard-light">
+							<ellipse cx="6.79195" cy="17.308" rx="6.79195" ry="7.05602" fill="#C5FFD5"
+								fill-opacity="0.64" />
+						</g>
+						<ellipse cx="16.0893" cy="10.947" rx="8.69478" ry="8.65595" fill="#33FF00"
+							fill-opacity="0.59" />
+						<path d="M12.0148 21.832L11.5371 22.364L12.64 22.0922L12.0148 21.832Z" fill="#D77706" />
+						<g style="mix-blend-mode:hard-light">
+							<ellipse cx="8.98189" cy="8.65595" rx="8.69478" ry="8.65595" fill="#5BDDBE"
+								fill-opacity="0.82" />
+						</g>
+						<path
+							d="M15.2148 24.5704L16.1197 22.0831L16.6323 19.5171L17.7079 19.4551V34.002H15.2148V29.2862V24.5704Z"
+							fill="#D77706" />
+						<path
+							d="M12.3173 22.0456C12.5309 21.7893 17.2272 24.3374 17.2272 24.3374L15.235 27.819C15.235 27.819 15.315 24.1389 12.8088 23.1901C10.3025 22.2413 12.1038 22.3019 12.3173 22.0456Z"
+							fill="#D77706" />
+					</svg>
+					<span class="font-semibold text-sm tracking-tight ml-1 hidden md:block">The Small Green
+						Studio</span>
+
+				</div>
+			</a>
+
 
 			<div class="flex items-center mr-6 ">
+				<!-- contact us button -->
 				<div class="hidden md:block">
 					<a href="#" class="inline-block px-6 py-2.5 bg-yellow-500 text-white font-medium text-sm leading-tight 
 						rounded-full shadow-md hover:bg-yellow-600 hover:shadow-lg focus:bg-yellow-600 focus:shadow-lg focus:outline-none
 						focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out">Contact
 						Us</a>
 				</div>
+
+				<!-- menu icon  -->
 				<button class="nav__menu relative font-boldflex items-center px-3 py-2 border
 				hover:text-white hover:border-white">
 					<svg width="104" height="44" viewBox="0 0 104 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,10 +79,12 @@
 				</button>
 			</div>
 		</nav>
+
 		<!-- menu -->
-		<div
-			class="fixed menu__layout w-full h-screen  overflow-y-scroll overflow-x-hidden justify-between flex-col lg:flex-row z-40 bg-green-300 pt-20">
+		<div class="fixed menu__layout top-0 w-full h-screen overflow-y-scroll overflow-x-hidden justify-between flex-col
+			lg:flex-row z-40 bg-[url('/dist/assets/images/menu_bg.png')] pt-20">
 			<nav class="navbar relative lg:basis-9/12">
+				<!-- menu list -->
 				<ul class="navbar__list grid grid-cols-2 grid-flow-row">
 					<li class="navbar__list__items  -left-2 -top-20  ">
 						<a class="relative">
@@ -125,6 +137,8 @@
 						</a></li>
 				</ul>
 			</nav>
+
+			<!-- menu socials -->
 			<div class="header__menu__socials pl-7 pb-7 lg:mt-auto lg:p-12">
 				<p class="header__menu__socials__title">Let's work together &#8594</p>
 				<ul class="flex flex-row gap-4 mt-4">
@@ -145,7 +159,9 @@
 	<main>
 
 		<!-- hero section -->
-		<div>
+		<section>
+
+			<!-- hero content -->
 			<div class="hero__content h-screen opacity-0 sticky z-20 flex flex-row align-bottom w-full">
 				<div class="flex flex-col basis-1/2 justify-center ml-20">
 					<h1 class="hero__title lg:text-7xl max-w-0"><span class="block">The</span><span
@@ -162,7 +178,7 @@
 					</div>
 				</div>
 
-				<!-- <button>Color Change</button> -->
+				<!-- get in touch -->
 				<a class="flex ml-auto mr-52 w-72">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%"
 						id="blobSvg" style="opacity: 1;">
@@ -222,40 +238,211 @@
 			</div>
 
 
-			<!--Hero-->
-			<section name="hero relative">
-				<!-- video -->
-				<div class="hero-overflow rounded-lg  scale-75 absolute z-10 left-1/2 ">
+		</section>
+
+
+
+		<!-- introduction -->
+		<section name="introduction">
+			<div class="introduction__wrapper">
+				<p>Hello! Happy <span>Date through js</span></p>
+				<h2>We are a small studio <span><img src="" alt="" srcset=""></span>which </h2>
+			</div>
+		</section>
+
+
+
+		<!--How We Work-->
+		<section class="how-we-work">
+
+			<div class="projects_wrapper">
+
+				<main
+					class="flex justify-center items-center p-4 h-screen w-full bg-gradient-to-r from-green-100 to-blue-100">
+					<div class="bg-white w-full sm:w-1/2 lg:w-96 border border-gray-200 divide-y divide-gray-200">
+						<details>
+							<summary class="question py-3 px-4 cursor-pointer select-none w-full outline-none">How is
+								this made?</summary>
+							<p class="pt-1 pb-3 px-4">With the HTML5 <code class="text-sm text-red-500">details</code>
+								element and some Tailwind for showcase.</pre>
+						</details>
+						<details>
+							<summary class="question py-3 px-4 cursor-pointer select-none w-full">Can I use it?
+							</summary>
+							<p class="pt-1 pb-3 px-4">Of course. It's yours to use wherever and whenever you like.</p>
+						</details>
+					</div>
+			</div>
+
+
+
+		</section>
+
+
+		<!--Video Reel-->
+		<section name="video_reel">
+
+		</section>
+
+		<!-- how we can help -->
+		<section class="how-we-can-help">
+			<h2 class="title">How we can help</h2>
+			<div class="categories">
+				<div class="categories__gallery">
+					<div class="categories__gallery__wrapper">
+						<a href="#" class="categories__gallery__link" data-index="0">
+							<figure class="categories__gallery__media">
+								<img src="" alt="" class="categories__gallery__media__image">
+							</figure>
+						</a>
+					</div>
+				</div>
+				<div class="categories__content">
+					<article class="categories__article">
+						<h2 class="categories__article__title"></h2>
+						<p class="categories__article__description"></p>
+					</article>
+				</div>
+			</div>
+
+		</section>
+
+		<!--Purpose Projects-->
+		<section name="purpose_projects">
+
+
+			<div class="box-border h-32 w-64 bg-white">
+				<div class="box-border__inner">
+					<div class="box-border__inner__content">
+						<h3>Project 1</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+					</div>
+
 				</div>
 
-				<!-- hero content -->
-				<div class="hero__reveal">
-					<h1 class="text-2xl">The <span></span> Purpose led Production Collective</h1>
-					<p>From a simple photo to building your whole story, let's make it happen.</p>
-					<button>View work</button>
-					<button>Get in touch</button>
-					<button>Color Change</button>
-					<button>Get in touch</button>
+				<div class="box-border h-32 w-64 bg-black justify-center">
+					<div class="box-border__inner">
+						<div class="box-border__inner__content">
+							<h3>Project 2</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+						</div>
+
+					</div>
+
+		</section>
+
+		<!--Team Small-->
+
+		<section name="team_small">
+
+
+
+
+		</section>
+
+
+
+		<!--Call to Action-->
+		<section class="call_to_action">
+			<div class="cta__wrapper  ml-8 mt-72 mb-72">
+				<div class="cta__text">
+					<h2 class="text-9xl font-semibold ">
+						<span>That's it for now,</span>
+						<span><img src="" alt=""></span>
+						<span>so have</span>
+						<span><img src="" alt=""></span>
+						<span>we sparked</span>
+						<span>your</span>
+						<span>curiosity?</span>
+					</h2>
 				</div>
-			</section>
+				<div class="cta__blob flex justify-end relative">
+					<a class="absolute z-10" href="mailto:dostuff@thesmallgreenstudio.com">
+						<svg width="216" height="224" viewBox="0 0 216 224" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M103.136 0.620796C132.552 -0.935111 164.334 -1.04249 186.201 18.695C208.832 39.1218 216.778 71.3156 215.188 101.76C213.677 130.68 197.6 155.303 177.953 176.577C157.241 199.004 133.568 220.677 103.136 223.093C70.6862 225.668 36.2564 214.485 15.4183 189.478C-4.26522 165.856 -0.42015 132.41 2.03238 101.76C4.22255 74.389 9.0033 46.4604 28.4161 27.0407C47.8318 7.61801 75.7111 2.07135 103.136 0.620796Z"
+								fill="#D9B138" />
+							<text class="z-10 fill-white" x="50%" y="50%" dominant-baseline="middle"
+								text-anchor="middle">Get
+								in touch</text>
+						</svg></a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!--Footer-->
+	<footer class="w-full">
+		<div class="footer__wrapper flex flex-col">
+			<div class="flex flex-wrap flex-col text-center mb-72">
+				<h3 class="text-5xl font-bold">Ready?<br>Let's Get Started</h3>
+				<p>have a project or just want a quick chat?</p>
+				<button class="w-48 h-12 rounded-lg text-black font-semibold
+				bg-white m-auto">Contact Us</button>
+			</div>
+
+			<div class="flex justify-between m-10 ">
+				<div class="flex flex-wrap flex-col">
+					<p class="font-bold">Links</p>
+					<a href="url">Who are we</a>
+					<a href="url">Our team</a>
+					<a href="url">Things we can do</a>
+					<a href="url">Things we have done</a>
+					<a href="url">Contacts</a>
+				</div>
+
+				<div class="emails-wrapper">
+					<div class="flex flex-wrap flex-col text-center">
+						<p class="font-bold">Send a not so serious email</p>
+						<a href="mailto:dostuff@thesmallgreenstudio.com">Send Email</a>
+					</div>
 
 
-			<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-			<script>
-				window.ga = function () {
-					ga.q.push(arguments)
-				};
-				ga.q = [];
-				ga.l = +new Date;
-				ga('create', 'UA-XXXXX-Y', 'auto');
-				ga('set', 'anonymizeIp', true);
-				ga('set', 'transport', 'beacon');
-				ga('send', 'pageview')
-			</script>
-			<script src="https://www.google-analytics.com/analytics.js" async></script>
-			<script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
-			<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
-			<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js?v=3.3.0-3"></script>
+					<div class="flex flex-wrap flex-col">
+						<p class="font-bold">Socials</p>
+						<div class="icon-wrapper">
+							<button class="btn mr-4	"><i class="fa-brands fa-instagram"></i></button>
+							<button class="btn mr-4"><i class="fa-brands fa-youtube"></i></button>
+							<button class="btn mr-4"><i class="fa-brands fa-linkedin"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="call-wrapper">
+					<div class="flex flex-wrap flex-col">
+						<p class="font-bold">give us a ring</p>
+						<p>07397616938</p>
+					</div>
+
+					<div class="flex flex-wrap flex-col">
+						<p class="font-bold">Just because</p>
+						<p>51.5072 N, 0.1276 W</p>
+						<p>Current Time</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+	</footer>
+
+
+	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+	<script>
+		window.ga = function () {
+			ga.q.push(arguments)
+		};
+		ga.q = [];
+		ga.l = +new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto');
+		ga('set', 'anonymizeIp', true);
+		ga('set', 'transport', 'beacon');
+		ga('send', 'pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async></script>
+	<script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js?v=3.3.0-3"></script>
 
 </body>
 
