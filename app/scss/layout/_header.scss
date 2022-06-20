@@ -23,3 +23,148 @@ opacity: 0;
 .who-are-we{
   transform: rotate(52.68) ;
 }
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+  z-index: 100;
+  mix-blend-mode: difference;
+  width: 100%;
+  height: fit-content;
+}
+
+header .menu-items {
+  display: flex;
+
+  align-items: center;
+    margin-right: 35px;
+}
+header .menu-items .freelance-work {
+  padding: 0px 60px;
+  font-size: 15px;
+}
+.freelance-work a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #bbebbd;
+}
+.freelance-work a img {
+  width: 15px;
+  padding-right: 10px;
+}
+.freelance-work p {
+  text-decoration: none;
+  color: #bbebbd;
+}
+.menu-items .menu {
+  font-size:2rem;
+  padding: 0px 15px;
+  font-weight: bold;
+  line-height: 1.45;
+  overflow: hidden;
+  position: absolute;
+  top: 4px;
+  color: #bbebbd;
+}
+.menu-items .menu span {
+  display: block;
+  position: relative;
+}
+.logo span {
+  font-size: 30px;
+}
+#menuBtnDiv2 {
+  position: absolute;
+}
+/* container  */
+
+.heading1 {
+  margin-left: 11%;
+}
+.heading3 {
+  margin-left: 3%;
+}
+
+.menu-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+
+}
+.menu-container .menu-container-1 {
+  width: 50vw;
+  background-color: #101010;
+}
+.menu-container-1 {
+  display: flex;
+  padding: 10vh 5vw;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #bbebbd;
+}
+.menu-container-1 .menu-container-header li {
+  font-size: 60px;
+  margin: 10px 0px;
+  font-weight: bold;
+  overflow: hidden;
+}
+.menu-container-1 .menu-container-footer li {
+  font-size: 30px;
+  font-weight: lighter;
+  text-decoration: underline;
+  margin: 5px 0px;
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+}
+.menu-container .menu-container-2 {
+  width: 50vw;
+  background-color: #bbebbd;
+}
+.menu-container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10vh 5vw;
+  color: #101010;
+}
+.menu-container-2 .menu-container-footer li {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 5px 0px;
+  overflow: hidden;
+}
+#special-li {
+  font-size: 20px;
+  text-decoration: none;
+  margin: 20px 2px;
+}
+.menu-container-header li span,
+.menu-container-footer li span {
+  display: block;
+  position: relative;
+}
+
+.menu-container-header li:hover span,
+.menu-container-footer li:hover span {
+  animation: MoveDown 0.3s forwards, MoveUp 0.2s forwards 0.2s;
+}
+@keyframes MoveDown {
+  to {
+    transform: translate3d(0, 105%, 0);
+  }
+}
+@keyframes MoveUp {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
