@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind base;
@@ -397,6 +398,13 @@ button {
   font-style: normal;
   font-weight: 400 500 700 900;
 }
+@font-face {
+  font-family: "font-rubik-mono";
+  src: url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap") format("woff2-variations");
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
 /**
  * Basic typography style for copy text
  */
@@ -465,44 +473,51 @@ body {
   width: 1px;
 }
 
-
 .menu__layout {
   display: none;
   opacity: 0;
-  -webkit-transition: opacity ease-in-out 2s;
   transition: opacity ease-in-out 2s;
 }
 
 .change {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   opacity: 1;
-  -webkit-transition: opacity ease-in-out 2s;
   transition: opacity ease-in-out 2s;
 }
 
 .change-nav {
   background-color: transparent;
+  mix-blend-mode: difference;
 }
 
 .who-are-we {
-  -webkit-transform: rotate(52.68);
-          transform: rotate(52.68);
+  transform: rotate(52.68);
 }
 
 .marquee {
-  position: relative;
+  position: fixed;
   width: 10000px;
   max-width: 100%;
+  display: flex;
+  align-items: center;
   overflow-x: hidden;
+  top: 0;
 }
 
-div[class^="content_"] {
+.hero__content {
+  width: 10000px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  top: 0;
+}
+
+div[class^=content_] {
   white-space: nowrap;
   will-change: transform;
-  -webkit-animation: marquee 100s linear infinite both;
-          animation: marquee 100s linear infinite both;
+  -webkit-animation: marquee 32s linear infinite both;
+          animation: marquee 32s linear infinite both;
   color: #195B3E;
 }
 
@@ -511,75 +526,34 @@ div[class^="content_"] {
 }
 
 .hero-overflow {
-  -webkit-transform: translate(-50%, -50%) scale(0.5);
-          transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
   top: 50%;
 }
 
 @-webkit-keyframes marquee {
   from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   to {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes marquee {
   from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   to {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
-
-html, body {
-  margin: 0;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
+.hero__title {
+  font-family: "Rubik Mono One", sans-serif;
+  letter-spacing: -6%;
 }
-
-.panel {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 600;
-  font-size: 1.5em;
-  text-align: center;
-  color: white;
-  position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 10px;
-}
-
-body {
-  overflow-x: hidden !important;
-  overflow-y: scroll !important;
-}
-
-.orangeWrapper {
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-
-.nav__menu {
-  opacity: 1;
-  transition: ease-in-out 2s;
+.hero__title span:nth-child(2) {
+  font-family: "font-over-the-rainbow", "Lucida Sans", Verdana, sans-serif;
+  color: #33FF00;
 }
 
 body {
@@ -593,7 +567,6 @@ footer {
   width: 100%;
   overflow: hidden;
   z-index: 1;
-
 }
 
 footer:after {
@@ -619,4 +592,37 @@ footer:after {
 
 .fa-youtube {
   color: black;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+body {
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+}
+
+.orangeWrapper {
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
 }/*# sourceMappingURL=style.css.map */
