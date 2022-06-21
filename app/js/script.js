@@ -22,31 +22,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // --- ORANGE PANEL ---
 
-const tl = gsap.timeline({
-		scrollTrigger: {
-			trigger: ".orangeWrapper",
-			scrub: true,
-			pin: true,
 
-			start: "50% 50%",
-			end: "+=100%"
-		}
-	})
-
-	.from(".orange", {
-		scale: 0.3,
-		ease: "none"
-	})
-
-	.to(".marquee", {
-		opacity: 0,
-		ease: "none"
-	})
-
-	.to(".hero__content", {
-		opacity: 1,
-		ease: "none"
-	})
 
 
 
@@ -111,4 +87,31 @@ menu_open.from(
 
 function menuOpen() {
 	menu_open.reversed() ? menu_open.play() : menu_open.reverse();
-}
+};
+
+
+const tl = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".orangeWrapper",
+		scrub: true,
+		pin: true,
+
+		start: "50% 50%",
+		end: "+=100%"
+	}
+});
+
+tl.from(".orange", {
+	scale: 0.3,
+	ease: "none"
+});
+
+tl.to(".marquee", {
+	opacity: 0,
+	ease: "none"
+});
+
+tl.to(".hero__content", {
+	opacity: 1,
+	ease: "none"
+});

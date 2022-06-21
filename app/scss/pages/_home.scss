@@ -26,12 +26,13 @@
 div[class^="content_"] {
     white-space: nowrap;
     will-change: transform;
-    animation: marquee 32s linear infinite both;
+    animation: marquee 50s linear infinite both;
     color: #195B3E;
 }
 
 .content_2 {
     animation-direction: reverse !important;
+    animation-delay: 2s;
 }
 
 .hero-overflow {
