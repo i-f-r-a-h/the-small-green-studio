@@ -163,9 +163,25 @@ $(document).on("mousemove", function (e) {
 $(".team-js img").on("mouseenter", function () {
 	cursor.addClass("active--cursor");
 	follower.addClass("active--cursor");
+	if ($('.about__info-js').is(":visible")) {
+		$(".active--cursor").attr('data-before', 'close');
+	} else {
+		$(".active--cursor").attr('data-before', 'view');
+	}
 });
 
 $(".team-js img").on("mouseleave", function () {
 	cursor.removeClass("active--cursor");
 	follower.removeClass("active--cursor");
+});
+
+
+$(".team-js").on("click", function () {
+	$('.about__info-js').slideToggle("slow", function () {
+		if ($('.about__info-js').is(":visible")) {
+			$(".active--cursor").attr('data-before', 'close');
+		} else {
+			$(".active--cursor").attr('data-before', 'view');
+		}
+	});
 });

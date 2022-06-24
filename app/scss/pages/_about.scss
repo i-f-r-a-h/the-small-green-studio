@@ -55,7 +55,7 @@ body {
     left: 50%;
     transform: translate(-50%, 0%);
     text-align: center;
-    content: "view";
+    content: attr(data-before);
     border-radius: 100%;
     color: black;
     opacity: 0;
