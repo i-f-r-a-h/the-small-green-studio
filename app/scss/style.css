@@ -506,8 +506,6 @@ body {
 .who-are-we {
   -webkit-transform: rotate(52.68);
           transform: rotate(52.68);
-<<<<<<< HEAD
-=======
 }
 
 header {
@@ -695,7 +693,6 @@ ul {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
   }
->>>>>>> 061c174f57c0bf3ef703091243caf24c7cf0d358
 }
 
 .marquee {
