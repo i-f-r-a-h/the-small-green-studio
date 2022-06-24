@@ -727,7 +727,6 @@ div[class^="content_"] {
   will-change: transform;
   -webkit-animation: marquee 50s linear infinite both;
           animation: marquee 50s linear infinite both;
-  color: #195B3E;
 }
 
 .content_2 {
