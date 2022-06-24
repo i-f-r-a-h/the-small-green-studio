@@ -1,5 +1,5 @@
 
-
+//home page content video 
 html, body {
   margin: 0;
   height: 100%;
@@ -31,4 +31,11 @@ body {
   padding:0;
   width: 100vw;
   height: 100vh;
+}
+
+
+//team section
+@import url('https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap');
+.team__role{
+font-family: 'Over the Rainbow', cursive;
 }

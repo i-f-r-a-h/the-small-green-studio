@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind base;
@@ -851,5 +852,9 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
+}
+
+.team__role {
+  font-family: 'Over the Rainbow', cursive;
 }
 /*# sourceMappingURL=style.css.map */
