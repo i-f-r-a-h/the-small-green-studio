@@ -160,10 +160,10 @@ $(document).on("mousemove", function (e) {
 	mouseY = e.pageY;
 });
 
-$(".team-js img").on("mouseenter", function () {
+$(".team-js").on("mouseenter", function () {
 	cursor.addClass("active--cursor");
 	follower.addClass("active--cursor");
-	if ($('.about__info-js').is(":visible")) {
+	if ($(this).find(".about__info-js").is(":visible")) {
 		$(".active--cursor").attr('data-before', 'close');
 	} else {
 		$(".active--cursor").attr('data-before', 'view');
@@ -177,8 +177,8 @@ $(".team-js img").on("mouseleave", function () {
 
 
 $(".team-js").on("click", function () {
-	$('.about__info-js').slideToggle("slow", function () {
-		if ($('.about__info-js').is(":visible")) {
+	$(this).find(".about__info-js").slideToggle("slow", function () {
+		if ($(".about__info-js").is(":visible")) {
 			$(".active--cursor").attr('data-before', 'close');
 		} else {
 			$(".active--cursor").attr('data-before', 'view');
