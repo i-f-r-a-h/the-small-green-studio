@@ -25,7 +25,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-
+//how we can help 
 
 
 
@@ -153,6 +153,9 @@ TweenMax.to({}, 0.016, {
 
 	}
 });
+
+
+
 
 //event listeners
 $(document).on("mousemove", function (e) {
