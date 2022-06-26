@@ -25,7 +25,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-//how we can help 
+//how we can help
 
 
 
@@ -117,9 +117,54 @@ tl.to(".hero__content", {
 });
 
 
+const sections = gsap.utils.toArray(".principles__item");
+let maxWidth = 0;
 
+const getMaxWidth = () => {
+	maxWidth = 0;
+	sections.forEach((section) => {
+		maxWidth += section.offsetWidth;
+		maxWidth += gsap.getProperty(section, 'marginLeft');
+	});
+	maxWidth += 20;
+	maxWidth += window.innerWidth;
+	maxWidth -= sections[0].offsetWidth;
+	return maxWidth;
+};
+
+getMaxWidth();
+ScrollTrigger.addEventListener("refreshInit", getMaxWidth);
+
+gsap.set('section.spacer', {
+	minHeight: window.innerHeight - document.querySelector('.principles').offsetHeight
+})
+
+gsap.to(sections, {
+	x: () => `-${maxWidth - window.innerWidth}`,
+	ease: "none",
+	scrollTrigger: {
+		trigger: ".principles",
+		pin: true,
+		scrub: 0.5,
+		markers: true,
+		end: () => `+=${maxWidth}`,
+		invalidateOnRefresh: true
+	}
+});
+
+sections.forEach((sct, i) => {
+	ScrollTrigger.create({
+		trigger: sct,
+		start: () => 'top top-=' + (sct.offsetLeft - window.innerWidth / 2) * (maxWidth / (maxWidth - window.innerWidth)),
+		end: () => '+=' + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
+		toggleClass: {
+			targets: sct,
+			className: "active"
+		}
+	});
+});
 // on hover image effect
-// .active--cursor 
+// .active--cursor
 
 //variables
 let cursor = $(".cursor"),
