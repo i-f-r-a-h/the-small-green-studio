@@ -116,7 +116,10 @@ tl.to(".hero__content", {
 	ease: "none"
 });
 
-
+//how we can help
+gsap.set('.categories__article', {
+	autoAlpha: 0
+})
 const sections = gsap.utils.toArray(".principles__item");
 let maxWidth = 0;
 
@@ -153,15 +156,33 @@ gsap.to(sections, {
 });
 
 sections.forEach((sct, i) => {
+	const smallTimeline = gsap.timeline();
+	const content = document.querySelector('.categories__wrapper');
+	const relevantContent = content.querySelector('article.categories__article-' + i);
+
 	ScrollTrigger.create({
 		trigger: sct,
-		start: () => 'top top-=' + (sct.offsetLeft - window.innerWidth / 2) * (maxWidth / (maxWidth - window.innerWidth)),
+		start: () => 'top top-=' + (sct.offsetLeft - window.innerWidth / 1.5) * (maxWidth / (maxWidth - window.innerWidth)),
 		end: () => '+=' + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
-		toggleClass: {
-			targets: sct,
-			className: "active"
-		}
+		animation: smallTimeline,
+		toggleActions: "play reverse play reverse",
 	});
+
+	smallTimeline
+		//.to(elem,{ duration: 0.25, fontSize: "40px", color: "orange"}, 0)  
+		.to(sct, {
+			duration: 0.25,
+			color: "orange"
+		}, 0)
+		.to(sct, {
+			duration: 0.25,
+			opacity: 1
+		}, 0)
+		.to(relevantContent, {
+			duration: 0.25,
+			y: 0,
+			autoAlpha: 1
+		}, 0)
 });
 // on hover image effect
 // .active--cursor

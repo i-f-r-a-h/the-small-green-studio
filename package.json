@@ -30,6 +30,7 @@
   ],
   "devDependencies": {
     "del": "^6.1.1",
+    "gsap": "^3.10.4",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^5.0.0",
