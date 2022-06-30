@@ -156,6 +156,9 @@ gsap.to(sections, {
 });
 
 sections.forEach((sct, i) => {
+	const section_video = document.querySelectorAll(".principles__item__video");
+
+
 	const smallTimeline = gsap.timeline();
 	const content = document.querySelector('.categories__wrapper');
 	const relevantContent = content.querySelector('article.categories__article-' + i);
@@ -166,23 +169,35 @@ sections.forEach((sct, i) => {
 		end: () => '+=' + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
 		animation: smallTimeline,
 		toggleActions: "play reverse play reverse",
+
 	});
 
 	smallTimeline
 		//.to(elem,{ duration: 0.25, fontSize: "40px", color: "orange"}, 0)  
+
 		.to(sct, {
 			duration: 0.25,
 			color: "orange"
 		}, 0)
 		.to(sct, {
 			duration: 0.25,
-			opacity: 1
+			opacity: 1,
 		}, 0)
 		.to(relevantContent, {
 			duration: 0.25,
 			y: 0,
 			autoAlpha: 1
 		}, 0)
+
 });
-// on hover image effect
-// .active--cursor
+
+
+
+
+/// introduction date 
+var prnDt = new Date().toLocaleDateString('en-us', {
+	weekday: 'long'
+});
+console.log(prnDt);
+
+document.querySelector('.intro__date-js').innerHTML = `${prnDt}`;

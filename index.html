@@ -180,7 +180,7 @@
 				<section class="panel orange">
 
 					<video class="scale-110 rounded-lg  object-cover h-full z-10 " autoplay loop playsinline muted>
-						<source src="/dist/assets/videos/SiteLoop_1.webm" type="video/mp4">
+						<source src="/dist/assets/videos/hero_reel.mp4" type="video/mp4">
 					</video>
 				</section>
 
@@ -209,7 +209,8 @@
 
 		<section name="introduction ">
 			<div class="introduction__wrapper bg-[#155000] w-full h-full rounded-3xl">
-				<p class="text-center pt-28 py-4 text-[#00FF66]">Hello! Happy <span>Date through js</span></p>
+				<p class="text-center pt-28 py-4 text-[#00FF66]">Hello, Happy <span class="intro__date-js">{insert
+						date}</span>!</p>
 				<h2 class="text-center mx-32 mt-10 text-5xl uppercase  leading-[5rem]   ">We are a small studio
 					<span><img src="" alt="" srcset=""></span>which means we can
 					respond to your brief <span class="line-through ">quickly</span>-or write one with you to get <span
@@ -253,7 +254,7 @@
 
 
 		<!--Video Reel-->
-		<section name="video_reel" class="w-full h-screen relative mb-96">
+		<section name="video_reel" class="w-full h-screen relative mb-72">
 			<div>
 				<img class="object-fill w-full	h-screen" src="app\assets\images\background_img.png" alt="">
 				<div class="absolute bottom-3/4 left-2/4	 h-16 w-12">
@@ -372,10 +373,11 @@
 
 					<!-- gallery -->
 					<div class="principles__list mb-16">
-						<div class="principles__item opacity-25">
-							<span class="principles__number">01</span>
-							<p class="principles__description">Our highest priority is to satisfy the customer through
-								early and continuous delivery of valuable software.</p>
+						<div class="principles__item opacity-25" id="item-video">
+							<video class="principles__item__video scale-110 rounded-lg object-cover h-full z-10 " loop
+								autoplay muted>
+								<source src="/app/assets/images/GALLERY/narrative_1.mp4" type="video/mp4">
+							</video>
 						</div>
 						<div class="principles__item opacity-25">
 							<span class="principles__number">02</span>
@@ -572,31 +574,56 @@
 				</div>
 			</div>
 		</section>
-		<!-- 
-
-	Purpose Projects-->
-		<!--<section name="purpose_projects">
 
 
-			<div class="box-border h-32 w-64 bg-white">
-				<div class="box-border__inner">
-					<div class="box-border__inner__content">
-						<h3>Project 1</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+		<!-- Purpose Projects -->
+		<section name="purpose_projects">
+
+			<div class="flex flex-wrap flex-col text-center mb-60">
+				<h3 class="text-5xl font-bold">Purpose Led Projects</h3>
+			</div>
+
+			<div class="grid grid-cols-1 justify-items-center">
+				<div class="flex h-25 w-1/2  bg-light-green p-8 flex-col">
+					<div class="flex items-center mb-3">
+						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center py-8 pr-10">
+						</div>
+						<div class="flex justify-between w-full pr-10">
+							<h2 class="text-gray-900 text-lg title-font font-medium pr-10">Bird & Wild Coffee</h2>
+						</div>
 					</div>
-
 				</div>
 
-				<div class="box-border h-32 w-64 bg-black justify-center">
-					<div class="box-border__inner">
-						<div class="box-border__inner__content">
-							<h3>Project 2</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-						</div>
-
+				<div class="flex  h-25 w-1/2  bg-light-brown p-8 flex-col rotate-3">
+					<div class="flex items-center mb-3">
+						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
+						<h2 class="text-gray-900 text-lg title-font font-medium">Pedrick’s Zero Waste Shop</h2>
 					</div>
+				</div>
 
-		</section>-->
+				<div class="flex h-25 w-1/2  bg-forest-green p-8 flex-col -rotate-10">
+					<div class="flex items-center mb-3">
+						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
+						<h2 class="text-gray-900 text-lg title-font font-medium">Westerham Brewery</h2>
+					</div>
+				</div>
+
+				<div class="flex  h-25 w-1/2  bg-standard-green p-8 flex-col rotate-3">
+					<div class="flex items-center mb-3">
+						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
+						<h2 class="text-gray-900 text-lg title-font font-medium">The Earth Law Center</h2>
+					</div>
+				</div>
+
+				<div class="flex  h-25 w-1/2 bg-deep-green p-8 flex-col ">
+					<div class="flex items-center mb-3">
+						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
+						<h2 class="text-gray-900 text-lg title-font font-medium">Fairborn Snacks - Dorset</h2>
+					</div>
+				</div>
+
+
+		</section>
 
 		<!--Team Small-->
 
