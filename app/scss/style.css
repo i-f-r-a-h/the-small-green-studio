@@ -393,7 +393,7 @@ button {
 
 @font-face {
   font-family: 'font-over-the-rainbow';
-  src: url("./assets/overtherainbow-regular.ttf") format("woff2");
+  src: url("./assets/fonts/overtherainbow-regular.ttf") format("woff2");
   font-display: swap;
   font-style: normal;
   font-weight: normal;
@@ -401,7 +401,7 @@ button {
 
 @font-face {
   font-family: 'font-outfit';
-  src: url("./assets/outfit-variable.ttf") format("woff2-variations");
+  src: url("./assets/fonts/outfit-variable.ttf") format("woff2-variations");
   font-display: swap;
   font-style: normal;
   font-weight: 400 500 700 900;
@@ -811,6 +811,146 @@ footer:after {
 
 .fa-youtube {
   color: black;
+}
+
+.principles {
+  padding: 60px 20px 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.principles__container {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.principles__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 54px;
+  color: #1C2F6B;
+  margin-bottom: 32px;
+}
+
+.principles__counter {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #30C5FF;
+}
+
+.principles__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: calc(50vw - 370px/2);
+}
+
+.principles__item {
+  background-color: #F5F9FF;
+  min-width: 370px;
+  padding: 32px;
+  margin-left: 30px;
+  cursor: pointer;
+  height: 290px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.principles__item:first-of-type {
+  margin-left: 0;
+}
+
+.principles__item:after {
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #1C2F6B;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  transition: transform .3s,-webkit-transform .3s;
+  z-index: -1;
+}
+
+.principles__item.active:after {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.principles__item:hover {
+  background-color: #1C2F6B;
+  opacity: 1 !important;
+}
+
+.principles__item:hover .principles__description,
+.principles__item.active .principles__description {
+  color: #fff;
+}
+
+.principles__number {
+  color: #30C5FF;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.principles__description {
+  color: #1C2F6B;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+.content-wrap {
+  position: relative;
+  width: 333px;
+  height: 222px;
+  border-radius: 4px;
+  /*background-color: limegreen;*/
+  background-color: green;
+  margin-right: 111px;
+  margin-top: -10px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  /*background-color: limegreen;*/
+  background-color: green;
+  border-radius: 4px;
+  font-size: 30px;
+  color: white;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
 }
 
 html,
