@@ -825,6 +825,12 @@ footer:after {
   position: relative;
 }
 
+.gallery-modal {
+  position: fixed;
+  background-color: red;
+  height: 100%;
+}
+
 .principles__title {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
