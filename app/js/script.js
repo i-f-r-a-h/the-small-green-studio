@@ -25,7 +25,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-
+//how we can help
 
 
 
@@ -116,72 +116,234 @@ tl.to(".hero__content", {
 	ease: "none"
 });
 
+//how we can help
+gsap.set('.categories__article', {
+	autoAlpha: 0
+})
+const sections = gsap.utils.toArray(".principles__item");
+let maxWidth = 0;
 
-
-// on hover image effect
-// .active--cursor 
-
-//variables
-let cursor = $(".cursor"),
-	follower = $(".cursor__follower");
-
-let posX = 0,
-	posY = 0,
-	mouseX = 0,
-	mouseY = 0;
-
-//cursor change effect
-TweenMax.to({}, 0.016, {
-	repeat: -1,
-	onRepeat: function () {
-		posX += (mouseX - posX) / 9;
-		posY += (mouseY - posY) / 9;
-
-		TweenMax.set(follower, {
-			css: {
-				left: posX - 20,
-				top: posY - 20
-			}
-		});
-
-		TweenMax.set(cursor, {
-			css: {
-				left: mouseX,
-				top: mouseY
-			}
-		});
-
-	}
-});
-
-//event listeners
-$(document).on("mousemove", function (e) {
-	mouseX = e.pageX;
-	mouseY = e.pageY;
-});
-
-$(".team-js").on("mouseenter", function () {
-	cursor.addClass("active--cursor");
-	follower.addClass("active--cursor");
-	if ($(this).find(".about__info-js").is(":visible")) {
-		$(".active--cursor").attr('data-before', 'close');
-	} else {
-		$(".active--cursor").attr('data-before', 'view');
-	}
-});
-
-$(".team-js img").on("mouseleave", function () {
-	cursor.removeClass("active--cursor");
-	follower.removeClass("active--cursor");
-});
-
-
-$(".team-js").on("click", function () {
-	$(this).find(".about__info-js").slideToggle("slow", function () {
-		if ($(".about__info-js").is(":visible")) {
-			$(".active--cursor").attr('data-before', 'close');
-		} else {
-			$(".active--cursor").attr('data-before', 'view');
-		}
+const getMaxWidth = () => {
+	maxWidth = 0;
+	sections.forEach((section) => {
+		maxWidth += section.offsetWidth;
+		maxWidth += gsap.getProperty(section, 'marginLeft');
 	});
+	maxWidth += 20;
+	maxWidth += window.innerWidth;
+	maxWidth -= sections[0].offsetWidth;
+	return maxWidth;
+};
+
+getMaxWidth();
+ScrollTrigger.addEventListener("refreshInit", getMaxWidth);
+
+gsap.set('section.spacer', {
+	minHeight: window.innerHeight - document.querySelector('.principles').offsetHeight
+})
+
+gsap.to(sections, {
+	x: () => `-${maxWidth - window.innerWidth}`,
+	ease: "none",
+	scrollTrigger: {
+		trigger: ".principles",
+		pin: true,
+		scrub: 0.5,
+		markers: true,
+		end: () => `+=${maxWidth}`,
+		invalidateOnRefresh: true
+	}
 });
+
+sections.forEach((sct, i) => {
+	const section_video = document.querySelectorAll(".principles__item__video");
+
+
+	const smallTimeline = gsap.timeline();
+	const content = document.querySelector('.categories__wrapper');
+	const relevantContent = content.querySelector('article.categories__article-' + i);
+
+	ScrollTrigger.create({
+		trigger: sct,
+		start: () => 'top top-=' + (sct.offsetLeft - window.innerWidth / 1.5) * (maxWidth / (maxWidth - window.innerWidth)),
+		end: () => '+=' + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
+		animation: smallTimeline,
+		toggleActions: "play reverse play reverse",
+
+	});
+
+	smallTimeline
+		//.to(elem,{ duration: 0.25, fontSize: "40px", color: "orange"}, 0)  
+
+		.to(sct, {
+			duration: 0.25,
+			color: "orange"
+		}, 0)
+		.to(sct, {
+			duration: 0.25,
+			opacity: 1,
+		}, 0)
+		.to(relevantContent, {
+			duration: 0.25,
+			y: 0,
+			autoAlpha: 1
+		}, 0)
+
+});
+
+gsap.registerPlugin(Flip);
+window.addEventListener('load', () => {
+	const headshots = gsap.utils.toArray('.leadershipCard'),
+		expandedContainer = document.querySelector('.leadershipExpandedContainer'),
+		expandedBioContainer = document.querySelector('.leadershipExpandedContainer__bio'),
+		expandedImage = document.querySelector('.leadershipExpandedContainer__headshot img'),
+		expandedName = document.querySelector('.leadershipExpandedContainer__bio .name'),
+		expandedTitle = document.querySelector('.leadershipExpandedContainer__bio .title'),
+		expandedBio = document.querySelector('.leadershipExpandedContainer__bio .bio'),
+		expandedSocial = document.querySelector('.leadershipExpandedContainer__bio .social')
+
+	let activeHeadshot;
+
+	gsap.set(expandedBioContainer, {
+		xPercent: 15,
+		opacity: 0
+	});
+
+	function expandHeadshot(card) {
+		//If someone clicks on element behind expanded headshot, then we should 
+		//just close the currently expanded headshot
+		if (activeHeadshot) {
+			return closeHeadshot()
+		}
+
+		//If we're on a small screen, just return. The bios are expanded via css
+		if (window.innerWidth < 800) {
+			return;
+		}
+
+		//When the image in the detail DOM is loaded, we run the GSAP flip stuff.
+		//Anything outside this function isn't related to FLIPing the headshot
+		const onload = () => {
+
+			//Position the expanded container on top of the headshot.
+			//Make sure to use fitChild on the image so that's what looks like
+			//it's growing. 
+			Flip.fit(expandedContainer, card, {
+				scale: true,
+				fitChild: expandedImage
+			})
+
+			//Record the state that everything is in.
+			const state = Flip.getState(expandedContainer);
+
+			//Set the final state
+			gsap.set(expandedContainer, {
+				clearProps: true
+			});
+			gsap.set(expandedContainer, {
+				visibility: 'visible'
+			});
+
+			Flip.from(state, {
+				duration: 0.75,
+				scale: true,
+				ease: "power2.inOut",
+				absolute: true
+			}).to(expandedBioContainer, {
+				xPercent: 0,
+				opacity: 1
+			}, .75)
+
+			expandedImage.removeEventListener('load', onload);
+			document.addEventListener('click', closeHeadshot);
+
+		}
+
+
+		//Change image and text
+		const data = card.dataset;
+		expandedImage.addEventListener('load', onload);
+		expandedImage.src = data.headshot;
+		expandedName.innerText = data.name;
+		expandedTitle.innerText = data.titles;
+		expandedBio.innerText = data.bio;
+
+		//Fade out the other items
+		gsap.to(headshots, {
+			opacity: 0.3,
+			stagger: {
+				amount: 0.7,
+				from: headshots.indexOf(card),
+				grid: 'auto'
+			}
+		});
+		activeHeadshot = card;
+
+	}
+
+	function closeHeadshot() {
+		console.log('Closing headshot');
+		document.removeEventListener('click', closeHeadshot);
+
+		//Record current state
+		const state = Flip.getState(expandedContainer);
+
+		//Scale details down so that it's image fits exactly on top of the active headshot
+		Flip.fit(expandedContainer, activeHeadshot, {
+			scale: true,
+			fitChild: expandedImage
+		});
+
+		//Put the bio container back and then fade in the other headshots
+		const tl = gsap.timeline();
+		tl.to(expandedBioContainer, {
+				xPercent: 15,
+				opacity: 0
+			})
+			.to(expandedContainer, {
+				visibility: 'hidden'
+			})
+			.to(headshots, {
+				opacity: 1,
+				stagger: {
+					amount: 0.7,
+					from: headshots.indexOf(activeHeadshot),
+					grid: 'auto'
+				}
+			});
+
+		Flip.from(state, {
+			scale: true,
+			duration: 0.5,
+			delay: 0.2
+		})
+
+		activeHeadshot = null;
+
+
+	}
+
+	//Add click events
+	gsap.utils.toArray('.leadershipCard').forEach(item => {
+		item.addEventListener('click', () => {
+			expandHeadshot(item);
+		});
+	});
+
+	gsap.set('.leadershipCard', {
+		autoAlpha: 1
+	});
+	gsap.from('.leadershipCard', {
+		opacity: 0,
+		yPercent: 30,
+		stagger: 0.14
+	})
+});
+
+/// introduction date 
+var prnDt = new Date().toLocaleDateString('en-us', {
+	weekday: 'long'
+});
+console.log(prnDt);
+
+document.querySelector('.intro__date-js').innerHTML = `${prnDt}`;
