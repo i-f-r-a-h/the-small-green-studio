@@ -853,10 +853,17 @@ footer:after {
 }
 
 .principles__item {
-  background-color: #F5F9FF;
   min-width: 370px;
-  padding: 32px;
-  margin-left: 30px;
+  margin: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   height: 290px;
   -webkit-box-sizing: border-box;
