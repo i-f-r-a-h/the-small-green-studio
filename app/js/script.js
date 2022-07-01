@@ -347,3 +347,71 @@ var prnDt = new Date().toLocaleDateString('en-us', {
 console.log(prnDt);
 
 document.querySelector('.intro__date-js').innerHTML = `${prnDt}`;
+
+
+
+
+//cursor
+//variables
+let cursor = $(".cursor"),
+	follower = $(".cursor__follower");
+
+let posX = 0,
+	posY = 0,
+	mouseX = 0,
+	mouseY = 0;
+
+//cursor change effect
+TweenMax.to({}, 0.016, {
+	repeat: -1,
+	onRepeat: function () {
+		posX += (mouseX - posX) / 9;
+		posY += (mouseY - posY) / 9;
+
+		TweenMax.set(follower, {
+			css: {
+				left: posX - 20,
+				top: posY - 20
+			}
+		});
+
+		TweenMax.set(cursor, {
+			css: {
+				left: mouseX,
+				top: mouseY
+			}
+		});
+
+	}
+});
+
+//event listeners
+$(document).on("mousemove", function (e) {
+	mouseX = e.pageX;
+	mouseY = e.pageY;
+});
+
+$(".categories__article, .principles__item").on("mouseenter", function () {
+	cursor.addClass("active--cursor");
+	follower.addClass("active--cursor");
+
+	$(".active--cursor").attr('data-before', 'view');
+
+});
+
+$(".categories__article, .principles__item").on("mouseleave", function () {
+	cursor.removeClass("active--cursor");
+	follower.removeClass("active--cursor");
+});
+
+//modal on click display close - TO DO
+$(".categories__article, .principles__item").on("click", function () {
+	// $(this).find(".about__info-js").slideToggle("slow", function () {
+	// 	if ($(".about__info-js").is(":visible")) {
+	// 		$(".active--cursor").attr('data-before', 'close');
+	// 	} else {
+	// 		$(".active--cursor").attr('data-before', 'view');
+	// 	}
+	// });
+	$(".active--cursor").attr('data-before', 'close');
+});

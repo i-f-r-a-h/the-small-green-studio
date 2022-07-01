@@ -29,6 +29,11 @@
 </head>
 
 <body>
+	<!-- cursor -->
+	<div class="cursor absolute  w-2 h-2 rounded-full z-[9999] scale-75 select-none pointer-events-none">
+	</div>
+	<div class="cursor__follower absolute w-10 h-10 rounded-full z-[9999] select-none pointer-events-none">
+	</div>
 	<!--Header-->
 	<header class="z-50">
 
@@ -360,11 +365,204 @@
 
 
 		<!-- how we can help -->
+		<!-- issues -->
+		<!-- on scroll cursor label moves with scroll bar -->
+		<section class="principles py-10">
+			<div class="principles__container content-container">
 
+				<div class="principles__scroll pt-8">
+					<!-- title -->
+					<h2 class="title text-6xl font-bold pb-10 pl-20">How we can help</h2>
+					<div class="principles__counter">
+						<span class="principles__current">1</span> /
+						<span class="principles__total">10</span>
+					</div>
+
+					<!-- gallery -->
+					<div class="principles__list mb-14 pt-4">
+						<div class="principles__item opacity-25" id="item-video">
+							<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
+								<source src="/app/assets/images/GALLERY/narrative_1.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="principles__item opacity-25">
+							<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
+								<source src="/app/assets/images/GALLERY/news_1.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/team_shot_1.webp" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/web_1.webp" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/conference_1.webp" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/outdoor_1.webp" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/channel_1.jpg" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/content_1.jpg" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/pod_1.jpg" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/live_1.webp" alt="" srcset="">
+						</div>
+					</div>
+
+					<!-- content -->
+					<div class="categories__wrapper overflow-hidden pl-20">
+						<!-- video -->
+						<article
+							class="categories__article categories__article-0  opacity-25 absolute opacity-100 active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Video</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Narrative</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								We're documentary geeks and live to draw out a dynamic narrative from our interviews.
+								And we work carefully to
+								get the best out of our contributors.When we combine all this with cinema and top notch
+								sound design, the results are memorable and magical.</p>
+						</article>
+						<article
+							class="categories__article categories__article-1 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Video</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">News & Reactive</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								We have an extended global network of producers and self directing camera operators.This
+								means that when there's little time to
+								plan or a rare opportunity to capture the
+								footage our clients need,
+								we can deploy rapidly and deliver immediately. </p>
+						</article>
+
+						<!-- photography -->
+						<article
+							class="categories__article categories__article-2 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">photography</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Teams Shots.</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								Show your values and brand personality through your team shots.We're helping lots of
+								brands refresh their photography in light of home and flexible working arrangements. Set
+								your brand free with team shots that reflect this.</p>
+						</article>
+						<article
+							class="categories__article categories__article-3 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">photography</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Web & Editorial</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								Make your content pop with an image library of your people and products in their natural
+								habitat.You can spot stock photos a mile off and it takes away from the brand you work
+								hard to
+								maintain.Ask us about imagery for a specific brief, for web or editorial applications.
+							</p>
+						</article>
+
+						<!-- Event Capture -->
+						<article
+							class="categories__article categories__article-4 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Event Capture</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Conferences, town halls,
+								AGM</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								Sometimes you want to capture the essence of a conference or event. We can offer a full
+								service of delegate
+								portraits, reportage of speakers and audience participation.We can also gather
+								soundbites and commentary to promote future events or work into a
+								highlights reel.
+							</p>
+						</article>
+						<article
+							class="categories__article categories__article-5 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Event Capture</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Outdoor and Sports
+							</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								We love getting out and about and we're used to capturing the action, even if we have to
+								chase it down.We can help the audience feel like they're part of the action, which
+								usually means
+								getting involved ourselves. Which is
+								no bad thing.
+							</p>
+						</article>
+
+						<!-- Social media -->
+						<article
+							class="categories__article categories__article-6 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Social Media</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-5 max-w-2xl">Channel audit,
+								management
+								and consultancy</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								In our experience, we all think we can do social media because we have personal
+								accounts. But as soon as ad budgets,
+								constantly changing algorithms and your own time come in to play, it can be better to
+								outsource it to a specialist.
+							</p>
+						</article>
+
+						<article
+							class="categories__article categories__article-7 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Social Media</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Content creation</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								It can be tempting to use templated creation tools too, but how do you stand out with so
+								many also doing this?
+								With any brand, engagement and interaction are key and we know lots of ways to help.
+							</p>
+						</article>
+
+
+						<!-- broadcast -->
+						<article
+							class="categories__article categories__article-8 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Broadcast</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Pod and Vodcasting</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								We think there's also scope to explore the power of sound design a little
+								more too rather than the
+								[insert jazz sample here] approach.We have a bit of radio and programming experience to
+								throw into the mix so there's no
+								where we can't travel...with a
+								mic and a set of appropriately large cans.
+							</p>
+						</article>
+
+						<article
+							class="categories__article categories__article-9 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Broadcast</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Live streaming</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								If you've got the bandwidth, we've got the expertise. We have extensive experience in
+								getting you and your content
+								through a tiny wire to your audience wherever they may be. It could be a performance or
+								a hybrid event with a live
+								audience and viewers online. Get in touch for examples of how we can help.
+							</p>
+						</article>
+
+					</div>
+
+				</div>
+			</div>
+		</section>
 
 
 		<!-- Purpose Projects -->
-		<section name="purpose_projects">
+		<section name="purpose_projects" class="pt-72">
 
 			<div class="flex flex-wrap flex-col text-center mb-60">
 				<h3 class="text-5xl font-bold">Purpose Led Projects</h3>
