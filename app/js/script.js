@@ -197,6 +197,7 @@ sections.forEach((sct, i) => {
 		const state = Flip.getState(modal);
 		modal.classList.toggle("gallery-modal");
 		Flip.from(state);
+
 		$(".active--cursor").attr('data-before', 'close');
 	});
 
