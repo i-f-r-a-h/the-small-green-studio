@@ -117,6 +117,7 @@ tl.to(".hero__content", {
 });
 
 //how we can help
+gsap.registerPlugin(Flip);
 gsap.set('.categories__article', {
 	autoAlpha: 0
 })
@@ -156,9 +157,6 @@ gsap.to(sections, {
 });
 
 sections.forEach((sct, i) => {
-	const section_video = document.querySelectorAll(".principles__item__video");
-
-
 	const smallTimeline = gsap.timeline();
 	const content = document.querySelector('.categories__wrapper');
 	const relevantContent = content.querySelector('article.categories__article-' + i);
@@ -174,7 +172,6 @@ sections.forEach((sct, i) => {
 
 	smallTimeline
 		//.to(elem,{ duration: 0.25, fontSize: "40px", color: "orange"}, 0)  
-
 		.to(sct, {
 			duration: 0.25,
 			color: "orange"
@@ -189,20 +186,24 @@ sections.forEach((sct, i) => {
 			autoAlpha: 1
 		}, 0)
 
-});
+	// modal
 
-gsap.registerPlugin(Flip);
-window.addEventListener('load', () => {
-	const gallery_container = document.querySelector(".principles__container");
-	const gallery = document.querySelector(".categories__article, .principles__item");
-	gallery.addEventListener("click", () => {
-		const state = Flip.getState(gallery_container);
-		gallery_container.classList.toggle("full-screen");
+
+
+	const modal = document.querySelector('.principles__container');
+
+
+	sct.addEventListener("click", () => {
+		const state = Flip.getState(modal);
+		modal.classList.toggle("gallery-modal");
 		Flip.from(state);
 		$(".active--cursor").attr('data-before', 'close');
 	});
 
 });
+
+
+
 
 /// introduction date 
 var prnDt = new Date().toLocaleDateString('en-us', {
