@@ -252,22 +252,6 @@ TweenMax.to({}, 0.016, {
 });
 
 //event listeners
-$(document).on("mousemove", function (e) {
-	mouseX = e.pageX;
-	mouseY = e.pageY;
-});
 
-$(".categories__article, .principles__item").on("mouseenter", function () {
-	cursor.addClass("active--cursor");
-	follower.addClass("active--cursor");
-
-	$(".active--cursor").attr('data-before', 'view');
-
-});
-
-$(".categories__article, .principles__item").on("mouseleave", function () {
-	cursor.removeClass("active--cursor");
-	follower.removeClass("active--cursor");
-});
 
 //modal on click display close - TO DO

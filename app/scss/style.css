@@ -831,6 +831,10 @@ footer:after {
   height: 100%;
 }
 
+.gallery-modal .categories__article {
+  top: 0px;
+}
+
 .principles__title {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -904,11 +908,6 @@ footer:after {
 .principles__item.active:after {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
-}
-
-.principles__item:hover {
-  background-color: #1C2F6B;
-  opacity: 1 !important;
 }
 
 .principles__item:hover .principles__description,
