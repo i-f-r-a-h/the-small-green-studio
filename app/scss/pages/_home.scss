@@ -126,10 +126,16 @@ footer:after {
     width: 100%;
     position: relative;
 }
+
+//modal
 .gallery-modal{
 position: fixed;
 background-color: red;
 height: 100%;
+.categories__article{
+  top:0px;
+}
+
 }
 .principles__title{
     font-family: 'Montserrat', sans-serif;
@@ -198,10 +204,7 @@ height: 100%;
 }
 
 
-.principles__item:hover{
-  background-color: #1C2F6B;
-  opacity: 1 !important;
-}
+
 .principles__item:hover .principles__description,
 .principles__item.active .principles__description{
   color: #fff;
