@@ -126,6 +126,12 @@ footer:after {
     width: 100%;
     position: relative;
 }
+
+.principles__container.fullscreen{
+position: fixed;
+background-color: red;
+height: 100%;
+}
 .principles__title{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -215,6 +221,7 @@ footer:after {
   font-family: 'Montserrat', sans-serif;
   transition: .5s all ease;
 }
+
 .content-wrap{
   position:relative;
   width: 333px;
@@ -241,3 +248,9 @@ footer:after {
   transform: translateY(50px);
 }
 
+
+
+//gallery modal
+.galleryItemExpandedContainer{
+
+}
