@@ -194,9 +194,6 @@ sections.forEach((sct, i) => {
 
 
 	sct.addEventListener("click", () => {
-		const state = Flip.getState(modal);
-		modal.classList.toggle("gallery-modal");
-		Flip.from(state);
 
 		$(".active--cursor").attr('data-before', 'close');
 	});
@@ -255,3 +252,10 @@ TweenMax.to({}, 0.016, {
 
 
 //modal on click display close - TO DO
+$(function () {
+	$("#modal-launcher, #modal-background, #modal-close").click(function () {
+		$("body, #modal-content, #modal-background").toggleClass("active");
+	});
+});
+
+const targetEl = document.getElementById('modalEl');
