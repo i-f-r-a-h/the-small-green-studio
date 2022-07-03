@@ -257,6 +257,7 @@ TweenMax.to({}, 0.016, {
 $(function () {
 	$("#modal-background, #modal-close").click(function () {
 		$("body, #modal-content, #modal-background").toggleClass("active");
+		$(".carousel-inner").empty();
 	});
 });
 
@@ -265,15 +266,26 @@ $(function () {
 $(".principles__item").on("click", function () {
 	var dir = "app/assets/images/GALLERY/"; // folder location
 	var fileextension = ".webp"; // image format
-	var index = "0";
+	var index = 0;
 	// var j = "2"; // dynamic
 	let imgLength = +$(this).data("length");
 	let imgStart = +$(this).data("index");
 
+
+
+	let title = $('.categories__article-' + imgStart + ' h2').clone();
+	$(".gallery__title").html($('.categories__article-' + imgStart + ' h2').html().replace(/(\s+)?.$/, '') + ' Gallery');
+
 	function imageloop() {
 
 		if (index <= imgLength) {
-			$("<img />").attr('src', dir + imgStart + '-' + index + fileextension).appendTo(".carousel");
+			if (index == 0) {
+				$('<div class="carousel-item active relative float-left w-full"> <img class="rounded-lg h-[60vh]  shadow-lg mb-6 mx-auto" src="' + dir + imgStart + '-' + index + fileextension + '" alt="avatar"/></div>"').appendTo(".carousel-inner");
+
+			} else {
+				$('<div class="carousel-item relative float-left w-full"> <img class="rounded-lg h-[60vh] shadow-lg mb-6 mx-auto" src="' + dir + imgStart + '-' + index + fileextension + '" alt="avatar"/></div>"').appendTo(".carousel-inner");
+
+			}
 			index++;
 			imageloop();
 		}
