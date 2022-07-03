@@ -24,7 +24,7 @@
 
 	<link rel="stylesheet" href="/dist/style.css" />
 
-	<script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+
 	<link defer rel="stylesheet" href="assets/css/blobz.min.css">
 </head>
 
@@ -390,13 +390,13 @@
 								<source src="/app/assets/images/GALLERY/news_1.mp4" type="video/mp4">
 							</video>
 						</div>
-						<div class="principles__item opacity-25">
-							<img class="rounded-lg object-cover h-full w-full"
-								src="/app/assets/images/GALLERY/team_shot_1.webp" alt="" srcset="">
+						<div class="principles__item opacity-25" data-length="8" data-index="2">
+							<img class="rounded-lg object-cover h-full w-full" src="/app/assets/images/GALLERY/2-0.webp"
+								alt="" srcset="">
 						</div>
-						<div class="principles__item opacity-25">
-							<img class="rounded-lg object-cover h-full w-full"
-								src="/app/assets/images/GALLERY/web_1.webp" alt="" srcset="">
+						<div class="principles__item opacity-25" data-length="2" data-index="3">
+							<img class="rounded-lg object-cover h-full w-full" src="/app/assets/images/GALLERY/3-0.webp"
+								alt="" srcset="">
 						</div>
 						<div class="principles__item opacity-25">
 							<img class="rounded-lg object-cover h-full w-full"
@@ -451,7 +451,8 @@
 
 						<!-- photography -->
 						<article
-							class="categories__article categories__article-2 opacity-25 absolute active:opacity-100">
+							class="categories__article categories__article-2 opacity-25 absolute active:opacity-100"
+							data-length="8" data-index="2">
 							<h3 class="text-xl font-medium mb-1">photography</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-3">Teams Shots.</h2>
 							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
@@ -460,7 +461,8 @@
 								your brand free with team shots that reflect this.</p>
 						</article>
 						<article
-							class="categories__article categories__article-3 opacity-25 absolute active:opacity-100">
+							class="categories__article categories__article-3 opacity-25 absolute active:opacity-100"
+							data-length="2" data-index="3">
 							<h3 class="text-xl font-medium mb-1">photography</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-3">Web & Editorial</h2>
 							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
@@ -560,28 +562,57 @@
 		</section>
 		<section class="relative">
 			<!-- Modal -->
-			<button id="modal-launcher">Launch Modal Window</button>
-
 			<div id="modal-background"></div>
-			<div id="modal-content">
-				<button id="modal-close">Close Modal Window</button>
+			<div id="modal-content" class="relative bg-slate-500">
+				<button id="modal-close" class="absolute right-12 top-8"> <svg width="104" height="44"
+						viewBox="0 0 104 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M47.3009 6.11528C39.448 5.4595 31.8609 7.03966 25.0124 8.56538C16.5028 10.4612 5.16168 13.7454 2.12454 19.9626C-0.911974 26.1786 7.96299 31.9421 15.9692 35.2653C29.8766 41.038 47.5516 42.7498 61.6241 41.7195C73.7422 40.8322 86.9601 38.2824 95.3907 32.8118C100.802 29.3008 104.127 23.6189 100.119 17.7355C95.1275 10.408 84.4785 6.24188 74.0985 4.29637C55.2361 0.761023 36.2723 1.74063 18.1935 2.31607"
+							stroke="white" stroke-width="2" stroke-linecap="round" />
+					</svg><span class="absolute top-2 left-[1.9rem]">close</span></button>
+				<section class="mb-32 text-gray-800 text-center h-full">
+
+					<h2 class="text-3xl text-white font-bold mb-12">INSET service gallery</h2>
+
+					<div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+						<div class="carousel-inner relative w-full overflow-hidden">
+							<!-- insert images/videos here -->
+							<div class="carousel-item active relative float-left w-full">
+								<img class="rounded-lg shadow-lg mb-6 mx-auto"
+									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" alt="avatar" />
+
+							</div>
+							<div class="carousel-item relative float-left w-full">
+								<img class="rounded-lg shadow-lg mb-6 mx-auto"
+									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" alt="avatar" />
+
+							</div>
+							<div class="carousel-item relative float-left w-full">
+								<img class="rounded-lg shadow-lg mb-6 mx-auto"
+									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" alt="avatar" />
+
+							</div>
+						</div>
+						<button
+							class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+							type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon inline-block bg-no-repeat"
+								aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+							type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+							<span class="carousel-control-next-icon inline-block bg-no-repeat"
+								aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+
+				</section>
 			</div>
 		</section>
 
-		<!-- modal -->
-		<div class="modal-background active:block hidden fixed top-0 left-0 w-full h-full bg-white opacity-50 z-50 ">
-		</div>
-		<section
-			class="modal-content active:block bg-white rounded-2xl h-96 left-1/2 m-[-120px_0_0_-160px] absolute top-1/2 w-[320px] z-50">
-			<div class="slider">
-				<!-- change via dom with a for loop -->
-			</div>
-			<div class="slider-nav">
-				<div class="slider-nav-btn go-prev">Prev</div>
-				<div class="slider-nav-btn go-next">Next</div>
-				<div class="slider-nav-btn autoplay">insert icons</div>
-			</div>
-		</section>
 
 
 		<!-- Purpose Projects -->
@@ -749,12 +780,13 @@
 		ga('send', 'pageview')
 	</script>
 	<script src="https://www.google-analytics.com/analytics.js" async></script>
-	<script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+	<script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
 	<script defer src="/dist/script.js"></script>
 </body>
 

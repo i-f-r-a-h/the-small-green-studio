@@ -194,9 +194,10 @@ sections.forEach((sct, i) => {
 
 
 	sct.addEventListener("click", () => {
-
-		$(".active--cursor").attr('data-before', 'close');
+		$("body, #modal-content, #modal-background").toggleClass("active");
+		console.log('article.categories__article-' + i);
 	});
+
 
 });
 
@@ -248,14 +249,34 @@ TweenMax.to({}, 0.016, {
 	}
 });
 
-//event listeners
+//modal dynamic dom
+
 
 
 //modal on click display close - TO DO
 $(function () {
-	$("#modal-launcher, #modal-background, #modal-close").click(function () {
+	$("#modal-background, #modal-close").click(function () {
 		$("body, #modal-content, #modal-background").toggleClass("active");
 	});
 });
 
-const targetEl = document.getElementById('modalEl');
+
+
+$(".principles__item").on("click", function () {
+	var dir = "app/assets/images/GALLERY/"; // folder location
+	var fileextension = ".webp"; // image format
+	var index = "0";
+	// var j = "2"; // dynamic
+	let imgLength = +$(this).data("length");
+	let imgStart = +$(this).data("index");
+
+	function imageloop() {
+
+		if (index <= imgLength) {
+			$("<img />").attr('src', dir + imgStart + '-' + index + fileextension).appendTo(".carousel");
+			index++;
+			imageloop();
+		}
+	}
+	imageloop();
+});
