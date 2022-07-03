@@ -363,7 +363,6 @@
 
 
 
-
 		<!-- how we can help -->
 		<!-- issues -->
 		<!-- on scroll cursor label moves with scroll bar -->
@@ -374,31 +373,32 @@
 					<!-- title -->
 					<h2 class="title text-6xl font-bold pb-10 pl-20">How we can help</h2>
 					<div class="principles__counter">
-						<span class="principles__current">1</span> /
+						<span class="principles__current w-2/3 ">1</span> /
 						<span class="principles__total">10</span>
 					</div>
 
 					<!-- gallery -->
 					<div class="principles__list mb-14 pt-4">
-						<div class="principles__item opacity-25" id="item-video">
+						<div class="principles__item opacity-25" id="item-video" data-type='[0,1,2]' data-length="3"
+							data-index="0">
 							<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
 								<source src="/app/assets/images/GALLERY/narrative_1.mp4" type="video/mp4">
 							</video>
 						</div>
-						<div class="principles__item opacity-25">
+						<div class="principles__item opacity-25" data-type='[1,2]' data-length="2" data-index="1">
 							<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
 								<source src="/app/assets/images/GALLERY/news_1.mp4" type="video/mp4">
 							</video>
 						</div>
 						<div class="principles__item opacity-25" data-length="8" data-index="2">
-							<img class="rounded-lg object-cover h-full w-full" src="/app/assets/images/GALLERY/2-0.webp"
-								alt="" srcset="">
+							<img class="rounded-lg object-cover h-full w-full w-"
+								src="/app/assets/images/GALLERY/2-0.webp" alt="" srcset="">
 						</div>
 						<div class="principles__item opacity-25" data-length="2" data-index="3">
 							<img class="rounded-lg object-cover h-full w-full" src="/app/assets/images/GALLERY/3-0.webp"
 								alt="" srcset="">
 						</div>
-						<div class="principles__item opacity-25">
+						<div class="principles__item opacity-25" data-length="2" data-index="3">
 							<img class="rounded-lg object-cover h-full w-full"
 								src="/app/assets/images/GALLERY/conference_1.webp" alt="" srcset="">
 						</div>
@@ -428,7 +428,8 @@
 					<div class="categories__wrapper overflow-hidden pl-20">
 						<!-- video -->
 						<article
-							class="categories__article categories__article-0  opacity-25 absolute opacity-100 active:opacity-100">
+							class="categories__article categories__article-0 opacity-25 absolute opacity-100 active:opacity-100"
+							data-length="3" data-index="0" data-video="">
 							<h3 class="text-xl font-medium mb-1">Video</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-3">Narrative</h2>
 							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
@@ -438,7 +439,8 @@
 								sound design, the results are memorable and magical.</p>
 						</article>
 						<article
-							class="categories__article categories__article-1 opacity-25 absolute active:opacity-100">
+							class="categories__article categories__article-1 opacity-25 absolute active:opacity-100"
+							data-length="2" data-index="2">
 							<h3 class="text-xl font-medium mb-1">Video</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-3">News & Reactive</h2>
 							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
@@ -452,9 +454,9 @@
 						<!-- photography -->
 						<article
 							class="categories__article categories__article-2 opacity-25 absolute active:opacity-100"
-							data-length="8" data-index="2">
+							data-length="8" data-index="3">
 							<h3 class="text-xl font-medium mb-1">photography</h3>
-							<h2 class="categories__article__title text-5xl font-semibold mb-3">Teams Shots.</h2>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Teams Shots</h2>
 							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
 								Show your values and brand personality through your team shots.We're helping lots of
 								brands refresh their photography in light of home and flexible working arrangements. Set
@@ -564,7 +566,7 @@
 			<!-- Modal -->
 			<div id="modal-background"></div>
 			<div id="modal-content" class="relative bg-slate-500">
-				<button id="modal-close" class="absolute right-12 top-8"> <svg width="104" height="44"
+				<button id="modal-close" class="absolute right-12 top-6 scale-75"> <svg width="104" height="44"
 						viewBox="0 0 104 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M47.3009 6.11528C39.448 5.4595 31.8609 7.03966 25.0124 8.56538C16.5028 10.4612 5.16168 13.7454 2.12454 19.9626C-0.911974 26.1786 7.96299 31.9421 15.9692 35.2653C29.8766 41.038 47.5516 42.7498 61.6241 41.7195C73.7422 40.8322 86.9601 38.2824 95.3907 32.8118C100.802 29.3008 104.127 23.6189 100.119 17.7355C95.1275 10.408 84.4785 6.24188 74.0985 4.29637C55.2361 0.761023 36.2723 1.74063 18.1935 2.31607"
@@ -572,7 +574,7 @@
 					</svg><span class="absolute top-2 left-[1.9rem]">close</span></button>
 				<section class="gallery mb-32 text-gray-800 text-center">
 
-					<h2 class="gallery__title text-3xl text-white font-bold mb-12">gallery</h2>
+					<h2 class="gallery__title text-3xl text-white font-bold mb-12 mt-4">gallery</h2>
 
 					<div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
 						<div class="carousel-inner relative w-full overflow-hidden">
