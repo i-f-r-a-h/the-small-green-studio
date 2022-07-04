@@ -224,22 +224,57 @@
 	</section>
 	<!-- image gallery -->
 
-	<section>
-		<div class="image_gallery_wrapper flex">
-			<span><img src="/dist/assets/images/EVENT_CAPTURE.jpg"  alt="event" width="297px" height="469px"></span>
-			<span><img src="/dist/assets/images/PODCAST.jpg" alt="" width="372px" height="264px"></span>
-            <span><img src="/dist/assets/images/Live-Streaming-Churches-Featured-Image.jpg" alt=""width="297px" height="469px" ></span>
-			<span><img src="/dist/assets/images/CASE STUDY ICEBERGS/P1023196.jpg" alt="" width="372px" height="264px"></span>
-			<span><img src="/dist/assets/images/CASE STUDY CYCLE EVENT/P1444038.jpg" alt=""width="297px" height="469px"></span>
-			<span><img src="/dist/assets/images/CASE STUDY BREWERY/SamBrook.jpg" alt="" width="372px" height="264px"></span>
-			<span><img src="/dist/assets/images/CASE STUDY ICEBERGS/P1023332.jpg" alt=""width="297px" height="469px"></span>
-			<span><img src="/dist/assets/images/CASE STUDY CYCLE EVENT/P1444048.jpg" alt="" width="372px" height="264px"></span>
-			<span><img src="/dist/assets/images/CASE STUDY BREWERY/RubberGloves.jpg" alt=""width="297px" height="469px"></span>
-
-
-
+	<section >
+		<div class="platforms bg-transparent z-10 overflow-hidden">
+			<div class="slide-track flex relative h-20">
+					
+						 <img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery1.jpg">
+			 	    
+						<img class="rounded-2xl mr-4" src="/dist/assets/images/gallery2.jpg">
+			  		
+					<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery3.jpg">		
+					
+						<img class="rounded-2xl mr-4" src="/dist/assets/images/gallery4.jpg">
+			  		
+						<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery5.jpg">	
+			  		
+						  <img class="rounded-2xl mr-4" src="/dist/assets/images/gallery6.jpg">	
+			  		
+						  <img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery7.jpg">	
+			  		
+						  <img class="rounded-2xl mr-4" src="/dist/assets/images/gallery8.jpg">	
+					
+						<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery9.jpg">
+					
+			</div>
 		</div>
-	</section>
+   </section>
+    <script>
+	   const platforms = document.querySelector('.platforms .slide-track')
+
+const rollingAnimation = platforms.animate([
+  { transform: 'translateX(0)' },
+  { transform: `translateX(${-200 * 13}px)` }
+],
+  { iterations: Infinity, duration: 80 * 1000 });
+
+function rollCarousel() {
+  rollingAnimation.play()
+}
+
+function pauseCarousel() {
+  rollingAnimation.pause();
+}
+
+platforms.addEventListener('mouseover', pauseCarousel)
+platforms.addEventListener('mouseout', rollCarousel)
+
+if (window.matchMedia("(max-width: 800px)").matches) {
+    transform: `translateX(${-150 * 13}px)`
+}
+
+
+   </script>   
 
 
 
