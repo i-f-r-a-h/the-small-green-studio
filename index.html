@@ -181,7 +181,7 @@
 				<section class="panel orange">
 
 					<video class="scale-110 rounded-lg  object-cover h-full z-10 " autoplay loop playsinline muted>
-						<source src="/dist/assets/videos/SiteLoop_1.webm" type="video/mp4">
+						<source src="app\assets\videos\hero.mp4" type="video/mp4">
 					</video>
 				</section>
 
@@ -296,12 +296,307 @@
 		</section>
 
 		<!-- how we can help -->
-		<section name="how we can help" class="w-full h-screen relative">
+		<!-- issues -->
+		<!-- on scroll cursor label moves with scroll bar -->
+		<section class="principles py-10">
+			<div class="principles__container content-container">
 
-			<div class="flex flex-wrap flex-col ">
-				<h3 class="text-5xl font-bold pl-16">How we can help</h3>
+				<div class="principles__scroll pt-8">
+					<!-- title -->
+					<h2 class="title text-6xl font-bold pb-10 pl-20">How we can help</h2>
+					<div class="principles__counter">
+						<span class="principles__current w-2/3 ">1</span> /
+						<span class="principles__total">10</span>
+					</div>
+
+					<!-- gallery -->
+					<div class="principles__list mb-14 pt-4">
+						<div class="principles__item opacity-25" id="item-video" data-type='[0,1,2]' data-length="3"
+							data-index="0">
+							<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
+								<source src="/app/assets/images/GALLERY/narrative_1.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="principles__item opacity-25" data-type='[1,2]' data-length="2" data-index="1">
+							<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
+								<source src="/app/assets/images/GALLERY/news_1.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="principles__item opacity-25" data-length="8" data-index="2">
+							<img class="rounded-lg object-cover h-full w-full w-"
+								src="/app/assets/images/GALLERY/2-0.webp" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25" data-length="2" data-index="3">
+							<img class="rounded-lg object-cover h-full w-full" src="/app/assets/images/GALLERY/3-0.webp"
+								alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25" data-length="2" data-index="3">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/conference_1.webp" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/outdoor_1.webp" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/channel_1.jpg" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/content_1.jpg" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/pod_1.jpg" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/live_1.webp" alt="" srcset="">
+						</div>
+					</div>
+
+					<!-- content -->
+					<div class="categories__wrapper overflow-hidden pl-20">
+						<!-- video -->
+						<article
+							class="categories__article categories__article-0 opacity-25 absolute opacity-100 active:opacity-100"
+							data-length="3" data-index="0" data-video="">
+							<h3 class="text-xl font-medium mb-1">Video</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Narrative</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								We're documentary geeks and live to draw out a dynamic narrative from our interviews.
+								And we work carefully to
+								get the best out of our contributors.When we combine all this with cinema and top notch
+								sound design, the results are memorable and magical.</p>
+						</article>
+						<article
+							class="categories__article categories__article-1 opacity-25 absolute active:opacity-100"
+							data-length="2" data-index="2">
+							<h3 class="text-xl font-medium mb-1">Video</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">News & Reactive</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								We have an extended global network of producers and self directing camera operators.This
+								means that when there's little time to
+								plan or a rare opportunity to capture the
+								footage our clients need,
+								we can deploy rapidly and deliver immediately. </p>
+						</article>
+
+						<!-- photography -->
+						<article
+							class="categories__article categories__article-2 opacity-25 absolute active:opacity-100"
+							data-length="8" data-index="3">
+							<h3 class="text-xl font-medium mb-1">photography</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Teams Shots</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								Show your values and brand personality through your team shots.We're helping lots of
+								brands refresh their photography in light of home and flexible working arrangements. Set
+								your brand free with team shots that reflect this.</p>
+						</article>
+						<article
+							class="categories__article categories__article-3 opacity-25 absolute active:opacity-100"
+							data-length="2" data-index="3">
+							<h3 class="text-xl font-medium mb-1">photography</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Web & Editorial</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								Make your content pop with an image library of your people and products in their natural
+								habitat.You can spot stock photos a mile off and it takes away from the brand you work
+								hard to
+								maintain.Ask us about imagery for a specific brief, for web or editorial applications.
+							</p>
+						</article>
+
+						<!-- Event Capture -->
+						<article
+							class="categories__article categories__article-4 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Event Capture</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Conferences, town halls,
+								AGM</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								Sometimes you want to capture the essence of a conference or event. We can offer a full
+								service of delegate
+								portraits, reportage of speakers and audience participation.We can also gather
+								soundbites and commentary to promote future events or work into a
+								highlights reel.
+							</p>
+						</article>
+						<article
+							class="categories__article categories__article-5 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Event Capture</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Outdoor and Sports
+							</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								We love getting out and about and we're used to capturing the action, even if we have to
+								chase it down.We can help the audience feel like they're part of the action, which
+								usually means
+								getting involved ourselves. Which is
+								no bad thing.
+							</p>
+						</article>
+
+						<!-- Social media -->
+						<article
+							class="categories__article categories__article-6 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Social Media</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-5 max-w-2xl">Channel audit,
+								management
+								and consultancy</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								In our experience, we all think we can do social media because we have personal
+								accounts. But as soon as ad budgets,
+								constantly changing algorithms and your own time come in to play, it can be better to
+								outsource it to a specialist.
+							</p>
+						</article>
+
+						<article
+							class="categories__article categories__article-7 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Social Media</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Content creation</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								It can be tempting to use templated creation tools too, but how do you stand out with so
+								many also doing this?
+								With any brand, engagement and interaction are key and we know lots of ways to help.
+							</p>
+						</article>
+
+
+						<!-- broadcast -->
+						<article
+							class="categories__article categories__article-8 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Broadcast</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Pod and Vodcasting</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								We think there's also scope to explore the power of sound design a little
+								more too rather than the
+								[insert jazz sample here] approach.We have a bit of radio and programming experience to
+								throw into the mix so there's no
+								where we can't travel...with a
+								mic and a set of appropriately large cans.
+							</p>
+						</article>
+
+						<article
+							class="categories__article categories__article-9 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Broadcast</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Live streaming</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								If you've got the bandwidth, we've got the expertise. We have extensive experience in
+								getting you and your content
+								through a tiny wire to your audience wherever they may be. It could be a performance or
+								a hybrid event with a live
+								audience and viewers online. Get in touch for examples of how we can help.
+							</p>
+						</article>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="relative">
+			<!-- Modal -->
+			<div id="modal-background"></div>
+			<div id="modal-content" class="relative bg-slate-500">
+				<button id="modal-close" class="absolute right-12 top-6 scale-75"> <svg width="104" height="44"
+						viewBox="0 0 104 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M47.3009 6.11528C39.448 5.4595 31.8609 7.03966 25.0124 8.56538C16.5028 10.4612 5.16168 13.7454 2.12454 19.9626C-0.911974 26.1786 7.96299 31.9421 15.9692 35.2653C29.8766 41.038 47.5516 42.7498 61.6241 41.7195C73.7422 40.8322 86.9601 38.2824 95.3907 32.8118C100.802 29.3008 104.127 23.6189 100.119 17.7355C95.1275 10.408 84.4785 6.24188 74.0985 4.29637C55.2361 0.761023 36.2723 1.74063 18.1935 2.31607"
+							stroke="white" stroke-width="2" stroke-linecap="round" />
+					</svg><span class="absolute top-2 left-[1.9rem]">close</span></button>
+				<section class="gallery mb-32 text-gray-800 text-center">
+
+					<h2 class="gallery__title text-3xl text-white font-bold mb-12 mt-4">gallery</h2>
+
+					<div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+						<div class="carousel-inner relative w-full overflow-hidden">
+							<!-- insert images/videos here -->
+							<!-- <div class="carousel-item active relative float-left w-full">
+								<img class="rounded-lg shadow-lg mb-6 mx-auto"
+									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" alt="avatar" />
+							</div>
+							<div class="carousel-item relative float-left w-full">
+								<img class="rounded-lg shadow-lg mb-6 mx-auto"
+									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" alt="avatar" />
+							</div>
+							<div class="carousel-item relative float-left w-full">
+								<img class="rounded-lg shadow-lg mb-6 mx-auto"
+									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" alt="avatar" />
+							</div> -->
+						</div>
+						<button
+							class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+							type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon inline-block bg-no-repeat"
+								aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+							type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+							<span class="carousel-control-next-icon inline-block bg-no-repeat"
+								aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+
+				</section>
+			</div>
+		</section>
+
+
+
+		<!-- Purpose Projects -->
+		<section name="purpose_projects" class="pt-72">
+
+			<div class="flex flex-wrap flex-col text-center mb-60">
+				<h3 class="text-5xl font-bold">Purpose Led Projects</h3>
 			</div>
 
+			<div class="grid grid-cols-1 justify-items-center">
+				<div class="flex h-25 w-1/2  bg-light-green p-8 flex-col">
+					<div class="flex items-center mb-3">
+						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center py-8 pr-10">
+						</div>
+						<div class="flex justify-between w-full pr-10">
+							<h2 class="text-gray-900 text-lg title-font font-medium pr-10">Bird & Wild Coffee</h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex  h-25 w-1/2  bg-light-brown p-8 flex-col rotate-3">
+					<div class="flex items-center mb-3">
+						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
+						<h2 class="text-gray-900 text-lg title-font font-medium">Pedrick’s Zero Waste Shop</h2>
+					</div>
+				</div>
+
+				<div class="flex h-25 w-1/2  bg-forest-green p-8 flex-col -rotate-10">
+					<div class="flex items-center mb-3">
+						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
+						<h2 class="text-gray-900 text-lg title-font font-medium">Westerham Brewery</h2>
+					</div>
+				</div>
+
+				<div class="flex  h-25 w-1/2  bg-standard-green p-8 flex-col rotate-3">
+					<div class="flex items-center mb-3">
+						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
+						<h2 class="text-gray-900 text-lg title-font font-medium">The Earth Law Center</h2>
+					</div>
+				</div>
+
+				<div class="flex  h-25 w-1/2 bg-deep-green p-8 flex-col ">
+					<div class="flex items-center mb-3">
+						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
+						<h2 class="text-gray-900 text-lg title-font font-medium">Fairborn Snacks - Dorset</h2>
+					</div>
+				</div>
+
+
+		</section>
+
+		<!--Team Small-->
+		<section name="team_small">
 
 
 
