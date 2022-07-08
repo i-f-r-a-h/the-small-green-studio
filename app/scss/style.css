@@ -52,8 +52,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -197,9 +196,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -207,9 +206,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -218,9 +217,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -238,8 +237,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -271,10 +269,9 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -283,8 +280,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -292,7 +289,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -302,7 +299,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -353,8 +350,7 @@ template {
  * Set up a decent box model on the root element
  */
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /**
@@ -366,8 +362,7 @@ html {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /**
@@ -378,7 +373,6 @@ a {
   text-decoration: none;
   outline: none;
 }
-
 a:hover, a:active, a:focus {
   color: inherit;
   text-decoration: underline;
@@ -393,29 +387,26 @@ button {
 }
 
 @font-face {
-  font-family: 'font-over-the-rainbow';
+  font-family: "font-over-the-rainbow";
   src: url("./assets/fonts/overtherainbow-regular.ttf") format("woff2");
   font-display: swap;
   font-style: normal;
   font-weight: normal;
 }
-
 @font-face {
-  font-family: 'font-outfit';
+  font-family: "font-outfit";
   src: url("./assets/fonts/outfit-variable.ttf") format("woff2-variations");
   font-display: swap;
   font-style: normal;
   font-weight: 400 500 700 900;
 }
-
 @font-face {
-  font-family: 'font-rubik-mono';
+  font-family: "font-rubik-mono";
   src: url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap") format("woff2-variations");
   font-display: swap;
   font-style: normal;
   font-weight: normal;
 }
-
 /**
  * Basic typography style for copy text
  */
@@ -430,7 +421,7 @@ body {
  */
 .clearfix::after {
   clear: both;
-  content: '';
+  content: "";
   display: table;
 }
 
@@ -487,16 +478,12 @@ body {
 .menu__layout {
   display: none;
   opacity: 0;
-  -webkit-transition: opacity ease-in-out 2s;
   transition: opacity ease-in-out 2s;
 }
 
 .change {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   opacity: 1;
-  -webkit-transition: opacity ease-in-out 2s;
   transition: opacity ease-in-out 2s;
 }
 
@@ -506,21 +493,14 @@ body {
 }
 
 .who-are-we {
-  -webkit-transform: rotate(52.68);
-          transform: rotate(52.68);
+  transform: rotate(52.68);
 }
 
 header {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 20px 0px;
   z-index: 100;
   mix-blend-mode: difference;
@@ -531,12 +511,8 @@ header {
 }
 
 header .menu-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .menu-items .menu {
@@ -582,17 +558,10 @@ header .menu-items {
 }
 
 .menu-container-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 10vh 5vw;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   color: #bbebbd;
 }
 
@@ -622,16 +591,9 @@ ul {
 }
 
 .menu-container-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
   padding: 10vh 5vw;
   color: #101010;
 }
@@ -663,50 +625,37 @@ ul {
 
 @-webkit-keyframes MoveDown {
   to {
-    -webkit-transform: translate3d(0, 105%, 0);
-            transform: translate3d(0, 105%, 0);
+    transform: translate3d(0, 105%, 0);
   }
 }
 
 @keyframes MoveDown {
   to {
-    -webkit-transform: translate3d(0, 105%, 0);
-            transform: translate3d(0, 105%, 0);
+    transform: translate3d(0, 105%, 0);
   }
 }
-
 @-webkit-keyframes MoveUp {
   from {
-    -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
   to {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
-
 @keyframes MoveUp {
   from {
-    -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
   to {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
-
 .marquee {
   position: fixed;
   width: 10000px;
   max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   overflow-x: hidden;
   top: 0;
 }
@@ -714,17 +663,13 @@ ul {
 .hero__content {
   width: 10000px;
   max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   overflow-x: hidden;
   top: 0;
 }
 
-div[class^="content_"] {
+div[class^=content_] {
   white-space: nowrap;
   will-change: transform;
   -webkit-animation: marquee 50s linear infinite both;
@@ -738,38 +683,31 @@ div[class^="content_"] {
 }
 
 .hero-overflow {
-  -webkit-transform: translate(-50%, -50%) scale(0.5);
-          transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
   top: 50%;
 }
 
 @-webkit-keyframes marquee {
   from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   to {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes marquee {
   from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   to {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
-
 .hero__title {
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: "Rubik Mono One", sans-serif;
   letter-spacing: -6%;
 }
-
 .hero__title span:nth-child(2) {
   font-family: "font-over-the-rainbow", "Lucida Sans", Verdana, sans-serif;
   color: #33FF00;
@@ -795,7 +733,6 @@ footer:after {
   height: 100%;
   position: absolute;
   top: 10%;
-  -webkit-transform: skewY(-4deg);
   transform: skewY(-4deg);
   background-color: black;
   z-index: 2;
@@ -816,8 +753,7 @@ footer:after {
 
 .principles {
   padding: 60px 20px 120px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .principles__container {
@@ -827,7 +763,7 @@ footer:after {
 }
 
 .principles__title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 42px;
   line-height: 54px;
@@ -839,7 +775,7 @@ footer:after {
   position: absolute;
   right: 0;
   top: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 36px;
@@ -847,28 +783,19 @@ footer:after {
 }
 
 .principles__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  padding-left: calc(50vw - 370px/2);
+  padding-left: calc(50vw - 185px);
 }
 
 .principles__item {
   min-width: 370px;
   margin: 0 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   height: 290px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .principles__item:first-of-type {
@@ -884,20 +811,13 @@ footer:after {
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
-  -webkit-transform: scaleY(0);
   transform: scaleY(0);
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
-  transition: transform .3s,-webkit-transform .3s;
+  transition: transform 0.3s;
   z-index: -1;
 }
 
 .principles__item.active:after {
-  -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }
 
@@ -911,16 +831,15 @@ footer:after {
   margin-bottom: 5px;
   font-size: 20px;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .principles__description {
   color: #1C2F6B;
   font-size: 20px;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  -webkit-transition: .5s all ease;
-  transition: .5s all ease;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.5s all ease;
 }
 
 .content-wrap {
@@ -937,23 +856,16 @@ footer:after {
 .content {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   /*background-color: limegreen;*/
   background-color: green;
   border-radius: 4px;
   font-size: 30px;
   color: white;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
+  transform: translateY(50px);
 }
 
 #modal-background {
@@ -964,15 +876,15 @@ footer:after {
   width: 100%;
   height: 100%;
   background-color: #d2ffdd;
-  opacity: .50;
-  -webkit-opacity: .5;
-  -moz-opacity: .5;
+  opacity: 0.5;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
   filter: alpha(opacity=50);
   z-index: 1000;
 }
 
 #modal-content {
-  background-color: #191919;
+  background-color: rgb(25, 25, 25);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -983,8 +895,7 @@ footer:after {
   height: 80vh;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   padding: 10px;
   position: fixed;
   width: 80vw;
@@ -995,8 +906,7 @@ footer:after {
   display: block;
 }
 
-​
-body.active {
+​ body.active {
   overflow-y: hidden !important;
 }
 
@@ -1004,8 +914,7 @@ body.active {
   max-width: 14rem;
   /* so it cuts off at the correct length */
   text-align: center;
-  -webkit-transform: rotate(30.72deg);
-          transform: rotate(30.72deg);
+  transform: rotate(30.72deg);
   left: 9.5rem;
   font-size: 1.4rem;
   top: 3.5rem;
@@ -1022,22 +931,15 @@ body {
 .panel {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-weight: 600;
   font-size: 1.5em;
   text-align: center;
   color: white;
   position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 10px;
 }
 
@@ -1057,16 +959,12 @@ body.active {
 }
 
 .team__role {
-  font-family: 'Over the Rainbow', cursive;
+  font-family: "Over the Rainbow", cursive;
 }
 
 .cursor {
-  -webkit-transition: 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.5s cubic-bezier(0.75, -1.75, 0.3, 2.33) -webkit-transform;
-  transition: 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.5s cubic-bezier(0.75, -1.75, 0.3, 2.33) -webkit-transform;
   transition: 0.5s cubic-bezier(0.75, -1.75, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
-  transition: 0.5s cubic-bezier(0.75, -1.75, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.5s cubic-bezier(0.75, -1.75, 0.3, 2.33) -webkit-transform;
 }
-
 .cursor::before {
   content: "";
   width: 200px;
@@ -1074,8 +972,7 @@ body.active {
   position: absolute;
   top: 35%;
   left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
   text-align: center;
   content: attr(data-before);
   border-radius: 100%;
@@ -1085,37 +982,29 @@ body.active {
 
 .cursor.active--cursor {
   opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   width: 80px;
   height: 80px;
   border-radius: 100%;
   background-color: white;
   border: 1px solid black;
 }
-
 .cursor.active--cursor::before {
   opacity: 1;
 }
 
 .cursor__follower {
-  -webkit-transition: 0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.6s cubic-bezier(0.75, -1.75, 0.3, 2.33) -webkit-transform;
-  transition: 0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.6s cubic-bezier(0.75, -1.75, 0.3, 2.33) -webkit-transform;
   transition: 0.6s cubic-bezier(0.75, -1.75, 0.3, 2.33) transform, 0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
-  transition: 0.6s cubic-bezier(0.75, -1.75, 0.3, 2.33) transform, 0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.6s cubic-bezier(0.75, -1.75, 0.3, 2.33) -webkit-transform;
-  -webkit-transform: translate(4px, 4px);
-          transform: translate(4px, 4px);
+  transform: translate(4px, 4px);
 }
 
 .cursor__follower.active--cursor {
   opacity: 1;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
 }
 
 .img {
   position: relative;
   border-radius: 20px;
   margin-right: 20px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
