@@ -23,39 +23,18 @@
 	<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="/dist/style.css" />
-	<script defer src="/dist/script.js"></script>
-	<script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+
+
 	<link defer rel="stylesheet" href="assets/css/blobz.min.css">
 </head>
 
 <body>
+	<!-- cursor -->
+	<div class="cursor absolute  w-2 h-2 rounded-full z-[9999] scale-75 select-none pointer-events-none">
+	</div>
+	<div class="cursor__follower absolute w-10 h-10 rounded-full z-[9999] select-none pointer-events-none">
+	</div>
 	<!--Header-->
-<<<<<<< HEAD
-<!--Header-->
-<header class="z-50">
-
-	<a href="index.html" class="ml-5 md:ml-8">
-		<div class="flex items-center flex-shrink-0 text-white">
-			<svg width="60" height="60" viewBox="0 0 25 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<g style="mix-blend-mode:hard-light">
-					<ellipse cx="6.79195" cy="17.308" rx="6.79195" ry="7.05602" fill="#C5FFD5"
-						fill-opacity="0.64" />
-				</g>
-				<ellipse cx="16.0893" cy="10.947" rx="8.69478" ry="8.65595" fill="#33FF00" fill-opacity="0.59" />
-				<path d="M12.0148 21.832L11.5371 22.364L12.64 22.0922L12.0148 21.832Z" fill="#D77706" />
-				<g style="mix-blend-mode:hard-light">
-					<ellipse cx="8.98189" cy="8.65595" rx="8.69478" ry="8.65595" fill="#5BDDBE"
-						fill-opacity="0.82" />
-				</g>
-				<path
-					d="M15.2148 24.5704L16.1197 22.0831L16.6323 19.5171L17.7079 19.4551V34.002H15.2148V29.2862V24.5704Z"
-					fill="#D77706" />
-				<path
-					d="M12.3173 22.0456C12.5309 21.7893 17.2272 24.3374 17.2272 24.3374L15.235 27.819C15.235 27.819 15.315 24.1389 12.8088 23.1901C10.3025 22.2413 12.1038 22.3019 12.3173 22.0456Z"
-					fill="#D77706" />
-			</svg>
-			<img class="max-w-none w-24 md:block hidden " src="app\assets\images\logo_text.svg" alt="" srcset="">
-=======
 	<header class="z-50">
 
 		<a href="index.html" class="ml-5 md:ml-8">
@@ -78,36 +57,35 @@
 						d="M12.3173 22.0456C12.5309 21.7893 17.2272 24.3374 17.2272 24.3374L15.235 27.819C15.235 27.819 15.315 24.1389 12.8088 23.1901C10.3025 22.2413 12.1038 22.3019 12.3173 22.0456Z"
 						fill="#D77706" />
 				</svg>
->>>>>>> 8ee9df1cc8eeddc44544c4c5d47517ebd46f1ffa
+				<img class="max-w-none w-24 md:block hidden " src="app\assets\images\logo_text.svg" alt="" srcset="">
 
-		</div>
-	</a>
+			</div>
+		</a>
 
-	<div class="menu-items mr-4 md:mr-9">
-		<div class="hidden md:block">
-			<a href="#" class="inline-block px-6 py-2.5 bg-yellow-500 text-black font-medium text-sm leading-tight 
+		<div class="menu-items mr-4 md:mr-9">
+			<div class="hidden md:block">
+				<a href="#" class="inline-block px-6 py-2.5 bg-yellow-500 text-black font-medium text-sm leading-tight 
 					rounded-full shadow-md hover:bg-yellow-600 hover:shadow-lg focus:bg-yellow-600 focus:shadow-lg focus:outline-none
 					focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out">Contact
-				Us</a>
-		</div>
-
-		<button class="nav__menu relative font-boldflex items-center px-3 py-2 border
-			hover:text-white hover:border-white">
-			<svg width="104" height="44" viewBox="0 0 104 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path
-					d="M47.3009 6.11528C39.448 5.4595 31.8609 7.03966 25.0124 8.56538C16.5028 10.4612 5.16168 13.7454 2.12454 19.9626C-0.911974 26.1786 7.96299 31.9421 15.9692 35.2653C29.8766 41.038 47.5516 42.7498 61.6241 41.7195C73.7422 40.8322 86.9601 38.2824 95.3907 32.8118C100.802 29.3008 104.127 23.6189 100.119 17.7355C95.1275 10.408 84.4785 6.24188 74.0985 4.29637C55.2361 0.761023 36.2723 1.74063 18.1935 2.31607"
-					stroke="white" stroke-width="2" stroke-linecap="round" />
-			</svg>
-			<div class="menu text-2xl leading-[2]" onclick="menuOpen()">
-				<span id="menuBtn">
-					<div id="menuBtnDiv">menu</div>
-					<div id="menuBtnDiv2">close</div>
-				</span>
+					Us</a>
 			</div>
-		</button>
-	</div>
-</header>
 
+			<button class="nav__menu relative font-boldflex items-center px-3 py-2 border
+			hover:text-white hover:border-white">
+				<svg width="104" height="44" viewBox="0 0 104 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M47.3009 6.11528C39.448 5.4595 31.8609 7.03966 25.0124 8.56538C16.5028 10.4612 5.16168 13.7454 2.12454 19.9626C-0.911974 26.1786 7.96299 31.9421 15.9692 35.2653C29.8766 41.038 47.5516 42.7498 61.6241 41.7195C73.7422 40.8322 86.9601 38.2824 95.3907 32.8118C100.802 29.3008 104.127 23.6189 100.119 17.7355C95.1275 10.408 84.4785 6.24188 74.0985 4.29637C55.2361 0.761023 36.2723 1.74063 18.1935 2.31607"
+						stroke="white" stroke-width="2" stroke-linecap="round" />
+				</svg>
+				<div class="menu text-2xl leading-[2]" onclick="menuOpen()">
+					<span id="menuBtn">
+						<div id="menuBtnDiv">menu</div>
+						<div id="menuBtnDiv2">close</div>
+					</span>
+				</div>
+			</button>
+		</div>
+	</header>
 
 	<!-- menu -->
 
@@ -156,7 +134,6 @@
 	</nav>
 
 
-
 	<main>
 
 		<!-- hero section -->
@@ -171,7 +148,7 @@
 					<p class="text-lg -mt-10">From a simple photo to building your whole story, let's make it happen.
 					</p>
 					<div class="hero__cta flex flex-row gap-7 mt-10">
-						<a href="#how-we-can-help" class="px-6 py-2.5 border-solid border-2 border-white text-white font-medium text-sm leading-tight 
+						<a href="about.html" class="px-6 py-2.5 border-solid border-2 border-white text-white font-medium text-sm leading-tight 
 						rounded-full shadow-md  hover:shadow-lgt">About Us</a>
 						<a href="mailto:dostuff@thesmallgreenstudio.com" class="px-6 py-2.5 bg-green-900 text-white font-medium text-sm leading-tight 
 						rounded-full shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none
@@ -180,7 +157,7 @@
 				</div>
 
 				<!-- get in touch -->
-				<a href="mailto:dostuff@thesmallgreenstudio.com" class="flex ml-auto mr-52 w-72">
+				<a class="flex ml-auto mr-52 w-72">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%"
 						id="blobSvg" style="opacity: 1;">
 						<path id="blob" fill="url(#gradient)" style="opacity: 1;">
@@ -207,7 +184,7 @@
 				<section class="panel orange">
 
 					<video class="scale-110 rounded-lg  object-cover h-full z-10 " autoplay loop playsinline muted>
-						<source src="/dist/assets/videos/SiteLoop_1.webm" type="video/mp4">
+						<source src="/dist/assets/videos/hero_reel.mp4" type="video/mp4">
 					</video>
 				</section>
 
@@ -215,11 +192,14 @@
 			<!-- marquee -->
 			<div class="marquee h-screen -z-10">
 				<div class="track">
-					<div class="content_1 text-7xl lg:text-9xl font-bold py-5 text-green-500">films for good — pictures with purpose —
+					<div class="content_1 text-7xl lg:text-9xl font-bold py-5 text-green-500">films for good — pictures
+						with purpose —
 						stories for change — films for good — pictures with purpose</div>
-					<div class="content_2 text-7xl lg:text-9xl font-bold py-5 text-green-500">pictures with purpose — stories for
+					<div class="content_2 text-7xl lg:text-9xl font-bold py-5 text-green-500">pictures with purpose —
+						stories for
 						change — films for good — pictures with purpose — stories for change</div>
-					<div class="content_3 text-7xl lg:text-9xl font-bold py-5 text-green-500">stories for change - films for good -
+					<div class="content_3 text-7xl lg:text-9xl font-bold py-5 text-green-500">stories for change - films
+						for good -
 						pictures with purpose — stories for change — films for good</div>
 				</div>
 			</div>
@@ -231,19 +211,6 @@
 
 		<!-- introduction -->
 
-<<<<<<< HEAD
-		<section name="introduction ">
-			<div class="introduction__wrapper bg-[#155000] w-full h-full rounded-3xl">
-				<p class="text-center pt-28 py-4 text-[#00FF66]">Hello! Happy <span>Date through js</span></p>
-				<h2 class="text-center mx-32 mt-10 text-5xl uppercase  leading-[5rem]   ">We are a small studio
-					<span><img src="" alt="" srcset=""></span>which means we can
-					respond to your brief <span class="line-through ">quickly</span>-or write one with you to get <span
-						class="line-through">cracking</span>
-					right away.</h2>
-				<div class="text-center align-middle">
-					<svg class="ml-20  pb-16 " width="347" height="239" viewBox="0 0 347 239" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-=======
 		<section name="introduction"
 			class="relative mt-8 bg-[#155000] w-full h-[90vh] rounded-3xl flex items-center flex-col">
 			<div class="introduction__wrapper mt-24">
@@ -256,7 +223,6 @@
 					<h2>which means we can respond to your brief </span<span class="line-through ">quickly</span>-or
 						write one with you to get <span class="line-through">cracking</span> right away.</h2>
 				</div>
->>>>>>> 8ee9df1cc8eeddc44544c4c5d47517ebd46f1ffa
 
 				<a class="flex mt-[-8%] ml-[-4%] w-60">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%"
@@ -278,12 +244,70 @@
 
 
 
-		<!--How We Work-->
-		<section class="how-we-work">
+		<!-- What makes us different -->
+		<section class="container py-24">
 
-			
+			<div class="projects_wrapper py-12">
+				<div class="our-team__title">
+					<h2 class="text-7xl font-bold max-w-2xl mb-5 relative">We're different. In a totally good way.</h2>
+					<p class="max-w-md">We try to walk the talk ourselves. By doing as much subsidised work for as many
+						good and green
+						causes as the balance sheet will allow..</p>
+				</div>
+			</div>
 
 
+			<div class="slider">
+				<input type="radio" name="testimonial" id="t-1">
+				<input type="radio" name="testimonial" id="t-2">
+				<input type="radio" name="testimonial" id="t-3" checked>
+				<input type="radio" name="testimonial" id="t-4">
+				<input type="radio" name="testimonial" id="t-5">
+				<div class="testimonials">
+					<label class="item" for="t-1">
+						<img src="https://dummyimage.com/150" alt="picture">
+						<p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown
+							aliqua, retro
+							synth master cleanse."</p>
+						<h2>- Princy, Web Developer</h2>
+					</label>
+					<label class="item" for="t-2">
+						<img src="https://dummyimage.com/150" alt="picture">
+						<p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown
+							aliqua, retro
+							synth master cleanse."</p>
+						<h2>- Princy, Web Developer</h2>
+					</label>
+					<label class="item" for="t-3">
+						<img src="https://dummyimage.com/150" alt="picture">
+						<p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown
+							aliqua, retro
+							synth master cleanse."</p>
+						<h2>- Princy, Web Developer</h2>
+					</label>
+					<label class="item" for="t-4">
+						<img src="https://dummyimage.com/150" alt="picture">
+						<p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown
+							aliqua, retro
+							synth master cleanse."</p>
+						<h2>- Princy, Web Developer</h2>
+					</label>
+					<label class="item" for="t-5">
+						<img src="https://dummyimage.com/150" alt="picture">
+						<p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown
+							aliqua, retro
+							synth master cleanse."</p>
+						<h2>- Princy, Web Developer</h2>
+					</label>
+				</div>
+				<div class="dots">
+					<label for="t-1"></label>
+					<label for="t-2"></label>
+					<label for="t-3"></label>
+					<label for="t-4"></label>
+					<label for="t-5"></label>
+				</div>
+			</div>
 		</section>
 
 
@@ -291,155 +315,365 @@
 		<section name="video_reel" class="w-full h-screen relative mb-72">
 			<div>
 				<img class="object-fill w-full	h-screen" src="app\assets\images\background_img.png" alt="">
-<<<<<<< HEAD
-				<div class="absolute bottom-3/4 left-2/4	 h-17 w-12">
-				<svg width="570" height="118" viewBox="0 0 570 118" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M27.4047 95.0052C27.4047 87.489 26.4711 78.517 31.2974 72.1207C40.1107 60.4404 59.9325 58.3246 73.1145 56.9038C93.1088 54.7487 113.966 53.532 133.628 58.5552C137.989 59.6692 151.948 62.0228 153.741 67.4023" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M16.7891 89.6965C18.769 92.4308 23.4928 102.072 28.1723 99.9591C35.2778 96.7502 41.8382 91.4591 48.6385 87.5732" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M323.902 45.8383C320.447 42.7572 317.771 41.7798 313.178 43.2887C310.05 44.3161 303.54 47.0275 309.293 49.5413C314.728 51.9163 320.675 53.0161 325.804 56.1176C329.528 58.3691 321.629 57.8264 320.624 57.8578" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M331.915 53.8516C337.323 62.3492 341.263 71.8937 343.388 81.7353C343.722 83.2803 345.174 87.5475 344.056 86.4298C343.121 85.4948 342.644 83.4414 342.113 82.2614" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M346.12 50.209C346.999 54.479 342.542 54.447 339.22 54.6607C335.454 54.9029 331.673 54.7509 327.908 54.5797" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M343.935 52.3948C346.937 49.843 345.166 47.5285 341.79 46.0815C339.41 45.0616 335.569 43.9657 333.008 44.9079C332.111 45.2378 332.051 46.49 331.753 47.2551C331.048 49.0679 333.232 49.7892 333.736 51.3021" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M361.054 44.0177C357.224 43.8941 349.402 44.0703 348.569 49.3192C347.921 53.398 352.249 56.7763 355.914 56.4217C359.009 56.1222 366.733 52.8746 362.025 49.0359C361.085 48.2699 353.769 44.2931 353.769 47.2957" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M371.616 46.9314C372.824 48.3338 374.024 49.7371 375.157 51.201C375.221 51.2837 376.767 53.6842 376.736 53.6697C375.77 53.2241 374.75 52.1565 373.883 51.5855C371.927 50.2973 369.03 49.1662 367.731 47.0933C365.744 43.921 373.714 42.4066 375.259 42.3785C377.551 42.3369 381.075 42.7888 382.543 44.746" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M390.557 33.0908C394.003 39.3666 397.637 45.6241 400.593 52.1522C402.37 56.0757 397.744 52.8144 396.02 52.0307" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M387.643 49.4813C395.535 48.2452 403.348 47.9017 411.317 47.6602" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M411.317 47.6602C412.811 50.3014 415.19 53.3791 415.911 56.3814C416.103 57.1824 412.677 56.0967 412.41 56.0374" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M407.311 36.3691C407.664 36.9378 409.575 40.9213 410.73 40.4768C411.426 40.2091 411.26 39.1887 410.912 38.7569C409.583 37.1038 408.767 36.9518 408.767 38.9187" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M418.237 42.5605C418.816 44.1582 426.641 56.7952 428.071 54.8228C430.778 51.0918 427.36 44.7363 425.522 41.4678" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M434.628 47.2959C437.354 48.1568 446.196 50.6575 447.659 46.9317C449.057 43.3738 443.452 41.9736 441.022 41.9944C438.218 42.0183 435.217 46.6775 435.033 49.198C434.768 52.8228 440.039 54.3916 442.601 55.0257C448.36 56.4517 453.944 55.8418 459.76 55.6732" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M200.787 30.0454C197.068 28.2807 193.777 27.7354 189.7 29.0638C183.59 31.0548 179.416 38.1887 178.845 44.3655C177.892 54.6606 189.536 58.1993 197.64 59.0609C202.942 59.6246 208.291 59.2394 213.519 58.3679" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M217 54.1734C218.815 56.5777 223.805 62.055 227.09 58.5473C228.21 57.3521 228.238 55.457 227.899 53.9568C227.882 53.8811 227.302 52.344 227.61 53.5526C229.524 61.0625 233.191 68.0974 233.63 75.971C233.701 77.2447 233.755 80.4163 232.417 81.5431C231.179 82.5862 228.45 81.8868 227.307 81.572C223.97 80.6535 221.249 78.9457 218.299 77.2991" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M233.787 46.6758C235.639 51.8618 238.141 57.1852 241.582 61.4866" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M265 55.0238C269.651 56.8587 276.02 58.3344 280.879 56.2941C282.341 55.6804 282.621 54.3842 281.89 53.0894C280.948 51.4213 279.05 50.5751 277.241 50.2312C274.546 49.7186 268.109 50.4858 268.522 54.6196C269.107 60.4673 279.723 59.9237 283.449 60.4804" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M250.407 51.0908C248.375 51.7091 242.736 52.7144 244.257 56.0566C246.93 61.9278 256.964 60.8114 262.1 60.9647" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M465 36.0908C466.666 39.8195 468.405 43.5102 470.223 47.1677C470.846 48.4211 471.459 49.6533 472.261 50.798" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M473.936 56.9414C473.397 57.0258 472.335 56.9312 472.074 57.5412C471.346 59.2403 474.773 58.9028 475.435 58.772C476.919 58.4794 478.41 57.9494 479.79 57.3344C480.017 57.2331 481.04 56.8408 480.245 56.6725C477.264 56.0419 473.97 56.4145 470.957 56.569" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M495.809 34.6523C499.894 38.9421 503.768 42.5011 508.916 45.3328" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M510.859 39.9922C514.483 42.173 518.05 44.3723 522.025 45.8179" stroke="white" stroke-width="3" stroke-linecap="round"/>
-					<path d="M539.502 45.333C538.035 53.0344 532.543 54.8424 525.1 55.8517C513.553 57.4174 501.406 57.4224 489.983 55.0426" stroke="white" stroke-width="3" stroke-linecap="round"/>
-
-				<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2	 h-16 w-12">
-
-				<div class="absolute bottom-3/4 left-2/4 h-17 w-12">
-
-					<svg width="570" height="118" viewBox="0 0 570 118" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M27.4047 95.0052C27.4047 87.489 26.4711 78.517 31.2974 72.1207C40.1107 60.4404 59.9325 58.3246 73.1145 56.9038C93.1088 54.7487 113.966 53.532 133.628 58.5552C137.989 59.6692 151.948 62.0228 153.741 67.4023"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M16.7891 89.6965C18.769 92.4308 23.4928 102.072 28.1723 99.9591C35.2778 96.7502 41.8382 91.4591 48.6385 87.5732"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M323.902 45.8383C320.447 42.7572 317.771 41.7798 313.178 43.2887C310.05 44.3161 303.54 47.0275 309.293 49.5413C314.728 51.9163 320.675 53.0161 325.804 56.1176C329.528 58.3691 321.629 57.8264 320.624 57.8578"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M331.915 53.8516C337.323 62.3492 341.263 71.8937 343.388 81.7353C343.722 83.2803 345.174 87.5475 344.056 86.4298C343.121 85.4948 342.644 83.4414 342.113 82.2614"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M346.12 50.209C346.999 54.479 342.542 54.447 339.22 54.6607C335.454 54.9029 331.673 54.7509 327.908 54.5797"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M343.935 52.3948C346.937 49.843 345.166 47.5285 341.79 46.0815C339.41 45.0616 335.569 43.9657 333.008 44.9079C332.111 45.2378 332.051 46.49 331.753 47.2551C331.048 49.0679 333.232 49.7892 333.736 51.3021"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M361.054 44.0177C357.224 43.8941 349.402 44.0703 348.569 49.3192C347.921 53.398 352.249 56.7763 355.914 56.4217C359.009 56.1222 366.733 52.8746 362.025 49.0359C361.085 48.2699 353.769 44.2931 353.769 47.2957"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M371.616 46.9314C372.824 48.3338 374.024 49.7371 375.157 51.201C375.221 51.2837 376.767 53.6842 376.736 53.6697C375.77 53.2241 374.75 52.1565 373.883 51.5855C371.927 50.2973 369.03 49.1662 367.731 47.0933C365.744 43.921 373.714 42.4066 375.259 42.3785C377.551 42.3369 381.075 42.7888 382.543 44.746"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M390.557 33.0908C394.003 39.3666 397.637 45.6241 400.593 52.1522C402.37 56.0757 397.744 52.8144 396.02 52.0307"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path d="M387.643 49.4813C395.535 48.2452 403.348 47.9017 411.317 47.6602" stroke="white"
-							stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M411.317 47.6602C412.811 50.3014 415.19 53.3791 415.911 56.3814C416.103 57.1824 412.677 56.0967 412.41 56.0374"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M407.311 36.3691C407.664 36.9378 409.575 40.9213 410.73 40.4768C411.426 40.2091 411.26 39.1887 410.912 38.7569C409.583 37.1038 408.767 36.9518 408.767 38.9187"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M418.237 42.5605C418.816 44.1582 426.641 56.7952 428.071 54.8228C430.778 51.0918 427.36 44.7363 425.522 41.4678"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M434.628 47.2959C437.354 48.1568 446.196 50.6575 447.659 46.9317C449.057 43.3738 443.452 41.9736 441.022 41.9944C438.218 42.0183 435.217 46.6775 435.033 49.198C434.768 52.8228 440.039 54.3916 442.601 55.0257C448.36 56.4517 453.944 55.8418 459.76 55.6732"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M200.787 30.0454C197.068 28.2807 193.777 27.7354 189.7 29.0638C183.59 31.0548 179.416 38.1887 178.845 44.3655C177.892 54.6606 189.536 58.1993 197.64 59.0609C202.942 59.6246 208.291 59.2394 213.519 58.3679"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M217 54.1734C218.815 56.5777 223.805 62.055 227.09 58.5473C228.21 57.3521 228.238 55.457 227.899 53.9568C227.882 53.8811 227.302 52.344 227.61 53.5526C229.524 61.0625 233.191 68.0974 233.63 75.971C233.701 77.2447 233.755 80.4163 232.417 81.5431C231.179 82.5862 228.45 81.8868 227.307 81.572C223.97 80.6535 221.249 78.9457 218.299 77.2991"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path d="M233.787 46.6758C235.639 51.8618 238.141 57.1852 241.582 61.4866" stroke="white"
-							stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M265 55.0238C269.651 56.8587 276.02 58.3344 280.879 56.2941C282.341 55.6804 282.621 54.3842 281.89 53.0894C280.948 51.4213 279.05 50.5751 277.241 50.2312C274.546 49.7186 268.109 50.4858 268.522 54.6196C269.107 60.4673 279.723 59.9237 283.449 60.4804"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M250.407 51.0908C248.375 51.7091 242.736 52.7144 244.257 56.0566C246.93 61.9278 256.964 60.8114 262.1 60.9647"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M465 36.0908C466.666 39.8195 468.405 43.5102 470.223 47.1677C470.846 48.4211 471.459 49.6533 472.261 50.798"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M473.936 56.9414C473.397 57.0258 472.335 56.9312 472.074 57.5412C471.346 59.2403 474.773 58.9028 475.435 58.772C476.919 58.4794 478.41 57.9494 479.79 57.3344C480.017 57.2331 481.04 56.8408 480.245 56.6725C477.264 56.0419 473.97 56.4145 470.957 56.569"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path d="M495.809 34.6523C499.894 38.9421 503.768 42.5011 508.916 45.3328" stroke="white"
-							stroke-width="3" stroke-linecap="round" />
-						<path d="M510.859 39.9922C514.483 42.173 518.05 44.3723 522.025 45.8179" stroke="white"
-							stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M539.502 45.333C538.035 53.0344 532.543 54.8424 525.1 55.8517C513.553 57.4174 501.406 57.4224 489.983 55.0426"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
->>>>>>> 8ee9df1cc8eeddc44544c4c5d47517ebd46f1ffa
-					</svg>
-				</div>
-				<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-					<video class="rounded-lg hidden md:block" width="600" height="338" autoplay loop playsinline muted>
-						<source src="app/assets/videos/SiteLoop_2.webm" type="video/webm">
-					  Your browser does not support the video tag.
-					  </video>
-					  <img class="block md:hidden" src="app\assets\images\CASE STUDY CYCLE EVENT\P1433878.jpg" alt="">
-				</div>
+				<<<<<<< HEAD <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2	 h-16 w-12">
+					=======
+					<div class="absolute bottom-3/4 left-2/4 h-17 w-12">
+						>>>>>>> 15e83b46994bfe4a26e42843c8d704524aff070d
+						<svg width="570" height="118" viewBox="0 0 570 118" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M27.4047 95.0052C27.4047 87.489 26.4711 78.517 31.2974 72.1207C40.1107 60.4404 59.9325 58.3246 73.1145 56.9038C93.1088 54.7487 113.966 53.532 133.628 58.5552C137.989 59.6692 151.948 62.0228 153.741 67.4023"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M16.7891 89.6965C18.769 92.4308 23.4928 102.072 28.1723 99.9591C35.2778 96.7502 41.8382 91.4591 48.6385 87.5732"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M323.902 45.8383C320.447 42.7572 317.771 41.7798 313.178 43.2887C310.05 44.3161 303.54 47.0275 309.293 49.5413C314.728 51.9163 320.675 53.0161 325.804 56.1176C329.528 58.3691 321.629 57.8264 320.624 57.8578"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M331.915 53.8516C337.323 62.3492 341.263 71.8937 343.388 81.7353C343.722 83.2803 345.174 87.5475 344.056 86.4298C343.121 85.4948 342.644 83.4414 342.113 82.2614"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M346.12 50.209C346.999 54.479 342.542 54.447 339.22 54.6607C335.454 54.9029 331.673 54.7509 327.908 54.5797"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M343.935 52.3948C346.937 49.843 345.166 47.5285 341.79 46.0815C339.41 45.0616 335.569 43.9657 333.008 44.9079C332.111 45.2378 332.051 46.49 331.753 47.2551C331.048 49.0679 333.232 49.7892 333.736 51.3021"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M361.054 44.0177C357.224 43.8941 349.402 44.0703 348.569 49.3192C347.921 53.398 352.249 56.7763 355.914 56.4217C359.009 56.1222 366.733 52.8746 362.025 49.0359C361.085 48.2699 353.769 44.2931 353.769 47.2957"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M371.616 46.9314C372.824 48.3338 374.024 49.7371 375.157 51.201C375.221 51.2837 376.767 53.6842 376.736 53.6697C375.77 53.2241 374.75 52.1565 373.883 51.5855C371.927 50.2973 369.03 49.1662 367.731 47.0933C365.744 43.921 373.714 42.4066 375.259 42.3785C377.551 42.3369 381.075 42.7888 382.543 44.746"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M390.557 33.0908C394.003 39.3666 397.637 45.6241 400.593 52.1522C402.37 56.0757 397.744 52.8144 396.02 52.0307"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path d="M387.643 49.4813C395.535 48.2452 403.348 47.9017 411.317 47.6602" stroke="white"
+								stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M411.317 47.6602C412.811 50.3014 415.19 53.3791 415.911 56.3814C416.103 57.1824 412.677 56.0967 412.41 56.0374"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M407.311 36.3691C407.664 36.9378 409.575 40.9213 410.73 40.4768C411.426 40.2091 411.26 39.1887 410.912 38.7569C409.583 37.1038 408.767 36.9518 408.767 38.9187"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M418.237 42.5605C418.816 44.1582 426.641 56.7952 428.071 54.8228C430.778 51.0918 427.36 44.7363 425.522 41.4678"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M434.628 47.2959C437.354 48.1568 446.196 50.6575 447.659 46.9317C449.057 43.3738 443.452 41.9736 441.022 41.9944C438.218 42.0183 435.217 46.6775 435.033 49.198C434.768 52.8228 440.039 54.3916 442.601 55.0257C448.36 56.4517 453.944 55.8418 459.76 55.6732"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M200.787 30.0454C197.068 28.2807 193.777 27.7354 189.7 29.0638C183.59 31.0548 179.416 38.1887 178.845 44.3655C177.892 54.6606 189.536 58.1993 197.64 59.0609C202.942 59.6246 208.291 59.2394 213.519 58.3679"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M217 54.1734C218.815 56.5777 223.805 62.055 227.09 58.5473C228.21 57.3521 228.238 55.457 227.899 53.9568C227.882 53.8811 227.302 52.344 227.61 53.5526C229.524 61.0625 233.191 68.0974 233.63 75.971C233.701 77.2447 233.755 80.4163 232.417 81.5431C231.179 82.5862 228.45 81.8868 227.307 81.572C223.97 80.6535 221.249 78.9457 218.299 77.2991"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path d="M233.787 46.6758C235.639 51.8618 238.141 57.1852 241.582 61.4866" stroke="white"
+								stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M265 55.0238C269.651 56.8587 276.02 58.3344 280.879 56.2941C282.341 55.6804 282.621 54.3842 281.89 53.0894C280.948 51.4213 279.05 50.5751 277.241 50.2312C274.546 49.7186 268.109 50.4858 268.522 54.6196C269.107 60.4673 279.723 59.9237 283.449 60.4804"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M250.407 51.0908C248.375 51.7091 242.736 52.7144 244.257 56.0566C246.93 61.9278 256.964 60.8114 262.1 60.9647"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M465 36.0908C466.666 39.8195 468.405 43.5102 470.223 47.1677C470.846 48.4211 471.459 49.6533 472.261 50.798"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M473.936 56.9414C473.397 57.0258 472.335 56.9312 472.074 57.5412C471.346 59.2403 474.773 58.9028 475.435 58.772C476.919 58.4794 478.41 57.9494 479.79 57.3344C480.017 57.2331 481.04 56.8408 480.245 56.6725C477.264 56.0419 473.97 56.4145 470.957 56.569"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+							<path d="M495.809 34.6523C499.894 38.9421 503.768 42.5011 508.916 45.3328" stroke="white"
+								stroke-width="3" stroke-linecap="round" />
+							<path d="M510.859 39.9922C514.483 42.173 518.05 44.3723 522.025 45.8179" stroke="white"
+								stroke-width="3" stroke-linecap="round" />
+							<path
+								d="M539.502 45.333C538.035 53.0344 532.543 54.8424 525.1 55.8517C513.553 57.4174 501.406 57.4224 489.983 55.0426"
+								stroke="white" stroke-width="3" stroke-linecap="round" />
+						</svg>
+					</div>
+					<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+						<video class="rounded-lg hidden md:block" width="600" height="338" autoplay loop playsinline
+							muted>
+							<source src="app/assets/videos/SiteLoop_2.webm" type="video/webm">
+							Your browser does not support the video tag.
+						</video>
+						<img class="block md:hidden" src="app\assets\images\CASE STUDY CYCLE EVENT\P1433878.jpg" alt="">
+					</div>
 			</div>
 			<div class="w-[3000px] -mt-32 absolute -left-2.5">
-			<div class="h-40 overflow-hidden relative bg-[#2A4D4C] -rotate-2 w-screen flex items-center">
-				<div class="track">
-					<div class="content_1  lg:text-6xl font-['Kdam Thmor Pro'] !text-white ">Video — photography — event capture — social media — broadcast —  video — photography</div>
+				<div class="h-40 overflow-hidden relative bg-[#2A4D4C] -rotate-2 w-screen flex items-center">
+					<div class="track">
+						<div class="content_1  lg:text-6xl font-['Kdam Thmor Pro'] !text-white ">Video — photography —
+							event capture — social media — broadcast — video — photography</div>
+					</div>
 				</div>
-			</div>
 
-<<<<<<< HEAD
-			<div class="h-40 overflow-hidden relative bg-[#2A4D4C] rotate-3 mt-24 w-screen flex items-center">
-				<div class="track">
-					<div class="content_2  lg:text-6xl font-['Kdam Thmor Pro', sans-serif] !text-white">Video — photography — event capture — social media — broadcast —  video — photography</div>
-=======
 				<div class="h-40 overflow-hidden relative bg-[#2A4D4C] rotate-3 mt-24 w-screen flex items-center">
 					<div class="track">
 						<div class="content_2  lg:text-6xl font-['Kdam Thmor Pro', sans-serif] !text-white">Video —
 							photography — event capture — social media — broadcast — video — photography</div>
 					</div>
->>>>>>> 8ee9df1cc8eeddc44544c4c5d47517ebd46f1ffa
 				</div>
 			</div>
-		</div>
 		</section>
+
+
+
+
 
 		<!-- how we can help -->
-		<section name="how we can help" class="w-full h-screen relative">
+		<!-- issues -->
+		<!-- on scroll cursor label moves with scroll bar -->
+		<section class="principles py-10">
+			<div class="principles__container content-container">
 
-			<div class="flex flex-wrap flex-col ">
-				<h3 class="text-5xl font-bold pl-16">How we can help</h3>
+				<div class="principles__scroll pt-8">
+					<!-- title -->
+					<h2 class="title text-6xl font-bold pb-10 pl-20">How we can help</h2>
+					<div class="principles__counter">
+						<span class="principles__current w-2/3 ">1</span> /
+						<span class="principles__total">10</span>
+					</div>
+
+					<!-- gallery -->
+					<div class="principles__list mb-14 pt-4">
+						<div class="principles__item opacity-25" id="item-video" data-type='[0,1,2]' data-length="3"
+							data-index="0">
+							<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
+								<source src="/app/assets/images/GALLERY/narrative_1.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="principles__item opacity-25" data-type='[1,2]' data-length="2" data-index="1">
+							<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
+								<source src="/app/assets/images/GALLERY/news_1.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="principles__item opacity-25" data-length="8" data-index="2">
+							<img class="rounded-lg object-cover h-full w-full w-"
+								src="/app/assets/images/GALLERY/2-0.webp" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25" data-length="2" data-index="3">
+							<img class="rounded-lg object-cover h-full w-full" src="/app/assets/images/GALLERY/3-0.webp"
+								alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25" data-length="2" data-index="3">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/conference_1.webp" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/outdoor_1.webp" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/channel_1.jpg" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/content_1.jpg" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/pod_1.jpg" alt="" srcset="">
+						</div>
+						<div class="principles__item opacity-25">
+							<img class="rounded-lg object-cover h-full w-full"
+								src="/app/assets/images/GALLERY/live_1.webp" alt="" srcset="">
+						</div>
+					</div>
+
+					<!-- content -->
+					<div class="categories__wrapper overflow-hidden pl-20">
+						<!-- video -->
+						<article
+							class="categories__article categories__article-0 opacity-25 absolute opacity-100 active:opacity-100"
+							data-length="3" data-index="0" data-video="">
+							<h3 class="text-xl font-medium mb-1">Video</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Narrative</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								We're documentary geeks and live to draw out a dynamic narrative from our interviews.
+								And we work carefully to
+								get the best out of our contributors.When we combine all this with cinema and top notch
+								sound design, the results are memorable and magical.</p>
+						</article>
+						<article
+							class="categories__article categories__article-1 opacity-25 absolute active:opacity-100"
+							data-length="2" data-index="2">
+							<h3 class="text-xl font-medium mb-1">Video</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">News & Reactive</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								We have an extended global network of producers and self directing camera operators.This
+								means that when there's little time to
+								plan or a rare opportunity to capture the
+								footage our clients need,
+								we can deploy rapidly and deliver immediately. </p>
+						</article>
+
+						<!-- photography -->
+						<article
+							class="categories__article categories__article-2 opacity-25 absolute active:opacity-100"
+							data-length="8" data-index="3">
+							<h3 class="text-xl font-medium mb-1">photography</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Teams Shots</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								Show your values and brand personality through your team shots.We're helping lots of
+								brands refresh their photography in light of home and flexible working arrangements. Set
+								your brand free with team shots that reflect this.</p>
+						</article>
+						<article
+							class="categories__article categories__article-3 opacity-25 absolute active:opacity-100"
+							data-length="2" data-index="3">
+							<h3 class="text-xl font-medium mb-1">photography</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Web & Editorial</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								Make your content pop with an image library of your people and products in their natural
+								habitat.You can spot stock photos a mile off and it takes away from the brand you work
+								hard to
+								maintain.Ask us about imagery for a specific brief, for web or editorial applications.
+							</p>
+						</article>
+
+						<!-- Event Capture -->
+						<article
+							class="categories__article categories__article-4 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Event Capture</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Conferences, town halls,
+								AGM</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								Sometimes you want to capture the essence of a conference or event. We can offer a full
+								service of delegate
+								portraits, reportage of speakers and audience participation.We can also gather
+								soundbites and commentary to promote future events or work into a
+								highlights reel.
+							</p>
+						</article>
+						<article
+							class="categories__article categories__article-5 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Event Capture</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Outdoor and Sports
+							</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								We love getting out and about and we're used to capturing the action, even if we have to
+								chase it down.We can help the audience feel like they're part of the action, which
+								usually means
+								getting involved ourselves. Which is
+								no bad thing.
+							</p>
+						</article>
+
+						<!-- Social media -->
+						<article
+							class="categories__article categories__article-6 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Social Media</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-5 max-w-2xl">Channel audit,
+								management
+								and consultancy</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								In our experience, we all think we can do social media because we have personal
+								accounts. But as soon as ad budgets,
+								constantly changing algorithms and your own time come in to play, it can be better to
+								outsource it to a specialist.
+							</p>
+						</article>
+
+						<article
+							class="categories__article categories__article-7 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Social Media</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Content creation</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								It can be tempting to use templated creation tools too, but how do you stand out with so
+								many also doing this?
+								With any brand, engagement and interaction are key and we know lots of ways to help.
+							</p>
+						</article>
+
+
+						<!-- broadcast -->
+						<article
+							class="categories__article categories__article-8 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Broadcast</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Pod and Vodcasting</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								We think there's also scope to explore the power of sound design a little
+								more too rather than the
+								[insert jazz sample here] approach.We have a bit of radio and programming experience to
+								throw into the mix so there's no
+								where we can't travel...with a
+								mic and a set of appropriately large cans.
+							</p>
+						</article>
+
+						<article
+							class="categories__article categories__article-9 opacity-25 absolute active:opacity-100">
+							<h3 class="text-xl font-medium mb-1">Broadcast</h3>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Live streaming</h2>
+							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+								If you've got the bandwidth, we've got the expertise. We have extensive experience in
+								getting you and your content
+								through a tiny wire to your audience wherever they may be. It could be a performance or
+								a hybrid event with a live
+								audience and viewers online. Get in touch for examples of how we can help.
+							</p>
+						</article>
+
+					</div>
+				</div>
 			</div>
-
-
-
-
-
 		</section>
-		<!--Purpose Projects-->
-		<section name="purpose_projects" class="w-full h-screen relative">
+		<section class="relative">
+			<!-- Modal -->
+			<div id="modal-background"></div>
+			<div id="modal-content" class="relative bg-slate-500">
+				<button id="modal-close" class="absolute right-12 top-6 scale-75"> <svg width="104" height="44"
+						viewBox="0 0 104 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M47.3009 6.11528C39.448 5.4595 31.8609 7.03966 25.0124 8.56538C16.5028 10.4612 5.16168 13.7454 2.12454 19.9626C-0.911974 26.1786 7.96299 31.9421 15.9692 35.2653C29.8766 41.038 47.5516 42.7498 61.6241 41.7195C73.7422 40.8322 86.9601 38.2824 95.3907 32.8118C100.802 29.3008 104.127 23.6189 100.119 17.7355C95.1275 10.408 84.4785 6.24188 74.0985 4.29637C55.2361 0.761023 36.2723 1.74063 18.1935 2.31607"
+							stroke="white" stroke-width="2" stroke-linecap="round" />
+					</svg><span class="absolute top-2 left-[1.9rem]">close</span></button>
+				<section class="gallery mb-32 text-gray-800 text-center">
+
+					<h2 class="gallery__title text-3xl text-white font-bold mb-12 mt-4">gallery</h2>
+
+					<div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+						<div class="carousel-inner relative w-full overflow-hidden">
+							<!-- insert images/videos here -->
+							<!-- <div class="carousel-item active relative float-left w-full">
+								<img class="rounded-lg shadow-lg mb-6 mx-auto"
+									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" alt="avatar" />
+							</div>
+							<div class="carousel-item relative float-left w-full">
+								<img class="rounded-lg shadow-lg mb-6 mx-auto"
+									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" alt="avatar" />
+							</div>
+							<div class="carousel-item relative float-left w-full">
+								<img class="rounded-lg shadow-lg mb-6 mx-auto"
+									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" alt="avatar" />
+							</div> -->
+						</div>
+						<button
+							class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+							type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon inline-block bg-no-repeat"
+								aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+							type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+							<span class="carousel-control-next-icon inline-block bg-no-repeat"
+								aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+
+				</section>
+			</div>
+		</section>
+
+
+
+		<!-- Purpose Projects -->
+		<section name="purpose_projects" class="pt-72">
 
 			<div class="flex flex-wrap flex-col text-center mb-60">
 				<h3 class="text-5xl font-bold">Purpose Led Projects</h3>
@@ -447,44 +681,47 @@
 
 			<div class="grid grid-cols-1 justify-items-center">
 				<div class="flex h-25 w-1/2  bg-light-green p-8 flex-col">
-				<div class="flex items-center mb-3">
-				<div class="w-8 h-8 mr-3 inline-flex items-center justify-center py-8 pr-10">
+					<div class="flex items-center mb-3">
+						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center py-8 pr-10">
+						</div>
+						<div class="flex justify-between w-full pr-10">
+							<h2 class="text-gray-900 text-lg title-font font-medium pr-10">Bird & Wild Coffee</h2>
+						</div>
+					</div>
 				</div>
-				<div class="flex justify-between w-full pr-10">
-				<h2 class="text-gray-900 text-lg title-font font-medium pr-10">Bird & Wild Coffee</h2>
-				</div>
-				</div>
-				</div>
-				
+
 				<div class="flex  h-25 w-1/2  bg-light-brown p-8 flex-col rotate-3">
-				<div class="flex items-center mb-3"><div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
-				<h2 class="text-gray-900 text-lg title-font font-medium">Pedrick’s Zero Waste Shop</h2>
+					<div class="flex items-center mb-3">
+						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
+						<h2 class="text-gray-900 text-lg title-font font-medium">Pedrick’s Zero Waste Shop</h2>
+					</div>
 				</div>
-				</div>
-				
+
 				<div class="flex h-25 w-1/2  bg-forest-green p-8 flex-col -rotate-10">
-				<div class="flex items-center mb-3"><div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
-				<h2 class="text-gray-900 text-lg title-font font-medium">Westerham Brewery</h2>
+					<div class="flex items-center mb-3">
+						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
+						<h2 class="text-gray-900 text-lg title-font font-medium">Westerham Brewery</h2>
+					</div>
 				</div>
-				</div>
-				
+
 				<div class="flex  h-25 w-1/2  bg-standard-green p-8 flex-col rotate-3">
-				<div class="flex items-center mb-3"><div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
-				<h2 class="text-gray-900 text-lg title-font font-medium">The Earth Law Center</h2>
+					<div class="flex items-center mb-3">
+						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
+						<h2 class="text-gray-900 text-lg title-font font-medium">The Earth Law Center</h2>
+					</div>
 				</div>
-				</div>
-				
+
 				<div class="flex  h-25 w-1/2 bg-deep-green p-8 flex-col ">
-				<div class="flex items-center mb-3"><div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
-				<h2 class="text-gray-900 text-lg title-font font-medium">Fairborn Snacks - Dorset</h2>
+					<div class="flex items-center mb-3">
+						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
+						<h2 class="text-gray-900 text-lg title-font font-medium">Fairborn Snacks - Dorset</h2>
+					</div>
 				</div>
-				</div>
-				
+
 
 		</section>
 
 		<!--Team Small-->
-
 		<section name="team_small">
 
 
@@ -494,8 +731,10 @@
 
 
 
+
+
 		<!--Call to Action-->
-		<section class="call_to_action mt-[1600px]">
+		<section class="call_to_action">
 			<div class="cta__wrapper  ml-8 mt-72 mb-72">
 				<div class="cta__text">
 					<h2 class="text-8xl font-semibold flex flex-wrap ">
@@ -598,10 +837,14 @@
 		ga('send', 'pageview')
 	</script>
 	<script src="https://www.google-analytics.com/analytics.js" async></script>
-	<script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
-	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
-	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js?v=3.3.0-3"></script>
 
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+	<script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
+	<script defer src="/dist/script.js"></script>
 </body>
 
 </html>
