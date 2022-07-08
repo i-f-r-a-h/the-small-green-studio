@@ -25,7 +25,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-
+//how we can help
 
 
 
@@ -116,11 +116,108 @@ tl.to(".hero__content", {
 	ease: "none"
 });
 
+//how we can help
+gsap.registerPlugin(Flip);
+gsap.set('.categories__article', {
+	autoAlpha: 0
+})
+const sections = gsap.utils.toArray(".principles__item");
+let maxWidth = 0;
+
+const getMaxWidth = () => {
+	maxWidth = 0;
+	sections.forEach((section) => {
+		maxWidth += section.offsetWidth;
+		maxWidth += gsap.getProperty(section, 'marginLeft');
+	});
+	maxWidth += 20;
+	maxWidth += window.innerWidth;
+	maxWidth -= sections[0].offsetWidth;
+	return maxWidth;
+};
+
+getMaxWidth();
+ScrollTrigger.addEventListener("refreshInit", getMaxWidth);
+
+gsap.set('section.spacer', {
+	minHeight: window.innerHeight - document.querySelector('.principles').offsetHeight
+})
+
+gsap.to(sections, {
+	x: () => `-${maxWidth - window.innerWidth}`,
+	ease: "none",
+	scrollTrigger: {
+		trigger: ".principles",
+		pin: true,
+		scrub: 0.5,
+		markers: true,
+		end: () => `+=${maxWidth}`,
+		invalidateOnRefresh: true
+	}
+});
+
+sections.forEach((sct, i) => {
+	const smallTimeline = gsap.timeline();
+	const content = document.querySelector('.categories__wrapper');
+	const relevantContent = content.querySelector('article.categories__article-' + i);
+
+	ScrollTrigger.create({
+		trigger: sct,
+		start: () => 'top top-=' + (sct.offsetLeft - window.innerWidth / 1.5) * (maxWidth / (maxWidth - window.innerWidth)),
+		end: () => '+=' + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
+		animation: smallTimeline,
+		toggleActions: "play reverse play reverse",
+
+	});
+
+	smallTimeline
+		//.to(elem,{ duration: 0.25, fontSize: "40px", color: "orange"}, 0)  
+		.to(sct, {
+			duration: 0.25,
+			color: "orange"
+		}, 0)
+		.to(sct, {
+			duration: 0.25,
+			opacity: 1,
+		}, 0)
+		.to(relevantContent, {
+			duration: 0.25,
+			y: 0,
+			autoAlpha: 1
+		}, 0)
+
+	// modal
 
 
-// on hover image effect
-// .active--cursor 
 
+	const modal = document.querySelector('.principles__container');
+
+
+	sct.addEventListener("click", () => {
+		const state = Flip.getState(modal);
+		modal.classList.toggle("gallery-modal");
+		Flip.from(state);
+
+		$(".active--cursor").attr('data-before', 'close');
+	});
+
+});
+
+
+
+
+/// introduction date 
+var prnDt = new Date().toLocaleDateString('en-us', {
+	weekday: 'long'
+});
+console.log(prnDt);
+
+document.querySelector('.intro__date-js').innerHTML = `${prnDt}`;
+
+
+
+
+//cursor
 //variables
 let cursor = $(".cursor"),
 	follower = $(".cursor__follower");
@@ -155,33 +252,6 @@ TweenMax.to({}, 0.016, {
 });
 
 //event listeners
-$(document).on("mousemove", function (e) {
-	mouseX = e.pageX;
-	mouseY = e.pageY;
-});
-
-$(".team-js").on("mouseenter", function () {
-	cursor.addClass("active--cursor");
-	follower.addClass("active--cursor");
-	if ($(this).find(".about__info-js").is(":visible")) {
-		$(".active--cursor").attr('data-before', 'close');
-	} else {
-		$(".active--cursor").attr('data-before', 'view');
-	}
-});
-
-$(".team-js img").on("mouseleave", function () {
-	cursor.removeClass("active--cursor");
-	follower.removeClass("active--cursor");
-});
 
 
-$(".team-js").on("click", function () {
-	$(this).find(".about__info-js").slideToggle("slow", function () {
-		if ($(".about__info-js").is(":visible")) {
-			$(".active--cursor").attr('data-before', 'close');
-		} else {
-			$(".active--cursor").attr('data-before', 'view');
-		}
-	});
-});
+//modal on click display close - TO DO
