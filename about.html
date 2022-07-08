@@ -164,8 +164,8 @@
 
 		<h2 class="bold text-7xl flex justify-center  items-center flex-col w-full relative">Why work
 			<span>
-				<svg class="absolute top-[2rem] right-[53rem]" width="251" height="165" viewBox="0 0 251 165" fill="none"
-					xmlns="http://www.w3.org/2000/svg">
+				<svg class="absolute top-[2rem] right-[53rem]" width="251" height="165" viewBox="0 0 251 165"
+					fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M78.4207 158.343C103.64 147.798 130.004 139.902 155.538 130.124C175.564 122.456 198.456 115.641 216.205 103.249C230.528 93.248 234.211 77.076 231.416 60.4458C226.448 30.8851 197.017 13.4068 169.792 8.13933C134.978 1.40367 99.1534 10.1635 66.7522 22.9165C47.6414 30.4385 18.2716 40.5555 9.33744 61.5683C1.49398 80.016 7.24085 113.673 19.9096 129.13C43.8993 158.401 86.0534 159.9 120.435 158.884C142.925 158.22 165.191 154.853 186.462 147.286C207.907 139.657 224.909 125.837 243.509 113.25"
 						stroke="#2BBC65" stroke-opacity="0.39" stroke-width="10" stroke-linecap="square" />
@@ -231,58 +231,65 @@
 	-->
 =======
 
-	<section >
+	<section>
 		<div class="platforms bg-transparent z-10 overflow-hidden">
 			<div class="slide-track flex relative h-20">
-					
-						 <img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery1.jpg">
-			 	    
-						<img class="rounded-2xl mr-4" src="/dist/assets/images/gallery2.jpg">
-			  		
-					<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery3.jpg">		
-					
-						<img class="rounded-2xl mr-4" src="/dist/assets/images/gallery4.jpg">
-			  		
-						<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery5.jpg">	
-			  		
-						  <img class="rounded-2xl mr-4" src="/dist/assets/images/gallery6.jpg">	
-			  		
-						  <img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery7.jpg">	
-			  		
-						  <img class="rounded-2xl mr-4" src="/dist/assets/images/gallery8.jpg">	
-					
-						<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery9.jpg">
-					
-			</div>
-		</div>
-   </section>
-    <script>
-	   const platforms = document.querySelector('.platforms .slide-track')
 
-const rollingAnimation = platforms.animate([
-  { transform: 'translateX(0)' },
-  { transform: `translateX(${-200 * 13}px)` }
-],
-  { iterations: Infinity, duration: 80 * 1000 });
+				<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery1.jpg">
 
-function rollCarousel() {
-  rollingAnimation.play()
-}
+				<img class="rounded-2xl mr-4" src="/dist/assets/images`">
 
-function pauseCarousel() {
-  rollingAnimation.pause();
-}
+				<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery3.jpg">
 
-platforms.addEventListener('mouseover', pauseCarousel)
-platforms.addEventListener('mouseout', rollCarousel)
+				<img class="rounded-2xl mr-4" src="/dist/assets/images/gallery4.jpg">
 
-if (window.matchMedia("(max-width: 800px)").matches) {
-    transform: `translateX(${-150 * 13}px)`
-}
+				<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery5.jpg">
 
+				<img class="rounded-2xl mr-4" src="/dist/assets/images/gallery6.jpg">
 
+				<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery7.jpg">
+
+				<img class="rounded-2xl mr-4" src="/dist/assets/images/gallery8.jpg">
+
+<<<<<<< HEAD
    </script>   
 >>>>>>> a5bb605f3f7f7f1247e43386643b2b2f7c8ba6eb
+=======
+				<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery9.jpg">
+
+			</div>
+		</div>
+	</section>
+	<script>
+		const platforms = document.querySelector('.platforms .slide-track')
+
+		const rollingAnimation = platforms.animate([{
+				transform: 'translateX(0)'
+			},
+			{
+				transform: `translateX(${-200 * 13}px)`
+			}
+		], {
+			iterations: Infinity,
+			duration: 80 * 1000
+		});
+
+		function rollCarousel() {
+			rollingAnimation.play()
+		}
+
+		function pauseCarousel() {
+			rollingAnimation.pause();
+		}
+
+		platforms.addEventListener('mouseover', pauseCarousel)
+		platforms.addEventListener('mouseout', rollCarousel)
+
+		if (window.matchMedia("(max-width: 800px)").matches) {
+			transform: `translateX(${-150 * 13}px)`
+		}
+	</script>
+>>>>>>> 8ee9df1cc8eeddc44544c4c5d47517ebd46f1ffa
 
 
 
