@@ -24,7 +24,7 @@
 
 	<link rel="stylesheet" href="/dist/style.css" />
 
-	<script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+
 	<link defer rel="stylesheet" href="assets/css/blobz.min.css">
 </head>
 
@@ -149,7 +149,7 @@
 					<p class="text-lg -mt-10">From a simple photo to building your whole story, let's make it happen.
 					</p>
 					<div class="hero__cta flex flex-row gap-7 mt-10">
-						<a href="#how-we-can-help" class="px-6 py-2.5 border-solid border-2 border-white text-white font-medium text-sm leading-tight 
+						<a href="about.html" class="px-6 py-2.5 border-solid border-2 border-white text-white font-medium text-sm leading-tight 
 						rounded-full shadow-md  hover:shadow-lgt">About Us</a>
 						<a href="mailto:dostuff@thesmallgreenstudio.com" class="px-6 py-2.5 bg-green-900 text-white font-medium text-sm leading-tight 
 						rounded-full shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none
@@ -242,12 +242,10 @@
 
 
 		<!-- What makes us different -->
-		<section class="what-makes-us-different">
+		<section class="container py-24">
 
 			<div class="projects_wrapper py-12">
-
-
-				<div class="our-team__title ml-20">
+				<div class="our-team__title">
 					<h2 class="text-7xl font-bold max-w-2xl mb-5 relative">We're different. In a totally good way.</h2>
 					<p class="max-w-md">We try to walk the talk ourselves. By doing as much subsidised work for as many
 						good and green
@@ -256,7 +254,57 @@
 			</div>
 
 
-
+			<div class="slider">
+				<input type="radio" name="testimonial" id="t-1">
+				<input type="radio" name="testimonial" id="t-2">
+				<input type="radio" name="testimonial" id="t-3" checked>
+				<input type="radio" name="testimonial" id="t-4">
+				<input type="radio" name="testimonial" id="t-5">
+				<div class="testimonials">
+					<label class="item" for="t-1">
+						<img src="https://dummyimage.com/150" alt="picture">
+						<p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown
+							aliqua, retro
+							synth master cleanse."</p>
+						<h2>- Princy, Web Developer</h2>
+					</label>
+					<label class="item" for="t-2">
+						<img src="https://dummyimage.com/150" alt="picture">
+						<p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown
+							aliqua, retro
+							synth master cleanse."</p>
+						<h2>- Princy, Web Developer</h2>
+					</label>
+					<label class="item" for="t-3">
+						<img src="https://dummyimage.com/150" alt="picture">
+						<p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown
+							aliqua, retro
+							synth master cleanse."</p>
+						<h2>- Princy, Web Developer</h2>
+					</label>
+					<label class="item" for="t-4">
+						<img src="https://dummyimage.com/150" alt="picture">
+						<p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown
+							aliqua, retro
+							synth master cleanse."</p>
+						<h2>- Princy, Web Developer</h2>
+					</label>
+					<label class="item" for="t-5">
+						<img src="https://dummyimage.com/150" alt="picture">
+						<p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown
+							aliqua, retro
+							synth master cleanse."</p>
+						<h2>- Princy, Web Developer</h2>
+					</label>
+				</div>
+				<div class="dots">
+					<label for="t-1"></label>
+					<label for="t-2"></label>
+					<label for="t-3"></label>
+					<label for="t-4"></label>
+					<label for="t-5"></label>
+				</div>
+			</div>
 		</section>
 
 
@@ -369,7 +417,6 @@
 
 
 
-
 		<!-- how we can help -->
 		<!-- issues -->
 		<!-- on scroll cursor label moves with scroll bar -->
@@ -380,31 +427,32 @@
 					<!-- title -->
 					<h2 class="title text-6xl font-bold pb-10 pl-20">How we can help</h2>
 					<div class="principles__counter">
-						<span class="principles__current">1</span> /
+						<span class="principles__current w-2/3 ">1</span> /
 						<span class="principles__total">10</span>
 					</div>
 
 					<!-- gallery -->
 					<div class="principles__list mb-14 pt-4">
-						<div class="principles__item opacity-25" id="item-video">
+						<div class="principles__item opacity-25" id="item-video" data-type='[0,1,2]' data-length="3"
+							data-index="0">
 							<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
 								<source src="/app/assets/images/GALLERY/narrative_1.mp4" type="video/mp4">
 							</video>
 						</div>
-						<div class="principles__item opacity-25">
+						<div class="principles__item opacity-25" data-type='[1,2]' data-length="2" data-index="1">
 							<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
 								<source src="/app/assets/images/GALLERY/news_1.mp4" type="video/mp4">
 							</video>
 						</div>
-						<div class="principles__item opacity-25">
-							<img class="rounded-lg object-cover h-full w-full"
-								src="/app/assets/images/GALLERY/team_shot_1.webp" alt="" srcset="">
+						<div class="principles__item opacity-25" data-length="8" data-index="2">
+							<img class="rounded-lg object-cover h-full w-full w-"
+								src="/app/assets/images/GALLERY/2-0.webp" alt="" srcset="">
 						</div>
-						<div class="principles__item opacity-25">
-							<img class="rounded-lg object-cover h-full w-full"
-								src="/app/assets/images/GALLERY/web_1.webp" alt="" srcset="">
+						<div class="principles__item opacity-25" data-length="2" data-index="3">
+							<img class="rounded-lg object-cover h-full w-full" src="/app/assets/images/GALLERY/3-0.webp"
+								alt="" srcset="">
 						</div>
-						<div class="principles__item opacity-25">
+						<div class="principles__item opacity-25" data-length="2" data-index="3">
 							<img class="rounded-lg object-cover h-full w-full"
 								src="/app/assets/images/GALLERY/conference_1.webp" alt="" srcset="">
 						</div>
@@ -434,7 +482,8 @@
 					<div class="categories__wrapper overflow-hidden pl-20">
 						<!-- video -->
 						<article
-							class="categories__article categories__article-0  opacity-25 absolute opacity-100 active:opacity-100">
+							class="categories__article categories__article-0 opacity-25 absolute opacity-100 active:opacity-100"
+							data-length="3" data-index="0" data-video="">
 							<h3 class="text-xl font-medium mb-1">Video</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-3">Narrative</h2>
 							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
@@ -444,7 +493,8 @@
 								sound design, the results are memorable and magical.</p>
 						</article>
 						<article
-							class="categories__article categories__article-1 opacity-25 absolute active:opacity-100">
+							class="categories__article categories__article-1 opacity-25 absolute active:opacity-100"
+							data-length="2" data-index="2">
 							<h3 class="text-xl font-medium mb-1">Video</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-3">News & Reactive</h2>
 							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
@@ -457,16 +507,18 @@
 
 						<!-- photography -->
 						<article
-							class="categories__article categories__article-2 opacity-25 absolute active:opacity-100">
+							class="categories__article categories__article-2 opacity-25 absolute active:opacity-100"
+							data-length="8" data-index="3">
 							<h3 class="text-xl font-medium mb-1">photography</h3>
-							<h2 class="categories__article__title text-5xl font-semibold mb-3">Teams Shots.</h2>
+							<h2 class="categories__article__title text-5xl font-semibold mb-3">Teams Shots</h2>
 							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
 								Show your values and brand personality through your team shots.We're helping lots of
 								brands refresh their photography in light of home and flexible working arrangements. Set
 								your brand free with team shots that reflect this.</p>
 						</article>
 						<article
-							class="categories__article categories__article-3 opacity-25 absolute active:opacity-100">
+							class="categories__article categories__article-3 opacity-25 absolute active:opacity-100"
+							data-length="2" data-index="3">
 							<h3 class="text-xl font-medium mb-1">photography</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-3">Web & Editorial</h2>
 							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
@@ -561,10 +613,62 @@
 						</article>
 
 					</div>
-
 				</div>
 			</div>
 		</section>
+		<section class="relative">
+			<!-- Modal -->
+			<div id="modal-background"></div>
+			<div id="modal-content" class="relative bg-slate-500">
+				<button id="modal-close" class="absolute right-12 top-6 scale-75"> <svg width="104" height="44"
+						viewBox="0 0 104 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M47.3009 6.11528C39.448 5.4595 31.8609 7.03966 25.0124 8.56538C16.5028 10.4612 5.16168 13.7454 2.12454 19.9626C-0.911974 26.1786 7.96299 31.9421 15.9692 35.2653C29.8766 41.038 47.5516 42.7498 61.6241 41.7195C73.7422 40.8322 86.9601 38.2824 95.3907 32.8118C100.802 29.3008 104.127 23.6189 100.119 17.7355C95.1275 10.408 84.4785 6.24188 74.0985 4.29637C55.2361 0.761023 36.2723 1.74063 18.1935 2.31607"
+							stroke="white" stroke-width="2" stroke-linecap="round" />
+					</svg><span class="absolute top-2 left-[1.9rem]">close</span></button>
+				<section class="gallery mb-32 text-gray-800 text-center">
+
+					<h2 class="gallery__title text-3xl text-white font-bold mb-12 mt-4">gallery</h2>
+
+					<div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+						<div class="carousel-inner relative w-full overflow-hidden">
+							<!-- insert images/videos here -->
+							<!-- <div class="carousel-item active relative float-left w-full">
+								<img class="rounded-lg shadow-lg mb-6 mx-auto"
+									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" alt="avatar" />
+
+							</div>
+							<div class="carousel-item relative float-left w-full">
+								<img class="rounded-lg shadow-lg mb-6 mx-auto"
+									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" alt="avatar" />
+
+							</div>
+							<div class="carousel-item relative float-left w-full">
+								<img class="rounded-lg shadow-lg mb-6 mx-auto"
+									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" alt="avatar" />
+
+							</div> -->
+						</div>
+						<button
+							class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+							type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon inline-block bg-no-repeat"
+								aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+							type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+							<span class="carousel-control-next-icon inline-block bg-no-repeat"
+								aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+
+				</section>
+			</div>
+		</section>
+
 
 
 		<!-- Purpose Projects -->
@@ -623,6 +727,8 @@
 
 
 		</section>
+
+
 
 
 
@@ -730,12 +836,13 @@
 		ga('send', 'pageview')
 	</script>
 	<script src="https://www.google-analytics.com/analytics.js" async></script>
-	<script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+	<script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
 	<script defer src="/dist/script.js"></script>
 </body>
 

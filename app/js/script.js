@@ -194,12 +194,10 @@ sections.forEach((sct, i) => {
 
 
 	sct.addEventListener("click", () => {
-		const state = Flip.getState(modal);
-		modal.classList.toggle("gallery-modal");
-		Flip.from(state);
-
-		$(".active--cursor").attr('data-before', 'close');
+		$("body, #modal-content, #modal-background").toggleClass("active");
+		console.log('article.categories__article-' + i);
 	});
+
 
 });
 
@@ -251,7 +249,62 @@ TweenMax.to({}, 0.016, {
 	}
 });
 
-//event listeners
+//modal dynamic dom
+
 
 
 //modal on click display close - TO DO
+$(function () {
+	$("#modal-background, #modal-close").click(function () {
+		$("body, #modal-content, #modal-background").toggleClass("active");
+		$(".carousel-inner, .gallery__title").empty();
+	});
+});
+
+
+
+$(".principles__item").on("click", function () {
+	var dir = "app/assets/images/GALLERY/"; // folder location
+	var fileextension = ".webp"; // image format
+	var index = 0;
+	// var j = "2"; // dynamic
+	let imgLength = +$(this).data("length");
+	let imgStart = +$(this).data("index");
+	let file_type = $(this).data("type");
+
+	// check if video or image
+
+	var folder = "app/assets/images/GALLERY/";
+	// if ($.inArray($this.data('video'), $this.data('video')) !== -1) {
+	// 	$this.children('.status').text('New text value');
+	// }
+	$(".gallery__title").html($('.categories__article-' + imgStart + ' h2').html() + ' Gallery');
+	console.log(jQuery.type(file_type));
+
+	function imageloop() {
+
+		if (index <= imgLength) {
+
+			let source = "";
+
+			if ($.inArray(index, file_type) !== -1) {
+				source += '<video class="rounded-lg w-2/3 mx-auto mt-8" autoplay loop controls muted> <source src="' + dir + imgStart + '-' + index + '-' + index + '.mp4" type="video/webm">Your browser does not support the video tag.</video>';
+			} else {
+				source += '<img class="rounded-lg h-[60vh]  shadow-lg mx-auto" src="' + dir + imgStart + '-' + index + '.webp" alt="avatar"/>';
+			}
+
+
+			//active
+			if (index == 0) {
+				$('<div class="carousel-item active relative float-left w-full">' + source + '</div>"').appendTo(".carousel-inner");
+
+			} else {
+				$('<div class="carousel-item relative float-left w-full">' + source + '</div>"').appendTo(".carousel-inner");
+
+			}
+			index++;
+			imageloop();
+		}
+	}
+	imageloop();
+});

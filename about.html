@@ -223,11 +223,66 @@
 			</div>
 	</section>
 	<!-- image gallery -->
+<<<<<<< HEAD
 	<!--
 		1. add wrapper/container
 		2. add images and videos
 		3.
 	-->
+=======
+
+	<section >
+		<div class="platforms bg-transparent z-10 overflow-hidden">
+			<div class="slide-track flex relative h-20">
+					
+						 <img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery1.jpg">
+			 	    
+						<img class="rounded-2xl mr-4" src="/dist/assets/images/gallery2.jpg">
+			  		
+					<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery3.jpg">		
+					
+						<img class="rounded-2xl mr-4" src="/dist/assets/images/gallery4.jpg">
+			  		
+						<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery5.jpg">	
+			  		
+						  <img class="rounded-2xl mr-4" src="/dist/assets/images/gallery6.jpg">	
+			  		
+						  <img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery7.jpg">	
+			  		
+						  <img class="rounded-2xl mr-4" src="/dist/assets/images/gallery8.jpg">	
+					
+						<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery9.jpg">
+					
+			</div>
+		</div>
+   </section>
+    <script>
+	   const platforms = document.querySelector('.platforms .slide-track')
+
+const rollingAnimation = platforms.animate([
+  { transform: 'translateX(0)' },
+  { transform: `translateX(${-200 * 13}px)` }
+],
+  { iterations: Infinity, duration: 80 * 1000 });
+
+function rollCarousel() {
+  rollingAnimation.play()
+}
+
+function pauseCarousel() {
+  rollingAnimation.pause();
+}
+
+platforms.addEventListener('mouseover', pauseCarousel)
+platforms.addEventListener('mouseout', rollCarousel)
+
+if (window.matchMedia("(max-width: 800px)").matches) {
+    transform: `translateX(${-150 * 13}px)`
+}
+
+
+   </script>   
+>>>>>>> a5bb605f3f7f7f1247e43386643b2b2f7c8ba6eb
 
 
 

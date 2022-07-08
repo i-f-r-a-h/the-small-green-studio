@@ -23,10 +23,12 @@ body {
 }
 
 body {
-  overflow-x: hidden !important;
-  overflow-y: scroll !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
+
+body.active {  overflow-y: hidden!important; }
 .orangeWrapper {
   padding: 0;
   width: 100vw;
@@ -91,4 +93,33 @@ body {
 
 
 //how we can help
+//image gallery
+
+.platforms {
+//   background: transparent;
+//   //height: 100%;
+//   //margin: auto;
+//   overflow: hidden;
+//   //position: absolute;
+//   //width: 100%;
+//   z-index: 1;
+//   .slide-track{
+//     display: flex;
+//     flex-direction: row;
+//     row-gap: 10px;
+//     //width: calc(200px * 32);
+//     //top: 30%;
+//     position: relative;
+//   }
+// }
+.img{
+  position: relative; 
+  border-radius: 20px;
+  margin-right: 20px;
+  // width: 200px;
+  // height: auto;
+}
+
+
+ 
 
