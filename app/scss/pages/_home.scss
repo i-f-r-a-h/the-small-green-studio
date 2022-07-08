@@ -285,3 +285,14 @@ transform: translate(-50%, -50%);
 }​
 
 body.active { overflow-y: hidden!important; }
+
+
+//introduction 
+.textsvg{
+  max-width:14rem;/* so it cuts off at the correct length */
+  text-align:center;
+  transform:rotate(30.72deg);
+  left:9.5rem;
+  font-size:1.4rem;
+  top:3.5rem;
+}

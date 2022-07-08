@@ -164,8 +164,8 @@
 
 		<h2 class="bold text-7xl flex justify-center  items-center flex-col w-full relative">Why work
 			<span>
-				<svg class="absolute top-[2rem] right-[53rem]" width="251" height="165" viewBox="0 0 251 165" fill="none"
-					xmlns="http://www.w3.org/2000/svg">
+				<svg class="absolute top-[2rem] right-[53rem]" width="251" height="165" viewBox="0 0 251 165"
+					fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M78.4207 158.343C103.64 147.798 130.004 139.902 155.538 130.124C175.564 122.456 198.456 115.641 216.205 103.249C230.528 93.248 234.211 77.076 231.416 60.4458C226.448 30.8851 197.017 13.4068 169.792 8.13933C134.978 1.40367 99.1534 10.1635 66.7522 22.9165C47.6414 30.4385 18.2716 40.5555 9.33744 61.5683C1.49398 80.016 7.24085 113.673 19.9096 129.13C43.8993 158.401 86.0534 159.9 120.435 158.884C142.925 158.22 165.191 154.853 186.462 147.286C207.907 139.657 224.909 125.837 243.509 113.25"
 						stroke="#2BBC65" stroke-opacity="0.39" stroke-width="10" stroke-linecap="square" />
@@ -223,326 +223,344 @@
 			</div>
 	</section>
 	<!-- image gallery -->
+	<<<<<<< HEAD <!-- 1. add wrapper/container 2. add images and videos 3. -->
+		=======
 
-	<section >
-		<div class="platforms bg-transparent z-10 overflow-hidden">
-			<div class="slide-track flex relative h-20">
-					
-						 <img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery1.jpg">
-			 	    
-						<img class="rounded-2xl mr-4" src="/dist/assets/images/gallery2.jpg">
-			  		
-					<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery3.jpg">		
-					
-						<img class="rounded-2xl mr-4" src="/dist/assets/images/gallery4.jpg">
-			  		
-						<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery5.jpg">	
-			  		
-						  <img class="rounded-2xl mr-4" src="/dist/assets/images/gallery6.jpg">	
-			  		
-						  <img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery7.jpg">	
-			  		
-						  <img class="rounded-2xl mr-4" src="/dist/assets/images/gallery8.jpg">	
-					
-						<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery9.jpg">
-					
-			</div>
-		</div>
-   </section>
-    <script>
-	   const platforms = document.querySelector('.platforms .slide-track')
+		<section>
+			<div class="platforms bg-transparent z-10 overflow-hidden">
+				<div class="slide-track flex relative h-20">
 
-const rollingAnimation = platforms.animate([
-  { transform: 'translateX(0)' },
-  { transform: `translateX(${-200 * 13}px)` }
-],
-  { iterations: Infinity, duration: 80 * 1000 });
+					<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery1.jpg">
 
-function rollCarousel() {
-  rollingAnimation.play()
-}
+					<img class="rounded-2xl mr-4" src="/dist/assets/images`">
 
-function pauseCarousel() {
-  rollingAnimation.pause();
-}
+					<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery3.jpg">
 
-platforms.addEventListener('mouseover', pauseCarousel)
-platforms.addEventListener('mouseout', rollCarousel)
+					<img class="rounded-2xl mr-4" src="/dist/assets/images/gallery4.jpg">
 
-if (window.matchMedia("(max-width: 800px)").matches) {
-    transform: `translateX(${-150 * 13}px)`
-}
+					<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery5.jpg">
 
+					<img class="rounded-2xl mr-4" src="/dist/assets/images/gallery6.jpg">
 
-   </script>   
+					<img class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery7.jpg">
 
+					<img class="rounded-2xl mr-4" src="/dist/assets/images/gallery8.jpg">
 
+					<<<<<<< HEAD </script>>>>>>>> a5bb605f3f7f7f1247e43386643b2b2f7c8ba6eb=======<img
+						class="rounded-2xl mr-4 h-full mt-10" src="/dist/assets/images/gallery9.jpg">
 
-	<!-- our team -->
-	<section class="my-16 mx-32 flex flex-col">
-		<div class="our-team__title ml-auto mr-0">
-			<h2 class="text-7xl font-bold max-w-2xl mb-5 relative">The people making the difference <span><img
-						class="absolute top-[4.5rem] right-28" src="/dist/assets/images/team_1.svg" alt=""
-						srcset=""><img class="absolute top-16 left-32 -z-10" src="/dist/assets/images/team_2.svg" alt=""
-						srcset=""></span>
-			</h2>
-			<p class="max-w-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-				incididunt ut
-				labore
-				et
-				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-				aliquip
-				ex ea commodo consequat.</p>
-		</div>
-
-		<!-- grid -->
-		<section class="relative">
-
-			<!-- svg -->
-			<svg class="absolute -left-28" width="206" height="298" viewBox="0 0 206 298" fill="none"
-				xmlns="http://www.w3.org/2000/svg">
-				<path fill-rule="evenodd" clip-rule="evenodd"
-					d="M26.4045 202.316L35.1097 178.885C28.9938 185.881 26.2752 193.603 26.4045 202.316ZM170.881 97.5174C163.799 105.958 156.715 114.399 149.631 122.841C158.852 116.107 165.915 107.646 170.881 97.5174ZM182.39 33.6944C189.375 34.1489 194.763 36.1458 195.481 43.758C195.793 47.0811 192.823 51.9934 189.519 53.5349C192.809 54.104 194.252 55.396 193.413 59.0077C192.721 61.9841 193.743 65.3401 193.218 68.3886C191.108 80.6856 188.464 92.9123 180.762 103.14C178.786 105.762 174.275 106.632 175.687 111.31C170.647 118.602 165.63 125.926 158.554 131.514C156.863 132.848 154.883 133.834 153.019 134.954C145.14 139.685 137.266 144.428 129.339 149.082C128.806 149.394 127.839 148.916 127.088 148.972C126.434 149.019 125.798 149.302 125.153 149.478C126.406 153.385 122.483 153 120.985 153.455C116.47 154.822 111.685 155.352 107.004 156.2C106.46 156.299 105.728 156.147 105.381 156.447C101.58 159.735 97.4682 161.241 92.1728 160.168C90.3045 159.79 88.0201 161.533 85.6583 161.457C85.011 162.276 84.5417 163.502 83.6908 163.851C74.8105 167.498 65.8691 171.004 56.8106 174.603C55.8343 178.263 48.5022 183.858 44.2899 183.588C44.9363 184.435 45.4015 185.047 45.4164 185.066C44.1169 186.936 42.5436 188.443 41.8815 190.279C38.4989 199.643 35.3403 208.954 35.7166 219.303C36.1012 229.908 34.9431 240.541 34.9926 251.165C35.0098 254.928 36.4471 258.744 37.5197 262.459C38.152 264.649 38.1216 265.931 35.4841 266.41C28.4494 267.69 24.2949 265.927 22.7742 258.799C20.719 249.168 18.8051 239.224 19.0476 229.496C19.3478 217.49 21.4333 205.47 23.6551 193.634C26.0401 180.927 35.2555 173.014 45.7765 166.524C57.2833 159.422 69.7556 154.651 83.0967 151.801C99.2393 148.354 114.015 141.626 128.149 133.345C142.955 124.668 155.451 113.618 164.835 99.4002C172.006 88.5387 177.533 76.9242 178.751 63.6536C179.634 54.0195 180.776 44.4119 181.83 34.7964C181.872 34.4156 182.194 34.0676 182.39 33.6944Z"
-					fill="#F3F3F3" />
-				<path fill-rule="evenodd" clip-rule="evenodd"
-					d="M136.037 78.0496C129.117 79.0471 127.615 78.3466 124.795 72.4702C121.782 66.194 119.076 59.7795 116.213 53.4348C115.746 52.4006 115.026 51.458 114.672 50.3962C114.049 48.5315 113.618 46.6087 113.106 44.7089C115.388 45.1756 118.053 45.0744 119.858 46.2576C122.023 47.6772 124.036 49.9424 125.107 52.2816C128.917 60.6169 132.299 69.1377 136.037 78.0496Z"
-					fill="#F3F3F3" />
-				<path fill-rule="evenodd" clip-rule="evenodd"
-					d="M77.0109 101.922C72.5923 98.879 67.9257 95.8535 63.5243 92.4871C62.5827 91.7659 62.6058 89.8078 62.1837 88.4206C63.5494 88.0774 64.9129 87.4581 66.2812 87.4673C67.6525 87.4727 69.1466 87.8753 70.3832 88.5022C76.0102 91.3572 81.5756 94.3369 87.1395 97.316C88.1457 97.854 89.1552 98.4878 89.9404 99.2886C90.4784 99.8366 91.0919 101 90.8493 101.444C90.4636 102.154 89.375 102.952 88.6125 102.917C84.9233 102.749 81.2422 102.313 77.0109 101.922Z"
-					fill="#F3F3F3" />
-				<path fill-rule="evenodd" clip-rule="evenodd"
-					d="M82.7273 241.342C78.6744 243.562 76.1771 242.849 74.4398 239.956C72.1056 236.067 69.7373 232.166 67.8572 228.065C67.256 226.751 68.1523 224.784 68.3631 223.116C70.6884 223.741 74.2451 223.661 75.1137 225.12C78.1287 230.177 80.2085 235.768 82.7273 241.342Z"
-					fill="#F3F3F3" />
-				<path fill-rule="evenodd" clip-rule="evenodd"
-					d="M109.074 224.311C99.4398 224.781 95.9018 216.677 90.1649 211.917C89.6398 211.48 89.7684 209.133 90.117 209.004C91.8452 208.363 94.6728 207.231 95.4384 207.967C100.297 212.639 104.722 217.752 109.248 222.756C109.427 222.953 109.174 223.528 109.074 224.311Z"
-					fill="#F3F3F3" />
-				<path fill-rule="evenodd" clip-rule="evenodd"
-					d="M107.763 79.6116C105.65 79.1166 103.063 79.2135 101.512 78.0103C97.2553 74.7044 93.3503 70.9338 89.5037 67.1517C88.6845 66.3466 88.6988 64.7169 88.3308 63.4659C89.7652 63.2925 91.6452 62.4605 92.5546 63.0637C96.1999 65.4825 99.707 68.1734 102.944 71.1089C105.169 73.1262 106.864 75.7124 108.796 78.0454C108.452 78.5675 108.108 79.0895 107.763 79.6116Z"
-					fill="#F3F3F3" />
-				<path fill-rule="evenodd" clip-rule="evenodd"
-					d="M122.101 184.641C120.948 185.813 120.578 186.528 120.03 186.694C114.294 188.42 108.582 190.262 102.744 191.589C101.088 191.965 99.0443 190.768 97.302 189.597C105.16 186.477 112.606 182.628 122.101 184.641Z"
-					fill="#F3F3F3" />
-			</svg>
-
-
-			<!-- grid -->
-			<div class="my-48 grid__wrapper grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-16">
-				<!-- nick -->
-				<figure class="team-js">
-					<img class="rounded-2xl object-cover w-full h-[22rem]" src="/dist/assets/images/TEAM/Nick.jpg"
-						alt="nick holding camera" srcset="">
-					<p class="font-bold text-base my-9">Nick <span
-							class="team__role text-xl absolute ml-4 -mt-2">—founder</span></p>
-					<p class="about__info-js hidden pb-8 text-base">In the early days, Nick had been living a bit of a
-						double life.
-						A trusted
-						corporate
-						communications and events professional during office hours and a keen multimedia creator for the
-						rest of the
-						time. It wasn’t his plan to merge these two worlds, but it’s where he found a sweet spot that
-						would benefit
-						both and accelerate his career.
-					</p>
-					<span class="line-break">
-						<svg class="w-full" width="389" height="18" viewBox="0 0 389 18" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M3.1377 5.58958C67.4064 -0.98335 132.708 6.88257 196.876 11.0453C240.4 13.8689 283.89 14.6627 327.487 14.6627C347.106 14.6627 366.725 14.6627 386.344 14.6627"
-								stroke="#09A501" stroke-width="5" stroke-linecap="square" />
-						</svg>
-					</span>
-				</figure>
-
-				<!-- fi -->
-				<figure class="team-js">
-					<img class="rounded-2xl object-cover w-full h-[22rem]" src="/dist/assets/images/TEAM/Fi.jpg"
-						alt="nick holding camera" srcset="">
-					<p class="font-bold text-base my-9">Fi <span
-							class="team__role text-xl absolute ml-4 -mt-2">—content,
-							writing and
-							narration</span>
-					</p>
-					<p class="about__info-js hidden pb-8 text-base">Fi is one of our content specialists. She’s spent a
-						large part of
-						her career
-						creating world class visitor experiences. She is a skilled writer and editor with a unique voice
-						that we think
-						fits much of our voice over work too.</p>
-					<span class="line-break">
-						<svg class="w-full" width="362" height="15" viewBox="0 0 362 15" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M2.80664 3.32617C75.1441 3.88476 147.441 7.06217 219.791 7.06217C239.128 7.06217 258.46 7.94261 277.788 8.54471C299.505 9.22126 321.222 10.6377 342.871 12.3697C348.296 12.8036 353.88 11.8656 359.327 11.8656"
-								stroke="#09A501" stroke-width="5" stroke-linecap="square" />
-						</svg>
-
-					</span>
-				</figure>
-
-				<!-- Michael -->
-				<figure class="team-js">
-					<img class="rounded-2xl object-cover w-full h-[22rem]" src="/dist/assets/images/TEAM/Michael.png"
-						alt="nick holding camera" srcset="">
-					<p class="font-bold text-base my-9">Michael<span
-							class="team__role text-xl absolute ml-4 -mt-2">—director of
-							photography</span></p>
-					<p class="about__info-js hidden pb-8 text-base">In his words “finding the visual language is always
-						a very
-						important step in achieving this and pursuing the right rhythm for the piece”.Michael is a
-						British/Israeli Director of Photography with a huge portfolio of work across commercial,
-						narrative, fashion and music genres.</p>
-					<span class="line-break">
-						<svg class="w-full" width="386" height="10" viewBox="0 0 386 10" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M2.69727 6.55159C31.7942 7.37997 60.867 7.4263 89.9743 7.4263C122.488 7.4263 154.613 5.77207 187.068 4.51059C238.172 2.52421 289.368 5.05391 340.483 3.87885C354.733 3.55125 368.879 3.05273 383.198 3.05273"
-								stroke="#09A501" stroke-width="5" stroke-linecap="square" />
-						</svg>
-
-					</span>
-				</figure>
-
-				<!-- betty -->
-				<figure class="team-js">
-					<img class="rounded-2xl object-cover w-full h-[22rem]" src="/dist/assets/images/TEAM/Betty.jpg"
-						alt="nick holding camera" srcset="">
-					<p class="font-bold text-base my-9 pb-8 text-base">Betty <span
-							class="team__role text-xl absolute ml-4 -mt-2">—pr
-							and social</span>
-					</p>
-					<p class="about__info-js hidden text-base">Betty works with us part-time and has found a way to
-						make the
-						'always-on' nature
-						of social media fit around the school run and the odd sports day. Whether it's content creation
-						or managing
-						social media channels, her achievements speak for themselves. On a recent account, Betty's
-						social media
-						campaigns have helped grow several rounds of funding into six figure R&D budgets for a
-						sustainable agritech
-						enterprise.
-					</p>
-					<span class="line-break">
-						<svg class="w-full" width="384" height="10" viewBox="0 0 384 10" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M3 6.68733C101.321 3.42358 199.79 10.838 298.119 5.37526C325.599 3.84857 353.339 3.18848 380.876 3.18848"
-								stroke="#09A501" stroke-width="5" stroke-linecap="square" />
-						</svg>
-
-
-					</span>
-				</figure>
-
-				<!-- fran -->
-				<figure class="team-js">
-					<img class="rounded-2xl object-cover w-full h-[22rem]" src="/dist/assets/images/TEAM/Fran.jpeg"
-						alt="nick holding camera" srcset="">
-					<p class="font-bold text-base my-9">Fran <span
-							class="team__role text-xl absolute ml-4 -mt-2">—reportage</span></p>
-					<p class="about__info-js hidden pb-8 text-base">Club culture and event photography had been a large
-						part of Fran's
-						early portfolio. She gets a buzz from reportage style, adopting a 'hidden in plain sight'
-						approach.Fran has a growing repertoire of portraits, lifestyle and corporate work too and is
-						fluent in Kiwi.</p>
-					<span class="line-break">
-						<svg class="w-full" width="389" height="18" viewBox="0 0 389 18" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M3.1377 5.58958C67.4064 -0.98335 132.708 6.88257 196.876 11.0453C240.4 13.8689 283.89 14.6627 327.487 14.6627C347.106 14.6627 366.725 14.6627 386.344 14.6627"
-								stroke="#09A501" stroke-width="5" stroke-linecap="square" />
-						</svg>
-					</span>
-				</figure>
-
-				<!-- Morg -->
-				<figure class="team-js">
-					<img class="rounded-2xl object-cover w-full h-[22rem]" src="/dist/assets/images/TEAM/Morg.jpeg"
-						alt="nick holding camera" srcset="">
-					<p class="font-bold text-base my-9">Morg <span class="team__role text-xl absolute ml-4 -mt-2">—green
-							advisor</span>
-					</p>
-					<p class="about__info-js hidden pb-8 text-base">Morg is a favourite uncle, a green haired gigging
-						bassist and
-						distributor of ethical loo roll. He’s also succeeded in his mission to reduce his meat intake to
-						only two
-						special occasions per year. We’ll let you guess which ones.</p>
-
-					<span class="line-break">
-						<svg class="w-full" width="389" height="18" viewBox="0 0 389 18" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M3.1377 5.58958C67.4064 -0.98335 132.708 6.88257 196.876 11.0453C240.4 13.8689 283.89 14.6627 327.487 14.6627C347.106 14.6627 366.725 14.6627 386.344 14.6627"
-								stroke="#09A501" stroke-width="5" stroke-linecap="square" />
-						</svg>
-					</span>
-				</figure>
+				</div>
 			</div>
 		</section>
+		<script>
+			const platforms = document.querySelector('.platforms .slide-track')
 
-	</section>
-	<!--Footer-->
-	<footer class="w-full">
-		<div class="footer__wrapper flex flex-col mt-64 z-10 relative">
-			<div class="flex flex-wrap flex-col text-center mb-60">
-				<h3 class="text-5xl font-bold">Ready?<br>Let's Get Started</h3>
-				<p>have a project or just want a quick chat?</p>
-				<button class="w-48 h-12 rounded-lg text-black font-semibold
-				bg-white m-auto">Contact Us</button>
+			const rollingAnimation = platforms.animate([{
+					transform: 'translateX(0)'
+				},
+				{
+					transform: `translateX(${-200 * 13}px)`
+				}
+			], {
+				iterations: Infinity,
+				duration: 80 * 1000
+			});
+
+			function rollCarousel() {
+				rollingAnimation.play()
+			}
+
+			function pauseCarousel() {
+				rollingAnimation.pause();
+			}
+
+			platforms.addEventListener('mouseover', pauseCarousel)
+			platforms.addEventListener('mouseout', rollCarousel)
+
+			if (window.matchMedia("(max-width: 800px)").matches) {
+				transform: `translateX(${-150 * 13}px)`
+			}
+		</script>
+		>>>>>>> 8ee9df1cc8eeddc44544c4c5d47517ebd46f1ffa
+
+
+
+		<!-- our team -->
+		<section class="my-16 mx-32 flex flex-col">
+			<div class="our-team__title ml-auto mr-0">
+				<h2 class="text-7xl font-bold max-w-2xl mb-5 relative">The people making the difference <span><img
+							class="absolute top-[4.5rem] right-28" src="/dist/assets/images/team_1.svg" alt=""
+							srcset=""><img class="absolute top-16 left-32 -z-10" src="/dist/assets/images/team_2.svg"
+							alt="" srcset=""></span>
+				</h2>
+				<p class="max-w-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut
+					labore
+					et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip
+					ex ea commodo consequat.</p>
 			</div>
 
-			<div class="flex justify-between m-10 ">
-				<div class="flex flex-wrap flex-col">
-					<p class="font-bold">Links</p>
-					<a href="url">Who are we</a>
-					<a href="url">Our team</a>
-					<a href="url">Things we can do</a>
-					<a href="url">Things we have done</a>
-					<a href="url">Contacts</a>
+			<!-- grid -->
+			<section class="relative">
+
+				<!-- svg -->
+				<svg class="absolute -left-28" width="206" height="298" viewBox="0 0 206 298" fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M26.4045 202.316L35.1097 178.885C28.9938 185.881 26.2752 193.603 26.4045 202.316ZM170.881 97.5174C163.799 105.958 156.715 114.399 149.631 122.841C158.852 116.107 165.915 107.646 170.881 97.5174ZM182.39 33.6944C189.375 34.1489 194.763 36.1458 195.481 43.758C195.793 47.0811 192.823 51.9934 189.519 53.5349C192.809 54.104 194.252 55.396 193.413 59.0077C192.721 61.9841 193.743 65.3401 193.218 68.3886C191.108 80.6856 188.464 92.9123 180.762 103.14C178.786 105.762 174.275 106.632 175.687 111.31C170.647 118.602 165.63 125.926 158.554 131.514C156.863 132.848 154.883 133.834 153.019 134.954C145.14 139.685 137.266 144.428 129.339 149.082C128.806 149.394 127.839 148.916 127.088 148.972C126.434 149.019 125.798 149.302 125.153 149.478C126.406 153.385 122.483 153 120.985 153.455C116.47 154.822 111.685 155.352 107.004 156.2C106.46 156.299 105.728 156.147 105.381 156.447C101.58 159.735 97.4682 161.241 92.1728 160.168C90.3045 159.79 88.0201 161.533 85.6583 161.457C85.011 162.276 84.5417 163.502 83.6908 163.851C74.8105 167.498 65.8691 171.004 56.8106 174.603C55.8343 178.263 48.5022 183.858 44.2899 183.588C44.9363 184.435 45.4015 185.047 45.4164 185.066C44.1169 186.936 42.5436 188.443 41.8815 190.279C38.4989 199.643 35.3403 208.954 35.7166 219.303C36.1012 229.908 34.9431 240.541 34.9926 251.165C35.0098 254.928 36.4471 258.744 37.5197 262.459C38.152 264.649 38.1216 265.931 35.4841 266.41C28.4494 267.69 24.2949 265.927 22.7742 258.799C20.719 249.168 18.8051 239.224 19.0476 229.496C19.3478 217.49 21.4333 205.47 23.6551 193.634C26.0401 180.927 35.2555 173.014 45.7765 166.524C57.2833 159.422 69.7556 154.651 83.0967 151.801C99.2393 148.354 114.015 141.626 128.149 133.345C142.955 124.668 155.451 113.618 164.835 99.4002C172.006 88.5387 177.533 76.9242 178.751 63.6536C179.634 54.0195 180.776 44.4119 181.83 34.7964C181.872 34.4156 182.194 34.0676 182.39 33.6944Z"
+						fill="#F3F3F3" />
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M136.037 78.0496C129.117 79.0471 127.615 78.3466 124.795 72.4702C121.782 66.194 119.076 59.7795 116.213 53.4348C115.746 52.4006 115.026 51.458 114.672 50.3962C114.049 48.5315 113.618 46.6087 113.106 44.7089C115.388 45.1756 118.053 45.0744 119.858 46.2576C122.023 47.6772 124.036 49.9424 125.107 52.2816C128.917 60.6169 132.299 69.1377 136.037 78.0496Z"
+						fill="#F3F3F3" />
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M77.0109 101.922C72.5923 98.879 67.9257 95.8535 63.5243 92.4871C62.5827 91.7659 62.6058 89.8078 62.1837 88.4206C63.5494 88.0774 64.9129 87.4581 66.2812 87.4673C67.6525 87.4727 69.1466 87.8753 70.3832 88.5022C76.0102 91.3572 81.5756 94.3369 87.1395 97.316C88.1457 97.854 89.1552 98.4878 89.9404 99.2886C90.4784 99.8366 91.0919 101 90.8493 101.444C90.4636 102.154 89.375 102.952 88.6125 102.917C84.9233 102.749 81.2422 102.313 77.0109 101.922Z"
+						fill="#F3F3F3" />
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M82.7273 241.342C78.6744 243.562 76.1771 242.849 74.4398 239.956C72.1056 236.067 69.7373 232.166 67.8572 228.065C67.256 226.751 68.1523 224.784 68.3631 223.116C70.6884 223.741 74.2451 223.661 75.1137 225.12C78.1287 230.177 80.2085 235.768 82.7273 241.342Z"
+						fill="#F3F3F3" />
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M109.074 224.311C99.4398 224.781 95.9018 216.677 90.1649 211.917C89.6398 211.48 89.7684 209.133 90.117 209.004C91.8452 208.363 94.6728 207.231 95.4384 207.967C100.297 212.639 104.722 217.752 109.248 222.756C109.427 222.953 109.174 223.528 109.074 224.311Z"
+						fill="#F3F3F3" />
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M107.763 79.6116C105.65 79.1166 103.063 79.2135 101.512 78.0103C97.2553 74.7044 93.3503 70.9338 89.5037 67.1517C88.6845 66.3466 88.6988 64.7169 88.3308 63.4659C89.7652 63.2925 91.6452 62.4605 92.5546 63.0637C96.1999 65.4825 99.707 68.1734 102.944 71.1089C105.169 73.1262 106.864 75.7124 108.796 78.0454C108.452 78.5675 108.108 79.0895 107.763 79.6116Z"
+						fill="#F3F3F3" />
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M122.101 184.641C120.948 185.813 120.578 186.528 120.03 186.694C114.294 188.42 108.582 190.262 102.744 191.589C101.088 191.965 99.0443 190.768 97.302 189.597C105.16 186.477 112.606 182.628 122.101 184.641Z"
+						fill="#F3F3F3" />
+				</svg>
+
+
+				<!-- grid -->
+				<div class="my-48 grid__wrapper grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-16">
+					<!-- nick -->
+					<figure class="team-js">
+						<img class="rounded-2xl object-cover w-full h-[22rem]" src="/dist/assets/images/TEAM/Nick.jpg"
+							alt="nick holding camera" srcset="">
+						<p class="font-bold text-base my-9">Nick <span
+								class="team__role text-xl absolute ml-4 -mt-2">—founder</span></p>
+						<p class="about__info-js hidden pb-8 text-base">In the early days, Nick had been living a bit of
+							a
+							double life.
+							A trusted
+							corporate
+							communications and events professional during office hours and a keen multimedia creator for
+							the
+							rest of the
+							time. It wasn’t his plan to merge these two worlds, but it’s where he found a sweet spot
+							that
+							would benefit
+							both and accelerate his career.
+						</p>
+						<span class="line-break">
+							<svg class="w-full" width="389" height="18" viewBox="0 0 389 18" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M3.1377 5.58958C67.4064 -0.98335 132.708 6.88257 196.876 11.0453C240.4 13.8689 283.89 14.6627 327.487 14.6627C347.106 14.6627 366.725 14.6627 386.344 14.6627"
+									stroke="#09A501" stroke-width="5" stroke-linecap="square" />
+							</svg>
+						</span>
+					</figure>
+
+					<!-- fi -->
+					<figure class="team-js">
+						<img class="rounded-2xl object-cover w-full h-[22rem]" src="/dist/assets/images/TEAM/Fi.jpg"
+							alt="nick holding camera" srcset="">
+						<p class="font-bold text-base my-9">Fi <span
+								class="team__role text-xl absolute ml-4 -mt-2">—content,
+								writing and
+								narration</span>
+						</p>
+						<p class="about__info-js hidden pb-8 text-base">Fi is one of our content specialists. She’s
+							spent a
+							large part of
+							her career
+							creating world class visitor experiences. She is a skilled writer and editor with a unique
+							voice
+							that we think
+							fits much of our voice over work too.</p>
+						<span class="line-break">
+							<svg class="w-full" width="362" height="15" viewBox="0 0 362 15" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M2.80664 3.32617C75.1441 3.88476 147.441 7.06217 219.791 7.06217C239.128 7.06217 258.46 7.94261 277.788 8.54471C299.505 9.22126 321.222 10.6377 342.871 12.3697C348.296 12.8036 353.88 11.8656 359.327 11.8656"
+									stroke="#09A501" stroke-width="5" stroke-linecap="square" />
+							</svg>
+
+						</span>
+					</figure>
+
+					<!-- Michael -->
+					<figure class="team-js">
+						<img class="rounded-2xl object-cover w-full h-[22rem]"
+							src="/dist/assets/images/TEAM/Michael.png" alt="nick holding camera" srcset="">
+						<p class="font-bold text-base my-9">Michael<span
+								class="team__role text-xl absolute ml-4 -mt-2">—director of
+								photography</span></p>
+						<p class="about__info-js hidden pb-8 text-base">In his words “finding the visual language is
+							always
+							a very
+							important step in achieving this and pursuing the right rhythm for the piece”.Michael is a
+							British/Israeli Director of Photography with a huge portfolio of work across commercial,
+							narrative, fashion and music genres.</p>
+						<span class="line-break">
+							<svg class="w-full" width="386" height="10" viewBox="0 0 386 10" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M2.69727 6.55159C31.7942 7.37997 60.867 7.4263 89.9743 7.4263C122.488 7.4263 154.613 5.77207 187.068 4.51059C238.172 2.52421 289.368 5.05391 340.483 3.87885C354.733 3.55125 368.879 3.05273 383.198 3.05273"
+									stroke="#09A501" stroke-width="5" stroke-linecap="square" />
+							</svg>
+
+						</span>
+					</figure>
+
+					<!-- betty -->
+					<figure class="team-js">
+						<img class="rounded-2xl object-cover w-full h-[22rem]" src="/dist/assets/images/TEAM/Betty.jpg"
+							alt="nick holding camera" srcset="">
+						<p class="font-bold text-base my-9 pb-8 text-base">Betty <span
+								class="team__role text-xl absolute ml-4 -mt-2">—pr
+								and social</span>
+						</p>
+						<p class="about__info-js hidden text-base">Betty works with us part-time and has found a way to
+							make the
+							'always-on' nature
+							of social media fit around the school run and the odd sports day. Whether it's content
+							creation
+							or managing
+							social media channels, her achievements speak for themselves. On a recent account, Betty's
+							social media
+							campaigns have helped grow several rounds of funding into six figure R&D budgets for a
+							sustainable agritech
+							enterprise.
+						</p>
+						<span class="line-break">
+							<svg class="w-full" width="384" height="10" viewBox="0 0 384 10" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M3 6.68733C101.321 3.42358 199.79 10.838 298.119 5.37526C325.599 3.84857 353.339 3.18848 380.876 3.18848"
+									stroke="#09A501" stroke-width="5" stroke-linecap="square" />
+							</svg>
+
+
+						</span>
+					</figure>
+
+					<!-- fran -->
+					<figure class="team-js">
+						<img class="rounded-2xl object-cover w-full h-[22rem]" src="/dist/assets/images/TEAM/Fran.jpeg"
+							alt="nick holding camera" srcset="">
+						<p class="font-bold text-base my-9">Fran <span
+								class="team__role text-xl absolute ml-4 -mt-2">—reportage</span></p>
+						<p class="about__info-js hidden pb-8 text-base">Club culture and event photography had been a
+							large
+							part of Fran's
+							early portfolio. She gets a buzz from reportage style, adopting a 'hidden in plain sight'
+							approach.Fran has a growing repertoire of portraits, lifestyle and corporate work too and is
+							fluent in Kiwi.</p>
+						<span class="line-break">
+							<svg class="w-full" width="389" height="18" viewBox="0 0 389 18" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M3.1377 5.58958C67.4064 -0.98335 132.708 6.88257 196.876 11.0453C240.4 13.8689 283.89 14.6627 327.487 14.6627C347.106 14.6627 366.725 14.6627 386.344 14.6627"
+									stroke="#09A501" stroke-width="5" stroke-linecap="square" />
+							</svg>
+						</span>
+					</figure>
+
+					<!-- Morg -->
+					<figure class="team-js">
+						<img class="rounded-2xl object-cover w-full h-[22rem]" src="/dist/assets/images/TEAM/Morg.jpeg"
+							alt="nick holding camera" srcset="">
+						<p class="font-bold text-base my-9">Morg <span
+								class="team__role text-xl absolute ml-4 -mt-2">—green
+								advisor</span>
+						</p>
+						<p class="about__info-js hidden pb-8 text-base">Morg is a favourite uncle, a green haired
+							gigging
+							bassist and
+							distributor of ethical loo roll. He’s also succeeded in his mission to reduce his meat
+							intake to
+							only two
+							special occasions per year. We’ll let you guess which ones.</p>
+
+						<span class="line-break">
+							<svg class="w-full" width="389" height="18" viewBox="0 0 389 18" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M3.1377 5.58958C67.4064 -0.98335 132.708 6.88257 196.876 11.0453C240.4 13.8689 283.89 14.6627 327.487 14.6627C347.106 14.6627 366.725 14.6627 386.344 14.6627"
+									stroke="#09A501" stroke-width="5" stroke-linecap="square" />
+							</svg>
+						</span>
+					</figure>
+				</div>
+			</section>
+
+		</section>
+		<!--Footer-->
+		<footer class="w-full">
+			<div class="footer__wrapper flex flex-col mt-64 z-10 relative">
+				<div class="flex flex-wrap flex-col text-center mb-60">
+					<h3 class="text-5xl font-bold">Ready?<br>Let's Get Started</h3>
+					<p>have a project or just want a quick chat?</p>
+					<button class="w-48 h-12 rounded-lg text-black font-semibold
+				bg-white m-auto">Contact Us</button>
 				</div>
 
-				<div class="emails-wrapper">
-					<div class="flex flex-wrap flex-col text-center">
-						<p class="font-bold">Send a not so serious email</p>
-						<a href="mailto:dostuff@thesmallgreenstudio.com">Send Email</a>
+				<div class="flex justify-between m-10 ">
+					<div class="flex flex-wrap flex-col">
+						<p class="font-bold">Links</p>
+						<a href="url">Who are we</a>
+						<a href="url">Our team</a>
+						<a href="url">Things we can do</a>
+						<a href="url">Things we have done</a>
+						<a href="url">Contacts</a>
 					</div>
 
+					<div class="emails-wrapper">
+						<div class="flex flex-wrap flex-col text-center">
+							<p class="font-bold">Send a not so serious email</p>
+							<a href="mailto:dostuff@thesmallgreenstudio.com">Send Email</a>
+						</div>
 
-					<div class="flex flex-wrap flex-col">
-						<p class="font-bold">Socials</p>
-						<div class="icon-wrapper">
-							<button class="btn mr-4	p-0.5 bg-white rounded-full"><i
-									class="fa-brands fa-instagram"></i></button>
-							<button class="btn mr-4 p-0.5 bg-white rounded-full"><i
-									class="fa-brands fa-youtube"></i></button>
-							<button class="btn mr-4 p-0.5 bg-white rounded-full w-24"><i
-									class="fa-brands fa-linkedin"></i></button>
+
+						<div class="flex flex-wrap flex-col">
+							<p class="font-bold">Socials</p>
+							<div class="icon-wrapper">
+								<button class="btn mr-4	p-0.5 bg-white rounded-full"><i
+										class="fa-brands fa-instagram"></i></button>
+								<button class="btn mr-4 p-0.5 bg-white rounded-full"><i
+										class="fa-brands fa-youtube"></i></button>
+								<button class="btn mr-4 p-0.5 bg-white rounded-full"><i
+										class="fa-brands fa-linkedin"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="call-wrapper">
+						<div class="flex flex-wrap flex-col">
+							<p class="font-bold">Give us a ring</p>
+							<p>07397616938</p>
+						</div>
+
+						<div class="flex flex-wrap flex-col">
+							<p class="font-bold">Just because</p>
+							<p>51.5072 N, 0.1276 W</p>
+							<p>Current Time</p>
 						</div>
 					</div>
 				</div>
-				<div class="call-wrapper">
-					<div class="flex flex-wrap flex-col">
-						<p class="font-bold">Give us a ring</p>
-						<p>07397616938</p>
-					</div>
-
-					<div class="flex flex-wrap flex-col">
-						<p class="font-bold">Just because</p>
-						<p>51.5072 N, 0.1276 W</p>
-						<p>Current Time</p>
-					</div>
-				</div>
 			</div>
-		</div>
-		</div>
-		</div>
-	</footer>
+			</div>
+			</div>
+		</footer>
 
-	<!-- js scripts -->
+		<!-- js scripts -->
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-	<script defer src="app/js/about.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+		<script defer src="app/js/about.js"></script>
 
 </body>
 
