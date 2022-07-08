@@ -212,28 +212,36 @@
 
 		<!-- introduction -->
 
-		<section name="introduction ">
-			<div class="introduction__wrapper bg-[#155000] w-full h-[80vh] rounded-3xl">
+		<section name="introduction"
+			class="relative mt-8 bg-[#155000] w-full h-[80vh] rounded-3xl flex items-center flex-col">
+			<div class="introduction__wrapper mt-24">
 
-				<p class="text-center pt-28 py-4 text-[#00FF66]">Hello, Happy <span class="intro__date-js">{insert
+				<p class="text-center text-[#00FF66]">Hello, Happy <span class="intro__date-js">{insert
 						date}</span>!</p>
-				<h2 class="text-center mx-32 mt-10 text-5xl uppercase  leading-[5rem]   ">We are a small studio
-					<span><img src="" alt="" srcset=""></span>which means we can
-					respond to your brief <span class="line-through ">quickly</span>-or write one with you to get <span
-						class="line-through">cracking</span>
+				<h2 class="text-center max-w-5xl mt-10 text-5xl uppercase relative leading-[5rem]   ">
+					<span>We are a small studio <img class="max-w-none inline" src="/dist/assets/images/intro.svg"
+							alt="" srcset=""></span>
+					which
+					means
+					we can
+					respond to your brief </span<span class="line-through ">quickly</span>-or write one with you to
+					get <span class="line-through">cracking</span>
 					right away.</h2>
 
-				<div class="text-center align-middle">
-					<svg class="ml-20  pb-16 " width="347" height="239" viewBox="0 0 347 239" fill="none"
+				<div class="absolute container ">
+					<svg class="ml-20 absolute  pb-16 " width="347" height="239" viewBox="0 0 347 239" fill="none"
 						xmlns="http://www.w3.org/2000/svg">
 
 						<path
 							d="M8.82001 41.0537C2.91482 42.0521 -0.809788 47.9888 1.15155 53.6476C11.1868 82.6012 27.0476 110.074 47.9519 134.637C71.4201 162.213 100.722 185.509 133.964 203.019C167.205 220.528 203.646 231.861 240.93 236.285C274.309 240.246 307.698 238.59 339.367 231.437C345.251 230.108 348.365 223.763 346.058 218.189L258.547 6.71222C256.764 2.40283 252.239 -0.101692 247.64 0.675789L8.82001 41.0537Z"
 							fill="#103901" />
-						<text class="text-1xl w-1/2 " x="80" y="50" fill="white" transform="rotate(30 20,40)">not good
-							enough,
-							<a class="learn_more text-yellow-500 underline " href="#"> learn more</a></text>
+
 					</svg>
+
+					<!-- text, used absolute to be able to move it freely -->
+					<div class="textsvg  absolute text-white z-50 transform ">Not good
+						enough,
+						<a class="learn_more text-yellow-500 underline " href="#"> Learn more</a></div>
 				</div>
 			</div>
 		</section>
@@ -384,7 +392,7 @@
 							stroke="white" stroke-width="3" stroke-linecap="round" />
 					</svg>
 				</div>
-				<div class="absolute bottom-1/3	 left-1/3">
+				<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
 					<video class="rounded-lg hidden md:block" width="600" height="338" autoplay loop playsinline muted>
 						<source src="app/assets/videos/SiteLoop_2.webm" type="video/webm">
 						Your browser does not support the video tag.

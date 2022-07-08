@@ -1000,6 +1000,17 @@ body.active {
   overflow-y: hidden !important;
 }
 
+.textsvg {
+  max-width: 14rem;
+  /* so it cuts off at the correct length */
+  text-align: center;
+  -webkit-transform: rotate(30.72deg);
+          transform: rotate(30.72deg);
+  left: 9.5rem;
+  font-size: 1.4rem;
+  top: 3.5rem;
+}
+
 html,
 body {
   margin: 0;
