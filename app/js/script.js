@@ -25,7 +25,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-//how we can help
+//footer
+let time = new Date();
+time = time.toLocaleString('en-GB', {
+	hour: 'numeric',
+	minute: 'numeric',
+	hour12: true,
+	timeZone: 'Europe/London'
+});
+document.querySelector('.time-js').innerHTML = `Currently ${time}`;
 
 
 
@@ -308,6 +316,3 @@ $(".principles__item").on("click", function () {
 	}
 	imageloop();
 });
-
-
-//purpose led projects
