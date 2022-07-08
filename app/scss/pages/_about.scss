@@ -23,10 +23,12 @@ body {
 }
 
 body {
-  overflow-x: hidden !important;
-  overflow-y: scroll !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
+
+body.active {  overflow-y: hidden!important; }
 .orangeWrapper {
   padding: 0;
   width: 100vw;
@@ -110,6 +112,7 @@ body {
 //     position: relative;
 //   }
 // }
+}
 .img{
   position: relative; 
   border-radius: 20px;

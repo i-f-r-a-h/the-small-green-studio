@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap");
 @tailwind base;
@@ -431,7 +432,7 @@ body {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 1180px;
+  max-width: 1280px;
   /* 1 */
   margin-left: auto;
   /* 2 */
@@ -761,15 +762,6 @@ footer:after {
   position: relative;
 }
 
-.gallery-modal {
-  position: fixed;
-  background-color: red;
-  height: 100%;
-}
-.gallery-modal .categories__article {
-  top: 0px;
-}
-
 .principles__title {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -876,6 +868,58 @@ footer:after {
   transform: translateY(50px);
 }
 
+#modal-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d2ffdd;
+  opacity: 0.5;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  filter: alpha(opacity=50);
+  z-index: 1000;
+}
+
+#modal-content {
+  background-color: rgb(25, 25, 25);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow: 0 0 20px 0 #222;
+  -webkit-box-shadow: 0 0 20px 0 #222;
+  -moz-box-shadow: 0 0 20px 0 #222;
+  display: none;
+  height: 80vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  position: fixed;
+  width: 80vw;
+  z-index: 1000;
+}
+
+#modal-background.active, #modal-content.active {
+  display: block;
+}
+
+​ body.active {
+  overflow-y: hidden !important;
+}
+
+.textsvg {
+  max-width: 14rem;
+  /* so it cuts off at the correct length */
+  text-align: center;
+  transform: rotate(30.72deg);
+  left: 9.5rem;
+  font-size: 1.4rem;
+  top: 3.5rem;
+}
+
 html,
 body {
   margin: 0;
@@ -900,8 +944,12 @@ body {
 }
 
 body {
-  overflow-x: hidden !important;
-  overflow-y: scroll !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body.active {
+  overflow-y: hidden !important;
 }
 
 .orangeWrapper {
@@ -953,18 +1001,6 @@ body {
 .cursor__follower.active--cursor {
   opacity: 1;
   transform: scale(0);
-}
-
-.platforms {
-  background: transparent;
-  overflow: hidden;
-  z-index: 1;
-}
-.platforms .slide-track {
-  display: flex;
-  flex-direction: row;
-  row-gap: 10px;
-  position: relative;
 }
 
 .img {
