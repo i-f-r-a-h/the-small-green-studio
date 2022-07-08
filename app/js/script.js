@@ -308,3 +308,6 @@ $(".principles__item").on("click", function () {
 	}
 	imageloop();
 });
+
+
+//purpose led projects
