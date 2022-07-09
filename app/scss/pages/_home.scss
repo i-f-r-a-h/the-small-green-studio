@@ -468,3 +468,11 @@ canvas {
 		top: 0;
 		z-index: -3 !important;
 	}
+
+  .socials:hover{
+    transition: .2s ease-in-out;
+    background-color: #155000;
+    i{
+      color: white !important;
+    }
+  }

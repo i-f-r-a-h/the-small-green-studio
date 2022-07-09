@@ -1288,6 +1288,16 @@ canvas {
   z-index: -3 !important;
 }
 
+.socials:hover {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  background-color: #155000;
+}
+
+.socials:hover i {
+  color: white !important;
+}
+
 html,
 body {
   margin: 0;
