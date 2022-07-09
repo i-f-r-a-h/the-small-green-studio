@@ -26,16 +26,59 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 //footer
-let time = new Date();
-time = time.toLocaleString('en-GB', {
-	hour: 'numeric',
-	minute: 'numeric',
-	hour12: true,
-	timeZone: 'Europe/London'
-});
-document.querySelector('.time-js').innerHTML = `Currently ${time}`;
+
+setInterval(() => {
+	document.querySelector('.time-js').innerHTML = 'Currently ' + refreshDate(new Date());
+}, 1000)
 
 
+function refreshDate(footertime) {
+	return footertime.toLocaleString('en-GB', {
+		hour: 'numeric',
+		minute: 'numeric',
+		timeZone: 'Europe/London',
+		hourCycle: 'h12'
+
+	});
+}
+
+
+
+
+
+
+function setup() {
+
+	var clientHeight = document.getElementById('footer-js').clientHeight;
+	var clientWidth = document.getElementById('footer-js').clientWidth;
+
+	var cnv = createCanvas(clientWidth, clientHeight);
+	cnv.parent("footer-js");
+	background(0);
+}
+
+
+function windowResized() {
+	sketchWidth = document.getElementById("footer-js").offsetWidth;
+	sketchHeight = document.getElementById("footer-js").offsetHeight;
+	resizeCanvas(sketchWidth, sketchHeight);
+	background(0);
+}
+
+function draw() {
+
+	fill('hsla(120, 100%, 75%, 0.3)');
+	//fill(0,255,0,50);
+	noStroke();
+	ellipse(mouseX, mouseY, 20);
+
+}
+
+
+function mousePressed() {
+	var cnv;
+	background(0);
+}
 
 // menu
 const menu_open = gsap.timeline({
@@ -225,7 +268,7 @@ document.querySelector('.intro__date-js').innerHTML = `${prnDt}`;
 
 //cursor
 //variables
-let cursor = $(".cursor"),
+let maincursor = $(".cursor"),
 	follower = $(".cursor__follower");
 
 let posX = 0,
@@ -247,7 +290,7 @@ TweenMax.to({}, 0.016, {
 			}
 		});
 
-		TweenMax.set(cursor, {
+		TweenMax.set(maincursor, {
 			css: {
 				left: mouseX,
 				top: mouseY

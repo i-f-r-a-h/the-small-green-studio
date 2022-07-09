@@ -88,7 +88,7 @@ tl.to(".hero__content", {
 
 
 //variables
-let cursor = $(".cursor"),
+let maincursor = $(".cursor"),
     follower = $(".cursor__follower");
 
 let posX = 0,
@@ -110,7 +110,7 @@ TweenMax.to({}, 0.016, {
             }
         });
 
-        TweenMax.set(cursor, {
+        TweenMax.set(maincursor, {
             css: {
                 left: mouseX,
                 top: mouseY
@@ -127,7 +127,7 @@ $(document).on("mousemove", function (e) {
 });
 
 $(".team-js").on("mouseenter", function () {
-    cursor.addClass("active--cursor");
+    maincursor.addClass("active--cursor");
     follower.addClass("active--cursor");
     if ($(this).find(".about__info-js").is(":visible")) {
         $(".active--cursor").attr('data-before', 'close');
@@ -137,7 +137,7 @@ $(".team-js").on("mouseenter", function () {
 });
 
 $(".team-js img").on("mouseleave", function () {
-    cursor.removeClass("active--cursor");
+    maincursor.removeClass("active--cursor");
     follower.removeClass("active--cursor");
 });
 

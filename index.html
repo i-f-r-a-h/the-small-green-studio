@@ -26,6 +26,37 @@
 
 
 	<link defer rel="stylesheet" href="assets/css/blobz.min.css">
+
+
+	<!-- p5 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+
+	<script>
+		// function footerDraw(f) {
+		// 	f.setup() = function () {
+		// 		f.createCanvas(windowWidth, windowHeight);
+		// 		f.parent('team-small');
+		// 		background(0);
+
+		// 	}
+
+
+		// 	f.draw() = function () {
+
+		// 		fill('hsla(120, 100%, 75%, 0.3)');
+		// 		//fill(0,255,0,50);
+		// 		noStroke();
+		// 		ellipse(mouseX, mouseY, 20);
+
+		// 	}
+
+
+		// 	f.mousePressed() = function () {
+		// 		createCanvas(windowWidth, windowHeight);
+		// 		background(0);
+		// 	}
+		// }
+	</script>
 </head>
 
 <body>
@@ -47,7 +78,7 @@
 					<ellipse cx="16.0893" cy="10.947" rx="8.69478" ry="8.65595" fill="#33FF00" fill-opacity="0.59" />
 					<path d="M12.0148 21.832L11.5371 22.364L12.64 22.0922L12.0148 21.832Z" fill="#D77706" />
 					<g style="mix-blend-mode:hard-light">
-						<ellipse cx="8.98189" cy="8.65595" rx="8.69478" ry="8.65595" fill="#5BDDBE"
+						<ellipse cx="8.98189" cy="8.65595" rx="8.69478" ry="8.65595" fill="#5bdda0"
 							fill-opacity="0.82" />
 					</g>
 					<path
@@ -201,13 +232,16 @@
 			<!-- marquee -->
 			<div class="marquee h-screen -z-10">
 				<div class="track">
-					<div class="content_1 text-7xl lg:text-9xl font-bold py-5 text-green-500">films for good — pictures
+					<div class="content_1 text-7xl lg:text-9xl font-bold py-5 text-[#A8CF39] opacity-[0.59]">films for
+						good — pictures
 						with purpose —
 						stories for change — films for good — pictures with purpose</div>
-					<div class="content_2 text-7xl lg:text-9xl font-bold py-5 text-green-500">pictures with purpose —
+					<div class="content_2 text-7xl lg:text-9xl font-bold py-5 text-[#A8CF39] opacity-[0.59]">pictures
+						with purpose —
 						stories for
 						change — films for good — pictures with purpose — stories for change</div>
-					<div class="content_3 text-7xl lg:text-9xl font-bold py-5 text-green-500">stories for change - films
+					<div class="content_3 text-7xl lg:text-9xl font-bold py-5 text-[#A8CF39] opacity-[0.59]">stories for
+						change - films
 						for good -
 						pictures with purpose — stories for change — films for good</div>
 				</div>
@@ -636,6 +670,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="relative">
 			<!-- Modal -->
 			<div id="modal-background"></div>
@@ -738,13 +773,18 @@
 		</section>
 
 		<!--Team Small-->
-		<section name="team_small">
+		<section name="team_small" id="team_small">
 
 
 
 
 		</section>
-
+		<div id="squareContainer">
+			<div id="square">
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+				<script src="square.js"></script>
+			</div>
+		</div>
 
 
 
@@ -783,7 +823,7 @@
 	</main>
 
 	<!--Footer-->
-	<footer class="w-full">
+	<footer class="w-full bg-black" id="footer-js">
 		<div class="footer__wrapper flex flex-col mt-64 z-10 relative max-w-6xl mx-auto">
 			<div class="flex flex-wrap flex-col text-center mb-44">
 				<h3 class="text-5xl font-bold ">Ready?<br>Let's Get Started</h3>
@@ -792,8 +832,8 @@
 				bg-white m-auto">Contact Us</button>
 			</div>
 
-			<div class="flex justify-between m-10 leading-[1.9rem]">
-				<div class="flex flex-wrap flex-col">
+			<div class="flex flex-wrap justify-between m-10 leading-[1.9rem]">
+				<div class="flex flex-wrap flex-col mb-7">
 					<p class="font-bold mb-1">Links</p>
 					<ul class="font-light">
 						<li> <a href="url">Who are we</a></li>
@@ -806,15 +846,15 @@
 
 				</div>
 
-				<div class="flex flex-wrap flex-col justify-between">
-					<div>
+				<div class="flex flex-wrap flex-col justify-between ">
+					<div class="mb-7">
 						<p class="font-bold mb-1">Send a not so serious email</p>
 						<a class="font-light"
 							href="mailto:dostuff@thesmallgreenstudio.com">dostuff@thesmallgreenstudio.com</a>
 					</div>
 
 
-					<div>
+					<div class="mb-7">
 						<p class="font-bold mb-1">Socials</p>
 						<ul class="flex flex-row gap-4 ">
 							<li class="bg-white flex justify-center items-center w-10 h-10 rounded-full drop-shadow-xl">
@@ -831,12 +871,12 @@
 					</div>
 				</div>
 				<div class="flex flex-wrap flex-col justify-between">
-					<div>
+					<div class="mb-7">
 						<p class="font-bold mb-1">Give us a ring</p>
-						<p class="font-light">07397616938</p>
+						<a href="tel:+447897 616938">07397616938</a>
 					</div>
 
-					<div>
+					<div class="mb-7">
 						<p class="font-bold mb-1">Just because</p>
 						<p class="font-light">51.5072 N, 0.1276 W</p>
 						<p class="font-light time-js"> </p>
@@ -871,5 +911,6 @@
 	<script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
 	<script defer src="/dist/script.js"></script>
 </body>
+
 
 </html>
