@@ -21,6 +21,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 // --- ORANGE PANEL ---
+//variables
+// CURSOR
+
 
 
 
@@ -201,7 +204,6 @@ gsap.to(sections, {
 		trigger: ".principles",
 		pin: true,
 		scrub: 0.5,
-		markers: true,
 		end: () => `+=${maxWidth}`,
 		invalidateOnRefresh: true
 	}
@@ -266,39 +268,6 @@ document.querySelector('.intro__date-js').innerHTML = `${prnDt}`;
 
 
 
-//cursor
-//variables
-let maincursor = $(".cursor"),
-	follower = $(".cursor__follower");
-
-let posX = 0,
-	posY = 0,
-	mouseX = 0,
-	mouseY = 0;
-
-//cursor change effect
-TweenMax.to({}, 0.016, {
-	repeat: -1,
-	onRepeat: function () {
-		posX += (mouseX - posX) / 9;
-		posY += (mouseY - posY) / 9;
-
-		TweenMax.set(follower, {
-			css: {
-				left: posX - 20,
-				top: posY - 20
-			}
-		});
-
-		TweenMax.set(maincursor, {
-			css: {
-				left: mouseX,
-				top: mouseY
-			}
-		});
-
-	}
-});
 
 //modal dynamic dom
 
