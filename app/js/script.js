@@ -21,13 +21,67 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 // --- ORANGE PANEL ---
+//variables
+// CURSOR
 
 
 
 
-//how we can help
+
+//footer
+
+setInterval(() => {
+	document.querySelector('.time-js').innerHTML = 'Currently ' + refreshDate(new Date());
+}, 1000)
 
 
+function refreshDate(footertime) {
+	return footertime.toLocaleString('en-GB', {
+		hour: 'numeric',
+		minute: 'numeric',
+		timeZone: 'Europe/London',
+		hourCycle: 'h12'
+
+	});
+}
+
+
+
+
+
+
+function setup() {
+
+	var clientHeight = document.getElementById('footer-js').clientHeight;
+	var clientWidth = document.getElementById('footer-js').clientWidth;
+
+	var cnv = createCanvas(clientWidth, clientHeight);
+	cnv.parent("footer-js");
+	background(0);
+}
+
+
+function windowResized() {
+	sketchWidth = document.getElementById("footer-js").offsetWidth;
+	sketchHeight = document.getElementById("footer-js").offsetHeight;
+	resizeCanvas(sketchWidth, sketchHeight);
+	background(0);
+}
+
+function draw() {
+
+	fill('hsla(120, 100%, 75%, 0.3)');
+	//fill(0,255,0,50);
+	noStroke();
+	ellipse(mouseX, mouseY, 20);
+
+}
+
+
+function mousePressed() {
+	var cnv;
+	background(0);
+}
 
 // menu
 const menu_open = gsap.timeline({
@@ -150,7 +204,6 @@ gsap.to(sections, {
 		trigger: ".principles",
 		pin: true,
 		scrub: 0.5,
-		markers: true,
 		end: () => `+=${maxWidth}`,
 		invalidateOnRefresh: true
 	}
@@ -215,39 +268,6 @@ document.querySelector('.intro__date-js').innerHTML = `${prnDt}`;
 
 
 
-//cursor
-//variables
-let cursor = $(".cursor"),
-	follower = $(".cursor__follower");
-
-let posX = 0,
-	posY = 0,
-	mouseX = 0,
-	mouseY = 0;
-
-//cursor change effect
-TweenMax.to({}, 0.016, {
-	repeat: -1,
-	onRepeat: function () {
-		posX += (mouseX - posX) / 9;
-		posY += (mouseY - posY) / 9;
-
-		TweenMax.set(follower, {
-			css: {
-				left: posX - 20,
-				top: posY - 20
-			}
-		});
-
-		TweenMax.set(cursor, {
-			css: {
-				left: mouseX,
-				top: mouseY
-			}
-		});
-
-	}
-});
 
 //modal dynamic dom
 
@@ -308,6 +328,3 @@ $(".principles__item").on("click", function () {
 	}
 	imageloop();
 });
-
-
-//purpose led projects
