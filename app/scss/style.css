@@ -3,6 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap");
 @tailwind base;
 @tailwind components;
+.a-button:not(.collapsed) {
+  background-color: none !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -1318,6 +1322,7 @@ input[type=radio] {
   height: 18px;
   margin: 0 15px 0 0;
   opacity: 0.4;
+  background-image: url("app/assets/images/input.svg");
   -webkit-transform: translateX(-83px);
           transform: translateX(-83px);
   cursor: pointer;
@@ -1329,6 +1334,7 @@ input[type=radio]:nth-child(5) {
 
 input[type=radio]:checked {
   opacity: 1;
+  width: 30px;
 }
 
 #slider label {

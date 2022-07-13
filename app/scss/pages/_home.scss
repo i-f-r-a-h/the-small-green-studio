@@ -498,6 +498,7 @@ input[type=radio] {
   height: 18px;
   margin: 0 15px 0 0;
   opacity: 0.4;
+    background-image: url('app/assets/images/input.svg');
   transform: translateX(-83px);
   cursor: pointer;
 }
@@ -509,6 +510,7 @@ input[type=radio]:nth-child(5) {
 
 input[type=radio]:checked {
   opacity: 1;
+    width: 30px;
 }
 
 
