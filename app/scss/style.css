@@ -3,6 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap");
 @tailwind base;
 @tailwind components;
+.a-button:not(.collapsed) {
+  background-color: none !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -421,7 +425,7 @@ button {
  */
 body {
   color: #F2EFE8;
-  background-color: #1D1D1D;
+  background-color: #0f0f0f;
   font: normal 125%/1.1 "font-outfit", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
@@ -1300,8 +1304,8 @@ canvas {
 
 #slider {
   position: relative;
-  width: 50%;
-  height: 30vw;
+  width: 70%;
+  height: 35vw;
   margin: 80px auto;
   font-family: 'Helvetica Neue', sans-serif;
   -webkit-perspective: 1400px;
@@ -1318,6 +1322,7 @@ input[type=radio] {
   height: 18px;
   margin: 0 15px 0 0;
   opacity: 0.4;
+  background-image: url("app/assets/images/input.svg");
   -webkit-transform: translateX(-83px);
           transform: translateX(-83px);
   cursor: pointer;
@@ -1329,6 +1334,7 @@ input[type=radio]:nth-child(5) {
 
 input[type=radio]:checked {
   opacity: 1;
+  width: 30px;
 }
 
 #slider label {
@@ -1342,9 +1348,6 @@ input[type=radio]:checked {
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1357,29 +1360,29 @@ input[type=radio]:checked {
   transition: transform 400ms ease, -webkit-transform 400ms ease;
 }
 
-#slide1 {
-  background: tomato;
-}
-
-#slide2 {
+.slide1 {
   background: yellowgreen;
 }
 
-#slide3 {
-  background: dodgerblue;
+.slide2 {
+  background: #E1A325;
 }
 
-#slide4 {
-  background: slateblue;
+.slide3 {
+  background: #2A4D4C;
 }
 
-#slide5 {
-  background: violet;
+.slide4 {
+  background: #008000;
+}
+
+.slide5 {
+  background: #D9D6C3;
 }
 
 /* Slider Functionality */
 /* Active Slide */
-#s1:checked ~ #slide1, #s2:checked ~ #slide2, #s3:checked ~ #slide3, #s4:checked ~ #slide4, #s5:checked ~ #slide5 {
+#s1:checked ~ .slide1, #s2:checked ~ .slide2, #s3:checked ~ .slide3, #s4:checked ~ .slide4, #s5:checked ~ .slide5 {
   -webkit-box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate3d(0%, 0, 0px);
@@ -1387,7 +1390,7 @@ input[type=radio]:checked {
 }
 
 /* Next Slide */
-#s1:checked ~ #slide2, #s2:checked ~ #slide3, #s3:checked ~ #slide4, #s4:checked ~ #slide5, #s5:checked ~ #slide1 {
+#s1:checked ~ .slide2, #s2:checked ~ .slide3, #s3:checked ~ .slide4, #s4:checked ~ .slide5, #s5:checked ~ .slide1 {
   -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate3d(15%, 0, -100px);
@@ -1395,7 +1398,7 @@ input[type=radio]:checked {
 }
 
 /* Next to Next Slide */
-#s1:checked ~ #slide3, #s2:checked ~ #slide4, #s3:checked ~ #slide5, #s4:checked ~ #slide1, #s5:checked ~ #slide2 {
+#s1:checked ~ .slide3, #s2:checked ~ .slide4, #s3:checked ~ .slide5, #s4:checked ~ .slide1, #s5:checked ~ .slide2 {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
   -webkit-transform: translate3d(30%, 0, -250px);
@@ -1403,7 +1406,7 @@ input[type=radio]:checked {
 }
 
 /* Previous to Previous Slide */
-#s1:checked ~ #slide4, #s2:checked ~ #slide5, #s3:checked ~ #slide1, #s4:checked ~ #slide2, #s5:checked ~ #slide3 {
+#s1:checked ~ .slide4, #s2:checked ~ .slide5, #s3:checked ~ .slide1, #s4:checked ~ .slide2, #s5:checked ~ .slide3 {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
   -webkit-transform: translate3d(-30%, 0, -250px);
@@ -1411,11 +1414,15 @@ input[type=radio]:checked {
 }
 
 /* Previous Slide */
-#s1:checked ~ #slide5, #s2:checked ~ #slide1, #s3:checked ~ #slide2, #s4:checked ~ #slide3, #s5:checked ~ #slide4 {
+#s1:checked ~ .slide5, #s2:checked ~ .slide1, #s3:checked ~ .slide2, #s4:checked ~ .slide3, #s5:checked ~ .slide4 {
   -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate3d(-15%, 0, -100px);
           transform: translate3d(-15%, 0, -100px);
+}
+
+.different-font {
+  font-family: "font-over-the-rainbow", "Lucida Sans", Verdana, sans-serif;
 }
 
 html,
