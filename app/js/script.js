@@ -50,39 +50,6 @@ function refreshDate(footertime) {
 
 
 
-function setup() {
-
-	var clientHeight = document.getElementById('footer-js').clientHeight;
-	var clientWidth = document.getElementById('footer-js').clientWidth;
-
-	var cnv = createCanvas(clientWidth, clientHeight);
-	cnv.parent("footer-js");
-	background(0);
-}
-
-
-function windowResized() {
-	sketchWidth = document.getElementById("footer-js").offsetWidth;
-	sketchHeight = document.getElementById("footer-js").offsetHeight;
-	resizeCanvas(sketchWidth, sketchHeight);
-	background(0);
-}
-
-function draw() {
-
-	fill('hsla(120, 100%, 75%, 0.3)');
-	//fill(0,255,0,50);
-	noStroke();
-	ellipse(mouseX, mouseY, 20);
-
-}
-
-
-function mousePressed() {
-	var cnv;
-	background(0);
-}
-
 // menu
 const menu_open = gsap.timeline({
 	paused: "true",
@@ -104,6 +71,7 @@ menu_open.fromTo(
 	},
 	"-=.15"
 );
+
 menu_open.from(
 	".menu-container-1", {
 		duration: 0.5,
@@ -141,7 +109,11 @@ menu_open.from(
 
 function menuOpen() {
 	menu_open.reversed() ? menu_open.play() : menu_open.reverse();
+	$(".menu-container a").on("click", function () {
+		menu_open.reverse();
+	});
 };
+
 
 
 const tl = gsap.timeline({
@@ -171,11 +143,13 @@ tl.to(".hero__content", {
 });
 
 //how we can help
-gsap.registerPlugin(Flip);
+
 gsap.set('.categories__article', {
 	autoAlpha: 0
 })
+
 const sections = gsap.utils.toArray(".principles__item");
+
 let maxWidth = 0;
 
 const getMaxWidth = () => {
@@ -212,6 +186,7 @@ gsap.to(sections, {
 sections.forEach((sct, i) => {
 	const smallTimeline = gsap.timeline();
 	const content = document.querySelector('.categories__wrapper');
+	const viewmore = sct.querySelector('span');
 	const relevantContent = content.querySelector('article.categories__article-' + i);
 
 	ScrollTrigger.create({
@@ -225,9 +200,9 @@ sections.forEach((sct, i) => {
 
 	smallTimeline
 		//.to(elem,{ duration: 0.25, fontSize: "40px", color: "orange"}, 0)  
-		.to(sct, {
+		.to(viewmore, {
 			duration: 0.25,
-			color: "orange"
+			opacity: 1,
 		}, 0)
 		.to(sct, {
 			duration: 0.25,
@@ -243,7 +218,7 @@ sections.forEach((sct, i) => {
 
 
 
-	const modal = document.querySelector('.principles__container');
+
 
 
 	sct.addEventListener("click", () => {
@@ -256,7 +231,9 @@ sections.forEach((sct, i) => {
 
 
 
-
+if ($(".principles__item").css('opacity') == 1) {
+	$(".view-more").css("opacity", 1);
+}
 /// introduction date 
 var prnDt = new Date().toLocaleDateString('en-us', {
 	weekday: 'long'
@@ -328,3 +305,70 @@ $(".principles__item").on("click", function () {
 	}
 	imageloop();
 });
+
+// purpose led projects
+const link = document.querySelectorAll('.accordion-item');
+const linkHoverReveal = document.querySelectorAll('.hover-reveal');
+const linkImages = document.querySelectorAll('.hidden-img');
+
+
+for (let i = 0; i < link.length; i++) {
+	link[i].addEventListener('mousemove', (e) => {
+		linkHoverReveal[i].style.opacity = 1;
+		linkHoverReveal[i].style.transform = `translate(-100%, -50% ) rotate(5deg)`;
+		linkImages[i].style.transform = 'scale(1, 1)';
+		linkHoverReveal[i].style.left = e.clientX + "px";
+	})
+
+	link[i].addEventListener('mouseleave', (e) => {
+		linkHoverReveal[i].style.opacity = 0;
+		linkHoverReveal[i].style.transform = `translate(-50%, -50%) rotate(-5deg)`;
+		linkImages[i].style.transform = 'scale(0.8, 0.8)';
+	})
+}
+
+
+//team
+let team = document.querySelector(".team")
+
+team.onmousemove = (e) => {
+	let bgreveal = document.querySelector(".bgreveal");
+	bgreveal.style.top = `${e.clientY - 100}px`;
+	bgreveal.style.left = `${e.clientX - 100}px`;
+}
+
+
+
+
+
+//footer
+function setup() {
+
+	var clientHeight = document.getElementById('footer-js').clientHeight;
+	var clientWidth = document.getElementById('footer-js').clientWidth;
+	var cnv = createCanvas(clientWidth, clientHeight);
+	cnv.parent("footer-js");
+	background(0);
+}
+
+
+function windowResized() {
+	sketchWidth = document.getElementById("footer-js").offsetWidth;
+	sketchHeight = document.getElementById("footer-js").offsetHeight;
+	resizeCanvas(sketchWidth, sketchHeight);
+	background(0);
+}
+
+function draw() {
+	fill('hsla(120, 100%, 75%, 0.3)');
+	//fill(0,255,0,50);
+	noStroke();
+	ellipse(mouseX, mouseY, 20);
+
+}
+
+
+function mousePressed() {
+	var cnv;
+	background(0);
+}

@@ -55,7 +55,11 @@ menu_open.from(
 
 function menuOpen() {
     menu_open.reversed() ? menu_open.play() : menu_open.reverse();
+    $(".menu-container a").on("click", function () {
+        menu_open.reverse();
+    });
 };
+
 
 
 const tl = gsap.timeline({
@@ -151,3 +155,14 @@ $(".team-js").on("click", function () {
         }
     });
 });
+
+//gallery
+// gsap.from(".reel", {
+//     scrollTrigger: {
+//         trigger: ".reel",
+//         toggleActions: "restart pause reverse pause"
+//     },
+//     y: -200,
+//     opacity: 0,
+//     duration: 2
+// })
