@@ -359,6 +359,7 @@ template {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /**
@@ -1315,7 +1316,7 @@ canvas {
 }
 
 input[type=radio] {
-  position: relative;
+  position: absolute;
   top: 108%;
   left: 50%;
   width: 18px;
@@ -1387,6 +1388,7 @@ input[type=radio]:checked {
           box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate3d(0%, 0, 0px);
           transform: translate3d(0%, 0, 0px);
+  position: absolute;
 }
 
 /* Next Slide */
@@ -1395,6 +1397,7 @@ input[type=radio]:checked {
           box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate3d(15%, 0, -100px);
           transform: translate3d(15%, 0, -100px);
+  position: absolute;
 }
 
 /* Next to Next Slide */
@@ -1403,6 +1406,7 @@ input[type=radio]:checked {
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
   -webkit-transform: translate3d(30%, 0, -250px);
           transform: translate3d(30%, 0, -250px);
+  position: absolute;
 }
 
 /* Previous to Previous Slide */
@@ -1411,6 +1415,7 @@ input[type=radio]:checked {
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
   -webkit-transform: translate3d(-30%, 0, -250px);
           transform: translate3d(-30%, 0, -250px);
+  position: absolute;
 }
 
 /* Previous Slide */
@@ -1419,6 +1424,7 @@ input[type=radio]:checked {
           box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
   -webkit-transform: translate3d(-15%, 0, -100px);
           transform: translate3d(-15%, 0, -100px);
+  position: absolute;
 }
 
 .different-font {
@@ -1531,5 +1537,124 @@ body.active {
   position: relative;
   border-radius: 20px;
   margin-right: 20px;
+}
+
+.card {
+  margin-left: -18em;
+  -webkit-transition: margin-left 200ms;
+  transition: margin-left 200ms;
+  border-radius: 1rem;
+}
+
+.card:hover + .card {
+  margin-left: -1em;
+}
+
+.reel {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500%;
+  height: 450px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-animation: reel 70s linear infinite both;
+          animation: reel 70s linear infinite both;
+}
+
+.reel:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+@-webkit-keyframes reel {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+}
+
+@keyframes reel {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+}
+
+.reel .pic {
+  background-position: center;
+  background-size: cover;
+  width: 170px;
+  height: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.reel .pic:nth-child(odd) {
+  width: 300px;
+  height: 200px;
+}
+
+.reel .pic:hover {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+  border-radius: 2rem;
+}
+
+.reel .pic0 {
+  background-image: url(/dist/assets/images/gallery1.jpg);
+}
+
+.reel .pic1 {
+  background-image: url(/dist/assets/images/gallery2.jpg);
+}
+
+.reel .pic2 {
+  background-image: url(/dist/assets/images/gallery3.jpg);
+}
+
+.reel .pic3 {
+  background-image: url(/dist/assets/images/gallery4.jpg);
+}
+
+.reel .pic4 {
+  background-image: url(/dist/assets/images/gallery5.jpg);
+}
+
+.reel .pic5 {
+  background-image: url(/dist/assets/images/gallery6.jpg);
+}
+
+.reel .pic6 {
+  background-image: url(/dist/assets/images/gallery7.jpg);
+}
+
+.reel .pic7 {
+  background-image: url(/dist/assets/images/gallery8.jpg);
+}
+
+.reel .pic8 {
+  background-image: url(/dist/assets/images/gallery9.jpg);
+}
+
+.reel .pic9 {
+  background-image: url(/dist/assets/images/gallery4.jpg);
 }
 /*# sourceMappingURL=style.css.map */

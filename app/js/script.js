@@ -54,7 +54,6 @@ function setup() {
 
 	var clientHeight = document.getElementById('footer-js').clientHeight;
 	var clientWidth = document.getElementById('footer-js').clientWidth;
-
 	var cnv = createCanvas(clientWidth, clientHeight);
 	cnv.parent("footer-js");
 	background(0);
@@ -69,7 +68,6 @@ function windowResized() {
 }
 
 function draw() {
-
 	fill('hsla(120, 100%, 75%, 0.3)');
 	//fill(0,255,0,50);
 	noStroke();
@@ -104,6 +102,7 @@ menu_open.fromTo(
 	},
 	"-=.15"
 );
+
 menu_open.from(
 	".menu-container-1", {
 		duration: 0.5,
@@ -141,7 +140,11 @@ menu_open.from(
 
 function menuOpen() {
 	menu_open.reversed() ? menu_open.play() : menu_open.reverse();
+	$(".menu-container a").on("click", function () {
+		menu_open.reverse();
+	});
 };
+
 
 
 const tl = gsap.timeline({
