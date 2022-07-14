@@ -603,8 +603,7 @@ input[type=radio]:checked {
 	position: absolute;
 	width: 300px;
 	height: 400px;
-	top: 50%;
-	left: 50%;
+
 	pointer-events: none;
 	transform: translate(-50%, -50%);
 	overflow: hidden;

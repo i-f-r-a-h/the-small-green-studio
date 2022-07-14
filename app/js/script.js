@@ -328,6 +328,15 @@ for (let i = 0; i < link.length; i++) {
 }
 
 
+//team
+let team = document.querySelector(".team")
+
+team.onmousemove = (e) => {
+	let bgreveal = document.querySelector(".bgreveal");
+	bgreveal.style.top = `${e.clientY - 100}px`;
+	bgreveal.style.left = `${e.clientX - 100}px`;
+}
+
 
 
 
