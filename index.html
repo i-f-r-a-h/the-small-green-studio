@@ -26,14 +26,15 @@
 
 
 	<link defer rel="stylesheet" href="assets/css/blobz.min.css">
+
+
+	<!-- p5 -->
+
 </head>
 
 <body>
 	<!-- cursor -->
-	<div class="cursor absolute  w-2 h-2 rounded-full z-[9999] scale-75 select-none pointer-events-none">
-	</div>
-	<div class="cursor__follower absolute w-10 h-10 rounded-full z-[9999] select-none pointer-events-none">
-	</div>
+
 	<!--Header-->
 	<header class="z-50">
 
@@ -47,7 +48,7 @@
 					<ellipse cx="16.0893" cy="10.947" rx="8.69478" ry="8.65595" fill="#33FF00" fill-opacity="0.59" />
 					<path d="M12.0148 21.832L11.5371 22.364L12.64 22.0922L12.0148 21.832Z" fill="#D77706" />
 					<g style="mix-blend-mode:hard-light">
-						<ellipse cx="8.98189" cy="8.65595" rx="8.69478" ry="8.65595" fill="#5BDDBE"
+						<ellipse cx="8.98189" cy="8.65595" rx="8.69478" ry="8.65595" fill="#5bdda0"
 							fill-opacity="0.82" />
 					</g>
 					<path
@@ -57,15 +58,14 @@
 						d="M12.3173 22.0456C12.5309 21.7893 17.2272 24.3374 17.2272 24.3374L15.235 27.819C15.235 27.819 15.315 24.1389 12.8088 23.1901C10.3025 22.2413 12.1038 22.3019 12.3173 22.0456Z"
 						fill="#D77706" />
 				</svg>
-				<!-- <span class="font-semibold text-sm tracking-tight ml-1 hidden md:block">The Small Green
-					Studio</span> -->
+				<img class="max-w-none w-24 md:block hidden " src="app\assets\images\logo_text.svg" alt="" srcset="">
 
 			</div>
 		</a>
 
 		<div class="menu-items mr-4 md:mr-9">
 			<div class="hidden md:block">
-				<a href="#" class="inline-block px-6 py-2.5 bg-yellow-500 text-black font-medium text-sm leading-tight 
+				<a href="mailto:dostuff@thesmallgreenstudio.com" class="inline-block px-6 py-2.5 bg-yellow-500 text-black font-medium text-sm leading-tight 
 						rounded-full shadow-md hover:bg-yellow-600 hover:shadow-lg focus:bg-yellow-600 focus:shadow-lg focus:outline-none
 						focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out">Contact
 					Us</a>
@@ -96,27 +96,31 @@
 			<div></div>
 			<div class="menu-container-header">
 				<ul>
-					<li><a href="about.html" target="_blank"><span>Who are we</span></a></li>
-					<li><span>How we can help</span></li>
-					<li><span>Purpose led projects</span></li>
-					<li class="md:hidden"><span>contact</span></li>
+					<li><a href="about.html"><span>Who are we</span></a></li>
+					<li class="menu-close"><span> <a href="#how_we_can_help"> How we can help</a></span></li>
+					<li class="menu-close"><a href="#purpose_led"><span> Purpose led projects </span></a></li>
+					<li class="md:hidden"><span> <a href="mailto:dostuff@thesmallgreenstudio.com"> contact</a></span>
+					</li>
 				</ul>
 			</div>
 			<div class="menu-container-footer">
 				<ul class="hidden md:block">
-					<li id="special-li">Latest work</li>
-					<li><span>Bird & wild Coffee</span></li>
-					<li><span>Pedrick’s Zero Waste Shop</span></li>
-					<li><span>The Earth Law Center</span></li>
-					<li><span>Westerham Brewery</span></li>
+					<li id="special-li">Featured services</li>
+					<li><span>Web & Editorial</span></li>
+					<li><span>Content Creation</span></li>
+					<li><span>News & Reactive</span></li>
+					<li><span>Outdoor and Sports</span></li>
 				</ul>
 				<ul class="flex flex-row gap-4 mt-4 md:hidden">
 					<li class="bg-white flex justify-center items-center w-10 h-10 rounded-full drop-shadow-xl"><a
-							href="#"><i class="fa-brands fa-instagram text-black text-2xl"></i></a>
+							href="https://www.instagram.com/thesmallgreenstudio/"><i
+								class="fa-brands fa-instagram text-black text-2xl"></i></a>
 					</li>
-					<li class="bg-white flex justify-center items-center  w-10 h-10 rounded-full"><a href="#"><i
+					<li class="bg-white flex justify-center items-center  w-10 h-10 rounded-full"><a
+							href="https://www.youtube.com/channel/UCWl_P2Jdn0SPFJvH2aHpaLw/featured"><i
 								class="fa-brands fa-youtube text-black text-2xl"></i></a></li>
-					<li class="bg-white flex justify-center items-center  w-10 h-10 rounded-full"><a href="#"><i
+					<li class="bg-white flex justify-center items-center  w-10 h-10 rounded-full"><a
+							href="https://www.linkedin.com/company/the-small-green-studio/"><i
 								class="fa-brands fa-linkedin text-black text-2xl"></i></a></li>
 				</ul>
 			</div>
@@ -124,11 +128,14 @@
 		<div class="md:!flex menu-container-2">
 			<div class="menu-container-footer">
 				<ul>
-					<li><span>Email us</span></li>
-					<li><span>Give us a ring</span></li>
-					<li><span>Youtube</span></li>
-					<li><span>Linkedin</span></li>
-					<li><span>Instagram</span></li>
+					<li><span> <a href="mailto:dostuff@thesmallgreenstudio.com"> Email us</a></span></li>
+					<li><span> <a href="tel:+447897 616938"> Give us a ring </a></span></li>
+					<li><span><a
+								href="https://www.youtube.com/channel/UCWl_P2Jdn0SPFJvH2aHpaLw/featured">Youtube</a></span>
+					</li>
+					<li><span><a href="https://www.linkedin.com/company/the-small-green-studio/"> Linkedin</a></span>
+					</li>
+					<li><span><a href="https://www.instagram.com/thesmallgreenstudio/"> Instagram </a></span></li>
 				</ul>
 			</div>
 		</div>
@@ -141,7 +148,9 @@
 		<section>
 
 			<!-- hero content -->
+
 			<div class="hero__content h-screen opacity-0 sticky z-20 flex flex-row align-bottom w-full">
+
 				<div class="flex flex-col basis-1/2 justify-center ml-20">
 					<h1 class="hero__title lg:text-7xl max-w-0"><span class="block">The</span><span
 							class="uppercase">Purpose</span>led Production Collective
@@ -151,7 +160,7 @@
 					<div class="hero__cta flex flex-row gap-7 mt-10">
 						<a href="about.html" class="px-6 py-2.5 border-solid border-2 border-white text-white font-medium text-sm leading-tight 
 						rounded-full shadow-md  hover:shadow-lgt">About Us</a>
-						<a href="mailto:dostuff@thesmallgreenstudio.com" class="px-6 py-2.5 bg-green-900 text-white font-medium text-sm leading-tight 
+						<a href="#" class="px-6 py-2.5 bg-green-900 text-white font-medium text-sm leading-tight 
 						rounded-full shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none
 						focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">View Work</a>
 					</div>
@@ -179,6 +188,7 @@
 				</a>
 			</div>
 
+
 			<!-- video -->
 			<div class="panel orangeWrapper">
 				<!-- hero content -->
@@ -193,13 +203,16 @@
 			<!-- marquee -->
 			<div class="marquee h-screen -z-10">
 				<div class="track">
-					<div class="content_1 text-7xl lg:text-9xl font-bold py-5 text-green-500">films for good — pictures
+					<div class="content_1 text-7xl lg:text-9xl font-bold py-5 text-[#A8CF39] opacity-[0.59]">films for
+						good — pictures
 						with purpose —
 						stories for change — films for good — pictures with purpose</div>
-					<div class="content_2 text-7xl lg:text-9xl font-bold py-5 text-green-500">pictures with purpose —
+					<div class="content_2 text-7xl lg:text-9xl font-bold py-5 text-[#A8CF39] opacity-[0.59]">pictures
+						with purpose —
 						stories for
 						change — films for good — pictures with purpose — stories for change</div>
-					<div class="content_3 text-7xl lg:text-9xl font-bold py-5 text-green-500">stories for change - films
+					<div class="content_3 text-7xl lg:text-9xl font-bold py-5 text-[#A8CF39] opacity-[0.59]">stories for
+						change - films
 						for good -
 						pictures with purpose — stories for change — films for good</div>
 				</div>
@@ -212,29 +225,44 @@
 
 		<!-- introduction -->
 
-		<section name="introduction ">
-			<div class="introduction__wrapper bg-[#155000] w-full h-full rounded-3xl">
+		<section name="introduction"
+			class="relative mt-8 bg-[#155000] w-full h-[85vh] rounded-3xl flex items-center flex-col">
+			<div class="mt-24 mx-auto">
 
-				<p class="text-center pt-28 py-4 text-[#00FF66]">Hello, Happy <span class="intro__date-js">{insert
+				<p class="text-center text-[#30ffa9]">Hello, Happy <span class="intro__date-js">{insert
 						date}</span>!</p>
-				<h2 class="text-center mx-32 mt-10 text-5xl uppercase  leading-[5rem]   ">We are a small studio
-					<span><img src="" alt="" srcset=""></span>which means we can
-					respond to your brief <span class="line-through ">quickly</span>-or write one with you to get <span
-						class="line-through">cracking</span>
-					right away.</h2>
-
-				<div class="text-center align-middle">
-					<svg class="ml-20  pb-16 " width="347" height="239" viewBox="0 0 347 239" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-
-						<path
-							d="M8.82001 41.0537C2.91482 42.0521 -0.809788 47.9888 1.15155 53.6476C11.1868 82.6012 27.0476 110.074 47.9519 134.637C71.4201 162.213 100.722 185.509 133.964 203.019C167.205 220.528 203.646 231.861 240.93 236.285C274.309 240.246 307.698 238.59 339.367 231.437C345.251 230.108 348.365 223.763 346.058 218.189L258.547 6.71222C256.764 2.40283 252.239 -0.101692 247.64 0.675789L8.82001 41.0537Z"
-							fill="#103901" />
-						<text class="text-1xl w-1/2 " x="80" y="50" fill="white" transform="rotate(30 20,40)">not good
-							enough,
-							<a class="learn_more text-yellow-500 underline " href="#"> learn more</a></text>
-					</svg>
+				<div class="text-center max-w-5xl mt-10 text-5xl uppercase relative leading-[5rem]   ">
+					<h2>We are a small studio <span class="absolute -top-12"><img class="absolute max-w-none inline"
+								src="/dist/assets/images/intro.svg" alt="" srcset=""></span></h2>
+					<h2>which means we can respond to your brief <span
+							class="link link--helike"><span>quickly</span></span>-or
+						write one with you to get
+						<span href="#" class="link link--carme">
+							<span>cracking</span>
+							<svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%"
+								height="95">
+								<path
+									d="M1.5791 51.9603C5.69034 51.9603 10.6132 52.4346 14.3641 50.4394C18.1728 48.4135 20.6019 41.9476 22.4914 38.3198C26.454 30.7116 30.9379 24.2837 38.3657 19.6414C39.9426 18.6558 43.133 16.5136 45.1622 17.1224C46.8072 17.6159 47.5448 20.3316 47.9663 21.6375C50.5372 29.6023 52.2474 37.9451 54.1925 46.0669C56.9504 57.5824 58.4905 70.5567 63.1277 81.5702C65.204 86.5015 68.4227 81.2679 70.352 78.7185C80.1757 65.7372 88.3934 49.8531 100.627 38.8426C102.258 37.375 103.85 43.2606 104.239 44.0707C106.628 49.0418 111.055 51.5248 116.692 51.0098C131.831 49.6265 146.523 39.0157 158.516 30.6203C170.668 22.1144 181.788 12.1432 194.162 3.95716C201.728 -1.04809 201.521 4.46426 201.767 11.4666C202.17 22.9757 202.129 34.5882 203.097 46.0669C203.84 54.8756 204.034 59.2236 212.888 53.8614C219.009 50.1543 221.555 47.1653 224.01 55.62C225.042 59.1751 227.356 79.5675 234.181 74.5836C241.521 69.2225 246.464 60.5852 252.431 53.8614C255.801 50.0646 261.834 42.0899 267.45 41.4091C275.119 40.4795 279.302 61.5573 282.136 66.694C285.008 71.8996 288.905 64.1227 292.497 62.7492C304.113 58.3079 312.697 71.7103 318.59 79.6216C319.161 80.3884 324.959 89.1371 324.959 84.4694"
+									pathLength="1" /></svg>
+						</span>
+						right away.</h2>
 				</div>
+
+
+				<a class="flex mt-[-8%] ml-[-4%] w-60">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%"
+						id="blobSvg" style="opacity: 1;">
+						<path id="blob" fill="#eab308" style="opacity: 1;">
+							<animate attributeName="d" dur="15300ms" repeatCount="indefinite"
+								values="M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;M453.78747,319.98894Q416.97789,389.97789,353.96683,436.87838Q290.95577,483.77887,223.95577,447.43366Q156.95577,411.08845,105.64373,365.97789Q54.33169,320.86732,62.67444,252.61056Q71.01719,184.3538,113.01965,135.21007Q155.02211,86.06634,220.52211,66.46683Q286.02211,46.86732,335.5,91.94472Q384.97789,137.02211,437.78747,193.51106Q490.59704,250,453.78747,319.98894Z;M411.39826,313.90633Q402.59677,377.81265,342.92059,407.63957Q283.24442,437.46649,215.13648,432.5428Q147.02853,427.61911,82.23325,380.9572Q17.43796,334.29529,20.45223,250.83809Q23.46649,167.38089,82.5856,115.05707Q141.70471,62.73325,212.19045,63.73015Q282.67618,64.72705,352.67308,84.79839Q422.66998,104.86972,421.43486,177.43486Q420.19974,250,411.39826,313.90633Z;M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;">
+							</animate>
+						</path>
+						<text class="text-4xl" fill="white" x="50%" y="45%" dominant-baseline="middle"
+							text-anchor="middle">Not good enough,</text>
+						<text class="text-4xl underline" fill="##155000" x="50%" y="55%" dominant-baseline="middle"
+							text-anchor="middle">Learn more</text>
+					</svg>
+				</a>
 			</div>
 		</section>
 
@@ -242,7 +270,7 @@
 
 
 		<!-- What makes us different -->
-		<section class="container py-24">
+		<section class="container py-24 mb-20">
 
 			<div class="projects_wrapper py-12">
 				<div class="our-team__title">
@@ -253,58 +281,133 @@
 				</div>
 			</div>
 
+			<section id="slider">
+				<input type="radio" name="slider" id="s1" checked>
+				<input type="radio" name="slider" id="s2">
+				<input type="radio" name="slider" id="s3">
+				<input type="radio" name="slider" id="s4">
+				<input type="radio" name="slider" id="s5">
 
-			<div class="slider">
-				<input type="radio" name="testimonial" id="t-1">
-				<input type="radio" name="testimonial" id="t-2">
-				<input type="radio" name="testimonial" id="t-3" checked>
-				<input type="radio" name="testimonial" id="t-4">
-				<input type="radio" name="testimonial" id="t-5">
-				<div class="testimonials">
-					<label class="item" for="t-1">
-						<img src="https://dummyimage.com/150" alt="picture">
-						<p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown
-							aliqua, retro
-							synth master cleanse."</p>
-						<h2>- Princy, Web Developer</h2>
-					</label>
-					<label class="item" for="t-2">
-						<img src="https://dummyimage.com/150" alt="picture">
-						<p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown
-							aliqua, retro
-							synth master cleanse."</p>
-						<h2>- Princy, Web Developer</h2>
-					</label>
-					<label class="item" for="t-3">
-						<img src="https://dummyimage.com/150" alt="picture">
-						<p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown
-							aliqua, retro
-							synth master cleanse."</p>
-						<h2>- Princy, Web Developer</h2>
-					</label>
-					<label class="item" for="t-4">
-						<img src="https://dummyimage.com/150" alt="picture">
-						<p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown
-							aliqua, retro
-							synth master cleanse."</p>
-						<h2>- Princy, Web Developer</h2>
-					</label>
-					<label class="item" for="t-5">
-						<img src="https://dummyimage.com/150" alt="picture">
-						<p>"Raw denim you probably haven't heard of them jean short austin. Nesciunt tofu stumptown
-							aliqua, retro
-							synth master cleanse."</p>
-						<h2>- Princy, Web Developer</h2>
-					</label>
-				</div>
-				<div class="dots">
-					<label for="t-1"></label>
-					<label for="t-2"></label>
-					<label for="t-3"></label>
-					<label for="t-4"></label>
-					<label for="t-5"></label>
-				</div>
-			</div>
+				<label for="s1" class="slide1 grid grid-flow-col auto-cols-fr px-16 justify-items-center">
+					<!-- index -->
+					<span class="absolute top-6 right-16 text-lg">1/5</span>
+					<!-- image -->
+					<img src="app/assets/images/how-we-can-help/1.svg">
+					<!-- content -->
+					<div>
+						<h3 class="text-4xl font-normal max-w-[23rem]">Our working mantra is <span
+								class="different-font">"do
+								good, start
+								small”</span>. Slide through
+							some examples,
+							we’re not perfect
+							but
+							it’s a start, a small
+							start.</h3>
+					</div>
+					<!-- border -->
+					<!-- <svg class="absolute" width="22" height="20" viewBox="0 0 22 20" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<line x1="2" y1="18.5" x2="22" y2="18.5" stroke="white" stroke-width="3" />
+						<line x1="1.5" y1="20" x2="1.5" stroke="white" stroke-width="3" />
+					</svg> -->
+				</label>
+				<label for="s2" class="slide2 grid grid-flow-col auto-cols-fr px-24 justify-items-center">
+					<!-- index -->
+					<span class="absolute top-6 right-16 text-lg">2/5</span>
+					<!-- content -->
+					<div class="h-[60%]">
+						<h3 class="text-5xl different-font uppercase mb-8">Our Workspaces.</h3>
+						<ul class="text-base font-normal list-disc flex flex-col gap-3 ml-4">
+							<li>We don’t print in our workspaces. We just don’t. There’s no need. And, if there’s a
+								digital option to doing
+								something, we’ll do our best to adopt it.</li>
+							<li>All of our lighting is LED and power is controlled to switch off when not in use.</li>
+						</ul>
+					</div>
+					<!-- image -->
+					<img src="app/assets/images/how-we-can-help/2.svg">
+				</label>
+				<label for="s3" class="slide3 grid grid-cols-[1fr,1.3fr] px-24 justify-items-center">
+					<!-- index -->
+					<span class="absolute top-6 right-16 text-lg">3/5</span>
+					<!-- image -->
+					<img src="app/assets/images/how-we-can-help/3.svg">
+					<!-- content -->
+					<div>
+						<h3 class="text-5xl different-font uppercase mb-8">Our operations.</h3>
+						<ul class="text-base font-normal list-disc flex flex-col gap-2 ml-4">
+							<li>We use ecosia as our search engine. They plant trees the more you use it.<a
+									href="https://info.ecosia.org/" class="underline">Make one change today and search
+									with ecosia</a></li>
+							<li>Our business cards are reusable and biodegradable. It uses NFC to transfer contact
+								details.<a href="https://v1ce.co/" class="underline">Check them out
+									here.</a></li>
+							<li>
+								If we must order from Amazon, we consolidate the deliveries and plan ahead. We ensure
+								that reduced packaging is
+								activated and that charitable giving is on for all purchases. We then recycle whatever’s
+								left. Obvs.
+							</li>
+						</ul>
+					</div>
+
+				</label>
+				<label for="s4" class="slide4 grid grid-flow-col auto-cols-fr px-24 justify-items-center">
+					<!-- index -->
+					<span class="absolute top-6 right-16 text-lg">4/5</span>
+					<!-- content -->
+					<div>
+						<h3 class="text-5xl different-font uppercase mb-8">Our Production.</h3>
+						<ul class="text-base font-normal list-disc flex flex-col gap-3 ml-4">
+							<li>Traditional set lighting uses huge amounts of power. When we’re scaling up productions,
+								we use <a href="https://www.greenkit.london/" class="underline">Greenkit</a></li>
+							<li>When setting up events there’s a big opportunity to make large-scale decisions for the
+								better. Eg. Water on
+								tap and not plastic bottles, encouraging delegates to take pictures and screenshots
+								rather than providing
+								paper, white boards instead of flipcharts, plant based menu through local providers,
+								carpooling or grouped
+								transport arrangements for delegates.</li>
+						</ul>
+					</div>
+					<!-- image -->
+					<img src="app/assets/images/how-we-can-help/4.svg">
+
+
+				</label>
+				<label for="s5" class="slide5 grid grid-flow-col auto-cols-fr px-24 justify-items-center">
+					<!-- index -->
+					<span class="absolute top-6 right-16 text-lg">5/5</span>
+
+
+					<!-- content -->
+					<div>
+						<h3 class="text-5xl different-font uppercase mb-8 text-black">Our Travels.</h3>
+						<ul class="text-base font-normal list-disc flex flex-col gap-3 ml-4 text-black">
+							<li>We always travel on public transport around London and major European cities. Or on two
+								wheels if the weather
+								is bearable. We’re looking at hybrid vehicles to transport our kit and crew to larger
+								shoots.</li>
+							<li>Flying is sometimes necessary, but not until we've ensured we couldn't resource more
+								locally. In Europe we
+								use Easyjet because they're the only company to fully offset their carbon and they
+								operate <a href="https://www.easyjet.com/en/sustainability" class="underline">the most
+									fuel
+									efficient aircraft</a>t. They also support ways to combat CO2 emissions more
+								generally and have been for 20
+								years.
+								Excessive flying is still not ok.</li>
+						</ul>
+					</div>
+
+					<!-- image -->
+					<img src="app/assets/images/how-we-can-help/5.svg">
+
+
+				</label>
+			</section>
+
 		</section>
 
 
@@ -312,7 +415,7 @@
 		<section name="video_reel" class="w-full h-screen relative mb-72">
 			<div>
 				<img class="object-fill w-full	h-screen" src="app\assets\images\background_img.png" alt="">
-				<div class="absolute bottom-3/4 left-2/4	 h-16 w-12">
+				<div class="absolute bottom-3/4 left-2/4	 h-17 w-12">
 					<svg width="570" height="118" viewBox="0 0 570 118" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M27.4047 95.0052C27.4047 87.489 26.4711 78.517 31.2974 72.1207C40.1107 60.4404 59.9325 58.3246 73.1145 56.9038C93.1088 54.7487 113.966 53.532 133.628 58.5552C137.989 59.6692 151.948 62.0228 153.741 67.4023"
@@ -384,7 +487,7 @@
 							stroke="white" stroke-width="3" stroke-linecap="round" />
 					</svg>
 				</div>
-				<div class="absolute bottom-1/3	 left-1/3">
+				<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
 					<video class="rounded-lg hidden md:block" width="600" height="338" autoplay loop playsinline muted>
 						<source src="app/assets/videos/SiteLoop_2.webm" type="video/webm">
 						Your browser does not support the video tag.
@@ -402,7 +505,7 @@
 
 				<div class="h-40 overflow-hidden relative bg-[#2A4D4C] rotate-3 mt-24 w-screen flex items-center">
 					<div class="track">
-						<div class="content_1  lg:text-6xl font-['Kdam Thmor Pro', sans-serif] !text-white">Video —
+						<div class="content_2  lg:text-6xl font-['Kdam Thmor Pro', sans-serif] !text-white">Video —
 							photography — event capture — social media — broadcast — video — photography</div>
 					</div>
 				</div>
@@ -414,61 +517,96 @@
 
 
 		<!-- how we can help -->
-		<!-- issues -->
-		<!-- on scroll cursor label moves with scroll bar -->
-		<section class="principles py-10">
+		<section class="principles py-10" id="how_we_can_help">
 			<div class="principles__container content-container">
 
 				<div class="principles__scroll pt-8">
 					<!-- title -->
 					<h2 class="title text-6xl font-bold pb-10 pl-20">How we can help</h2>
-					<div class="principles__counter">
-						<span class="principles__current w-2/3 ">1</span> /
-						<span class="principles__total">10</span>
-					</div>
+
 
 					<!-- gallery -->
 					<div class="principles__list mb-14 pt-4">
-						<div class="principles__item opacity-25" id="item-video" data-type='[0,1,2]' data-length="3"
+						<div class="principles__item opacity-5" id="item-video" data-type='[0,1,2]' data-length="2"
 							data-index="0">
+							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+								more <i class="align-middle fa-solid fa-arrow-right"></i>
+							</span>
 							<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
 								<source src="/app/assets/images/GALLERY/narrative_1.mp4" type="video/mp4">
 							</video>
 						</div>
-						<div class="principles__item opacity-25" data-type='[1,2]' data-length="2" data-index="1">
+						<div class="principles__item opacity-5" data-type='[1,2]' data-length="2" data-index="1">
+							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+								more <i class="align-middle fa-solid fa-arrow-right"></i>
+							</span>
 							<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
 								<source src="/app/assets/images/GALLERY/news_1.mp4" type="video/mp4">
 							</video>
 						</div>
-						<div class="principles__item opacity-25" data-length="8" data-index="2">
+						<div class="principles__item opacity-5" data-length="8" data-index="2">
+							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+								more <i class="align-middle fa-solid fa-arrow-right"></i>
+							</span>
 							<img class="rounded-lg object-cover h-full w-full w-"
 								src="/app/assets/images/GALLERY/2-0.webp" alt="" srcset="">
 						</div>
-						<div class="principles__item opacity-25" data-length="2" data-index="3">
+						<div class="principles__item opacity-5" data-length="2" data-index="3">
+							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+								more <i class="align-middle fa-solid fa-arrow-right"></i>
+							</span>
 							<img class="rounded-lg object-cover h-full w-full" src="/app/assets/images/GALLERY/3-0.webp"
 								alt="" srcset="">
 						</div>
-						<div class="principles__item opacity-25" data-length="2" data-index="3">
+						<div class="principles__item opacity-5" data-length="2" data-index="3">
+							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+								more <i class="align-middle fa-solid fa-arrow-right"></i>
+							</span>
 							<img class="rounded-lg object-cover h-full w-full"
 								src="/app/assets/images/GALLERY/conference_1.webp" alt="" srcset="">
 						</div>
-						<div class="principles__item opacity-25">
+						<div class="principles__item opacity-5">
+							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+								more <i class="align-middle fa-solid fa-arrow-right"></i>
+							</span>
 							<img class="rounded-lg object-cover h-full w-full"
 								src="/app/assets/images/GALLERY/outdoor_1.webp" alt="" srcset="">
 						</div>
-						<div class="principles__item opacity-25">
+						<div class="principles__item opacity-5">
+							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+								more <i class="align-middle fa-solid fa-arrow-right"></i>
+							</span>
 							<img class="rounded-lg object-cover h-full w-full"
 								src="/app/assets/images/GALLERY/channel_1.jpg" alt="" srcset="">
 						</div>
-						<div class="principles__item opacity-25">
+						<div class="principles__item opacity-5">
+							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+								more <i class="align-middle fa-solid fa-arrow-right"></i>
+							</span>
 							<img class="rounded-lg object-cover h-full w-full"
 								src="/app/assets/images/GALLERY/content_1.jpg" alt="" srcset="">
 						</div>
-						<div class="principles__item opacity-25">
+						<div class="principles__item opacity-5">
+							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+								more <i class="align-middle fa-solid fa-arrow-right"></i>
+							</span>
 							<img class="rounded-lg object-cover h-full w-full"
 								src="/app/assets/images/GALLERY/pod_1.jpg" alt="" srcset="">
 						</div>
-						<div class="principles__item opacity-25">
+						<div class="principles__item opacity-5">
+							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+								more <i class="align-middle fa-solid fa-arrow-right"></i>
+							</span>
 							<img class="rounded-lg object-cover h-full w-full"
 								src="/app/assets/images/GALLERY/live_1.webp" alt="" srcset="">
 						</div>
@@ -477,9 +615,9 @@
 					<!-- content -->
 					<div class="categories__wrapper overflow-hidden pl-20">
 						<!-- video -->
-						<article
-							class="categories__article categories__article-0 opacity-25 absolute opacity-100 active:opacity-100"
+						<article class="categories__article categories__article-0 opacity-5 absolute active:opacity-100"
 							data-length="3" data-index="0" data-video="">
+
 							<h3 class="text-xl font-medium mb-1">Video</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-3">Narrative</h2>
 							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
@@ -488,8 +626,7 @@
 								get the best out of our contributors.When we combine all this with cinema and top notch
 								sound design, the results are memorable and magical.</p>
 						</article>
-						<article
-							class="categories__article categories__article-1 opacity-25 absolute active:opacity-100"
+						<article class="categories__article categories__article-1 opacity-5 absolute active:opacity-100"
 							data-length="2" data-index="2">
 							<h3 class="text-xl font-medium mb-1">Video</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-3">News & Reactive</h2>
@@ -502,8 +639,7 @@
 						</article>
 
 						<!-- photography -->
-						<article
-							class="categories__article categories__article-2 opacity-25 absolute active:opacity-100"
+						<article class="categories__article categories__article-2 opacity-5 absolute active:opacity-100"
 							data-length="8" data-index="3">
 							<h3 class="text-xl font-medium mb-1">photography</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-3">Teams Shots</h2>
@@ -512,8 +648,7 @@
 								brands refresh their photography in light of home and flexible working arrangements. Set
 								your brand free with team shots that reflect this.</p>
 						</article>
-						<article
-							class="categories__article categories__article-3 opacity-25 absolute active:opacity-100"
+						<article class="categories__article categories__article-3 opacity-5 absolute active:opacity-100"
 							data-length="2" data-index="3">
 							<h3 class="text-xl font-medium mb-1">photography</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-3">Web & Editorial</h2>
@@ -527,7 +662,7 @@
 
 						<!-- Event Capture -->
 						<article
-							class="categories__article categories__article-4 opacity-25 absolute active:opacity-100">
+							class="categories__article categories__article-4 opacity-5 absolute active:opacity-100">
 							<h3 class="text-xl font-medium mb-1">Event Capture</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-3">Conferences, town halls,
 								AGM</h2>
@@ -540,7 +675,7 @@
 							</p>
 						</article>
 						<article
-							class="categories__article categories__article-5 opacity-25 absolute active:opacity-100">
+							class="categories__article categories__article-5 opacity-5 absolute active:opacity-100">
 							<h3 class="text-xl font-medium mb-1">Event Capture</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-3">Outdoor and Sports
 							</h2>
@@ -555,7 +690,7 @@
 
 						<!-- Social media -->
 						<article
-							class="categories__article categories__article-6 opacity-25 absolute active:opacity-100">
+							class="categories__article categories__article-6 opacity-5 absolute active:opacity-100">
 							<h3 class="text-xl font-medium mb-1">Social Media</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-5 max-w-2xl">Channel audit,
 								management
@@ -569,7 +704,7 @@
 						</article>
 
 						<article
-							class="categories__article categories__article-7 opacity-25 absolute active:opacity-100">
+							class="categories__article categories__article-7 opacity-5 absolute active:opacity-100">
 							<h3 class="text-xl font-medium mb-1">Social Media</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-3">Content creation</h2>
 							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
@@ -582,7 +717,7 @@
 
 						<!-- broadcast -->
 						<article
-							class="categories__article categories__article-8 opacity-25 absolute active:opacity-100">
+							class="categories__article categories__article-8 opacity-5 absolute active:opacity-100">
 							<h3 class="text-xl font-medium mb-1">Broadcast</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-3">Pod and Vodcasting</h2>
 							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
@@ -596,7 +731,7 @@
 						</article>
 
 						<article
-							class="categories__article categories__article-9 opacity-25 absolute active:opacity-100">
+							class="categories__article categories__article-9 opacity-5 absolute active:opacity-100">
 							<h3 class="text-xl font-medium mb-1">Broadcast</h3>
 							<h2 class="categories__article__title text-5xl font-semibold mb-3">Live streaming</h2>
 							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
@@ -612,6 +747,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="relative">
 			<!-- Modal -->
 			<div id="modal-background"></div>
@@ -632,17 +768,14 @@
 							<!-- <div class="carousel-item active relative float-left w-full">
 								<img class="rounded-lg shadow-lg mb-6 mx-auto"
 									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" alt="avatar" />
-
 							</div>
 							<div class="carousel-item relative float-left w-full">
 								<img class="rounded-lg shadow-lg mb-6 mx-auto"
 									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" alt="avatar" />
-
 							</div>
 							<div class="carousel-item relative float-left w-full">
 								<img class="rounded-lg shadow-lg mb-6 mx-auto"
 									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" alt="avatar" />
-
 							</div> -->
 						</div>
 						<button
@@ -668,84 +801,248 @@
 
 
 		<!-- Purpose Projects -->
-		<section name="purpose_projects" class="pt-72">
+		<section name="purpose_projects" class="pt-72 container" id="purpose_led">
 
-			<div class="flex flex-wrap flex-col text-center mb-60">
+			<div class="flex flex-wrap flex-col text-center mb-12">
 				<h3 class="text-5xl font-bold">Purpose Led Projects</h3>
 			</div>
+			<div class="accordion accordion-flush max-w-3xl mx-auto" id="accordionFlushExample">
+				<!-- bird and wild coffee-->
 
-			<div class="grid grid-cols-1 justify-items-center">
-				<div class="flex h-25 w-1/2  bg-light-green p-8 flex-col">
-					<div class="flex items-center mb-3">
-						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center py-8 pr-10">
+
+
+
+				<div class="accordion-item -ml-5 rotate-3  bg-light-green">
+					<h2 class="accordion-header mb-0" id="headingTwo">
+						<button class=" p-8
+        relative
+        flex
+        items-center
+        w-full
+        
+        text-2xl text-black text-left
+bg-light-green
+        border-0
+        rounded-none
+        transition
+        focus:outline-none
+      " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+							aria-controls="collapseTwo">
+							Bird & Wild Coffee
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body py-4 px-5 text-black">
+							Pedrick's Zero Waste Shop is local to our studio and we shop there ourselves. We're helping
+							tell the story of how an
+							average family can save tonnes of waste by refilling common containers. We're working on a
+							mini documentary about zero
+							waste shops and their mission, but also sneaking some of this content out onto social media
+							to boost awareness and
+							grow sales to a larger area. We even got to go on a delivery spree in their electric vehicle
+							named "Lavender".
 						</div>
-						<div class="flex justify-between w-full pr-10">
-							<h2 class="text-gray-900 text-lg title-font font-medium pr-10">Bird & Wild Coffee</h2>
+					</div>
+					<div class="hover-reveal">
+						<img class="hidden-img" src="app/assets/images/purpose-1.webp">
+					</div>
+				</div>
+				<!-- Pedrick's zero waste shop -->
+				<div class="accordion-item -ml-5 rotate-3  bg-light-brown">
+					<h2 class="accordion-header mb-0" id="headingTwo">
+						<button class=" p-8
+        relative
+        flex
+        items-center
+        w-full
+        
+        text-2xl text-black text-left
+    bg-light-brown
+        border-0
+        rounded-none
+        transition
+        focus:outline-none
+      " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+							aria-controls="collapseTwo">
+							Pedrick's Zero Waste Shop
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body py-4 px-5 text-black">
+							Pedrick's Zero Waste Shop is local to our studio and we shop there ourselves. We're helping
+							tell the story of how an
+							average family can save tonnes of waste by refilling common containers. We're working on a
+							mini documentary about zero
+							waste shops and their mission, but also sneaking some of this content out onto social media
+							to boost awareness and
+							grow sales to a larger area. We even got to go on a delivery spree in their electric vehicle
+							named "Lavender".
 						</div>
 					</div>
+					<div class="hover-reveal">
+						<img class="hidden-img" src="app/assets/images/purpose-5.png">
+					</div>
 				</div>
+				<!-- Westerham Brewery -->
+				<div class="accordion-item -ml-5 rotate-3   bg-forest-green">
+					<h2 class="accordion-header mb-0" id="headingTwo">
+						<button class=" p-8
+     relative
+     flex
+     items-center
+     w-full
 
-				<div class="flex  h-25 w-1/2  bg-light-brown p-8 flex-col rotate-3">
-					<div class="flex items-center mb-3">
-						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
-						<h2 class="text-gray-900 text-lg title-font font-medium">Pedrick’s Zero Waste Shop</h2>
+     text-2xl text-[#F4F4F4] text-left
+     bg-forest-green
+     border-0
+     rounded-none
+     transition
+     focus:outline-none
+      " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+							aria-controls="collapseTwo">
+							Westerham Brewery
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body py-4 px-5 text-black">
+							Pedrick's Zero Waste Shop is local to our studio and we shop there ourselves. We're helping
+							tell the story of how an
+							average family can save tonnes of waste by refilling common containers. We're working on a
+							mini documentary about zero
+							waste shops and their mission, but also sneaking some of this content out onto social media
+							to boost awareness and
+							grow sales to a larger area. We even got to go on a delivery spree in their electric vehicle
+							named "Lavender".
+						</div>
+					</div>
+					<div class="hover-reveal">
+						<img class="hidden-img" src="app/assets/images/purpose-2.png">
 					</div>
 				</div>
 
-				<div class="flex h-25 w-1/2  bg-forest-green p-8 flex-col -rotate-10">
-					<div class="flex items-center mb-3">
-						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
-						<h2 class="text-gray-900 text-lg title-font font-medium">Westerham Brewery</h2>
-					</div>
-				</div>
 
-				<div class="flex  h-25 w-1/2  bg-standard-green p-8 flex-col rotate-3">
-					<div class="flex items-center mb-3">
-						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
-						<h2 class="text-gray-900 text-lg title-font font-medium">The Earth Law Center</h2>
+				<!-- The Earth Law Center -->
+				<div class="accordion-item rotate-[-4.44deg] bg-standard-green">
+					<h2 class="accordion-header mb-0" id="headingFour">
+						<button class=" p-8
+        relative
+        flex
+        items-center
+        w-full
+       
+        text-2xl text-black text-left
+  bg-standard-green
+        border-0
+        rounded-none
+        transition
+        focus:outline-none
+      " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+							aria-controls="collapseFour">
+							The Earth Law Center
+						</button>
+					</h2>
+					<div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body py-4 px-5 text-black">
+							We offer our time to the Earth Law Center on a 'freetainer' basis. So far we've conducted a
+							social media audit to see
+							what improvements can be made. We've also taken some of their longer webinars and prepared
+							them for easier consumption
+							on YouTube and other social media. We also designed influencer meme posts aimed at pointing
+							new audiences to longer
+							form content on 'rights for nature'. It's a fascinating area.
+						</div>
+					</div>
+					<div class="hover-reveal">
+						<img class="hidden-img" src="app/assets/images/purpose-3.png">
 					</div>
 				</div>
+				<!-- Fairborn Snacks - Dorset -->
+				<div class="accordion-item rotate-[-1.44deg] z-10 bg-deep-green">
+					<h2 class="accordion-header mb-0" id="headingFour">
+						<button class=" p-8
+        relative
+        flex
+        items-center
+        w-full
 
-				<div class="flex  h-25 w-1/2 bg-deep-green p-8 flex-col ">
-					<div class="flex items-center mb-3">
-						<div class="w-8 h-8 mr-3 inline-flex items-center justify-center p-8"></div>
-						<h2 class="text-gray-900 text-lg title-font font-medium">Fairborn Snacks - Dorset</h2>
+        text-2xl text-[#F4F4F4] text-left
+bg-deep-green
+        border-0
+        rounded-none
+        transition
+        focus:outline-none
+      " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+							aria-controls="collapseFour">
+							Fairborn Snacks - Dorset
+						</button>
+					</h2>
+					<div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body py-4 px-5 text-[#F4F4F4]">
+							High quality, ethically-produced meat snacks from Dorset.Grass fed Aberdeen Angus meat is
+							air dried, flavoured
+							and packaged from surrounding farms - enabling a next to zero carbon footprint on production
+							too.&nbsp;We helped with branding design that reflects the simple and 'fair born' ethos of
+							the product.&nbsp;
+						</div>
+					</div>
+					<div class="hover-reveal">
+						<img class="hidden-img" src="app/assets/images/pupose-4.jpeg">
 					</div>
 				</div>
+			</div>
 
 
 		</section>
+
 
 		<!--Team Small-->
-		<section name="team_small">
+		<section
+			class="team bg-[#2A4D4C] h-screen w-screen relative overflow-hidden flex flex-col justify-center items-center">
+			<div class="team-content">
+				<h2 class="text-4xl">Who’s behind The Small Green Studio?</h2>
+				<p>find out more about the amazing team at The Small Green Studio.</p>
+				<a href="about.html#team">View Team</a>
+			</div>
 
 
-
-
+			<div class="bgreveal hidden absolute w-52 h-52 top-[calc(50%-100px)] left-[calc(50%-100px)] rounded-full
+				bg-[url('/app/assets/images/team-bg.jpg')] shadow-[inset_0_0_10px_10px_rgba(0,0,0,0.2)] bg-cover bg-fixed">
+			</div>
 		</section>
-
 
 
 
 
 		<!--Call to Action-->
-		<section class="call_to_action">
-			<div class="cta__wrapper  ml-8 mt-72 mb-72">
+		<section class="container">
+			<div class="max-w-7xl ml-8 mt-72  pb-[20rem] cta-js">
 				<div class="cta__text">
 					<h2 class="text-8xl font-semibold flex flex-wrap ">
 						<span>That's it for now,</span>
-						<span class="inline-block"><img src="app/assets/images/Rectangle327.png" alt=""></span>
+						<span class="inline-block"><img class="object-cover w-[400px] h-28"
+								src="app/assets/images/EVENT_CAPTURE.jpg" alt=""></span>
 						<span>so have</span>
-						<span><img src="app/assets/images/Rectangle329.png" alt=""></span>
+						<span class="block mx-8"><img class="object-cover  w-[200px] h-[150%]"
+								src="app/assets/images/CASE STUDY ICEBERGS/P1023196.jpg" alt=""></span>
 						<span>we sparked</span>
 						<span>your</span>
-						<span><img src="app/assets/images/Rectangle338.png" alt=""></span>
-						<span><img src="app/assets/images/Rectangle337.png" alt=""></span>
-						<span><img src="app/assets/images/Rectangle339.png" alt=""></span>
+						<span class="flex">
+							<img class="object-cover  w-[200px] h-full rotate-[20deg] -z-10"
+								src="app/assets/images/CASE STUDY BREWERY/SamBrook.jpg" alt="">
+							<img class="object-cover  w-[300px] h-full -ml-20"
+								src="app/assets/images/CASE STUDY CYCLE EVENT/IMG_1882.jpg" alt="">
+							<img class="object-cover  w-[200px] h-full rotate-[-30deg] -ml-8 "
+								src="app/assets/images/CASE STUDY ICEBERGS/P1023338.jpg" alt=""></span>
 						<span>curiosity?</span>
 					</h2>
 				</div>
-				<div class="cta__blob flex justify-end relative">
+				<!-- call to action -->
+				<div class="cta__blob flex justify-end relative -mt-20">
 					<a class="absolute z-10" href="mailto:dostuff@thesmallgreenstudio.com">
 						<svg width="216" height="224" viewBox="0 0 216 224" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
@@ -762,54 +1059,64 @@
 	</main>
 
 	<!--Footer-->
-	<footer class="w-full">
-		<div class="footer__wrapper flex flex-col mt-64 z-10 relative">
-			<div class="flex flex-wrap flex-col text-center mb-60">
-				<h3 class="text-5xl font-bold">Ready?<br>Let's Get Started</h3>
-				<p>have a project or just want a quick chat?</p>
-				<button class="w-48 h-12 rounded-lg text-black font-semibold
+	<footer class="w-full bg-black" id="footer-js">
+		<div class="footer__wrapper flex flex-col mt-20 z-10 relative max-w-6xl mx-auto">
+			<div class="flex flex-wrap flex-col text-center mb-32">
+				<h3 class="text-5xl font-bold ">Ready?<br>Let's Get Started</h3>
+				<p class="mt-2 mb-7">have a project or just want a quick chat?</p>
+				<button class="w-40 h-12 rounded-full text-black font-semibold
 				bg-white m-auto">Contact Us</button>
 			</div>
 
-			<div class="flex justify-between m-10 ">
-				<div class="flex flex-wrap flex-col">
-					<p class="font-bold">Links</p>
-					<a href="url">Who are we</a>
-					<a href="url">Our team</a>
-					<a href="url">Things we can do</a>
-					<a href="url">Things we have done</a>
-					<a href="url">Contacts</a>
+			<div class="flex flex-wrap justify-between m-10 leading-[1.9rem]">
+				<div class="flex flex-wrap flex-col mb-7">
+					<p class="font-bold mb-1">Links</p>
+					<ul class="font-light">
+						<li> <a href="url">Who are we</a></li>
+						<li><a href="url">Our team</a></li>
+						<li><a href="url">Things we can do</a></li>
+						<li><a href="url">Things we have done</a></li>
+						<li><a href="url">Contacts</a></li>
+					</ul>
+
+
 				</div>
 
-				<div class="emails-wrapper">
-					<div class="flex flex-wrap flex-col text-center">
-						<p class="font-bold">Send a not so serious email</p>
-						<a href="mailto:dostuff@thesmallgreenstudio.com">Send Email</a>
+				<div class="flex flex-wrap flex-col justify-between ">
+					<div class="mb-7">
+						<p class="font-bold mb-1">Send a not so serious email</p>
+						<a class="font-light"
+							href="mailto:dostuff@thesmallgreenstudio.com">dostuff@thesmallgreenstudio.com</a>
 					</div>
 
 
-					<div class="flex flex-wrap flex-col">
-						<p class="font-bold">Socials</p>
-						<div class="icon-wrapper">
-							<button class="btn mr-4	p-0.5 bg-white rounded-full w-7"><i
-									class="fa-brands fa-instagram"></i></button>
-							<button class="btn mr-4 p-0.5 bg-white rounded-full w-7"><i
-									class="fa-brands fa-youtube"></i></button>
-							<button class="btn mr-4 p-0.5 bg-white rounded-full w-7"><i
-									class="fa-brands fa-linkedin"></i></button>
-						</div>
+					<div class="mb-7">
+						<p class="font-bold mb-1">Socials</p>
+						<ul class="flex flex-row gap-4 ">
+							<li
+								class="bg-white flex justify-center items-center w-10 h-10 rounded-full drop-shadow-xl socials">
+								<a href="https://www.instagram.com/thesmallgreenstudio/"><i
+										class="fa-brands fa-instagram text-black text-2xl"></i></a>
+							</li>
+							<li class="bg-white flex justify-center items-center  w-10 h-10 rounded-full socials"><a
+									href="https://www.youtube.com/channel/UCWl_P2Jdn0SPFJvH2aHpaLw/featured"><i
+										class="fa-brands fa-youtube text-black text-2xl"></i></a></li>
+							<li class="bg-white flex justify-center items-center  w-10 h-10 rounded-full socials"><a
+									href="https://www.linkedin.com/company/the-small-green-studio/"><i
+										class="fa-brands fa-linkedin text-black text-2xl"></i></a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="call-wrapper">
-					<div class="flex flex-wrap flex-col">
-						<p class="font-bold">Give us a ring</p>
-						<p>07397616938</p>
+				<div class="flex flex-wrap flex-col justify-between">
+					<div class="mb-7">
+						<p class="font-bold mb-1">Give us a ring</p>
+						<a href="tel:+447897 616938">07397616938</a>
 					</div>
 
-					<div class="flex flex-wrap flex-col">
-						<p class="font-bold">Just because</p>
-						<p>51.5072 N, 0.1276 W</p>
-						<p>Current Time</p>
+					<div class="mb-7">
+						<p class="font-bold mb-1">Just because</p>
+						<p class="font-light">51.5072 N, 0.1276 W</p>
+						<p class="font-light time-js"> </p>
 					</div>
 				</div>
 			</div>
@@ -839,7 +1146,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 	<script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+
 	<script defer src="/dist/script.js"></script>
 </body>
+
 
 </html>

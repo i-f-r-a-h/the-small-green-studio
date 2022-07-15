@@ -1,6 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
+//purpose led
+.a-button:not(.collapsed) {
+  background-color: none!important;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

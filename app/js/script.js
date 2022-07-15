@@ -21,11 +21,32 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 // --- ORANGE PANEL ---
+//variables
+// CURSOR
 
 
 
 
-//how we can help
+
+//footer
+
+setInterval(() => {
+	document.querySelector('.time-js').innerHTML = 'Currently ' + refreshDate(new Date());
+}, 1000)
+
+
+function refreshDate(footertime) {
+	return footertime.toLocaleString('en-GB', {
+		hour: 'numeric',
+		minute: 'numeric',
+		timeZone: 'Europe/London',
+		hourCycle: 'h12'
+
+	});
+}
+
+
+
 
 
 
@@ -50,6 +71,7 @@ menu_open.fromTo(
 	},
 	"-=.15"
 );
+
 menu_open.from(
 	".menu-container-1", {
 		duration: 0.5,
@@ -87,7 +109,11 @@ menu_open.from(
 
 function menuOpen() {
 	menu_open.reversed() ? menu_open.play() : menu_open.reverse();
+	$(".menu-container a").on("click", function () {
+		menu_open.reverse();
+	});
 };
+
 
 
 const tl = gsap.timeline({
@@ -117,11 +143,13 @@ tl.to(".hero__content", {
 });
 
 //how we can help
-gsap.registerPlugin(Flip);
+
 gsap.set('.categories__article', {
 	autoAlpha: 0
 })
+
 const sections = gsap.utils.toArray(".principles__item");
+
 let maxWidth = 0;
 
 const getMaxWidth = () => {
@@ -150,7 +178,6 @@ gsap.to(sections, {
 		trigger: ".principles",
 		pin: true,
 		scrub: 0.5,
-		markers: true,
 		end: () => `+=${maxWidth}`,
 		invalidateOnRefresh: true
 	}
@@ -159,6 +186,7 @@ gsap.to(sections, {
 sections.forEach((sct, i) => {
 	const smallTimeline = gsap.timeline();
 	const content = document.querySelector('.categories__wrapper');
+	const viewmore = sct.querySelector('span');
 	const relevantContent = content.querySelector('article.categories__article-' + i);
 
 	ScrollTrigger.create({
@@ -172,9 +200,9 @@ sections.forEach((sct, i) => {
 
 	smallTimeline
 		//.to(elem,{ duration: 0.25, fontSize: "40px", color: "orange"}, 0)  
-		.to(sct, {
+		.to(viewmore, {
 			duration: 0.25,
-			color: "orange"
+			opacity: 1,
 		}, 0)
 		.to(sct, {
 			duration: 0.25,
@@ -190,7 +218,7 @@ sections.forEach((sct, i) => {
 
 
 
-	const modal = document.querySelector('.principles__container');
+
 
 
 	sct.addEventListener("click", () => {
@@ -203,7 +231,9 @@ sections.forEach((sct, i) => {
 
 
 
-
+if ($(".principles__item").css('opacity') == 1) {
+	$(".view-more").css("opacity", 1);
+}
 /// introduction date 
 var prnDt = new Date().toLocaleDateString('en-us', {
 	weekday: 'long'
@@ -215,39 +245,6 @@ document.querySelector('.intro__date-js').innerHTML = `${prnDt}`;
 
 
 
-//cursor
-//variables
-let cursor = $(".cursor"),
-	follower = $(".cursor__follower");
-
-let posX = 0,
-	posY = 0,
-	mouseX = 0,
-	mouseY = 0;
-
-//cursor change effect
-TweenMax.to({}, 0.016, {
-	repeat: -1,
-	onRepeat: function () {
-		posX += (mouseX - posX) / 9;
-		posY += (mouseY - posY) / 9;
-
-		TweenMax.set(follower, {
-			css: {
-				left: posX - 20,
-				top: posY - 20
-			}
-		});
-
-		TweenMax.set(cursor, {
-			css: {
-				left: mouseX,
-				top: mouseY
-			}
-		});
-
-	}
-});
 
 //modal dynamic dom
 
@@ -308,3 +305,80 @@ $(".principles__item").on("click", function () {
 	}
 	imageloop();
 });
+
+// purpose led projects
+const link = document.querySelectorAll('.accordion-item');
+const linkHoverReveal = document.querySelectorAll('.hover-reveal');
+const linkImages = document.querySelectorAll('.hidden-img');
+
+
+for (let i = 0; i < link.length; i++) {
+	link[i].addEventListener('mousemove', (e) => {
+		linkHoverReveal[i].style.opacity = 1;
+		linkHoverReveal[i].style.transform = `translate(-100%, -50% ) rotate(5deg)`;
+		linkImages[i].style.transform = 'scale(1, 1)';
+		linkHoverReveal[i].style.left = e.clientX + "px";
+	})
+
+	link[i].addEventListener('mouseleave', (e) => {
+		linkHoverReveal[i].style.opacity = 0;
+		linkHoverReveal[i].style.transform = `translate(-50%, -50%) rotate(-5deg)`;
+		linkImages[i].style.transform = 'scale(0.8, 0.8)';
+	})
+}
+
+
+//team
+let team = document.querySelector(".team");
+let bgreveal = document.querySelector(".bgreveal");
+let teambtn = document.querySelector(".team-content");
+team.onmousemove = (e) => {
+	bgreveal.style.display = "block";
+	bgreveal.style.top = `${e.clientY - 100}px`;
+	bgreveal.style.left = `${e.clientX - 100}px`;
+}
+
+team.onmouseleave = (e) => {
+	bgreveal.style.display = "none";
+	bgreveal.style.top = `${e.clientY - 100}px`;
+	bgreveal.style.left = `${e.clientX - 100}px`;
+}
+
+teambtn.addEventListener('mousemove', () => {
+	bgreveal.style.display = "none";
+})
+
+
+
+
+//footer
+function setup() {
+
+	var clientHeight = document.getElementById('footer-js').clientHeight;
+	var clientWidth = document.getElementById('footer-js').clientWidth;
+	var cnv = createCanvas(clientWidth, clientHeight);
+	cnv.parent("footer-js");
+	background(0);
+}
+
+
+function windowResized() {
+	sketchWidth = document.getElementById("footer-js").offsetWidth;
+	sketchHeight = document.getElementById("footer-js").offsetHeight;
+	resizeCanvas(sketchWidth, sketchHeight);
+	background(0);
+}
+
+function draw() {
+	fill('hsla(120, 100%, 75%, 0.3)');
+	//fill(0,255,0,50);
+	noStroke();
+	ellipse(mouseX, mouseY, 20);
+
+}
+
+
+function mousePressed() {
+	var cnv;
+	background(0);
+}
