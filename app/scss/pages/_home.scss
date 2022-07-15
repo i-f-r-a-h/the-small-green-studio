@@ -610,6 +610,7 @@ input[type=radio]:checked {
 	opacity: 0;
 	transform: scale(0.8);
 	transition: all .5s ease-out;
+    z-index: 999 !important;
 }
 
 .hover-reveal img {
@@ -618,5 +619,11 @@ input[type=radio]:checked {
 	object-fit: cover;
 	position: relative;
 	transition: transform .4s ease-out;
-  z-index: 99;
+  z-index: 999 !important;
+}
+
+.team-small{
+  &:hover{
+    text-decoration: none !important;
+  }
 }

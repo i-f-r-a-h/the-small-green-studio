@@ -1444,6 +1444,7 @@ input[type=radio]:checked {
           transform: scale(0.8);
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
+  z-index: 999 !important;
 }
 
 .hover-reveal img {
@@ -1456,7 +1457,11 @@ input[type=radio]:checked {
   transition: -webkit-transform .4s ease-out;
   transition: transform .4s ease-out;
   transition: transform .4s ease-out, -webkit-transform .4s ease-out;
-  z-index: 99;
+  z-index: 999 !important;
+}
+
+.team-small:hover {
+  text-decoration: none !important;
 }
 
 html,
