@@ -166,3 +166,17 @@ $(".team-js").on("click", function () {
 //     opacity: 0,
 //     duration: 2
 // })
+setInterval(() => {
+    document.querySelector('.time-js').innerHTML = 'Currently ' + refreshDate(new Date());
+}, 1000)
+
+
+function refreshDate(footertime) {
+    return footertime.toLocaleString('en-GB', {
+        hour: 'numeric',
+        minute: 'numeric',
+        timeZone: 'Europe/London',
+        hourCycle: 'h12'
+
+    });
+}

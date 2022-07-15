@@ -170,12 +170,16 @@
 			<div class="grid gap-5 mt-24 ml-24">
 				<p class="text-4xl">Ut enim ad minim veniam, quis nostrud aliquip ex ea commodo consequat.</p>
 				<div class="grid grid-cols-2 gap-12">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						tempor incididunt
+						ut
 						labore et dolore
 						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
 						ex ea commodo
 						consequat.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						tempor incididunt
+						ut
 						labore et dolore
 						magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
 						ex ea commodo
@@ -319,44 +323,15 @@
 			</div>
 		</div> -->
 	</section>
-	<!-- <script>
-		const platforms = document.querySelector('.platforms .slide-track')
 
-		const rollingAnimation = platforms.animate([{
-				transform: 'translateX(0)'
-			},
-			{
-				transform: `translateX(${-200 * 13}px)`
-			}
-		], {
-			iterations: Infinity,
-			duration: 8000 * 1000
-		});
-
-		function rollCarousel() {
-			rollingAnimation.play()
-		}
-
-		function pauseCarousel() {
-			rollingAnimation.pause();
-		}
-
-		platforms.addEventListener('mouseover', pauseCarousel)
-		platforms.addEventListener('mouseout', rollCarousel)
-
-		if (window.matchMedia("(max-width: 800px)").matches) {
-			transform: `translateX(${-150 * 13}px)`
-		}
-	</script> -->
 
 
 	<!-- our team -->
-	<section class="my-16 mx-32 flex flex-col" id="team">
+	<section class="my-16 mx-8 md:mx-32 flex flex-col" id="team">
 		<div class="our-team__title ml-auto mr-0">
-			<h2 class="text-7xl font-bold max-w-2xl mb-5 relative">The people making the difference <span><img
-						class="absolute top-[4.5rem] right-28" src="/dist/assets/images/team_1.svg" alt=""
-						srcset=""><img class="absolute top-16 left-32 -z-10" src="/dist/assets/images/team_2.svg" alt=""
-						srcset=""></span>
+			<h2 class="text-7xl font-bold max-w-2xl mb-5 relative">The people making the difference <img
+					class="inline-block" src="/dist/assets/images/team_1.svg" alt="" srcset=""><img
+					class="absolute top-16 left-32 -z-10" src="/dist/assets/images/team_2.svg" alt="" srcset="">
 			</h2>
 			<p class="max-w-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 				incididunt ut
@@ -488,7 +463,7 @@
 							class="team__role text-xl absolute ml-4 -mt-2">—pr
 							and social</span>
 					</p>
-					<p class="about__info-js hidden text-base">Betty works with us part-time and has found a way to
+					<p class="about__info-js hidden text-base pb-8">Betty works with us part-time and has found a way to
 						make the
 						'always-on' nature
 						of social media fit around the school run and the odd sports day. Whether it's content

@@ -307,6 +307,7 @@ $(".principles__item").on("click", function () {
 });
 
 // purpose led projects
+var desktop = window.matchMedia("(min-width: 700px)")
 const link = document.querySelectorAll('.accordion-item');
 const linkHoverReveal = document.querySelectorAll('.hover-reveal');
 const linkImages = document.querySelectorAll('.hidden-img');
