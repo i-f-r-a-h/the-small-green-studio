@@ -507,7 +507,6 @@ body {
 
 .change-nav {
   background-color: transparent;
-  mix-blend-mode: difference;
 }
 
 .who-are-we {
@@ -528,7 +527,6 @@ header {
           justify-content: space-between;
   padding: 20px 0px;
   z-index: 100;
-  mix-blend-mode: difference;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
