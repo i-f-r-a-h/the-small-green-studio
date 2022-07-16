@@ -1542,7 +1542,7 @@ body.active {
 }
 
 .reel {
-  margin-bottom: 100px;
+  margin: 200px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1552,8 +1552,8 @@ body.active {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  -webkit-animation: reel 70s linear infinite both;
-          animation: reel 70s linear infinite both;
+  -webkit-animation: reel 300s linear infinite both;
+          animation: reel 300s linear infinite both;
 }
 
 .reel:hover {
@@ -1588,8 +1588,8 @@ body.active {
 .reel .pic {
   background-position: center;
   background-size: cover;
-  width: 170px;
-  height: 300px;
+  width: 400px;
+  height: 500px;
   margin-left: 20px;
   margin-right: 20px;
   -webkit-transition: all .4s ease-in-out;
@@ -1597,15 +1597,15 @@ body.active {
 }
 
 .reel .pic:nth-child(odd) {
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
 }
 
 .reel .pic:hover {
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  -webkit-transform: scale(1.12);
-          transform: scale(1.12);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   border-radius: 2rem;
 }
 

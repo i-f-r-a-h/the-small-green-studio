@@ -139,13 +139,13 @@ body.active {  overflow-y: hidden!important; }
 //gallery
 
 .reel{
-    margin-bottom: 100px;
+    margin: 200px 0;
     display: flex;
     width: 500%;
     height: 450px;
     align-items: center;
     overflow: hidden;
-     animation:reel 70s linear infinite both;
+     animation:reel 300s linear infinite both;
      &:hover{
       animation-play-state: paused;
       transition: .5s ease-in-out;
@@ -162,19 +162,19 @@ body.active {  overflow-y: hidden!important; }
 .reel .pic{
     background-position: center;
     background-size: cover;
-    width: 170px;
-    height:300px;
+    width: 400px;
+    height:500px;
     margin-left: 20px;
     margin-right: 20px;
     transition: all .4s ease-in-out;
     &:nth-child(odd){
-          width: 300px;
-            height:200px;
+          width: 500px;
+            height:300px;
     }
 }
 .reel .pic:hover{
     transition: all .4s ease-in-out;
-    transform: scale(1.12);
+    transform: scale(1.1);
     border-radius: 2rem;
 
 }
