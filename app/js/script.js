@@ -1,35 +1,7 @@
-// const menuIcon = document.querySelector('.nav__menu');
-// const navbar = document.querySelector('.menu__layout');
-// const menuLink = document.querySelector('.navbar__list-link');
-// const header = document.querySelector('.site-nav-js');
-// const a = document.querySelectorAll('a');
-// //when the hamburger is clicked, menu opens
-// menuIcon.addEventListener('click', () => {
-// 	navbar.classList.toggle('change');
-// 	header.classList.toggle('change-nav');
-// });
-// //when a link is clicked, menu closes
-// a.forEach(item => {
-// 	item.addEventListener('click', () => {
-// 		navbar.classList.remove('change');
-// 	});
-// });
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 
-
-// --- ORANGE PANEL ---
-//variables
-// CURSOR
-
-
-
-
-
-//footer
-
+//footer date
 setInterval(() => {
 	document.querySelector('.time-js').innerHTML = 'Currently ' + refreshDate(new Date());
 }, 1000)
@@ -44,8 +16,6 @@ function refreshDate(footertime) {
 
 	});
 }
-
-
 
 
 
@@ -115,7 +85,7 @@ function menuOpen() {
 };
 
 
-
+//hero
 const tl = gsap.timeline({
 	scrollTrigger: {
 		trigger: ".orangeWrapper",

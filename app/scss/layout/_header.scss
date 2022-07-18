@@ -93,6 +93,9 @@ header .menu-items {
   margin: 10px 0px;
   font-weight: bold;
   overflow: hidden;
+  @media  (max-width:400px) {
+      font-size: 30px;
+  }
 }
 .menu-container-1 .menu-container-footer li {
   font-size: 30px;
