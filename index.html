@@ -2,20 +2,42 @@
 <html lang="en">
 
 <head>
+	<title>The Small Green Studio - Purpose Led Multimedia Production Studio</title>
 	<meta charset="UTF-8" />
-	<title></title>
-	<meta name="description"
-		content="The purpose led production collective from a simple photo to building your whole story.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Looking for a Multimedia Production Studio in Kenley? We can help you
+		tell an authentic, cohesive story born from action. Across all of your channels and media output.">
 
+	<!-- APPLE -->
+	<link rel="apple-touch-icon" href="/app/favicon_io/apple-touch-icon.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!-- FACEBOOK -->
 	<meta property="og:title" content="The Small Green Studio">
-	<meta property="og:type" content="website">
+	<meta property="og:type" content="business.business">
+	<meta property="og:title" content="The Small Green Studio - Purpose Led Multimedia Production Studio">
 	<meta property="og:url" content="https://thesmallgreenstudio.com/">
-	<meta property="og:image" content="app/assets/images/Live-Streaming-Churches-Featured-Image.jpg">
-	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="627" />
-	<link rel="shortcut icon" type="image/x-icon" href="/app/favicon_io/favicon.ico" />
+	<meta property="og:description" content="The Small Green Studio are a production studio based in London with big corporate and third sector experience.We can help you
+		tell an authentic, cohesive story born from action. Across all of your channels and media output.">
+	<meta property="og:site_name" content="The Small Green Studio">
+	<meta property="og:locale" content="en_GB">
+	<meta property="og:image" content="/app/favicon_io/large-icon.png">
+	<meta property="og:image:alt" content="The Small Green Studio">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
 
+	<!-- TWITTER -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://thesmallgreenstudio.com/">
+	<meta name="twitter:title" content="The Small Green Studio">
+	<meta name="twitter:description" content="The Small Green Studio are a production studio based in London with big corporate and third sector experience.We can help you
+		tell an authentic, cohesive story born from action. Across all of your channels and media output.">
+	<meta name="twitter:image" content="/app/favicon_io/large-icon.png">
+
+
+	<link rel="icon" type="image/png" href="/app/favicon_io/favicon-32X32.png" />
+	<link rel="canonical" href="https://thesmallgreenstudio.com/">
 	<script src="https://kit.fontawesome.com/20f93d43bc.js" crossorigin="anonymous"></script>
 	<meta property="og:locale" content="en-gb">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -103,13 +125,13 @@
 					</li>
 				</ul>
 			</div>
-			<div class="menu-container-footer">
+			<div>
 				<ul class="hidden md:block">
 					<li id="special-li">Featured services</li>
-					<li><span>Web & Editorial</span></li>
-					<li><span>Content Creation</span></li>
-					<li><span>News & Reactive</span></li>
-					<li><span>Outdoor and Sports</span></li>
+					<li><a href="#web"><span>Web & Editorial</span></a></li>
+					<li><a href="#content"><span>Content Creation</span></a></li>
+					<li><a href="#news"><span>News & Reactive</span></a></li>
+					<li><a href="#outdoor"><span>Outdoor and Sports</span></a></li>
 				</ul>
 				<ul class="flex flex-row gap-4 mt-4 md:hidden">
 					<li class="bg-white flex justify-center items-center w-10 h-10 rounded-full drop-shadow-xl"><a
@@ -148,29 +170,32 @@
 		<section>
 
 			<!-- hero content -->
+			<div class="hero__content container  px-0 h-screen opacity-0 sticky z-20 flex flex-row align-bottom w-full">
 
-			<div class="hero__content h-screen opacity-0 sticky z-20 flex flex-row align-bottom w-full">
-
-				<div class="flex flex-col basis-1/2 justify-center ml-20">
+				<div class="flex flex-col basis-1/2 justify-center md:ml-0 ml-8">
 					<h1 class="hero__title lg:text-7xl max-w-0"><span class="block">The</span><span
 							class="uppercase">Purpose</span>led Production Collective
 					</h1>
-					<p class="text-lg -mt-10">From a simple photo to building your whole story, let's make it happen.
+					<p class="text-lg md:-mt-10 w-80 md:w-full -mt-7 ">From a simple photo to building your whole story,
+						let's
+						make it
+						happen.
 					</p>
 					<div class="hero__cta flex flex-row gap-7 mt-10">
 						<a href="about.html" class="px-6 py-2.5 border-solid border-2 border-white text-white font-medium text-sm leading-tight 
 						rounded-full shadow-md  hover:shadow-lgt">About Us</a>
-						<a href="#" class="px-6 py-2.5 bg-green-900 text-white font-medium text-sm leading-tight 
+						<a href="#how_we_can_help" class="px-6 py-2.5 bg-green-900 text-white font-medium text-sm leading-tight 
 						rounded-full shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none
-						focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">View Work</a>
+						focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">View Services</a>
 					</div>
 				</div>
 
 				<!-- get in touch -->
-				<a class="flex ml-auto mr-52 w-72">
+				<a href="mailto:dostuff@thesmallgreenstudio.com" class="md:flex hidden ml-auto mr-[10%] w-72">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%"
 						id="blobSvg" style="opacity: 1;">
-						<path id="blob" fill="url(#gradient)" style="opacity: 1;">
+						<path id="blob" class="hover:fill-yellow-300 ease-in-out duration-300" fill="url(#gradient)"
+							style="opacity: 1;">
 							<animate attributeName="d" dur="15300ms" repeatCount="indefinite"
 								values="M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;M453.78747,319.98894Q416.97789,389.97789,353.96683,436.87838Q290.95577,483.77887,223.95577,447.43366Q156.95577,411.08845,105.64373,365.97789Q54.33169,320.86732,62.67444,252.61056Q71.01719,184.3538,113.01965,135.21007Q155.02211,86.06634,220.52211,66.46683Q286.02211,46.86732,335.5,91.94472Q384.97789,137.02211,437.78747,193.51106Q490.59704,250,453.78747,319.98894Z;M411.39826,313.90633Q402.59677,377.81265,342.92059,407.63957Q283.24442,437.46649,215.13648,432.5428Q147.02853,427.61911,82.23325,380.9572Q17.43796,334.29529,20.45223,250.83809Q23.46649,167.38089,82.5856,115.05707Q141.70471,62.73325,212.19045,63.73015Q282.67618,64.72705,352.67308,84.79839Q422.66998,104.86972,421.43486,177.43486Q420.19974,250,411.39826,313.90633Z;M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;">
 							</animate>
@@ -203,15 +228,15 @@
 			<!-- marquee -->
 			<div class="marquee h-screen -z-10">
 				<div class="track">
-					<div class="content_1 text-7xl lg:text-9xl font-bold py-5 text-[#A8CF39] opacity-[0.59]">films for
+					<div class="content_1 text-7xl lg:text-9xl font-bold py-5 text-green-700 opacity-[0.59]">films for
 						good — pictures
 						with purpose —
 						stories for change — films for good — pictures with purpose</div>
-					<div class="content_2 text-7xl lg:text-9xl font-bold py-5 text-[#A8CF39] opacity-[0.59]">pictures
+					<div class="content_2 text-7xl lg:text-9xl font-bold py-5 text-green-700 opacity-[0.59]">pictures
 						with purpose —
 						stories for
 						change — films for good — pictures with purpose — stories for change</div>
-					<div class="content_3 text-7xl lg:text-9xl font-bold py-5 text-[#A8CF39] opacity-[0.59]">stories for
+					<div class="content_3 text-7xl lg:text-9xl font-bold py-5 text-green-700 opacity-[0.59]">stories for
 						change - films
 						for good -
 						pictures with purpose — stories for change — films for good</div>
@@ -225,15 +250,16 @@
 
 		<!-- introduction -->
 
-		<section name="introduction"
-			class="relative mt-8 bg-[#155000] w-full h-[85vh] rounded-3xl flex items-center flex-col">
+		<section name="introduction" class="relative mt-8 bg-[#155000] w-full rounded-3xl flex items-center flex-col ">
 			<div class="mt-24 mx-auto">
 
 				<p class="text-center text-[#30ffa9]">Hello, Happy <span class="intro__date-js">{insert
 						date}</span>!</p>
-				<div class="text-center max-w-5xl mt-10 text-5xl uppercase relative leading-[5rem]   ">
-					<h2>We are a small studio <span class="absolute -top-12"><img class="absolute max-w-none inline"
-								src="/dist/assets/images/intro.svg" alt="" srcset=""></span></h2>
+				<div
+					class="text-center max-w-5xl mt-11 text-3xl px-8 md:mt-10 md:text-5xl uppercase relative md:leading-[5rem] leading-[3.5rem]   ">
+					<h2>We are a small studio <span class="absolute right-[25%] md:right-auto -top-32 md:-top-12"><img
+								class="absolute max-w-none inline" src="/dist/assets/images/intro.svg" alt=""
+								srcset=""></span></h2>
 					<h2>which means we can respond to your brief <span
 							class="link link--helike"><span>quickly</span></span>-or
 						write one with you to get
@@ -252,7 +278,8 @@
 				<a class="flex mt-[-8%] ml-[-4%] w-60">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%"
 						id="blobSvg" style="opacity: 1;">
-						<path id="blob" fill="#eab308" style="opacity: 1;">
+						<path id="blob" class="hover:fill-green-700 ease-in-out duration-200" fill="#eab308"
+							style="opacity: 1;">
 							<animate attributeName="d" dur="15300ms" repeatCount="indefinite"
 								values="M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;M453.78747,319.98894Q416.97789,389.97789,353.96683,436.87838Q290.95577,483.77887,223.95577,447.43366Q156.95577,411.08845,105.64373,365.97789Q54.33169,320.86732,62.67444,252.61056Q71.01719,184.3538,113.01965,135.21007Q155.02211,86.06634,220.52211,66.46683Q286.02211,46.86732,335.5,91.94472Q384.97789,137.02211,437.78747,193.51106Q490.59704,250,453.78747,319.98894Z;M411.39826,313.90633Q402.59677,377.81265,342.92059,407.63957Q283.24442,437.46649,215.13648,432.5428Q147.02853,427.61911,82.23325,380.9572Q17.43796,334.29529,20.45223,250.83809Q23.46649,167.38089,82.5856,115.05707Q141.70471,62.73325,212.19045,63.73015Q282.67618,64.72705,352.67308,84.79839Q422.66998,104.86972,421.43486,177.43486Q420.19974,250,411.39826,313.90633Z;M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;">
 							</animate>
@@ -270,32 +297,37 @@
 
 
 		<!-- What makes us different -->
-		<section class="container py-24 mb-20">
+		<section class="container py-24 mb-20 bg-[#0f0f0f]">
 
 			<div class="projects_wrapper py-12">
 				<div class="our-team__title">
-					<h2 class="text-7xl font-bold max-w-2xl mb-5 relative">We're different. In a totally good way.</h2>
-					<p class="max-w-md">We try to walk the talk ourselves. By doing as much subsidised work for as many
+					<h2 class="text-4xl max-w-xs md:text-7xl font-bold md:max-w-2xl mb-5 relative">We're different. In a
+						totally
+						good way.</h2>
+					<p class="md:max-w-md max-w-sm text-base">We try to walk the talk ourselves. By doing as much
+						subsidised work
+						for
+						as many
 						good and green
 						causes as the balance sheet will allow..</p>
 				</div>
 			</div>
 
-			<section id="slider">
+			<section id="slider" class="mx-auto md:my-20">
 				<input type="radio" name="slider" id="s1" checked>
 				<input type="radio" name="slider" id="s2">
 				<input type="radio" name="slider" id="s3">
 				<input type="radio" name="slider" id="s4">
 				<input type="radio" name="slider" id="s5">
 
-				<label for="s1" class="slide1 grid grid-flow-col auto-cols-fr px-16 justify-items-center">
+				<label for="s1" class="slide1 grid lg:grid-flow-col md:auto-cols-fr px-16 justify-items-center">
 					<!-- index -->
-					<span class="absolute top-6 right-16 text-lg">1/5</span>
+					<span class="absolute hidden md:block top-6 right-16 text-lg">1/5</span>
 					<!-- image -->
 					<img src="app/assets/images/how-we-can-help/1.svg">
 					<!-- content -->
 					<div>
-						<h3 class="text-4xl font-normal max-w-[23rem]">Our working mantra is <span
+						<h3 class="text-xl lg:text-4xl font-normal max-w-[23rem]">Our working mantra is <span
 								class="different-font">"do
 								good, start
 								small”</span>. Slide through
@@ -305,20 +337,14 @@
 							it’s a start, a small
 							start.</h3>
 					</div>
-					<!-- border -->
-					<!-- <svg class="absolute" width="22" height="20" viewBox="0 0 22 20" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<line x1="2" y1="18.5" x2="22" y2="18.5" stroke="white" stroke-width="3" />
-						<line x1="1.5" y1="20" x2="1.5" stroke="white" stroke-width="3" />
-					</svg> -->
 				</label>
-				<label for="s2" class="slide2 grid grid-flow-col auto-cols-fr px-24 justify-items-center">
+				<label for="s2" class="slide2 grid lg:grid-flow-col auto-cols-fr md:px-24 px-8 justify-items-center">
 					<!-- index -->
-					<span class="absolute top-6 right-16 text-lg">2/5</span>
+					<span class="absolute hidden md:block top-6 right-16 text-lg">2/5</span>
 					<!-- content -->
 					<div class="h-[60%]">
-						<h3 class="text-5xl different-font uppercase mb-8">Our Workspaces.</h3>
-						<ul class="text-base font-normal list-disc flex flex-col gap-3 ml-4">
+						<h3 class="text-2xl md:text-5xl different-font uppercase mb-8">Our Workspaces.</h3>
+						<ul class="text-sm md:text-base font-normal list-disc flex flex-col gap-3 ml-4">
 							<li>We don’t print in our workspaces. We just don’t. There’s no need. And, if there’s a
 								digital option to doing
 								something, we’ll do our best to adopt it.</li>
@@ -326,17 +352,18 @@
 						</ul>
 					</div>
 					<!-- image -->
-					<img src="app/assets/images/how-we-can-help/2.svg">
+					<img class="hidden lg:block  w-24 lg:w-auto" src="app/assets/images/how-we-can-help/2.svg">
 				</label>
-				<label for="s3" class="slide3 grid grid-cols-[1fr,1.3fr] px-24 justify-items-center">
+				<label for="s3"
+					class="slide3 grid lg:grid-cols-[1fr,1.3fr] lg:px-24 px-8 md:px-14 justify-items-center">
 					<!-- index -->
-					<span class="absolute top-6 right-16 text-lg">3/5</span>
+					<span class="absolute hidden md:block top-6 right-16 text-lg">3/5</span>
 					<!-- image -->
-					<img src="app/assets/images/how-we-can-help/3.svg">
+					<img class="hidden lg:block md:w-full" src="app/assets/images/how-we-can-help/3.svg">
 					<!-- content -->
 					<div>
-						<h3 class="text-5xl different-font uppercase mb-8">Our operations.</h3>
-						<ul class="text-base font-normal list-disc flex flex-col gap-2 ml-4">
+						<h3 class="text-2xl md:text-5xl  different-font uppercase mb-8">Our operations.</h3>
+						<ul class="text-sm md:text-base font-normal list-disc flex flex-col gap-2 ml-4">
 							<li>We use ecosia as our search engine. They plant trees the more you use it.<a
 									href="https://info.ecosia.org/" class="underline">Make one change today and search
 									with ecosia</a></li>
@@ -353,13 +380,14 @@
 					</div>
 
 				</label>
-				<label for="s4" class="slide4 grid grid-flow-col auto-cols-fr px-24 justify-items-center">
+				<label for="s4"
+					class="slide4 grid lg:grid-flow-col auto-cols-fr lg:px-24 px-8 md:px-14 justify-items-center">
 					<!-- index -->
-					<span class="absolute top-6 right-16 text-lg">4/5</span>
+					<span class="absolute hidden md:block top-6 right-16 text-lg">4/5</span>
 					<!-- content -->
 					<div>
-						<h3 class="text-5xl different-font uppercase mb-8">Our Production.</h3>
-						<ul class="text-base font-normal list-disc flex flex-col gap-3 ml-4">
+						<h3 class="text-2xl md:text-5xl different-font uppercase mb-8">Our Production.</h3>
+						<ul class="text-sm md:text-base font-normal list-disc flex flex-col gap-3 ml-4">
 							<li>Traditional set lighting uses huge amounts of power. When we’re scaling up productions,
 								we use <a href="https://www.greenkit.london/" class="underline">Greenkit</a></li>
 							<li>When setting up events there’s a big opportunity to make large-scale decisions for the
@@ -372,19 +400,20 @@
 						</ul>
 					</div>
 					<!-- image -->
-					<img src="app/assets/images/how-we-can-help/4.svg">
+					<img class="hidden lg:block" src="app/assets/images/how-we-can-help/4.svg">
 
 
 				</label>
-				<label for="s5" class="slide5 grid grid-flow-col auto-cols-fr px-24 justify-items-center">
+				<label for="s5"
+					class="slide5 grid lg:grid-flow-col auto-cols-fr lg:px-24 px-8 md:px-14 justify-items-center">
 					<!-- index -->
-					<span class="absolute top-6 right-16 text-lg">5/5</span>
+					<span class="absolute hidden md:block top-6 right-16 text-lg">5/5</span>
 
 
 					<!-- content -->
 					<div>
-						<h3 class="text-5xl different-font uppercase mb-8 text-black">Our Travels.</h3>
-						<ul class="text-base font-normal list-disc flex flex-col gap-3 ml-4 text-black">
+						<h3 class="text-2xl md:text-5xl different-font uppercase mb-8 text-black">Our Travels.</h3>
+						<ul class="text-sm md:text-base font-normal list-disc flex flex-col gap-3 ml-4 text-black">
 							<li>We always travel on public transport around London and major European cities. Or on two
 								wheels if the weather
 								is bearable. We’re looking at hybrid vehicles to transport our kit and crew to larger
@@ -402,7 +431,7 @@
 					</div>
 
 					<!-- image -->
-					<img src="app/assets/images/how-we-can-help/5.svg">
+					<img class="hidden lg:block" src="app/assets/images/how-we-can-help/5.svg">
 
 
 				</label>
@@ -412,101 +441,124 @@
 
 
 		<!--Video Reel-->
-		<section name="video_reel" class="w-full h-screen relative mb-72">
-			<div>
+		<section name="video_reel"
+			class="w-full h-screen relative mb-40 md:mb-[20rem] mt-96 md:mt-0 max-h-[25rem] md:max-h-[70rem]">
+			<div class="h-full overflow-hidden">
 				<img class="object-fill w-full	h-screen" src="app\assets\images\background_img.png" alt="">
-				<div class="absolute bottom-3/4 left-2/4	 h-17 w-12">
-					<svg width="570" height="118" viewBox="0 0 570 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<div class="absolute bottom-3/4 left-2/4 hidden lg:block h-17 w-12">
+					<svg width="610" height="72" viewBox="0 0 610 72" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
-							d="M27.4047 95.0052C27.4047 87.489 26.4711 78.517 31.2974 72.1207C40.1107 60.4404 59.9325 58.3246 73.1145 56.9038C93.1088 54.7487 113.966 53.532 133.628 58.5552C137.989 59.6692 151.948 62.0228 153.741 67.4023"
+							d="M13.0448 50C13.0448 43.7945 12.4688 36.387 15.4468 31.1062C20.885 21.4627 33.116 19.7158 41.2499 18.5428C53.5873 16.7635 66.4571 15.759 78.5898 19.9062C81.2803 20.8259 89.8935 22.7691 91 27.2106"
 							stroke="white" stroke-width="3" stroke-linecap="round" />
 						<path
-							d="M16.7891 89.6965C18.769 92.4308 23.4928 102.072 28.1723 99.9591C35.2778 96.7502 41.8382 91.4591 48.6385 87.5732"
+							d="M2 44.6614C3.97995 47.3956 8.7037 57.0373 13.3832 54.924C20.4888 51.715 27.0492 46.424 33.8494 42.5381"
 							stroke="white" stroke-width="3" stroke-linecap="round" />
 						<path
-							d="M323.902 45.8383C320.447 42.7572 317.771 41.7798 313.178 43.2887C310.05 44.3161 303.54 47.0275 309.293 49.5413C314.728 51.9163 320.675 53.0161 325.804 56.1176C329.528 58.3691 321.629 57.8264 320.624 57.8578"
+							d="M533 18.4385C534.666 22.1672 536.405 25.8579 538.223 29.5154C538.846 30.7688 539.459 32.0009 540.261 33.1457"
 							stroke="white" stroke-width="3" stroke-linecap="round" />
 						<path
-							d="M331.915 53.8516C337.323 62.3492 341.263 71.8937 343.388 81.7353C343.722 83.2803 345.174 87.5475 344.056 86.4298C343.121 85.4948 342.644 83.4414 342.113 82.2614"
+							d="M541.936 39.289C541.397 39.3735 540.335 39.2789 540.074 39.8889C539.346 41.588 542.773 41.2504 543.435 41.1197C544.919 40.8271 546.41 40.2971 547.79 39.6821C548.017 39.5807 549.04 39.1884 548.245 39.0201C545.264 38.3896 541.97 38.7622 538.957 38.9167"
 							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M346.12 50.209C346.999 54.479 342.542 54.447 339.22 54.6607C335.454 54.9029 331.673 54.7509 327.908 54.5797"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M343.935 52.3948C346.937 49.843 345.166 47.5285 341.79 46.0815C339.41 45.0616 335.569 43.9657 333.008 44.9079C332.111 45.2378 332.051 46.49 331.753 47.2551C331.048 49.0679 333.232 49.7892 333.736 51.3021"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M361.054 44.0177C357.224 43.8941 349.402 44.0703 348.569 49.3192C347.921 53.398 352.249 56.7763 355.914 56.4217C359.009 56.1222 366.733 52.8746 362.025 49.0359C361.085 48.2699 353.769 44.2931 353.769 47.2957"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M371.616 46.9314C372.824 48.3338 374.024 49.7371 375.157 51.201C375.221 51.2837 376.767 53.6842 376.736 53.6697C375.77 53.2241 374.75 52.1565 373.883 51.5855C371.927 50.2973 369.03 49.1662 367.731 47.0933C365.744 43.921 373.714 42.4066 375.259 42.3785C377.551 42.3369 381.075 42.7888 382.543 44.746"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M390.557 33.0908C394.003 39.3666 397.637 45.6241 400.593 52.1522C402.37 56.0757 397.744 52.8144 396.02 52.0307"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path d="M387.643 49.4813C395.535 48.2452 403.348 47.9017 411.317 47.6602" stroke="white"
+						<path d="M563.809 17C567.894 21.2898 571.768 24.8487 576.916 27.6805" stroke="white"
+							stroke-width="3" stroke-linecap="round" />
+						<path d="M578.859 22.3398C582.483 24.5207 586.05 26.72 590.025 28.1656" stroke="white"
 							stroke-width="3" stroke-linecap="round" />
 						<path
-							d="M411.317 47.6602C412.811 50.3014 415.19 53.3791 415.911 56.3814C416.103 57.1824 412.677 56.0967 412.41 56.0374"
+							d="M607.502 27.6807C606.035 35.382 600.543 37.1901 593.1 38.1993C581.553 39.765 569.406 39.77 557.983 37.3902"
 							stroke="white" stroke-width="3" stroke-linecap="round" />
 						<path
-							d="M407.311 36.3691C407.664 36.9378 409.575 40.9213 410.73 40.4768C411.426 40.2091 411.26 39.1887 410.912 38.7569C409.583 37.1038 408.767 36.9518 408.767 38.9187"
+							d="M271.126 20.3298C270.544 18.6488 269.866 16.7027 267.656 17.0815C265.72 17.4134 252.836 23.3118 258.511 24.1774C262.956 24.8555 272.114 22.6526 274.847 27.7096C277.382 32.3997 267.913 35.0893 264.881 35.0893C262.144 35.0893 254.25 33.2706 258.637 29.9802"
 							stroke="white" stroke-width="3" stroke-linecap="round" />
 						<path
-							d="M418.237 42.5605C418.816 44.1582 426.641 56.7952 428.071 54.8228C430.778 51.0918 427.36 44.7363 425.522 41.4678"
+							d="M276.569 18.3385C274.805 16.5751 277.681 22.216 277.956 23.416C278.725 26.7723 279.257 30.3271 280.542 33.5395C282.672 38.8635 284.663 29.4961 285.777 27.4213C287.992 23.2985 291.427 22.2539 293.599 26.8536C294.62 29.0169 293.485 36.504 296.437 36.504"
 							stroke="white" stroke-width="3" stroke-linecap="round" />
 						<path
-							d="M434.628 47.2959C437.354 48.1568 446.196 50.6575 447.659 46.9317C449.057 43.3738 443.452 41.9736 441.022 41.9944C438.218 42.0183 435.217 46.6775 435.033 49.198C434.768 52.8228 440.039 54.3916 442.601 55.0257C448.36 56.4517 453.944 55.8418 459.76 55.6732"
+							d="M303.615 21.9733C303.615 20.1089 305.795 20.2305 302.03 22.9195C299.062 25.0398 298.254 30.5802 299.696 33.7052C304.006 43.043 316.257 34.9574 315.15 26.5147C314.214 19.382 307.249 18.494 302.03 21.9733"
 							stroke="white" stroke-width="3" stroke-linecap="round" />
 						<path
-							d="M200.787 30.0454C197.068 28.2807 193.777 27.7354 189.7 29.0638C183.59 31.0548 179.416 38.1887 178.845 44.3655C177.892 54.6606 189.536 58.1993 197.64 59.0609C202.942 59.6246 208.291 59.2394 213.519 58.3679"
+							d="M323.92 26.007C323.226 25.2357 322.905 23.1713 321.523 23.8624C317.937 25.6556 320.071 36.1177 323.478 37.2973C327.077 38.5431 332.7 30.9732 330.164 27.9623C329.741 27.4599 329.615 32.0546 329.912 32.819C332.583 39.6884 350.149 32.874 345.964 26.8585C344.303 24.4696 335 19.217 338.112 25.4393"
 							stroke="white" stroke-width="3" stroke-linecap="round" />
 						<path
-							d="M217 54.1734C218.815 56.5777 223.805 62.055 227.09 58.5473C228.21 57.3521 228.238 55.457 227.899 53.9568C227.882 53.8811 227.302 52.344 227.61 53.5526C229.524 61.0625 233.191 68.0974 233.63 75.971C233.701 77.2447 233.755 80.4163 232.417 81.5431C231.179 82.5862 228.45 81.8868 227.307 81.572C223.97 80.6535 221.249 78.9457 218.299 77.2991"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path d="M233.787 46.6758C235.639 51.8618 238.141 57.1852 241.582 61.4866" stroke="white"
-							stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M265 55.0238C269.651 56.8587 276.02 58.3344 280.879 56.2941C282.341 55.6804 282.621 54.3842 281.89 53.0894C280.948 51.4213 279.05 50.5751 277.241 50.2312C274.546 49.7186 268.109 50.4858 268.522 54.6196C269.107 60.4673 279.723 59.9237 283.449 60.4804"
+							d="M352.303 26.0067C350.331 24.0347 351.638 29.4383 351.862 30.4219C352.241 32.0907 353.153 34.0985 353.88 35.6571C355.425 38.9685 352.303 28.4626 352.303 24.8083C352.303 19.8046 357.252 21.3157 360.251 22.6007"
 							stroke="white" stroke-width="3" stroke-linecap="round" />
 						<path
-							d="M250.407 51.0908C248.375 51.7091 242.736 52.7144 244.257 56.0566C246.93 61.9278 256.964 60.8114 262.1 60.9647"
+							d="M366.495 28.8449C362.442 29.0138 369.365 30.3824 370.437 30.5164C373.497 30.8989 377.565 28.3926 376.587 24.8713C374.656 17.9208 366.09 21.0398 364.634 26.6373C363.024 32.8301 368.248 36.0615 373.591 37.0131C375.989 37.4402 381.021 38.7289 382.958 36.7923"
 							stroke="white" stroke-width="3" stroke-linecap="round" />
 						<path
-							d="M465 36.0908C466.666 39.8195 468.405 43.5102 470.223 47.1677C470.846 48.4211 471.459 49.6533 472.261 50.798"
+							d="M386.363 29.4127C385.623 29.5053 385.579 30.5045 386.363 30.5481C388.261 30.6535 390.092 30.4976 391.85 29.7281C393.499 29.007 399.848 26.3695 398.284 23.6099C396.803 20.9962 393.436 20.6137 390.747 20.9607C385.99 21.5744 385.397 28.6219 386.678 31.9988C388.315 36.3132 398.714 41.6435 400.5 34.5"
 							stroke="white" stroke-width="3" stroke-linecap="round" />
 						<path
-							d="M473.936 56.9414C473.397 57.0258 472.335 56.9312 472.074 57.5412C471.346 59.2403 474.773 58.9028 475.435 58.772C476.919 58.4794 478.41 57.9494 479.79 57.3344C480.017 57.2331 481.04 56.8408 480.245 56.6725C477.264 56.0419 473.97 56.4145 470.957 56.569"
+							d="M405 16.3562C405 15.8695 405.325 10.9783 406.135 12.1933C406.925 13.3771 407.032 15.2647 407.271 16.6085C407.924 20.2897 408.72 23.9294 409.51 27.5835C409.675 28.3477 412.059 41.7286 413.515 37.36"
 							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path d="M495.809 34.6523C499.894 38.9421 503.768 42.5011 508.916 45.3328" stroke="white"
-							stroke-width="3" stroke-linecap="round" />
-						<path d="M510.859 39.9922C514.483 42.173 518.05 44.3723 522.025 45.8179" stroke="white"
-							stroke-width="3" stroke-linecap="round" />
 						<path
-							d="M539.502 45.333C538.035 53.0344 532.543 54.8424 525.1 55.8517C513.553 57.4174 501.406 57.4224 489.983 55.0426"
+							d="M431.568 13.8468C431.568 12.9609 431 8.96941 431 10.2516C431 15.8507 432.582 21.2173 433.712 26.651C434.081 28.4231 434.256 30.1546 434.406 31.9492C434.508 33.1742 434.874 29.5316 435.226 28.354C436.067 25.5424 438.244 19.059 442.353 20.9112C445.722 22.4294 448.913 25.9454 448.913 29.8047C448.913 32.8602 444.252 34.9291 441.912 35.7337C438.597 36.8733 430.534 33.6139 434.406 29.7416"
 							stroke="white" stroke-width="3" stroke-linecap="round" />
+						<path
+							d="M453.773 24.754C452.554 24.9063 456.672 41.3698 453.521 30.1153C451.409 22.5752 454.966 16.2676 462.856 20.2126"
+							stroke="white" stroke-width="3" stroke-linecap="round" />
+						<path
+							d="M475.316 26.0415C474.503 25.0254 474.885 23.9488 474.748 22.7617C474.448 20.1626 469.01 22.0711 467.999 23.0455C465.305 25.6435 464.977 31.8426 468.535 33.7997C471.52 35.4415 474.79 34.2513 475.883 31.0244C476.794 28.335 477.019 25.8318 477.019 23.014C477.019 21.1426 477.019 19.7777 477.019 22.667C477.019 26.1998 478.41 28.4365 481.087 30.8352C482.582 32.1742 488.299 37.2202 490.075 34.5566"
+							stroke="white" stroke-width="3" stroke-linecap="round" />
+						<path
+							d="M503.265 21C503.369 19.9554 502.32 19 498.96 19C496.481 19 494.546 21.8115 493.945 23.9829C493.087 27.086 493.243 30.4907 495.554 32.9395C497.564 35.0688 501.337 36.9327 503.564 34.0748C506.016 30.9296 504.899 24.0262 503.375 20.6399C501.267 15.9542 506.587 30.4456 508.926 35.0209C513.434 43.8411 515.745 57.0974 511.953 66.6528C508.664 74.9414 492.335 63.0879 487.922 60.44"
+							stroke="white" stroke-width="3" stroke-linecap="round" />
+						<path
+							d="M102.078 9.63781C102.134 9.58873 105.118 25.9378 105.358 29.0017C105.534 31.2447 105.484 35.1063 105.484 30.6416"
+							stroke="white" stroke-width="3" stroke-linecap="round" />
+						<path
+							d="M103.214 21.5588C101.976 23.3594 108.504 22.6967 109.585 22.568C111.775 22.3072 117.657 21.9396 118.415 19.2881C119.013 17.1967 118.302 14.5898 117.974 12.5391C117.449 9.26883 116.838 -0.644122 116.838 2.66796C116.838 14.1764 123.083 24.9949 123.083 36.3182"
+							stroke="white" stroke-width="3" stroke-linecap="round" />
+						<path
+							d="M127.036 25.3672C126.72 22.8365 128.591 28.1893 128.615 28.7384C128.868 34.6515 136.392 34.6035 140.725 34.4151C148.57 34.074 137.445 20.7116 137.445 24.7647"
+							stroke="white" stroke-width="3" stroke-linecap="round" />
+						<path
+							d="M148.06 24.9648C146.525 24.9648 146.96 24.5997 147.618 26.794C148.37 29.3006 148.837 30.9857 151.119 32.5653C154.424 34.8535 152.747 23.3177 154.935 22.5365C156.814 21.8655 156.558 29.2079 159.476 29.6639C164.049 30.3784 164.787 23.8295 168.622 23.8295C174.486 23.8295 169.761 32.9122 175.308 32.9122"
+							stroke="white" stroke-width="3" stroke-linecap="round" />
+						<path
+							d="M178.146 18.153C177.682 17.5146 177.542 15.1319 178.43 16.5131C179.139 17.6165 179.707 18.7022 179.975 19.9822C180.428 22.1446 180.233 24.3702 180.732 26.5104C181.312 28.9942 183.993 25.6759 185.242 25.0282C187.915 23.6422 192.676 24.1529 195.491 24.6497C199.489 25.3552 200.893 29.4943 197.573 32.2187C194.111 35.0593 188.155 34.6108 184.201 33.354C180.882 32.2991 178.532 30.9888 182.12 28.9388"
+							stroke="white" stroke-width="3" stroke-linecap="round" />
+						<path
+							d="M202.557 19.2885C202.628 17.9235 202.821 16.0475 203.44 14.8102C204.485 12.7203 204.26 18.71 204.26 19.0362C204.26 21.7287 205.586 35.9395 210.504 33.4802"
+							stroke="white" stroke-width="3" stroke-linecap="round" />
+						<path
+							d="M213.014 28.3944C212.755 28.3944 216.132 28.4516 217.019 28.3628C221.439 27.9208 229.62 26.0586 229.319 20.1947C228.983 13.6478 217.136 18.3795 216.799 23.5376C216.228 32.2579 229.3 33.8314 235.153 32.3681"
+							stroke="white" stroke-width="3" stroke-linecap="round" />
+						<path
+							d="M96 32.7836C97.9789 31.0094 101.659 31.4181 104.117 31.3946C106.525 31.3717 108.933 31.4332 111.34 31.3329C117.946 31.0577 124.537 30.5732 131.124 30.0057C141.834 29.0831 152.555 28.6115 163.285 27.9995C179.534 27.0729 195.784 26.5554 212.051 27.5057C220.74 28.0133 229.306 28.8184 237.947 29.728"
+							stroke="#FFC700" stroke-width="2" stroke-linecap="square" />
 					</svg>
+
 				</div>
 				<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-					<video class="rounded-lg hidden md:block" width="600" height="338" autoplay loop playsinline muted>
+					<video class="rounded-lg hidden md:block w-[50vw] max-w-[1000px]" width="600" height="338" autoplay
+						loop playsinline muted>
 						<source src="app/assets/videos/SiteLoop_2.webm" type="video/webm">
 						Your browser does not support the video tag.
 					</video>
-					<img class="block md:hidden" src="app\assets\images\CASE STUDY CYCLE EVENT\P1433878.jpg" alt="">
+					<img class="block md:hidden rounded-2xl" src="app\assets\images\CASE STUDY CYCLE EVENT\P1433878.jpg"
+						alt="">
 				</div>
 			</div>
-			<div class="w-[3000px] -mt-32 absolute -left-2.5">
-				<div class="h-40 overflow-hidden relative bg-[#2A4D4C] -rotate-2 w-screen flex items-center">
+			<div class="w-[3000px] -mt-20 md:-mt-32 absolute -left-2.5">
+				<div
+					class="w-[3000px] h-20 md:h-40 overflow-hidden relative bg-[#2A4D4C] -rotate-2 xl:w-screen flex items-center">
 					<div class="track">
 						<div class="content_1  lg:text-6xl font-['Kdam Thmor Pro'] !text-white ">Video — photography —
-							event capture — social media — broadcast — video — photography</div>
+							event capture — photography — social media — broadcast — video — photography — social media
+							— broadcast —Video
+							—social media
+						</div>
 					</div>
 				</div>
 
-				<div class="h-40 overflow-hidden relative bg-[#2A4D4C] rotate-3 mt-24 w-screen flex items-center">
+				<div
+					class="w-[3000px] h-20 md:h-40 overflow-hidden relative bg-[#2A4D4C] rotate-3 mt-32 md:mt-20 xl:w-screen flex items-center">
 					<div class="track">
 						<div class="content_2  lg:text-6xl font-['Kdam Thmor Pro', sans-serif] !text-white">Video —
-							photography — event capture — social media — broadcast — video — photography</div>
+							photography — broadcast — event capture — photography — social media — broadcast — video —
+							photography — event
+							capture — photography
+						</div>
 					</div>
 				</div>
 			</div>
@@ -517,16 +569,16 @@
 
 
 		<!-- how we can help -->
-		<section class="principles py-10" id="how_we_can_help">
-			<div class="principles__container content-container">
-
-				<div class="principles__scroll pt-8">
+		<section class="principles py-10 bg-[#0f0f0f]">
+			<div class="principles__container container content-container">
+				<div class="principles__scroll pt-8" id="how_we_can_help">
 					<!-- title -->
-					<h2 class="title text-6xl font-bold pb-10 pl-20">How we can help</h2>
+					<h2 class="title text-4xl md:text-5xl lg:text-6xl font-bold pb-10  xl:pt-6">How we can help</h2>
 
 
 					<!-- gallery -->
 					<div class="principles__list mb-14 pt-4">
+						<!-- narrative -->
 						<div class="principles__item opacity-5" id="item-video" data-type='[0,1,2]' data-length="2"
 							data-index="0">
 							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
@@ -537,7 +589,9 @@
 								<source src="/app/assets/images/GALLERY/narrative_1.mp4" type="video/mp4">
 							</video>
 						</div>
-						<div class="principles__item opacity-5" data-type='[1,2]' data-length="2" data-index="1">
+						<!-- news -->
+						<div class="principles__item opacity-5" id="news" data-type='[1,2]' data-length="2"
+							data-index="1">
 							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
 								-top-4">view
 								more <i class="align-middle fa-solid fa-arrow-right"></i>
@@ -546,6 +600,7 @@
 								<source src="/app/assets/images/GALLERY/news_1.mp4" type="video/mp4">
 							</video>
 						</div>
+						<!-- team shots -->
 						<div class="principles__item opacity-5" data-length="8" data-index="2">
 							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
 								-top-4">view
@@ -554,7 +609,8 @@
 							<img class="rounded-lg object-cover h-full w-full w-"
 								src="/app/assets/images/GALLERY/2-0.webp" alt="" srcset="">
 						</div>
-						<div class="principles__item opacity-5" data-length="2" data-index="3">
+						<!-- web -->
+						<div class="principles__item opacity-5" id="web" data-length="7" data-index="3">
 							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
 								-top-4">view
 								more <i class="align-middle fa-solid fa-arrow-right"></i>
@@ -562,7 +618,8 @@
 							<img class="rounded-lg object-cover h-full w-full" src="/app/assets/images/GALLERY/3-0.webp"
 								alt="" srcset="">
 						</div>
-						<div class="principles__item opacity-5" data-length="2" data-index="3">
+						<!-- conferences -->
+						<div class="principles__item opacity-5" data-length="1" data-index="4">
 							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
 								-top-4">view
 								more <i class="align-middle fa-solid fa-arrow-right"></i>
@@ -570,7 +627,8 @@
 							<img class="rounded-lg object-cover h-full w-full"
 								src="/app/assets/images/GALLERY/conference_1.webp" alt="" srcset="">
 						</div>
-						<div class="principles__item opacity-5">
+						<!-- outdoor -->
+						<div class="principles__item opacity-5" id="outdoor">
 							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
 								-top-4">view
 								more <i class="align-middle fa-solid fa-arrow-right"></i>
@@ -578,6 +636,7 @@
 							<img class="rounded-lg object-cover h-full w-full"
 								src="/app/assets/images/GALLERY/outdoor_1.webp" alt="" srcset="">
 						</div>
+						<!-- channel audit -->
 						<div class="principles__item opacity-5">
 							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
 								-top-4">view
@@ -586,7 +645,8 @@
 							<img class="rounded-lg object-cover h-full w-full"
 								src="/app/assets/images/GALLERY/channel_1.jpg" alt="" srcset="">
 						</div>
-						<div class="principles__item opacity-5">
+						<!-- content creation -->
+						<div class="principles__item opacity-5" id="content">
 							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
 								-top-4">view
 								more <i class="align-middle fa-solid fa-arrow-right"></i>
@@ -594,6 +654,7 @@
 							<img class="rounded-lg object-cover h-full w-full"
 								src="/app/assets/images/GALLERY/content_1.jpg" alt="" srcset="">
 						</div>
+						<!-- podcasting -->
 						<div class="principles__item opacity-5">
 							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
 								-top-4">view
@@ -602,6 +663,7 @@
 							<img class="rounded-lg object-cover h-full w-full"
 								src="/app/assets/images/GALLERY/pod_1.jpg" alt="" srcset="">
 						</div>
+						<!-- live streaming -->
 						<div class="principles__item opacity-5">
 							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
 								-top-4">view
@@ -613,60 +675,66 @@
 					</div>
 
 					<!-- content -->
-					<div class="categories__wrapper overflow-hidden pl-20">
-						<!-- video -->
+					<div class="categories__wrapper overflow-hidden ">
+						<!-- Narrative -->
 						<article class="categories__article categories__article-0 opacity-5 absolute active:opacity-100"
 							data-length="3" data-index="0" data-video="">
 
-							<h3 class="text-xl font-medium mb-1">Video</h3>
-							<h2 class="categories__article__title text-5xl font-semibold mb-3">Narrative</h2>
-							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+							<h3 class="md:text-xl text-base font-light mb-1">Video</h3>
+							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">
+								Narrative
+							</h2>
+							<p class="categories__article__description  text-sm md:text-base  leading-6 max-w-[35rem]">
 								We're documentary geeks and live to draw out a dynamic narrative from our interviews.
 								And we work carefully to
 								get the best out of our contributors.When we combine all this with cinema and top notch
 								sound design, the results are memorable and magical.</p>
 						</article>
+						<!-- news -->
 						<article class="categories__article categories__article-1 opacity-5 absolute active:opacity-100"
 							data-length="2" data-index="2">
 							<h3 class="text-xl font-medium mb-1">Video</h3>
-							<h2 class="categories__article__title text-5xl font-semibold mb-3">News & Reactive</h2>
-							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">News &
+								Reactive</h2>
+							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
 								We have an extended global network of producers and self directing camera operators.This
 								means that when there's little time to
 								plan or a rare opportunity to capture the
 								footage our clients need,
 								we can deploy rapidly and deliver immediately. </p>
 						</article>
-
-						<!-- photography -->
+						<!-- team shots -->
 						<article class="categories__article categories__article-2 opacity-5 absolute active:opacity-100"
 							data-length="8" data-index="3">
 							<h3 class="text-xl font-medium mb-1">photography</h3>
-							<h2 class="categories__article__title text-5xl font-semibold mb-3">Teams Shots</h2>
-							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Teams Shots
+							</h2>
+							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
 								Show your values and brand personality through your team shots.We're helping lots of
 								brands refresh their photography in light of home and flexible working arrangements. Set
 								your brand free with team shots that reflect this.</p>
 						</article>
+						<!-- web -->
 						<article class="categories__article categories__article-3 opacity-5 absolute active:opacity-100"
 							data-length="2" data-index="3">
 							<h3 class="text-xl font-medium mb-1">photography</h3>
-							<h2 class="categories__article__title text-5xl font-semibold mb-3">Web & Editorial</h2>
-							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Web &
+								Editorial</h2>
+							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
 								Make your content pop with an image library of your people and products in their natural
 								habitat.You can spot stock photos a mile off and it takes away from the brand you work
 								hard to
 								maintain.Ask us about imagery for a specific brief, for web or editorial applications.
 							</p>
 						</article>
-
-						<!-- Event Capture -->
+						<!-- conferences -->
 						<article
 							class="categories__article categories__article-4 opacity-5 absolute active:opacity-100">
 							<h3 class="text-xl font-medium mb-1">Event Capture</h3>
-							<h2 class="categories__article__title text-5xl font-semibold mb-3">Conferences, town halls,
+							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Conferences,
+								town halls,
 								AGM</h2>
-							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
 								Sometimes you want to capture the essence of a conference or event. We can offer a full
 								service of delegate
 								portraits, reportage of speakers and audience participation.We can also gather
@@ -674,12 +742,14 @@
 								highlights reel.
 							</p>
 						</article>
+						<!-- outdoor -->
 						<article
 							class="categories__article categories__article-5 opacity-5 absolute active:opacity-100">
 							<h3 class="text-xl font-medium mb-1">Event Capture</h3>
-							<h2 class="categories__article__title text-5xl font-semibold mb-3">Outdoor and Sports
+							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Outdoor and
+								Sports
 							</h2>
-							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
 								We love getting out and about and we're used to capturing the action, even if we have to
 								chase it down.We can help the audience feel like they're part of the action, which
 								usually means
@@ -692,22 +762,22 @@
 						<article
 							class="categories__article categories__article-6 opacity-5 absolute active:opacity-100">
 							<h3 class="text-xl font-medium mb-1">Social Media</h3>
-							<h2 class="categories__article__title text-5xl font-semibold mb-5 max-w-2xl">Channel audit,
+							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3 max-w-2xl">
+								Channel audit,
 								management
 								and consultancy</h2>
-							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
 								In our experience, we all think we can do social media because we have personal
-								accounts. But as soon as ad budgets,
-								constantly changing algorithms and your own time come in to play, it can be better to
-								outsource it to a specialist.
+								accounts.It can be better to outsource it to a specialist.
 							</p>
 						</article>
 
 						<article
 							class="categories__article categories__article-7 opacity-5 absolute active:opacity-100">
 							<h3 class="text-xl font-medium mb-1">Social Media</h3>
-							<h2 class="categories__article__title text-5xl font-semibold mb-3">Content creation</h2>
-							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Content
+								creation</h2>
+							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
 								It can be tempting to use templated creation tools too, but how do you stand out with so
 								many also doing this?
 								With any brand, engagement and interaction are key and we know lots of ways to help.
@@ -719,8 +789,9 @@
 						<article
 							class="categories__article categories__article-8 opacity-5 absolute active:opacity-100">
 							<h3 class="text-xl font-medium mb-1">Broadcast</h3>
-							<h2 class="categories__article__title text-5xl font-semibold mb-3">Pod and Vodcasting</h2>
-							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Pod and
+								Vodcasting</h2>
+							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
 								We think there's also scope to explore the power of sound design a little
 								more too rather than the
 								[insert jazz sample here] approach.We have a bit of radio and programming experience to
@@ -733,8 +804,9 @@
 						<article
 							class="categories__article categories__article-9 opacity-5 absolute active:opacity-100">
 							<h3 class="text-xl font-medium mb-1">Broadcast</h3>
-							<h2 class="categories__article__title text-5xl font-semibold mb-3">Live streaming</h2>
-							<p class="categories__article__description text-base  leading-6 max-w-[35rem]">
+							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Live
+								streaming</h2>
+							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
 								If you've got the bandwidth, we've got the expertise. We have extensive experience in
 								getting you and your content
 								through a tiny wire to your audience wherever they may be. It could be a performance or
@@ -746,21 +818,322 @@
 					</div>
 				</div>
 			</div>
+
+
+
+
+			<!-- Purpose Projects -->
+			<section name="purpose_projects" class="pt-96 py-36 container" id="purpose_led">
+
+				<div class="flex flex-wrap flex-col text-center mb-12">
+					<h3 class="text-5xl font-bold max-w-xs mx-auto md:max-w-none">Purpose Led Projects</h3>
+				</div>
+				<div class="accordion accordion-flush max-w-3xl mx-auto md:px-8" id="accordionFlushExample">
+					<!-- bird and wild coffee-->
+
+
+
+
+					<div class="accordion-item md:-ml-5  bg-light-green">
+						<h2 class="accordion-header mb-0" id="headingOne">
+							<button class=" p-8
+        relative
+        flex
+		justify-between
+        items-center
+        w-full
+        
+        text-2xl text-black text-left
+bg-light-green
+        border-0
+        rounded-none
+        transition
+        focus:outline-none
+      " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+								aria-controls="collapseOne">
+								Bird & Wild Coffee
+								<i class="fa-solid fa-plus"></i>
+							</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingTwo"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body pb-10 px-5 text-black">
+								Pedrick's Zero Waste Shop is local to our studio and we shop there ourselves. We're
+								helping
+								tell the story of how an
+								average family can save tonnes of waste by refilling common containers. We're working on
+								a
+								mini documentary about zero
+								waste shops and their mission, but also sneaking some of this content out onto social
+								media
+								to boost awareness and
+								grow sales to a larger area. We even got to go on a delivery spree in their electric
+								vehicle
+								named "Lavender".
+							</div>
+						</div>
+						<div class="hover-reveal">
+							<img class="hidden-img" src="app/assets/images/purpose-1.webp">
+						</div>
+					</div>
+					<!-- Pedrick's zero waste shop -->
+					<div class="accordion-item md:-ml-5 bg-light-brown">
+						<h2 class="accordion-header mb-0" id="headingTwo">
+							<button class=" p-8
+        relative
+        flex
+        items-center
+        w-full
+           flex
+           justify-between
+        text-2xl text-black text-left
+    bg-light-brown
+        border-0
+        rounded-none
+        transition
+        focus:outline-none
+      " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+								aria-controls="collapseTwo">
+								Pedrick's Zero Waste Shop
+								<i class="fa-solid fa-plus"></i>
+							</button>
+						</h2>
+						<div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body pb-10 px-5 text-black">
+								Pedrick's Zero Waste Shop is local to our studio and we shop there ourselves. We're
+								helping
+								tell the story of how an
+								average family can save tonnes of waste by refilling common containers. We're working on
+								a
+								mini documentary about zero
+								waste shops and their mission, but also sneaking some of this content out onto social
+								media
+								to boost awareness and
+								grow sales to a larger area. We even got to go on a delivery spree in their electric
+								vehicle
+								named "Lavender".
+							</div>
+						</div>
+						<div class="hover-reveal">
+							<img class="hidden-img" src="app/assets/images/purpose-5.png">
+						</div>
+					</div>
+					<!-- Westerham Brewery -->
+					<div class="accordion-item md:-ml-5  bg-forest-green">
+						<h2 class="accordion-header mb-0" id="headingThree">
+							<button class=" p-8
+     relative
+     flex
+     items-center
+     w-full
+   flex
+   justify-between
+     text-2xl text-[#F4F4F4] text-left
+     bg-forest-green
+     border-0
+     rounded-none
+     transition
+     focus:outline-none
+      " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+								aria-controls="collapseThree">
+								Westerham Brewery
+								<i class="fa-solid fa-plus"></i>
+							</button>
+						</h2>
+						<div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body pb-10 px-5 text-white">
+								Pedrick's Zero Waste Shop is local to our studio and we shop there ourselves. We're
+								helping
+								tell the story of how an
+								average family can save tonnes of waste by refilling common containers. We're working on
+								a
+								mini documentary about zero
+								waste shops and their mission, but also sneaking some of this content out onto social
+								media
+								to boost awareness and
+								grow sales to a larger area. We even got to go on a delivery spree in their electric
+								vehicle
+								named "Lavender".
+							</div>
+						</div>
+						<div class="hover-reveal">
+							<img class="hidden-img" src="app/assets/images/purpose-2.png">
+						</div>
+					</div>
+
+
+					<!-- The Earth Law Center -->
+					<div class="accordion-item  bg-standard-green">
+						<h2 class="accordion-header mb-0" id="headingFour">
+							<button class=" p-8
+        relative
+        flex
+		justify-between
+        items-center
+        w-full
+        text-2xl text-black text-left
+  bg-standard-green
+        border-0
+        rounded-none
+        transition
+        focus:outline-none
+      " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+								aria-controls="collapseFour">
+								The Earth Law Center
+								<i class="fa-solid fa-plus"></i>
+							</button>
+						</h2>
+						<div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body pb-10 px-5 text-black">
+								We offer our time to the Earth Law Center on a 'freetainer' basis. So far we've
+								conducted a
+								social media audit to see
+								what improvements can be made. We've also taken some of their longer webinars and
+								prepared
+								them for easier consumption
+								on YouTube and other social media. We also designed influencer meme posts aimed at
+								pointing
+								new audiences to longer
+								form content on 'rights for nature'. It's a fascinating area.
+							</div>
+						</div>
+						<div class="hover-reveal">
+							<img class="hidden-img" src="app/assets/images/purpose-3.png">
+						</div>
+					</div>
+					<!-- Fairborn Snacks - Dorset -->
+					<div class="accordion-item md:-ml-4 z-10 bg-deep-green">
+						<h2 class="accordion-header mb-0" id="headingFive">
+							<button class=" p-8
+        relative
+        flex
+        justify-between
+        w-full
+        text-2xl text-[#F4F4F4] text-left
+bg-deep-green
+        border-0
+        rounded-none
+        transition
+        focus:outline-none
+      " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+								aria-controls="collapseFive">
+								Fairborn Snacks - Dorset
+								<i class="fa-solid fa-plus"></i>
+							</button>
+						</h2>
+						<div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body pb-10 px-5 text-[#F4F4F4]">
+								High quality, ethically-produced meat snacks from Dorset.Grass fed Aberdeen Angus meat
+								is
+								air dried, flavoured
+								and packaged from surrounding farms - enabling a next to zero carbon footprint on
+								production
+								too.&nbsp;We helped with branding design that reflects the simple and 'fair born' ethos
+								of
+								the product.&nbsp;
+							</div>
+						</div>
+						<div class="hover-reveal">
+							<img class="hidden-img" src="app/assets/images/pupose-4.jpeg">
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+
+		</section>
+		<!--Team Small-->
+		<a href="about.html#team" class="team-small">
+			<section
+				class="team bg-[#2A4D4C] h-screen max-h-[50rem] w-full relative overflow-hidden flex flex-col justify-center items-center">
+				<div class="team-content text-center">
+					<h2 class="text-4xl md:text-6xl font-bold max-w-[80%] md:max-w-xl mx-auto mb-7">Who’s behind The
+						Small Green
+						Studio?</h2>
+					<p class="mb-4 max-w-[22rem] mx-auto">find out more about the amazing team at The Small Green
+						Studio.</p>
+					<p class="px-6 py-2.5 bg-yellow-500 text-black rounded-full max-w-[12rem] mx-auto">Click
+						anywhere to
+						learn
+						more!</p>
+				</div>
+
+
+				<div class="bgreveal hidden absolute w-52 h-52 top-[calc(50%-100px)] left-[calc(50%-100px)] rounded-full
+				bg-[url('/app/assets/images/team-bg.jpg')] shadow-[inset_0_0_10px_10px_rgba(0,0,0,0.2)] bg-cover bg-fixed">
+				</div>
+			</section>
+		</a>
+
+
+
+
+		<!--Call to Action-->
+		<section class="container bg-[#0f0f0f]">
+			<div class="max-w-7xl md:ml-8 mt-40  md:mt-32  pb-[20rem] cta-js">
+				<div class="cta__text">
+					<h2 class="text-7xl md:text-8xl font-semibold flex flex-wrap ">
+						<span>That's it for now,</span>
+						<span class="hidden md:inline-block"><img class="object-cover w-[400px] h-28"
+								src="app/assets/images/EVENT_CAPTURE.jpg" alt=""></span>
+						<span>so have</span>
+						<span class="hidden md:block mx-8"><img class="object-cover  w-[200px] h-[150%]"
+								src="app/assets/images/CASE STUDY ICEBERGS/P1023196.jpg" alt=""></span>
+						<span>we sparked</span>
+						<span> your</span>
+						<span class="flex">
+							<img class="object-cover  w-[200px] h-full rotate-[20deg]"
+								src="app/assets/images/CASE STUDY BREWERY/SamBrook.jpg" alt="">
+							<img class="object-cover  w-[300px] h-full -ml-20"
+								src="app/assets/images/CASE STUDY CYCLE EVENT/IMG_1882.jpg" alt="">
+							<img class="object-cover  w-[200px] h-full rotate-[-30deg] -ml-8 "
+								src="app/assets/images/CASE STUDY ICEBERGS/P1023338.jpg" alt=""></span>
+						<span>curiosity?</span>
+					</h2>
+				</div>
+				<!-- call to action -->
+				<div class="cta__blob flex justify-end relative md:-mt-20">
+					<a class="absolute z-10" href="mailto:dostuff@thesmallgreenstudio.com">
+						<svg width="216" height="224" viewBox="0 0 216 224" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path class="hover:fill-green-700 ease-in-out duration-200" fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M103.136 0.620796C132.552 -0.935111 164.334 -1.04249 186.201 18.695C208.832 39.1218 216.778 71.3156 215.188 101.76C213.677 130.68 197.6 155.303 177.953 176.577C157.241 199.004 133.568 220.677 103.136 223.093C70.6862 225.668 36.2564 214.485 15.4183 189.478C-4.26522 165.856 -0.42015 132.41 2.03238 101.76C4.22255 74.389 9.0033 46.4604 28.4161 27.0407C47.8318 7.61801 75.7111 2.07135 103.136 0.620796Z"
+								fill="#D9B138" />
+							<text class="z-10 fill-white" x="50%" y="50%" dominant-baseline="middle"
+								text-anchor="middle">Get
+								in touch</text>
+						</svg></a>
+				</div>
+			</div>
 		</section>
 
+		<!-- Modal -->
 		<section class="relative">
-			<!-- Modal -->
 			<div id="modal-background"></div>
 			<div id="modal-content" class="relative bg-slate-500">
-				<button id="modal-close" class="absolute right-12 top-6 scale-75"> <svg width="104" height="44"
-						viewBox="0 0 104 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M47.3009 6.11528C39.448 5.4595 31.8609 7.03966 25.0124 8.56538C16.5028 10.4612 5.16168 13.7454 2.12454 19.9626C-0.911974 26.1786 7.96299 31.9421 15.9692 35.2653C29.8766 41.038 47.5516 42.7498 61.6241 41.7195C73.7422 40.8322 86.9601 38.2824 95.3907 32.8118C100.802 29.3008 104.127 23.6189 100.119 17.7355C95.1275 10.408 84.4785 6.24188 74.0985 4.29637C55.2361 0.761023 36.2723 1.74063 18.1935 2.31607"
-							stroke="white" stroke-width="2" stroke-linecap="round" />
-					</svg><span class="absolute top-2 left-[1.9rem]">close</span></button>
-				<section class="gallery mb-32 text-gray-800 text-center">
+				<button id="modal-close" class="absolute right-6 top-4 md:right-12 md:top-6 scale-75">
+					<div class="md:block hidden">
+						<svg width="104" height="44" viewBox="0 0 104 44" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M47.3009 6.11528C39.448 5.4595 31.8609 7.03966 25.0124 8.56538C16.5028 10.4612 5.16168 13.7454 2.12454 19.9626C-0.911974 26.1786 7.96299 31.9421 15.9692 35.2653C29.8766 41.038 47.5516 42.7498 61.6241 41.7195C73.7422 40.8322 86.9601 38.2824 95.3907 32.8118C100.802 29.3008 104.127 23.6189 100.119 17.7355C95.1275 10.408 84.4785 6.24188 74.0985 4.29637C55.2361 0.761023 36.2723 1.74063 18.1935 2.31607"
+								stroke="white" stroke-width="2" stroke-linecap="round" />
+						</svg><span class="absolute top-2 left-[1.9rem]">close</span>
+					</div>
+					<div class="md:hidden block">
+						<i class="fa-solid fa-circle-xmark"></i>
+					</div>
+				</button>
 
-					<h2 class="gallery__title text-3xl text-white font-bold mb-12 mt-4">gallery</h2>
+				<section class="gallery  text-gray-800 text-center">
+
+					<h2 class="gallery__title text-xl md:text-3xl text-white font-bold mb-8">gallery</h2>
 
 					<div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
 						<div class="carousel-inner relative w-full overflow-hidden">
@@ -796,286 +1169,30 @@
 
 				</section>
 			</div>
-		</section>
-
-
-
-		<!-- Purpose Projects -->
-		<section name="purpose_projects" class="pt-72 container" id="purpose_led">
-
-			<div class="flex flex-wrap flex-col text-center mb-12">
-				<h3 class="text-5xl font-bold">Purpose Led Projects</h3>
-			</div>
-			<div class="accordion accordion-flush max-w-3xl mx-auto" id="accordionFlushExample">
-				<!-- bird and wild coffee-->
-
-
-
-
-				<div class="accordion-item -ml-5 rotate-3  bg-light-green">
-					<h2 class="accordion-header mb-0" id="headingTwo">
-						<button class=" p-8
-        relative
-        flex
-        items-center
-        w-full
-        
-        text-2xl text-black text-left
-bg-light-green
-        border-0
-        rounded-none
-        transition
-        focus:outline-none
-      " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-							aria-controls="collapseTwo">
-							Bird & Wild Coffee
-						</button>
-					</h2>
-					<div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
-						data-bs-parent="#accordionExample">
-						<div class="accordion-body py-4 px-5 text-black">
-							Pedrick's Zero Waste Shop is local to our studio and we shop there ourselves. We're helping
-							tell the story of how an
-							average family can save tonnes of waste by refilling common containers. We're working on a
-							mini documentary about zero
-							waste shops and their mission, but also sneaking some of this content out onto social media
-							to boost awareness and
-							grow sales to a larger area. We even got to go on a delivery spree in their electric vehicle
-							named "Lavender".
-						</div>
-					</div>
-					<div class="hover-reveal">
-						<img class="hidden-img" src="app/assets/images/purpose-1.webp">
-					</div>
-				</div>
-				<!-- Pedrick's zero waste shop -->
-				<div class="accordion-item -ml-5 rotate-3  bg-light-brown">
-					<h2 class="accordion-header mb-0" id="headingTwo">
-						<button class=" p-8
-        relative
-        flex
-        items-center
-        w-full
-        
-        text-2xl text-black text-left
-    bg-light-brown
-        border-0
-        rounded-none
-        transition
-        focus:outline-none
-      " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-							aria-controls="collapseTwo">
-							Pedrick's Zero Waste Shop
-						</button>
-					</h2>
-					<div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
-						data-bs-parent="#accordionExample">
-						<div class="accordion-body py-4 px-5 text-black">
-							Pedrick's Zero Waste Shop is local to our studio and we shop there ourselves. We're helping
-							tell the story of how an
-							average family can save tonnes of waste by refilling common containers. We're working on a
-							mini documentary about zero
-							waste shops and their mission, but also sneaking some of this content out onto social media
-							to boost awareness and
-							grow sales to a larger area. We even got to go on a delivery spree in their electric vehicle
-							named "Lavender".
-						</div>
-					</div>
-					<div class="hover-reveal">
-						<img class="hidden-img" src="app/assets/images/purpose-5.png">
-					</div>
-				</div>
-				<!-- Westerham Brewery -->
-				<div class="accordion-item -ml-5 rotate-3   bg-forest-green">
-					<h2 class="accordion-header mb-0" id="headingTwo">
-						<button class=" p-8
-     relative
-     flex
-     items-center
-     w-full
-
-     text-2xl text-[#F4F4F4] text-left
-     bg-forest-green
-     border-0
-     rounded-none
-     transition
-     focus:outline-none
-      " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-							aria-controls="collapseTwo">
-							Westerham Brewery
-						</button>
-					</h2>
-					<div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
-						data-bs-parent="#accordionExample">
-						<div class="accordion-body py-4 px-5 text-black">
-							Pedrick's Zero Waste Shop is local to our studio and we shop there ourselves. We're helping
-							tell the story of how an
-							average family can save tonnes of waste by refilling common containers. We're working on a
-							mini documentary about zero
-							waste shops and their mission, but also sneaking some of this content out onto social media
-							to boost awareness and
-							grow sales to a larger area. We even got to go on a delivery spree in their electric vehicle
-							named "Lavender".
-						</div>
-					</div>
-					<div class="hover-reveal">
-						<img class="hidden-img" src="app/assets/images/purpose-2.png">
-					</div>
-				</div>
-
-
-				<!-- The Earth Law Center -->
-				<div class="accordion-item rotate-[-4.44deg] bg-standard-green">
-					<h2 class="accordion-header mb-0" id="headingFour">
-						<button class=" p-8
-        relative
-        flex
-        items-center
-        w-full
-       
-        text-2xl text-black text-left
-  bg-standard-green
-        border-0
-        rounded-none
-        transition
-        focus:outline-none
-      " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
-							aria-controls="collapseFour">
-							The Earth Law Center
-						</button>
-					</h2>
-					<div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour"
-						data-bs-parent="#accordionExample">
-						<div class="accordion-body py-4 px-5 text-black">
-							We offer our time to the Earth Law Center on a 'freetainer' basis. So far we've conducted a
-							social media audit to see
-							what improvements can be made. We've also taken some of their longer webinars and prepared
-							them for easier consumption
-							on YouTube and other social media. We also designed influencer meme posts aimed at pointing
-							new audiences to longer
-							form content on 'rights for nature'. It's a fascinating area.
-						</div>
-					</div>
-					<div class="hover-reveal">
-						<img class="hidden-img" src="app/assets/images/purpose-3.png">
-					</div>
-				</div>
-				<!-- Fairborn Snacks - Dorset -->
-				<div class="accordion-item rotate-[-1.44deg] z-10 bg-deep-green">
-					<h2 class="accordion-header mb-0" id="headingFour">
-						<button class=" p-8
-        relative
-        flex
-        items-center
-        w-full
-
-        text-2xl text-[#F4F4F4] text-left
-bg-deep-green
-        border-0
-        rounded-none
-        transition
-        focus:outline-none
-      " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
-							aria-controls="collapseFour">
-							Fairborn Snacks - Dorset
-						</button>
-					</h2>
-					<div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour"
-						data-bs-parent="#accordionExample">
-						<div class="accordion-body py-4 px-5 text-[#F4F4F4]">
-							High quality, ethically-produced meat snacks from Dorset.Grass fed Aberdeen Angus meat is
-							air dried, flavoured
-							and packaged from surrounding farms - enabling a next to zero carbon footprint on production
-							too.&nbsp;We helped with branding design that reflects the simple and 'fair born' ethos of
-							the product.&nbsp;
-						</div>
-					</div>
-					<div class="hover-reveal">
-						<img class="hidden-img" src="app/assets/images/pupose-4.jpeg">
-					</div>
-				</div>
-			</div>
-
 
 		</section>
 
-
-		<!--Team Small-->
-		<section
-			class="team bg-[#2A4D4C] h-screen w-screen relative overflow-hidden flex flex-col justify-center items-center">
-			<div class="team-content">
-				<h2 class="text-4xl">Who’s behind The Small Green Studio?</h2>
-				<p>find out more about the amazing team at The Small Green Studio.</p>
-				<a href="about.html#team">View Team</a>
-			</div>
-
-
-			<div class="bgreveal hidden absolute w-52 h-52 top-[calc(50%-100px)] left-[calc(50%-100px)] rounded-full
-				bg-[url('/app/assets/images/team-bg.jpg')] shadow-[inset_0_0_10px_10px_rgba(0,0,0,0.2)] bg-cover bg-fixed">
-			</div>
-		</section>
-
-
-
-
-		<!--Call to Action-->
-		<section class="container">
-			<div class="max-w-7xl ml-8 mt-72  pb-[20rem] cta-js">
-				<div class="cta__text">
-					<h2 class="text-8xl font-semibold flex flex-wrap ">
-						<span>That's it for now,</span>
-						<span class="inline-block"><img class="object-cover w-[400px] h-28"
-								src="app/assets/images/EVENT_CAPTURE.jpg" alt=""></span>
-						<span>so have</span>
-						<span class="block mx-8"><img class="object-cover  w-[200px] h-[150%]"
-								src="app/assets/images/CASE STUDY ICEBERGS/P1023196.jpg" alt=""></span>
-						<span>we sparked</span>
-						<span>your</span>
-						<span class="flex">
-							<img class="object-cover  w-[200px] h-full rotate-[20deg] -z-10"
-								src="app/assets/images/CASE STUDY BREWERY/SamBrook.jpg" alt="">
-							<img class="object-cover  w-[300px] h-full -ml-20"
-								src="app/assets/images/CASE STUDY CYCLE EVENT/IMG_1882.jpg" alt="">
-							<img class="object-cover  w-[200px] h-full rotate-[-30deg] -ml-8 "
-								src="app/assets/images/CASE STUDY ICEBERGS/P1023338.jpg" alt=""></span>
-						<span>curiosity?</span>
-					</h2>
-				</div>
-				<!-- call to action -->
-				<div class="cta__blob flex justify-end relative -mt-20">
-					<a class="absolute z-10" href="mailto:dostuff@thesmallgreenstudio.com">
-						<svg width="216" height="224" viewBox="0 0 216 224" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd"
-								d="M103.136 0.620796C132.552 -0.935111 164.334 -1.04249 186.201 18.695C208.832 39.1218 216.778 71.3156 215.188 101.76C213.677 130.68 197.6 155.303 177.953 176.577C157.241 199.004 133.568 220.677 103.136 223.093C70.6862 225.668 36.2564 214.485 15.4183 189.478C-4.26522 165.856 -0.42015 132.41 2.03238 101.76C4.22255 74.389 9.0033 46.4604 28.4161 27.0407C47.8318 7.61801 75.7111 2.07135 103.136 0.620796Z"
-								fill="#D9B138" />
-							<text class="z-10 fill-white" x="50%" y="50%" dominant-baseline="middle"
-								text-anchor="middle">Get
-								in touch</text>
-						</svg></a>
-				</div>
-			</div>
-		</section>
 	</main>
+
 
 	<!--Footer-->
 	<footer class="w-full bg-black" id="footer-js">
 		<div class="footer__wrapper flex flex-col mt-20 z-10 relative max-w-6xl mx-auto">
 			<div class="flex flex-wrap flex-col text-center mb-32">
-				<h3 class="text-5xl font-bold ">Ready?<br>Let's Get Started</h3>
-				<p class="mt-2 mb-7">have a project or just want a quick chat?</p>
+				<h3 class="text-3xl md:text-5xl font-bold ">Ready?<br>Let's Get Started</h3>
+				<p class="sm:text-xs mt-2 mb-7">have a project or just want a quick chat?</p>
 				<button class="w-40 h-12 rounded-full text-black font-semibold
-				bg-white m-auto">Contact Us</button>
+				bg-white m-auto hover:bg-green-700 ease-in-out duration-200">Contact Us</button>
 			</div>
 
 			<div class="flex flex-wrap justify-between m-10 leading-[1.9rem]">
 				<div class="flex flex-wrap flex-col mb-7">
 					<p class="font-bold mb-1">Links</p>
 					<ul class="font-light">
-						<li> <a href="url">Who are we</a></li>
-						<li><a href="url">Our team</a></li>
-						<li><a href="url">Things we can do</a></li>
-						<li><a href="url">Things we have done</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li> <a href="about.html">Who are we</a></li>
+						<li><a href="#how-we-can-help">How we can help/a></li>
+						<li><a href="about.html#team">Purpose led projects</a></li>
 						<li><a href="url">Contacts</a></li>
 					</ul>
 
@@ -1093,16 +1210,18 @@ bg-deep-green
 					<div class="mb-7">
 						<p class="font-bold mb-1">Socials</p>
 						<ul class="flex flex-row gap-4 ">
-							<li
-								class="bg-white flex justify-center items-center w-10 h-10 rounded-full drop-shadow-xl socials">
+							<li class="bg-white flex justify-center items-center w-10 h-10 rounded-full drop-shadow-xl socials
+								hover:bg-green-700 ease-in-out duration-200">
 								<a href="https://www.instagram.com/thesmallgreenstudio/"><i
 										class="fa-brands fa-instagram text-black text-2xl"></i></a>
 							</li>
-							<li class="bg-white flex justify-center items-center  w-10 h-10 rounded-full socials"><a
-									href="https://www.youtube.com/channel/UCWl_P2Jdn0SPFJvH2aHpaLw/featured"><i
+							<li class="bg-white flex justify-center items-center w-10 h-10 rounded-full socials hover:bg-green-700 ease-in-out
+								duration-200">
+								<a href="https://www.youtube.com/channel/UCWl_P2Jdn0SPFJvH2aHpaLw/featured"><i
 										class="fa-brands fa-youtube text-black text-2xl"></i></a></li>
-							<li class="bg-white flex justify-center items-center  w-10 h-10 rounded-full socials"><a
-									href="https://www.linkedin.com/company/the-small-green-studio/"><i
+							<li class="bg-white flex justify-center items-center w-10 h-10 rounded-full socials hover:bg-green-700ease-in-out
+								duration-200">
+								<a href="https://www.linkedin.com/company/the-small-green-studio/"><i
 										class="fa-brands fa-linkedin text-black text-2xl"></i></a></li>
 						</ul>
 					</div>

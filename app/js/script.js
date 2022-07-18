@@ -1,35 +1,7 @@
-// const menuIcon = document.querySelector('.nav__menu');
-// const navbar = document.querySelector('.menu__layout');
-// const menuLink = document.querySelector('.navbar__list-link');
-// const header = document.querySelector('.site-nav-js');
-// const a = document.querySelectorAll('a');
-// //when the hamburger is clicked, menu opens
-// menuIcon.addEventListener('click', () => {
-// 	navbar.classList.toggle('change');
-// 	header.classList.toggle('change-nav');
-// });
-// //when a link is clicked, menu closes
-// a.forEach(item => {
-// 	item.addEventListener('click', () => {
-// 		navbar.classList.remove('change');
-// 	});
-// });
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 
-
-// --- ORANGE PANEL ---
-//variables
-// CURSOR
-
-
-
-
-
-//footer
-
+//footer date
 setInterval(() => {
 	document.querySelector('.time-js').innerHTML = 'Currently ' + refreshDate(new Date());
 }, 1000)
@@ -44,8 +16,6 @@ function refreshDate(footertime) {
 
 	});
 }
-
-
 
 
 
@@ -115,7 +85,7 @@ function menuOpen() {
 };
 
 
-
+//hero
 const tl = gsap.timeline({
 	scrollTrigger: {
 		trigger: ".orangeWrapper",
@@ -151,6 +121,7 @@ gsap.set('.categories__article', {
 const sections = gsap.utils.toArray(".principles__item");
 
 let maxWidth = 0;
+let maxStart;
 
 const getMaxWidth = () => {
 	maxWidth = 0;
@@ -182,6 +153,14 @@ gsap.to(sections, {
 		invalidateOnRefresh: true
 	}
 });
+ScrollTrigger.matchMedia({
+	"(min-width: 1500px)"() {
+		maxStart = 3;
+	},
+	"(max-width: 1500px)"() {
+		maxStart = 1.5;
+	},
+})
 
 sections.forEach((sct, i) => {
 	const smallTimeline = gsap.timeline();
@@ -191,7 +170,7 @@ sections.forEach((sct, i) => {
 
 	ScrollTrigger.create({
 		trigger: sct,
-		start: () => 'top top-=' + (sct.offsetLeft - window.innerWidth / 1.5) * (maxWidth / (maxWidth - window.innerWidth)),
+		start: () => 'top top-=' + (sct.offsetLeft - window.innerWidth / maxStart) * (maxWidth / (maxWidth - window.innerWidth)),
 		end: () => '+=' + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
 		animation: smallTimeline,
 		toggleActions: "play reverse play reverse",
@@ -285,9 +264,11 @@ $(".principles__item").on("click", function () {
 			let source = "";
 
 			if ($.inArray(index, file_type) !== -1) {
-				source += '<video class="rounded-lg w-2/3 mx-auto mt-8" autoplay loop controls muted> <source src="' + dir + imgStart + '-' + index + '-' + index + '.mp4" type="video/webm">Your browser does not support the video tag.</video>';
+				source += '<video class="rounded-lg w-2/3 mx-auto mt-8" autoplay loop controls muted> <source src="' +
+					dir + imgStart + '-' + index + '-' + index + '.mp4" type="video/webm">Your browser does not support the video tag.</video>';
 			} else {
-				source += '<img class="rounded-lg h-[60vh]  shadow-lg mx-auto" src="' + dir + imgStart + '-' + index + '.webp" alt="avatar"/>';
+				source += '<img class="rounded-lg h-[60vh]  shadow-lg mx-auto" src="' +
+					dir + imgStart + '-' + index + '.webp" alt="avatar"/>';
 			}
 
 
@@ -307,6 +288,7 @@ $(".principles__item").on("click", function () {
 });
 
 // purpose led projects
+var desktop = window.matchMedia("(min-width: 700px)")
 const link = document.querySelectorAll('.accordion-item');
 const linkHoverReveal = document.querySelectorAll('.hover-reveal');
 const linkImages = document.querySelectorAll('.hidden-img');
@@ -315,14 +297,14 @@ const linkImages = document.querySelectorAll('.hidden-img');
 for (let i = 0; i < link.length; i++) {
 	link[i].addEventListener('mousemove', (e) => {
 		linkHoverReveal[i].style.opacity = 1;
-		linkHoverReveal[i].style.transform = `translate(-100%, -50% ) rotate(5deg)`;
+		linkHoverReveal[i].style.transform = `translate(0%, -20% ) rotate(-10deg)`;
 		linkImages[i].style.transform = 'scale(1, 1)';
 		linkHoverReveal[i].style.left = e.clientX + "px";
 	})
 
 	link[i].addEventListener('mouseleave', (e) => {
 		linkHoverReveal[i].style.opacity = 0;
-		linkHoverReveal[i].style.transform = `translate(-50%, -50%) rotate(-5deg)`;
+		linkHoverReveal[i].style.transform = `translate(50%, 50%) rotate(-5deg)`;
 		linkImages[i].style.transform = 'scale(0.8, 0.8)';
 	})
 }
@@ -334,14 +316,12 @@ let bgreveal = document.querySelector(".bgreveal");
 let teambtn = document.querySelector(".team-content");
 team.onmousemove = (e) => {
 	bgreveal.style.display = "block";
-	bgreveal.style.top = `${e.clientY - 100}px`;
-	bgreveal.style.left = `${e.clientX - 100}px`;
+	bgreveal.style.top = e.clientY + "px";
+	bgreveal.style.left = e.clientX + "px";
 }
 
 team.onmouseleave = (e) => {
 	bgreveal.style.display = "none";
-	bgreveal.style.top = `${e.clientY - 100}px`;
-	bgreveal.style.left = `${e.clientX - 100}px`;
 }
 
 teambtn.addEventListener('mousemove', () => {
@@ -371,7 +351,6 @@ function windowResized() {
 
 function draw() {
 	fill('hsla(120, 100%, 75%, 0.3)');
-	//fill(0,255,0,50);
 	noStroke();
 	ellipse(mouseX, mouseY, 20);
 

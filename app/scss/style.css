@@ -446,7 +446,7 @@ body {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 1280px;
+  max-width: 1280px !important;
   /* 1 */
   margin-left: auto;
   /* 2 */
@@ -507,7 +507,6 @@ body {
 
 .change-nav {
   background-color: transparent;
-  mix-blend-mode: difference;
 }
 
 .who-are-we {
@@ -528,7 +527,6 @@ header {
           justify-content: space-between;
   padding: 20px 0px;
   z-index: 100;
-  mix-blend-mode: difference;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -732,8 +730,8 @@ ul {
 div[class^="content_"] {
   white-space: nowrap;
   will-change: transform;
-  -webkit-animation: marquee 50s linear infinite both;
-          animation: marquee 50s linear infinite both;
+  -webkit-animation: marquee 10s linear infinite both;
+          animation: marquee 10s linear infinite both;
 }
 
 .content_2 {
@@ -754,8 +752,8 @@ div[class^="content_"] {
             transform: translateX(0);
   }
   to {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
 }
 
@@ -765,8 +763,8 @@ div[class^="content_"] {
             transform: translateX(0);
   }
   to {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
   }
 }
 
@@ -816,31 +814,17 @@ footer {
   position: relative;
 }
 
-.principles__title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 42px;
-  line-height: 54px;
-  color: #1C2F6B;
-  margin-bottom: 32px;
-}
-
-.principles__counter {
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 36px;
-  color: #30C5FF;
-}
-
 .principles__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-left: calc(50vw - 370px/2);
+}
+
+@media (min-width: 1500px) {
+  .principles__list {
+    padding-left: calc(20vw - 370px/2);
+  }
 }
 
 .principles__item {
@@ -863,32 +847,6 @@ footer {
 
 .principles__item:first-of-type {
   margin-left: 0;
-}
-
-.principles__item:after {
-  display: block;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-color: #1C2F6B;
-  position: absolute;
-  left: 0;
-  top: 0;
-  -webkit-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-  -webkit-transform: scaleY(0);
-  transform: scaleY(0);
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
-  transition: transform .3s,-webkit-transform .3s;
-  z-index: -1;
-}
-
-.principles__item.active:after {
-  -webkit-transform: scaleY(1);
-  transform: scaleY(1);
 }
 
 .principles__item:hover .principles__description,
@@ -1307,8 +1265,7 @@ canvas {
   position: relative;
   width: 70%;
   height: 35vw;
-  margin: 80px auto;
-  font-family: 'Helvetica Neue', sans-serif;
+  max-height: 40rem;
   -webkit-perspective: 1400px;
           perspective: 1400px;
   -webkit-transform-style: preserve-3d;
@@ -1348,6 +1305,7 @@ input[type=radio]:checked {
   font-size: 70px;
   font-weight: bold;
   border-radius: 5px;
+  min-height: 32rem;
   cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1444,6 +1402,7 @@ input[type=radio]:checked {
           transform: scale(0.8);
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
+  z-index: 999 !important;
 }
 
 .hover-reveal img {
@@ -1456,7 +1415,11 @@ input[type=radio]:checked {
   transition: -webkit-transform .4s ease-out;
   transition: transform .4s ease-out;
   transition: transform .4s ease-out, -webkit-transform .4s ease-out;
-  z-index: 99;
+  z-index: 999 !important;
+}
+
+.team-small:hover {
+  text-decoration: none !important;
 }
 
 html,
@@ -1579,7 +1542,7 @@ body.active {
 }
 
 .reel {
-  margin-bottom: 100px;
+  margin: 200px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1589,8 +1552,8 @@ body.active {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  -webkit-animation: reel 70s linear infinite both;
-          animation: reel 70s linear infinite both;
+  -webkit-animation: reel 300s linear infinite both;
+          animation: reel 300s linear infinite both;
 }
 
 .reel:hover {
@@ -1625,8 +1588,8 @@ body.active {
 .reel .pic {
   background-position: center;
   background-size: cover;
-  width: 170px;
-  height: 300px;
+  width: 400px;
+  height: 500px;
   margin-left: 20px;
   margin-right: 20px;
   -webkit-transition: all .4s ease-in-out;
@@ -1634,15 +1597,15 @@ body.active {
 }
 
 .reel .pic:nth-child(odd) {
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
 }
 
 .reel .pic:hover {
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  -webkit-transform: scale(1.12);
-          transform: scale(1.12);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   border-radius: 2rem;
 }
 

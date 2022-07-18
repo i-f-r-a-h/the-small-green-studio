@@ -18,7 +18,7 @@ opacity: 0;
 
 .change-nav{
     background-color: transparent;
-    mix-blend-mode: difference;
+    //mix-blend-mode: difference;
 }
 .who-are-we{
   transform: rotate(52.68) ;
@@ -31,7 +31,7 @@ header {
   justify-content: space-between;
   padding: 20px 0px;
   z-index: 100;
-  mix-blend-mode: difference;
+  //mix-blend-mode: difference;
   width: 100%;
   height: fit-content;
 }
@@ -93,6 +93,9 @@ header .menu-items {
   margin: 10px 0px;
   font-weight: bold;
   overflow: hidden;
+  @media  (max-width:400px) {
+      font-size: 30px;
+  }
 }
 .menu-container-1 .menu-container-footer li {
   font-size: 30px;
