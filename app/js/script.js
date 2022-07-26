@@ -86,6 +86,7 @@ function menuOpen() {
 
 
 //hero
+const vw = (coef) => window.innerWidth * (coef / 100);
 const tl = gsap.timeline({
 	scrollTrigger: {
 		trigger: ".orangeWrapper",
@@ -93,7 +94,7 @@ const tl = gsap.timeline({
 		pin: true,
 
 		start: "50% 50%",
-		end: "+=100%"
+		end: "+=100vw"
 	}
 });
 
@@ -104,7 +105,9 @@ tl.from(".orange", {
 
 tl.to(".marquee", {
 	opacity: 0,
-	ease: "none"
+	ease: "none",
+	display: "none"
+
 });
 
 tl.to(".hero__content", {
