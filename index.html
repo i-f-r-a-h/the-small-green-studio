@@ -58,7 +58,7 @@
 	<!-- cursor -->
 
 	<!--Header-->
-	<header class="z-50">
+	<header class="z-50 bg-black">
 
 		<a href="index.html" class="ml-5 md:ml-8">
 			<div class="flex items-center flex-shrink-0 text-white">
@@ -443,6 +443,8 @@
 		<!--Video Reel-->
 		<section name="video_reel"
 			class="w-full h-screen relative mb-40 md:mb-[20rem] mt-96 md:mt-0 max-h-[25rem] md:max-h-[70rem]">
+
+			<!--SVG-->
 			<div class="h-full overflow-hidden">
 				<img class="object-fill w-full	h-screen" src="app\assets\images\background_img.png" alt="">
 				<div class="absolute bottom-3/4 left-2/4 hidden lg:block h-17 w-12">
@@ -529,6 +531,8 @@
 					</svg>
 
 				</div>
+
+				<!--Image in text-->
 				<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
 					<video class="rounded-lg hidden md:block w-[50vw] max-w-[1000px]" width="600" height="338" autoplay
 						loop playsinline muted>
@@ -539,6 +543,8 @@
 						alt="">
 				</div>
 			</div>
+
+			<!--Image in text-->
 			<div class="w-[3000px] -mt-20 md:-mt-32 absolute -left-2.5">
 				<div
 					class="w-[3000px] h-20 md:h-40 overflow-hidden relative bg-[#2A4D4C] -rotate-2 xl:w-screen flex items-center">
@@ -551,6 +557,8 @@
 					</div>
 				</div>
 
+
+				<!--Image in text-->
 				<div
 					class="w-[3000px] h-20 md:h-40 overflow-hidden relative bg-[#2A4D4C] rotate-3 mt-32 md:mt-20 xl:w-screen flex items-center">
 					<div class="track">
@@ -570,277 +578,351 @@
 
 		<!-- how we can help -->
 		<section class="principles py-10 bg-[#0f0f0f]">
+
+			<!--Container-->
 			<div class="principles__container container content-container">
 				<div class="principles__scroll pt-8">
-					<!-- title -->
-					<h2 class="title text-4xl md:text-5xl lg:text-6xl font-bold pb-10  xl:pt-6" id="how_we_can_help" v>
-						How
-						we can help
-					</h2>
+
+					<div class="principles__scroll pt-8" id="how_we_can_help">
+						<!-- title -->
+						<h2 class="title text-4xl md:text-5xl lg:text-6xl font-bold pb-10  xl:pt-6"
+							id="how_we_can_help">
+							How
+							we can help
+						</h2>
 
 
-					<!-- gallery -->
-					<div class="principles__list mb-14 pt-4">
-						<!-- narrative -->
-						<div class="principles__item opacity-5" id="item-video" data-type='[0,1,2]' data-length="2"
-							data-index="0">
-							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+						<!-- gallery -->
+						<div class="principles__list mb-14 pt-4">
+
+
+							<!-- narrative -->
+							<div class="principles__item opacity-5" id="item-video" data-type='[0,1,2]' data-length="2"
+								data-youtube='["https://www.youtube.com/embed/pEjRGedO4jI","https://www.youtube.com/embed/YSk5snvL8W0","https://www.youtube.com/embed/GmPOBWPfLw8"]'
+								data-index="0">
+								<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
 								-top-4">view
-								more <i class="align-middle fa-solid fa-arrow-right"></i>
-							</span>
-							<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
-								<source src="/app/assets/images/GALLERY/narrative_1.mp4" type="video/mp4">
-							</video>
+									more <i class="align-middle fa-solid fa-arrow-right"></i>
+								</span>
+								<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
+									<source src="/app/assets/images/GALLERY/0-0-0.mp4" type="video/mp4">
+								</video>
+							</div>
+
+
+							<!-- news -->
+							<div class="principles__item opacity-5" id="news" data-type='[0]' data-length="1"
+								data-youtube='["https://www.youtube.com/embed/MP8yjVxyXF8"]' data-index="1">
+								<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+									more <i class="align-middle fa-solid fa-arrow-right"></i>
+								</span>
+								<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
+									<source src="/app/assets/images/GALLERY/1-0-0.mp4" type="video/mp4">
+								</video>
+							</div>
+
+
+							<!-- team shots -->
+							<div class="principles__item opacity-5" data-length="8" data-index="2">
+								<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+									more <i class="align-middle fa-solid fa-arrow-right"></i>
+								</span>
+								<img class="rounded-lg object-cover h-full w-full w-"
+									src="/app/assets/images/GALLERY/2-0.webp" alt="" srcset="">
+							</div>
+
+
+							<!-- web -->
+							<div class="principles__item opacity-5" id="web" data-length="7" data-index="3">
+								<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+									more <i class="align-middle fa-solid fa-arrow-right"></i>
+								</span>
+								<img class="rounded-lg object-cover h-full w-full"
+									src="/app/assets/images/GALLERY/3-0.webp" alt="" srcset="">
+							</div>
+
+
+							<!-- conferences -->
+							<div class="principles__item opacity-5" data-length="1" data-index="4">
+								<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+									more <i class="align-middle fa-solid fa-arrow-right"></i>
+								</span>
+								<img class="rounded-lg object-cover h-full w-full"
+									src="/app/assets/images/GALLERY/4-0.webp" alt="" srcset="">
+							</div>
+
+
+							<!-- outdoor -->
+							<div class="principles__item opacity-5" data-length="6" data-type='[1,2]' data-index="5"
+								data-youtube='["https://www.youtube.com/embed/v-HLW7aDvu8","https://www.youtube.com/embed/Gej1H8HMFSo"]'
+								id="outdoor">
+								<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+									more <i class="align-middle fa-solid fa-arrow-right"></i>
+								</span>
+								<img class="rounded-lg object-cover h-full w-full"
+									src="/app/assets/images/GALLERY/5-0.webp" alt="" srcset="">
+							</div>
+
+
+							<!-- channel audit -->
+							<div class="principles__item opacity-5" data-length="0" data-index="6">
+								<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+									more <i class="align-middle fa-solid fa-arrow-right"></i>
+								</span>
+								<img class="rounded-lg object-cover h-full w-full"
+									src="/app/assets/images/GALLERY/6-0.webp" alt="" srcset="">
+							</div>
+
+
+							<!-- content creation -->
+							<div class="principles__item opacity-5" id="content" data-length="0" data-index="7">
+								<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+									more <i class="align-middle fa-solid fa-arrow-right"></i>
+								</span>
+								<img class="rounded-lg object-cover h-full w-full"
+									src="/app/assets/images/GALLERY/content_1.jpg" alt="" srcset="">
+							</div>
+
+
+							<!-- podcasting -->
+							<div class="principles__item opacity-5" data-length="0" data-index="8">
+								<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+									more <i class="align-middle fa-solid fa-arrow-right"></i>
+								</span>
+								<img class="rounded-lg object-cover h-full w-full"
+									src="/app/assets/images/GALLERY/8-0.webp" alt="" srcset="">
+							</div>
+
+
+							<!-- live streaming -->
+							<div class="principles__item opacity-5" data-length="0" data-index="9">
+								<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
+								-top-4">view
+									more <i class="align-middle fa-solid fa-arrow-right"></i>
+								</span>
+								<img class="rounded-lg object-cover h-full w-full"
+									src="/app/assets/images/GALLERY/9-0.webp" alt="" srcset="">
+							</div>
 						</div>
-						<!-- news -->
-						<div class="principles__item opacity-5" id="news" data-type='[1,2]' data-length="2"
-							data-index="1">
-							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
-								-top-4">view
-								more <i class="align-middle fa-solid fa-arrow-right"></i>
-							</span>
-							<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
-								<source src="/app/assets/images/GALLERY/news_1.mp4" type="video/mp4">
-							</video>
-						</div>
-						<!-- team shots -->
-						<div class="principles__item opacity-5" data-length="8" data-index="2">
-							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
-								-top-4">view
-								more <i class="align-middle fa-solid fa-arrow-right"></i>
-							</span>
-							<img class="rounded-lg object-cover h-full w-full w-"
-								src="/app/assets/images/GALLERY/2-0.webp" alt="" srcset="">
-						</div>
-						<!-- web -->
-						<div class="principles__item opacity-5" id="web" data-length="7" data-index="3">
-							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
-								-top-4">view
-								more <i class="align-middle fa-solid fa-arrow-right"></i>
-							</span>
-							<img class="rounded-lg object-cover h-full w-full" src="/app/assets/images/GALLERY/3-0.webp"
-								alt="" srcset="">
-						</div>
-						<!-- conferences -->
-						<div class="principles__item opacity-5" data-length="1" data-index="4">
-							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
-								-top-4">view
-								more <i class="align-middle fa-solid fa-arrow-right"></i>
-							</span>
-							<img class="rounded-lg object-cover h-full w-full"
-								src="/app/assets/images/GALLERY/conference_1.webp" alt="" srcset="">
-						</div>
-						<!-- outdoor -->
-						<div class="principles__item opacity-5" id="outdoor">
-							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
-								-top-4">view
-								more <i class="align-middle fa-solid fa-arrow-right"></i>
-							</span>
-							<img class="rounded-lg object-cover h-full w-full"
-								src="/app/assets/images/GALLERY/outdoor_1.webp" alt="" srcset="">
-						</div>
-						<!-- channel audit -->
-						<div class="principles__item opacity-5">
-							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
-								-top-4">view
-								more <i class="align-middle fa-solid fa-arrow-right"></i>
-							</span>
-							<img class="rounded-lg object-cover h-full w-full"
-								src="/app/assets/images/GALLERY/channel_1.jpg" alt="" srcset="">
-						</div>
-						<!-- content creation -->
-						<div class="principles__item opacity-5" id="content">
-							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
-								-top-4">view
-								more <i class="align-middle fa-solid fa-arrow-right"></i>
-							</span>
-							<img class="rounded-lg object-cover h-full w-full"
-								src="/app/assets/images/GALLERY/content_1.jpg" alt="" srcset="">
-						</div>
-						<!-- podcasting -->
-						<div class="principles__item opacity-5">
-							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
-								-top-4">view
-								more <i class="align-middle fa-solid fa-arrow-right"></i>
-							</span>
-							<img class="rounded-lg object-cover h-full w-full"
-								src="/app/assets/images/GALLERY/pod_1.jpg" alt="" srcset="">
-						</div>
-						<!-- live streaming -->
-						<div class="principles__item opacity-5">
-							<span class=" text-sm text-black opacity-0 absolute bg-white border border-black px-5 py-2 rounded-full -right-4
-								-top-4">view
-								more <i class="align-middle fa-solid fa-arrow-right"></i>
-							</span>
-							<img class="rounded-lg object-cover h-full w-full"
-								src="/app/assets/images/GALLERY/live_1.webp" alt="" srcset="">
+
+						<!-- content -->
+						<div class="categories__wrapper overflow-hidden ">
+
+							<!--How can we help sections-->
+							<!-- Narrative -->
+							<article
+								class="categories__article categories__article-0 opacity-5 absolute active:opacity-100"
+								data-length="3" data-index="0" data-video="">
+
+								<h3 class="md:text-xl text-base font-light mb-1">Video</h3>
+								<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">
+									Narrative
+								</h2>
+								<p
+									class="categories__article__description  text-sm md:text-base  leading-6 max-w-[35rem]">
+									We're documentary geeks and live to draw out a dynamic narrative from our
+									interviews.
+									And we work carefully to
+									get the best out of our contributors.When we combine all this with cinema and top
+									notch
+									sound design, the results are memorable and magical.</p>
+							</article>
+
+
+							<!-- news -->
+							<article
+								class="categories__article categories__article-1 opacity-5 absolute active:opacity-100"
+								data-length="2" data-index="2">
+								<h3 class="text-xl font-medium mb-1">Video</h3>
+								<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">News &
+									Reactive</h2>
+								<p
+									class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
+									We have an extended global network of producers and self directing camera
+									operators.This
+									means that when there's little time to
+									plan or a rare opportunity to capture the
+									footage our clients need,
+									we can deploy rapidly and deliver immediately. </p>
+							</article>
+
+
+							<!-- team shots -->
+							<article
+								class="categories__article categories__article-2 opacity-5 absolute active:opacity-100"
+								data-length="8" data-index="3">
+								<h3 class="text-xl font-medium mb-1">photography</h3>
+								<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Teams
+									Shots
+								</h2>
+								<p
+									class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
+									Show your values and brand personality through your team shots.We're helping lots of
+									brands refresh their photography in light of home and flexible working arrangements.
+									Set
+									your brand free with team shots that reflect this.</p>
+							</article>
+
+
+							<!-- web -->
+							<article
+								class="categories__article categories__article-3 opacity-5 absolute active:opacity-100"
+								data-length="2" data-index="3">
+								<h3 class="text-xl font-medium mb-1">photography</h3>
+								<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Web &
+									Editorial</h2>
+								<p
+									class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
+									Make your content pop with an image library of your people and products in their
+									natural
+									habitat.You can spot stock photos a mile off and it takes away from the brand you
+									work
+									hard to
+									maintain.Ask us about imagery for a specific brief, for web or editorial
+									applications.
+								</p>
+							</article>
+
+
+							<!-- conferences -->
+							<article
+								class="categories__article categories__article-4 opacity-5 absolute active:opacity-100">
+								<h3 class="text-xl font-medium mb-1">Event Capture</h3>
+								<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">
+									Conferences,
+									town halls,
+									AGM</h2>
+								<p
+									class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
+									Sometimes you want to capture the essence of a conference or event. We can offer a
+									full
+									service of delegate
+									portraits, reportage of speakers and audience participation.We can also gather
+									soundbites and commentary to promote future events or work into a
+									highlights reel.
+								</p>
+							</article>
+
+
+							<!-- outdoor -->
+							<article
+								class="categories__article categories__article-5 opacity-5 absolute active:opacity-100">
+								<h3 class="text-xl font-medium mb-1">Event Capture</h3>
+								<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Outdoor
+									and
+									Sports
+								</h2>
+								<p
+									class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
+									We love getting out and about and we're used to capturing the action, even if we
+									have to
+									chase it down.We can help the audience feel like they're part of the action, which
+									usually means
+									getting involved ourselves. Which is
+									no bad thing.
+								</p>
+							</article>
+
+							<!-- Social media -->
+							<article
+								class="categories__article categories__article-6 opacity-5 absolute active:opacity-100">
+								<h3 class="text-xl font-medium mb-1">Social Media</h3>
+								<h2
+									class="categories__article__title text-3xl md:text-5xl font-semibold mb-3 max-w-2xl">
+									Channel audit,
+									management
+									and consultancy</h2>
+								<p
+									class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
+									In our experience, we all think we can do social media because we have personal
+									accounts.It can be better to outsource it to a specialist.
+								</p>
+							</article>
+
+							<!--Content Creation-->
+							<article
+								class="categories__article categories__article-7 opacity-5 absolute active:opacity-100">
+								<h3 class="text-xl font-medium mb-1">Social Media</h3>
+								<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Content
+									creation</h2>
+								<p
+									class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
+									It can be tempting to use templated creation tools too, but how do you stand out
+									with so
+									many also doing this?
+									With any brand, engagement and interaction are key and we know lots of ways to help.
+								</p>
+							</article>
+
+
+							<!-- broadcast -->
+							<article
+								class="categories__article categories__article-8 opacity-5 absolute active:opacity-100">
+								<h3 class="text-xl font-medium mb-1">Broadcast</h3>
+								<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Pod and
+									Vodcasting</h2>
+								<p
+									class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
+									We think there's also scope to explore the power of sound design a little
+									more too rather than the
+									[insert jazz sample here] approach.We have a bit of radio and programming experience
+									to
+									throw into the mix so there's no
+									where we can't travel...with a
+									mic and a set of appropriately large cans.
+								</p>
+							</article>
+
+							<!--Livestreaming-->
+							<article
+								class="categories__article categories__article-9 opacity-5 absolute active:opacity-100">
+								<h3 class="text-xl font-medium mb-1">Broadcast</h3>
+								<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Live
+									streaming</h2>
+								<p
+									class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
+									If you've got the bandwidth, we've got the expertise. We have extensive experience
+									in
+									getting you and your content
+									through a tiny wire to your audience wherever they may be. It could be a performance
+									or
+									a hybrid event with a live
+									audience and viewers online. Get in touch for examples of how we can help.
+								</p>
+							</article>
+
 						</div>
 					</div>
-
-					<!-- content -->
-					<div class="categories__wrapper overflow-hidden ">
-						<!-- Narrative -->
-						<article class="categories__article categories__article-0 opacity-5 absolute active:opacity-100"
-							data-length="3" data-index="0" data-video="">
-
-							<h3 class="md:text-xl text-base font-light mb-1">Video</h3>
-							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">
-								Narrative
-							</h2>
-							<p class="categories__article__description  text-sm md:text-base  leading-6 max-w-[35rem]">
-								We're documentary geeks and live to draw out a dynamic narrative from our interviews.
-								And we work carefully to
-								get the best out of our contributors.When we combine all this with cinema and top notch
-								sound design, the results are memorable and magical.</p>
-						</article>
-						<!-- news -->
-						<article class="categories__article categories__article-1 opacity-5 absolute active:opacity-100"
-							data-length="2" data-index="2">
-							<h3 class="text-xl font-medium mb-1">Video</h3>
-							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">News &
-								Reactive</h2>
-							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
-								We have an extended global network of producers and self directing camera operators.This
-								means that when there's little time to
-								plan or a rare opportunity to capture the
-								footage our clients need,
-								we can deploy rapidly and deliver immediately. </p>
-						</article>
-						<!-- team shots -->
-						<article class="categories__article categories__article-2 opacity-5 absolute active:opacity-100"
-							data-length="8" data-index="3">
-							<h3 class="text-xl font-medium mb-1">photography</h3>
-							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Teams Shots
-							</h2>
-							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
-								Show your values and brand personality through your team shots.We're helping lots of
-								brands refresh their photography in light of home and flexible working arrangements. Set
-								your brand free with team shots that reflect this.</p>
-						</article>
-						<!-- web -->
-						<article class="categories__article categories__article-3 opacity-5 absolute active:opacity-100"
-							data-length="2" data-index="3">
-							<h3 class="text-xl font-medium mb-1">photography</h3>
-							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Web &
-								Editorial</h2>
-							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
-								Make your content pop with an image library of your people and products in their natural
-								habitat.You can spot stock photos a mile off and it takes away from the brand you work
-								hard to
-								maintain.Ask us about imagery for a specific brief, for web or editorial applications.
-							</p>
-						</article>
-						<!-- conferences -->
-						<article
-							class="categories__article categories__article-4 opacity-5 absolute active:opacity-100">
-							<h3 class="text-xl font-medium mb-1">Event Capture</h3>
-							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Conferences,
-								town halls,
-								AGM</h2>
-							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
-								Sometimes you want to capture the essence of a conference or event. We can offer a full
-								service of delegate
-								portraits, reportage of speakers and audience participation.We can also gather
-								soundbites and commentary to promote future events or work into a
-								highlights reel.
-							</p>
-						</article>
-						<!-- outdoor -->
-						<article
-							class="categories__article categories__article-5 opacity-5 absolute active:opacity-100">
-							<h3 class="text-xl font-medium mb-1">Event Capture</h3>
-							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Outdoor and
-								Sports
-							</h2>
-							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
-								We love getting out and about and we're used to capturing the action, even if we have to
-								chase it down.We can help the audience feel like they're part of the action, which
-								usually means
-								getting involved ourselves. Which is
-								no bad thing.
-							</p>
-						</article>
-
-						<!-- Social media -->
-						<article
-							class="categories__article categories__article-6 opacity-5 absolute active:opacity-100">
-							<h3 class="text-xl font-medium mb-1">Social Media</h3>
-							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3 max-w-2xl">
-								Channel audit,
-								management
-								and consultancy</h2>
-							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
-								In our experience, we all think we can do social media because we have personal
-								accounts.It can be better to outsource it to a specialist.
-							</p>
-						</article>
-
-						<article
-							class="categories__article categories__article-7 opacity-5 absolute active:opacity-100">
-							<h3 class="text-xl font-medium mb-1">Social Media</h3>
-							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Content
-								creation</h2>
-							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
-								It can be tempting to use templated creation tools too, but how do you stand out with so
-								many also doing this?
-								With any brand, engagement and interaction are key and we know lots of ways to help.
-							</p>
-						</article>
+				</div>
 
 
-						<!-- broadcast -->
-						<article
-							class="categories__article categories__article-8 opacity-5 absolute active:opacity-100">
-							<h3 class="text-xl font-medium mb-1">Broadcast</h3>
-							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Pod and
-								Vodcasting</h2>
-							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
-								We think there's also scope to explore the power of sound design a little
-								more too rather than the
-								[insert jazz sample here] approach.We have a bit of radio and programming experience to
-								throw into the mix so there's no
-								where we can't travel...with a
-								mic and a set of appropriately large cans.
-							</p>
-						</article>
 
-						<article
-							class="categories__article categories__article-9 opacity-5 absolute active:opacity-100">
-							<h3 class="text-xl font-medium mb-1">Broadcast</h3>
-							<h2 class="categories__article__title text-3xl md:text-5xl font-semibold mb-3">Live
-								streaming</h2>
-							<p class="categories__article__description text-sm md:text-base  leading-6 max-w-[35rem]">
-								If you've got the bandwidth, we've got the expertise. We have extensive experience in
-								getting you and your content
-								through a tiny wire to your audience wherever they may be. It could be a performance or
-								a hybrid event with a live
-								audience and viewers online. Get in touch for examples of how we can help.
-							</p>
-						</article>
 
+				<!-- Purpose Projects -->
+				<section name="purpose_projects" class="pt-96 py-36 container" id="purpose_led">
+
+					<div class="flex flex-wrap flex-col text-center mb-12">
+						<h3 class="text-5xl font-bold max-w-xs mx-auto md:max-w-none" id="purpose_led">Purpose Led
+							Projects
+						</h3>
 					</div>
-				</div>
-			</div>
+					<div class="accordion accordion-flush max-w-3xl mx-auto md:px-8" id="accordionFlushExample">
 
 
 
 
-			<!-- Purpose Projects -->
-			<section name="purpose_projects" class="pt-96 py-36 container" id="purpose_led">
-
-				<div class="flex flex-wrap flex-col text-center mb-12">
-					<h3 class="text-5xl font-bold max-w-xs mx-auto md:max-w-none" id="purpose_led">Purpose Led Projects
-					</h3>
-				</div>
-				<div class="accordion accordion-flush max-w-3xl mx-auto md:px-8" id="accordionFlushExample">
-					<!-- bird and wild coffee-->
-
-
-
-
-					<div class="accordion-item md:-ml-5  bg-light-green">
-						<h2 class="accordion-header mb-0" id="headingOne">
-							<button class=" p-8
+						<!-- bird and wild coffee-->
+						<div class="accordion-item md:-ml-5  bg-light-green">
+							<h2 class="accordion-header mb-0" id="headingOne">
+								<button class=" p-8
         relative
         flex
 		justify-between
@@ -854,36 +936,43 @@ bg-light-green
         transition
         focus:outline-none
       " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
-								aria-controls="collapseOne">
-								Bird & Wild Coffee
-								<i class="fa-solid fa-plus"></i>
-							</button>
-						</h2>
-						<div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingTwo"
-							data-bs-parent="#accordionExample">
-							<div class="accordion-body pb-10 px-5 text-black">
-								Pedrick's Zero Waste Shop is local to our studio and we shop there ourselves. We're
-								helping
-								tell the story of how an
-								average family can save tonnes of waste by refilling common containers. We're working on
-								a
-								mini documentary about zero
-								waste shops and their mission, but also sneaking some of this content out onto social
-								media
-								to boost awareness and
-								grow sales to a larger area. We even got to go on a delivery spree in their electric
-								vehicle
-								named "Lavender".
+									aria-controls="collapseOne">
+									Bird & Wild Coffee
+									<i class="fa-solid fa-plus"></i>
+								</button>
+							</h2>
+
+
+							<!--dropdown box bird & wild coffee-->
+							<div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingTwo"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body pb-10 px-5 text-black">
+									Pedrick's Zero Waste Shop is local to our studio and we shop there ourselves. We're
+									helping
+									tell the story of how an
+									average family can save tonnes of waste by refilling common containers. We're
+									working on
+									a
+									mini documentary about zero
+									waste shops and their mission, but also sneaking some of this content out onto
+									social
+									media
+									to boost awareness and
+									grow sales to a larger area. We even got to go on a delivery spree in their electric
+									vehicle
+									named "Lavender".
+								</div>
+							</div>
+							<div class="hover-reveal">
+								<img class="hidden-img" src="app/assets/images/purpose-1.webp">
 							</div>
 						</div>
-						<div class="hover-reveal">
-							<img class="hidden-img" src="app/assets/images/purpose-1.webp">
-						</div>
-					</div>
-					<!-- Pedrick's zero waste shop -->
-					<div class="accordion-item md:-ml-5 bg-light-brown">
-						<h2 class="accordion-header mb-0" id="headingTwo">
-							<button class=" p-8
+
+
+						<!-- Pedrick's zero waste shop -->
+						<div class="accordion-item md:-ml-5 bg-light-brown">
+							<h2 class="accordion-header mb-0" id="headingTwo">
+								<button class=" p-8
         relative
         flex
         items-center
@@ -897,36 +986,43 @@ bg-light-green
         transition
         focus:outline-none
       " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-								aria-controls="collapseTwo">
-								Pedrick's Zero Waste Shop
-								<i class="fa-solid fa-plus"></i>
-							</button>
-						</h2>
-						<div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
-							data-bs-parent="#accordionExample">
-							<div class="accordion-body pb-10 px-5 text-black">
-								Pedrick's Zero Waste Shop is local to our studio and we shop there ourselves. We're
-								helping
-								tell the story of how an
-								average family can save tonnes of waste by refilling common containers. We're working on
-								a
-								mini documentary about zero
-								waste shops and their mission, but also sneaking some of this content out onto social
-								media
-								to boost awareness and
-								grow sales to a larger area. We even got to go on a delivery spree in their electric
-								vehicle
-								named "Lavender".
+									aria-controls="collapseTwo">
+									Pedrick's Zero Waste Shop
+									<i class="fa-solid fa-plus"></i>
+								</button>
+							</h2>
+
+
+							<!--dropdown box pedricks zero waste shop-->
+							<div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body pb-10 px-5 text-black">
+									Pedrick's Zero Waste Shop is local to our studio and we shop there ourselves. We're
+									helping
+									tell the story of how an
+									average family can save tonnes of waste by refilling common containers. We're
+									working on
+									a
+									mini documentary about zero
+									waste shops and their mission, but also sneaking some of this content out onto
+									social
+									media
+									to boost awareness and
+									grow sales to a larger area. We even got to go on a delivery spree in their electric
+									vehicle
+									named "Lavender".
+								</div>
+							</div>
+							<div class="hover-reveal">
+								<img class="hidden-img" src="app/assets/images/purpose-5.png">
 							</div>
 						</div>
-						<div class="hover-reveal">
-							<img class="hidden-img" src="app/assets/images/purpose-5.png">
-						</div>
-					</div>
-					<!-- Westerham Brewery -->
-					<div class="accordion-item md:-ml-5  bg-forest-green">
-						<h2 class="accordion-header mb-0" id="headingThree">
-							<button class=" p-8
+
+
+						<!-- Westerham Brewery -->
+						<div class="accordion-item md:-ml-5  bg-forest-green">
+							<h2 class="accordion-header mb-0" id="headingThree">
+								<button class=" p-8
      relative
      flex
      items-center
@@ -940,38 +1036,43 @@ bg-light-green
      transition
      focus:outline-none
       " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-								aria-controls="collapseThree">
-								Westerham Brewery
-								<i class="fa-solid fa-plus"></i>
-							</button>
-						</h2>
-						<div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree"
-							data-bs-parent="#accordionExample">
-							<div class="accordion-body pb-10 px-5 text-white">
-								Pedrick's Zero Waste Shop is local to our studio and we shop there ourselves. We're
-								helping
-								tell the story of how an
-								average family can save tonnes of waste by refilling common containers. We're working on
-								a
-								mini documentary about zero
-								waste shops and their mission, but also sneaking some of this content out onto social
-								media
-								to boost awareness and
-								grow sales to a larger area. We even got to go on a delivery spree in their electric
-								vehicle
-								named "Lavender".
+									aria-controls="collapseThree">
+									Westerham Brewery
+									<i class="fa-solid fa-plus"></i>
+								</button>
+							</h2>
+
+
+							<!--dropdown box westerham brewery-->
+							<div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body pb-10 px-5 text-white">
+									Pedrick's Zero Waste Shop is local to our studio and we shop there ourselves. We're
+									helping
+									tell the story of how an
+									average family can save tonnes of waste by refilling common containers. We're
+									working on
+									a
+									mini documentary about zero
+									waste shops and their mission, but also sneaking some of this content out onto
+									social
+									media
+									to boost awareness and
+									grow sales to a larger area. We even got to go on a delivery spree in their electric
+									vehicle
+									named "Lavender".
+								</div>
+							</div>
+							<div class="hover-reveal">
+								<img class="hidden-img" src="app/assets/images/purpose-2.png">
 							</div>
 						</div>
-						<div class="hover-reveal">
-							<img class="hidden-img" src="app/assets/images/purpose-2.png">
-						</div>
-					</div>
 
 
-					<!-- The Earth Law Center -->
-					<div class="accordion-item  bg-standard-green">
-						<h2 class="accordion-header mb-0" id="headingFour">
-							<button class=" p-8
+						<!-- The Earth Law Center -->
+						<div class="accordion-item  bg-standard-green">
+							<h2 class="accordion-header mb-0" id="headingFour">
+								<button class=" p-8
         relative
         flex
 		justify-between
@@ -984,34 +1085,37 @@ bg-light-green
         transition
         focus:outline-none
       " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
-								aria-controls="collapseFour">
-								The Earth Law Center
-								<i class="fa-solid fa-plus"></i>
-							</button>
-						</h2>
-						<div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour"
-							data-bs-parent="#accordionExample">
-							<div class="accordion-body pb-10 px-5 text-black">
-								We offer our time to the Earth Law Center on a 'freetainer' basis. So far we've
-								conducted a
-								social media audit to see
-								what improvements can be made. We've also taken some of their longer webinars and
-								prepared
-								them for easier consumption
-								on YouTube and other social media. We also designed influencer meme posts aimed at
-								pointing
-								new audiences to longer
-								form content on 'rights for nature'. It's a fascinating area.
+									aria-controls="collapseFour">
+									The Earth Law Center
+									<i class="fa-solid fa-plus"></i>
+								</button>
+							</h2>
+
+
+							<!--dropdown box earth law center-->
+							<div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body pb-10 px-5 text-black">
+									We offer our time to the Earth Law Center on a 'freetainer' basis. So far we've
+									conducted a
+									social media audit to see
+									what improvements can be made. We've also taken some of their longer webinars and
+									prepared
+									them for easier consumption
+									on YouTube and other social media. We also designed influencer meme posts aimed at
+									pointing
+									new audiences to longer
+									form content on 'rights for nature'. It's a fascinating area.
+								</div>
+							</div>
+							<div class="hover-reveal">
+								<img class="hidden-img" src="app/assets/images/purpose-3.png">
 							</div>
 						</div>
-						<div class="hover-reveal">
-							<img class="hidden-img" src="app/assets/images/purpose-3.png">
-						</div>
-					</div>
-					<!-- Fairborn Snacks - Dorset -->
-					<div class="accordion-item md:-ml-4 z-10 bg-deep-green">
-						<h2 class="accordion-header mb-0" id="headingFive">
-							<button class=" p-8
+						<!-- Fairborn Snacks - Dorset -->
+						<div class="accordion-item md:-ml-4 z-10 bg-deep-green">
+							<h2 class="accordion-header mb-0" id="headingFive">
+								<button class=" p-8
         relative
         flex
         justify-between
@@ -1023,58 +1127,66 @@ bg-deep-green
         transition
         focus:outline-none
       " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
-								aria-controls="collapseFive">
-								Fairborn Snacks - Dorset
-								<i class="fa-solid fa-plus"></i>
-							</button>
-						</h2>
-						<div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive"
-							data-bs-parent="#accordionExample">
-							<div class="accordion-body pb-10 px-5 text-[#F4F4F4]">
-								High quality, ethically-produced meat snacks from Dorset.Grass fed Aberdeen Angus meat
-								is
-								air dried, flavoured
-								and packaged from surrounding farms - enabling a next to zero carbon footprint on
-								production
-								too.&nbsp;We helped with branding design that reflects the simple and 'fair born' ethos
-								of
-								the product.&nbsp;
+									aria-controls="collapseFive">
+									Fairborn Snacks - Dorset
+									<i class="fa-solid fa-plus"></i>
+								</button>
+							</h2>
+
+
+							<!--dropdown box fairborn snacks-->
+							<div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body pb-10 px-5 text-[#F4F4F4]">
+									High quality, ethically-produced meat snacks from Dorset.Grass fed Aberdeen Angus
+									meat
+									is
+									air dried, flavoured
+									and packaged from surrounding farms - enabling a next to zero carbon footprint on
+									production
+									too.&nbsp;We helped with branding design that reflects the simple and 'fair born'
+									ethos
+									of
+									the product.&nbsp;
+								</div>
+							</div>
+							<div class="hover-reveal">
+								<img class="hidden-img" src="app/assets/images/pupose-4.jpeg">
 							</div>
 						</div>
-						<div class="hover-reveal">
-							<img class="hidden-img" src="app/assets/images/pupose-4.jpeg">
-						</div>
-					</div>
-				</div>
-
-			</section>
-
-			<!--Team Small-->
-			<a href="about.html#team" class="team-small">
-				<section
-					class="team bg-[#2A4D4C] h-screen max-h-[50rem] w-full relative overflow-hidden flex flex-col justify-center items-center">
-					<div class="team-content text-center">
-						<h2 class="text-4xl md:text-6xl font-bold max-w-[80%] md:max-w-xl mx-auto mb-7">Who’s behind The
-							Small Green
-							Studio?</h2>
-						<p class="mb-4 max-w-[22rem] mx-auto">find out more about the amazing team at The Small Green
-							Studio.</p>
-						<p class="px-6 py-2.5 bg-yellow-500 text-black rounded-full max-w-[12rem] mx-auto">Click
-							anywhere to
-							learn
-							more!</p>
 					</div>
 
-
-					<div class="bgreveal hidden absolute w-52 h-52 top-[calc(50%-100px)] left-[calc(50%-100px)] rounded-full
-				bg-[url('/app/assets/images/team-bg.jpg')] shadow-[inset_0_0_10px_10px_rgba(0,0,0,0.2)] bg-cover bg-fixed">
-					</div>
 				</section>
-			</a>
+
+
 
 
 		</section>
 
+
+		<!--Team Small-->
+		<a href="about.html#team" class="team-small">
+			<section
+				class="team bg-[#2A4D4C] h-screen max-h-[50rem] w-full relative overflow-hidden flex flex-col justify-center items-center">
+				<div class="team-content text-center">
+					<h2 class="text-4xl md:text-6xl font-bold max-w-[80%] md:max-w-xl mx-auto mb-7">Who’s behind The
+						Small Green
+						Studio?</h2>
+					<p class="mb-4 max-w-[22rem] mx-auto">find out more about the amazing team at The Small Green
+						Studio.</p>
+					<p class="px-6 py-2.5 bg-yellow-500 text-black rounded-full max-w-[12rem] mx-auto">Click
+						anywhere to
+						learn
+						more!</p>
+				</div>
+
+
+				<!--image effect for drop down boxes when cursor is on the box-->
+				<div class="bgreveal hidden absolute w-52 h-52 top-[calc(50%-100px)] left-[calc(50%-100px)] rounded-full
+				bg-[url('/app/assets/images/team-bg.jpg')] shadow-[inset_0_0_10px_10px_rgba(0,0,0,0.2)] bg-cover bg-fixed">
+				</div>
+			</section>
+		</a>
 
 
 
@@ -1102,6 +1214,8 @@ bg-deep-green
 						<span>curiosity?</span>
 					</h2>
 				</div>
+
+
 				<!-- call to action -->
 				<div class="cta__blob flex justify-end relative md:-mt-20">
 					<a class="absolute z-10" href="mailto:dostuff@thesmallgreenstudio.com">
@@ -1118,6 +1232,7 @@ bg-deep-green
 				</div>
 			</div>
 		</section>
+
 
 		<!-- Modal -->
 		<section class="relative">
@@ -1137,6 +1252,8 @@ bg-deep-green
 					</div>
 				</button>
 
+
+				<!--image gallery-->
 				<section class="gallery  text-gray-800 text-center">
 
 					<h2 class="gallery__title text-xl md:text-3xl text-white font-bold mb-8">gallery</h2>
@@ -1157,6 +1274,9 @@ bg-deep-green
 									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" alt="avatar" />
 							</div> -->
 						</div>
+
+
+						<!--back button-->
 						<button
 							class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
 							type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -1164,6 +1284,9 @@ bg-deep-green
 								aria-hidden="true"></span>
 							<span class="visually-hidden">Previous</span>
 						</button>
+
+
+						<!--forward button-->
 						<button
 							class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
 							type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
@@ -1191,6 +1314,8 @@ bg-deep-green
 				bg-white m-auto hover:bg-green-700 ease-in-out duration-200">Contact Us</button>
 			</div>
 
+
+			<!--links-->
 			<div class="flex flex-wrap justify-between m-10 leading-[1.9rem]">
 				<div class="flex flex-wrap flex-col mb-7">
 					<p class="font-bold mb-1">Links</p>
@@ -1205,6 +1330,8 @@ bg-deep-green
 
 				</div>
 
+
+				<!--Email-->
 				<div class="flex flex-wrap flex-col justify-between ">
 					<div class="mb-7">
 						<p class="font-bold mb-1">Send a not so serious email</p>
@@ -1213,6 +1340,7 @@ bg-deep-green
 					</div>
 
 
+					<!--Social Media Links-->
 					<div class="mb-7">
 						<p class="font-bold mb-1">Socials</p>
 						<ul class="flex flex-row gap-4 ">
@@ -1232,12 +1360,17 @@ bg-deep-green
 						</ul>
 					</div>
 				</div>
+
+
+				<!--phone number-->
 				<div class="flex flex-wrap flex-col justify-between">
 					<div class="mb-7">
 						<p class="font-bold mb-1">Give us a ring</p>
 						<a href="tel:+447897 616938">07397616938</a>
 					</div>
 
+
+					<!--coordinates-->
 					<div class="mb-7">
 						<p class="font-bold mb-1">Just because</p>
 						<p class="font-light">51.5072 N, 0.1276 W</p>

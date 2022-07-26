@@ -525,7 +525,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 0px;
+  padding: 8px 0px;
   z-index: 100;
   width: 100%;
   height: -webkit-fit-content;
@@ -604,6 +604,12 @@ header .menu-items {
   margin: 10px 0px;
   font-weight: bold;
   overflow: hidden;
+}
+
+@media (max-width: 400px) {
+  .menu-container-1 .menu-container-header li {
+    font-size: 30px;
+  }
 }
 
 .menu-container-1 .menu-container-footer li {
@@ -928,12 +934,11 @@ footer {
   -webkit-box-shadow: 0 0 20px 0 #222;
   -moz-box-shadow: 0 0 20px 0 #222;
   display: none;
-  height: 80vh;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  padding: 10px;
+  padding: 3rem 1rem;
   position: fixed;
   width: 80vw;
   z-index: 1000;
@@ -1273,26 +1278,11 @@ canvas {
 }
 
 input[type=radio] {
-  position: relative;
-  top: 108%;
-  left: 50%;
-  width: 18px;
-  height: 18px;
-  margin: 0 15px 0 0;
-  opacity: 0.4;
-  background-image: url("app/assets/images/input.svg");
-  -webkit-transform: translateX(-83px);
-          transform: translateX(-83px);
-  cursor: pointer;
+  opacity: 0;
 }
 
-input[type=radio]:nth-child(5) {
-  margin-right: 0px;
-}
-
-input[type=radio]:checked {
-  opacity: 1;
-  width: 30px;
+input[type=radio]:focus {
+  outline: none !important;
 }
 
 #slider label {
@@ -1317,6 +1307,10 @@ input[type=radio]:checked {
   transition: -webkit-transform 400ms ease;
   transition: transform 400ms ease;
   transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+#slider label:focus {
+  outline: none !important;
 }
 
 .slide1 {
@@ -1531,14 +1525,26 @@ body.active {
 }
 
 .card {
-  margin-left: -18em;
-  -webkit-transition: margin-left 200ms;
-  transition: margin-left 200ms;
-  border-radius: 1rem;
+  -webkit-transition: margin-top 200ms;
+  transition: margin-top 200ms;
 }
 
-.card:hover + .card {
-  margin-left: -1em;
+@media (min-width: 768px) {
+  .card {
+    -webkit-transition: margin-left 200ms;
+    transition: margin-left 200ms;
+  }
+}
+
+.card:focus + .card, .card:hover + .card {
+  margin-top: -1em;
+}
+
+@media (min-width: 768px) {
+  .card:focus + .card, .card:hover + .card {
+    margin-left: -1em;
+    margin-top: 0em;
+  }
 }
 
 .reel {
@@ -1546,7 +1552,6 @@ body.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 500%;
   height: 450px;
   -webkit-box-align: center;
       -ms-flex-align: center;

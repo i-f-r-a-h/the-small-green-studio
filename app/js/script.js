@@ -246,17 +246,16 @@ $(".principles__item").on("click", function () {
 	var dir = "app/assets/images/GALLERY/"; // folder location
 	var fileextension = ".webp"; // image format
 	var index = 0;
+	var video = 0;
 	// var j = "2"; // dynamic
 	let imgLength = +$(this).data("length");
 	let imgStart = +$(this).data("index");
 	let file_type = $(this).data("type");
+	let youtube = $(this).data("youtube");
 
 	// check if video or image
 
-	var folder = "app/assets/images/GALLERY/";
-	// if ($.inArray($this.data('video'), $this.data('video')) !== -1) {
-	// 	$this.children('.status').text('New text value');
-	// }
+	var folder = "app/assets/images/GALLERY/"; // change folder directory
 	$(".gallery__title").html($('.categories__article-' + imgStart + ' h2').html() + ' Gallery');
 	console.log(jQuery.type(file_type));
 
@@ -265,15 +264,15 @@ $(".principles__item").on("click", function () {
 		if (index <= imgLength) {
 
 			let source = "";
-
 			if ($.inArray(index, file_type) !== -1) {
-				source += '<video class="rounded-lg w-2/3 mx-auto mt-8" autoplay loop controls muted> <source src="' +
-					dir + imgStart + '-' + index + '-' + index + '.mp4" type="video/webm">Your browser does not support the video tag.</video>';
+
+				source += '<iframe class="rounded-lg h-[60vh] w-[60vw] mx-auto"  src="' + youtube[video] + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+				video++;
+
 			} else {
 				source += '<img class="rounded-lg h-[60vh]  shadow-lg mx-auto" src="' +
 					dir + imgStart + '-' + index + '.webp" alt="avatar"/>';
 			}
-
 
 			//active
 			if (index == 0) {
@@ -284,6 +283,7 @@ $(".principles__item").on("click", function () {
 
 			}
 			index++;
+			console.log("video number" + index);
 			imageloop();
 		}
 	}
