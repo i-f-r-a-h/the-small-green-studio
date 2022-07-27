@@ -291,45 +291,64 @@ $(".principles__item").on("click", function () {
 });
 
 // purpose led projects
-var desktop = window.matchMedia("(min-width: 700px)")
+
 const link = document.querySelectorAll('.accordion-item');
 const linkHoverReveal = document.querySelectorAll('.hover-reveal');
 const linkImages = document.querySelectorAll('.hidden-img');
 
+function hoverEffect(desktop) {
+	if (desktop.matches) {
+		for (let i = 0; i < link.length; i++) {
+			link[i].addEventListener('mousemove', (e) => {
+				linkHoverReveal[i].style.opacity = 1;
+				linkHoverReveal[i].style.transform = `translate(0%, -20% ) rotate(-10deg)`;
+				linkImages[i].style.transform = 'scale(1, 1)';
+				linkHoverReveal[i].style.left = e.clientX + "px";
+			})
 
-for (let i = 0; i < link.length; i++) {
-	link[i].addEventListener('mousemove', (e) => {
-		linkHoverReveal[i].style.opacity = 1;
-		linkHoverReveal[i].style.transform = `translate(0%, -20% ) rotate(-10deg)`;
-		linkImages[i].style.transform = 'scale(1, 1)';
-		linkHoverReveal[i].style.left = e.clientX + "px";
-	})
-
-	link[i].addEventListener('mouseleave', (e) => {
-		linkHoverReveal[i].style.opacity = 0;
-		linkHoverReveal[i].style.transform = `translate(50%, 50%) rotate(-5deg)`;
-		linkImages[i].style.transform = 'scale(0.8, 0.8)';
-	})
+			link[i].addEventListener('mouseleave', (e) => {
+				linkHoverReveal[i].style.opacity = 0;
+				linkHoverReveal[i].style.transform = `translate(50%, 50%) rotate(-5deg)`;
+				linkImages[i].style.transform = 'scale(0.8, 0.8)';
+			})
+		}
+	}
 }
+
+var desktop = window.matchMedia("(min-width: 700px)");
+hoverEffect(desktop);
+desktop.addEventListener(hoverEffect);
+
 
 
 //team
 let team = document.querySelector(".team");
 let bgreveal = document.querySelector(".bgreveal");
 let teambtn = document.querySelector(".team-content");
-team.onmousemove = (e) => {
-	bgreveal.style.display = "block";
-	bgreveal.style.top = e.clientY + "px";
-	bgreveal.style.left = e.clientX + "px";
+
+function teamCursor(desktop) {
+	if (desktop.matches) {
+		team.onmousemove = (e) => {
+			bgreveal.style.display = "block";
+			bgreveal.style.top = e.clientY + "px";
+			bgreveal.style.left = e.clientX + "px";
+		}
+
+		team.onmouseleave = (e) => {
+			bgreveal.style.display = "none";
+		}
+
+		teambtn.addEventListener('mousemove', () => {
+			bgreveal.style.display = "none";
+		})
+	}
+
 }
 
-team.onmouseleave = (e) => {
-	bgreveal.style.display = "none";
-}
 
-teambtn.addEventListener('mousemove', () => {
-	bgreveal.style.display = "none";
-})
+teamCursor(desktop);
+desktop.addEventListener(teamCursor);
+
 
 
 

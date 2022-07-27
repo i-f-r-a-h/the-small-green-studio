@@ -91,38 +91,7 @@ tl.to(".hero__content", {
 
 
 
-//variables
-let maincursor = $(".cursor"),
-    follower = $(".cursor__follower");
 
-let posX = 0,
-    posY = 0,
-    mouseX = 0,
-    mouseY = 0;
-
-//cursor change effect
-TweenMax.to({}, 0.016, {
-    repeat: -1,
-    onRepeat: function () {
-        posX += (mouseX - posX) / 9;
-        posY += (mouseY - posY) / 9;
-
-        TweenMax.set(follower, {
-            css: {
-                left: posX - 20,
-                top: posY - 20
-            }
-        });
-
-        TweenMax.set(maincursor, {
-            css: {
-                left: mouseX,
-                top: mouseY
-            }
-        });
-
-    }
-});
 
 //event listeners
 $(document).on("mousemove", function (e) {
@@ -130,42 +99,83 @@ $(document).on("mousemove", function (e) {
     mouseY = e.pageY;
 });
 
-$(".team-js").on("mouseenter", function () {
-    maincursor.addClass("active--cursor");
-    follower.addClass("active--cursor");
-    if ($(this).find(".about__info-js").is(":visible")) {
-        $(".active--cursor").attr('data-before', 'close');
+function aboutCursor(desktop) {
+    if (desktop.matches) {
+        //variables
+        let maincursor = $(".cursor").show(),
+            follower = $(".cursor__follower").show();
+
+        let posX = 0,
+            posY = 0,
+            mouseX = 0,
+            mouseY = 0;
+
+        //cursor change effect
+        TweenMax.to({}, 0.016, {
+            repeat: -1,
+            onRepeat: function () {
+                posX += (mouseX - posX) / 9;
+                posY += (mouseY - posY) / 9;
+
+                TweenMax.set(follower, {
+                    css: {
+                        left: posX - 20,
+                        top: posY - 20
+                    }
+                });
+
+                TweenMax.set(maincursor, {
+                    css: {
+                        left: mouseX,
+                        top: mouseY
+                    }
+                });
+
+            }
+        });
+        $(".team-js").on("mouseenter", function () {
+            maincursor.addClass("active--cursor");
+            follower.addClass("active--cursor");
+            if ($(this).find(".about__info-js").is(":visible")) {
+                $(".active--cursor").attr('data-before', 'close');
+            } else {
+                $(".active--cursor").attr('data-before', 'view');
+            }
+        });
+
+        $(".team-js img").on("mouseleave", function () {
+            maincursor.removeClass("active--cursor");
+            follower.removeClass("active--cursor");
+        });
+
+
+        $(".team-js").on("click", function () {
+            $(this).find(".about__info-js").slideToggle("slow", function () {
+                if ($(".about__info-js").is(":visible")) {
+                    $(".active--cursor").attr('data-before', 'close');
+                } else {
+                    $(".active--cursor").attr('data-before', 'view');
+                }
+            });
+        });
     } else {
-        $(".active--cursor").attr('data-before', 'view');
+        $(".team-js").on("click", function () {
+            $(this).find(".about__info-js").slideToggle();
+        });
+
+        $(".cursor").hide();
+        $(".cursor__follower").hide();
     }
-});
 
-$(".team-js img").on("mouseleave", function () {
-    maincursor.removeClass("active--cursor");
-    follower.removeClass("active--cursor");
-});
+}
+
+var desktop = window.matchMedia("(min-width: 900px)");
+aboutCursor(desktop);
+desktop.addEventListener(aboutCursor);
 
 
-$(".team-js").on("click", function () {
-    $(this).find(".about__info-js").slideToggle("slow", function () {
-        if ($(".about__info-js").is(":visible")) {
-            $(".active--cursor").attr('data-before', 'close');
-        } else {
-            $(".active--cursor").attr('data-before', 'view');
-        }
-    });
-});
 
-//gallery
-// gsap.from(".reel", {
-//     scrollTrigger: {
-//         trigger: ".reel",
-//         toggleActions: "restart pause reverse pause"
-//     },
-//     y: -200,
-//     opacity: 0,
-//     duration: 2
-// })
+//footer
 setInterval(() => {
     document.querySelector('.time-js').innerHTML = 'Currently ' + refreshDate(new Date());
 }, 1000)

@@ -125,7 +125,7 @@ body.active {  overflow-y: hidden!important; }
 //gallery
 
 .reel{
-    margin: 200px 0;
+    margin: 80px 0;
     display: flex;
     height: 450px;
     align-items: center;
@@ -135,6 +135,8 @@ body.active {  overflow-y: hidden!important; }
       animation-play-state: paused;
       transition: .5s ease-in-out;
      }
+       @media(min-width:600px){    margin: 200px 0;
+       }
 }
 @keyframes reel{
     from{
