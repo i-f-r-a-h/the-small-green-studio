@@ -791,7 +791,7 @@ body {
 footer {
   background-color: 1D1D1D;
   position: relative;
-  width: 200%;
+  width: 100%;
   overflow: hidden;
   z-index: 1;
 }
@@ -1615,19 +1615,19 @@ body.active {
 }
 
 .reel .pic0 {
-  background-image: url(/dist/assets/images/gallery1.jpg);
+  background-image: url(/dist/assets/images/GALLERY/9-0.webp);
 }
 
 .reel .pic1 {
-  background-image: url(/dist/assets/images/gallery2.jpg);
+  background-image: url(/dist/assets/images/icebergs/P102332.jpg);
 }
 
 .reel .pic2 {
-  background-image: url(/dist/assets/images/gallery3.jpg);
+  background-image: url(/dist/assets/images/brewery/RAMSGATE.jpg);
 }
 
 .reel .pic3 {
-  background-image: url(/dist/assets/images/gallery4.jpg);
+  background-image: url(/dist/assets/images/brewery/SamBrook.jpg);
 }
 
 .reel .pic4 {

@@ -12,7 +12,7 @@
 
 
   <link rel="stylesheet" href="/dist/style.css" />
-  <script defer src="/dist/script.js"></script>
+
 
 
 
@@ -21,7 +21,7 @@
 <body>
 
   <!--Header-->
-  <header class="z-50">
+  <header class="z-50 bg-[#0f0f0f]">
 
     <a href="index.html" class="ml-5 md:ml-8">
       <div class="flex items-center flex-shrink-0 text-white">
@@ -32,7 +32,7 @@
           <ellipse cx="16.0893" cy="10.947" rx="8.69478" ry="8.65595" fill="#33FF00" fill-opacity="0.59" />
           <path d="M12.0148 21.832L11.5371 22.364L12.64 22.0922L12.0148 21.832Z" fill="#D77706" />
           <g style="mix-blend-mode:hard-light">
-            <ellipse cx="8.98189" cy="8.65595" rx="8.69478" ry="8.65595" fill="#5BDDBE" fill-opacity="0.82" />
+            <ellipse cx="8.98189" cy="8.65595" rx="8.69478" ry="8.65595" fill="#5bdda0" fill-opacity="0.82" />
           </g>
           <path d="M15.2148 24.5704L16.1197 22.0831L16.6323 19.5171L17.7079 19.4551V34.002H15.2148V29.2862V24.5704Z"
             fill="#D77706" />
@@ -40,15 +40,15 @@
             d="M12.3173 22.0456C12.5309 21.7893 17.2272 24.3374 17.2272 24.3374L15.235 27.819C15.235 27.819 15.315 24.1389 12.8088 23.1901C10.3025 22.2413 12.1038 22.3019 12.3173 22.0456Z"
             fill="#D77706" />
         </svg>
-        <!-- <span class="font-semibold text-sm tracking-tight ml-1 hidden md:block">The Small Green
-					Studio</span> -->
+        <img class="max-w-none w-24 md:block hidden " src="app/assets/images/logo_text.svg"
+          alt="The Small Green Studio Logo">
 
       </div>
     </a>
 
     <div class="menu-items mr-4 md:mr-9">
       <div class="hidden md:block">
-        <a href="#" class="inline-block px-6 py-2.5 bg-yellow-500 text-black font-medium text-sm leading-tight 
+        <a href="mailto:dostuff@thesmallgreenstudio.com" class="inline-block px-6 py-2.5 bg-yellow-500 text-black font-medium text-sm leading-tight 
 						rounded-full shadow-md hover:bg-yellow-600 hover:shadow-lg focus:bg-yellow-600 focus:shadow-lg focus:outline-none
 						focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out">Contact
           Us</a>
@@ -61,12 +61,12 @@
             d="M47.3009 6.11528C39.448 5.4595 31.8609 7.03966 25.0124 8.56538C16.5028 10.4612 5.16168 13.7454 2.12454 19.9626C-0.911974 26.1786 7.96299 31.9421 15.9692 35.2653C29.8766 41.038 47.5516 42.7498 61.6241 41.7195C73.7422 40.8322 86.9601 38.2824 95.3907 32.8118C100.802 29.3008 104.127 23.6189 100.119 17.7355C95.1275 10.408 84.4785 6.24188 74.0985 4.29637C55.2361 0.761023 36.2723 1.74063 18.1935 2.31607"
             stroke="white" stroke-width="2" stroke-linecap="round" />
         </svg>
-        <div class="menu text-2xl leading-[2]" onclick="menuOpen()">
+        <span class="menu text-2xl right-3 leading-[2]" onclick="menuOpen()">
           <span id="menuBtn">
-            <div id="menuBtnDiv">menu</div>
-            <div id="menuBtnDiv2">close</div>
+            <span id="menuBtnDiv">menu</span>
+            <span id="menuBtnDiv2">close</span>
           </span>
-        </div>
+        </span>
       </button>
     </div>
   </header>
@@ -79,27 +79,31 @@
       <div></div>
       <div class="menu-container-header">
         <ul>
-          <li><a href="about.html" target="_blank"><span>Who are we</span></a></li>
-          <li><span>How we can help</span></li>
-          <li><span>Purpose led projects</span></li>
-          <li class="md:hidden"><span>contact</span></li>
+          <li><a href="about.html"><span>Who are we</span></a></li>
+          <li class="menu-close"><span> <a href="#how_we_can_help"> How we can help</a></span></li>
+          <li class="menu-close"><a href="#purpose_led"><span> Purpose led projects </span></a></li>
+          <li class="md:hidden"><span> <a href="mailto:dostuff@thesmallgreenstudio.com"> contact</a></span>
+          </li>
         </ul>
       </div>
-      <div class="menu-container-footer">
+      <div>
         <ul class="hidden md:block">
-          <li id="special-li">Latest work</li>
-          <li><span>Bird & wild Coffee</span></li>
-          <li><span>Pedrick’s Zero Waste Shop</span></li>
-          <li><span>The Earth Law Center</span></li>
-          <li><span>Westerham Brewery</span></li>
+          <li id="special-li">Featured services</li>
+          <li><a href="#web"><span>Web & Editorial</span></a></li>
+          <li><a href="#content"><span>Content Creation</span></a></li>
+          <li><a href="#news"><span>News & Reactive</span></a></li>
+          <li><a href="#outdoor"><span>Outdoor and Sports</span></a></li>
         </ul>
         <ul class="flex flex-row gap-4 mt-4 md:hidden">
-          <li class="bg-white flex justify-center items-center w-10 h-10 rounded-full drop-shadow-xl"><a href="#"><i
+          <li class="bg-white flex justify-center items-center w-10 h-10 rounded-full drop-shadow-xl"><a
+              href="https://www.instagram.com/thesmallgreenstudio/"><i
                 class="fa-brands fa-instagram text-black text-2xl"></i></a>
           </li>
-          <li class="bg-white flex justify-center items-center  w-10 h-10 rounded-full"><a href="#"><i
+          <li class="bg-white flex justify-center items-center  w-10 h-10 rounded-full"><a
+              href="https://www.youtube.com/channel/UCWl_P2Jdn0SPFJvH2aHpaLw/featured"><i
                 class="fa-brands fa-youtube text-black text-2xl"></i></a></li>
-          <li class="bg-white flex justify-center items-center  w-10 h-10 rounded-full"><a href="#"><i
+          <li class="bg-white flex justify-center items-center  w-10 h-10 rounded-full"><a
+              href="https://www.linkedin.com/company/the-small-green-studio/"><i
                 class="fa-brands fa-linkedin text-black text-2xl"></i></a></li>
         </ul>
       </div>
@@ -107,11 +111,13 @@
     <div class="md:!flex menu-container-2">
       <div class="menu-container-footer">
         <ul>
-          <li><span>Email us</span></li>
-          <li><span>Give us a ring</span></li>
-          <li><span>Youtube</span></li>
-          <li><span>Linkedin</span></li>
-          <li><span>Instagram</span></li>
+          <li><span> <a href="mailto:dostuff@thesmallgreenstudio.com"> Email us</a></span></li>
+          <li><span> <a href="tel:07897616938"> Give us a ring </a></span></li>
+          <li><span><a href="https://www.youtube.com/channel/UCWl_P2Jdn0SPFJvH2aHpaLw/featured">Youtube</a></span>
+          </li>
+          <li><span><a href="https://www.linkedin.com/company/the-small-green-studio/"> Linkedin</a></span>
+          </li>
+          <li><span><a href="https://www.instagram.com/thesmallgreenstudio/"> Instagram </a></span></li>
         </ul>
       </div>
     </div>
@@ -157,25 +163,40 @@
         <h2 class="text-3xl md:text-5xl font-semibold leading-relaxed ">Well, this is <span
             class="different-font">awkward</span>,you
           just broke our website :(</h2>
-        <p class="mt-10 text-base">Just kidding! the page you are looking for doesn't exist.</p>
-        <button
-          class=" bg-white py-4 px-6 rounded-3xl mt-10 text-black text-base 	hover:bg-green-700 hover:text-white ease-in-out duration-200"><a
-            href="index.html">Return
-            Home</a></button>
+        <p class="my-10 text-base">Just kidding! the page you are looking for doesn't exist.</p>
+
+        <a href="index.html"
+          class=" bg-white py-4 px-6 rounded-3xl mt-10 text-black text-base 	hover:bg-green-700 hover:text-white ease-in-out duration-200">Return
+          Home</a>
       </div>
 
       <!-- gifs -->
 
       <img src="app/assets/images/lost_1.gif"
-        class="absolute -z-40 left-[5%] top-[20%] -rotate-12 w-[35vw] max-w-[70rem]">
+        class="absolute -z-40 left-[5%] top-[20%] -rotate-12 w-[35vw] max-w-[70rem]"
+        alt="pulp fiction gif of Vincent Vega being lost">
 
 
-      <img src="app/assets/images/lost_2.gif" class="absolute -z-40 right-[15%] bottom-[20%] rotate-12 w-[20vw]">
+      <img src="app/assets/images/lost_2.gif" class="absolute -z-40 right-[15%] bottom-[20%] rotate-12 w-[20vw]"
+        alt="Gif of homer simpson walking backwards into a bush">
 
     </section>
 
   </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+
+  <script defer src="/dist/script.js"></script>
 </body>
+
+
+
+
 
 </html>
 <!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->

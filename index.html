@@ -47,7 +47,7 @@
 	<link rel="stylesheet" href="/dist/style.css" />
 
 
-	<link defer rel="stylesheet" href="assets/css/blobz.min.css">
+	<link rel="preconnect" href="assets/css/blobz.min.css">
 
 
 	<!-- p5 -->
@@ -58,7 +58,7 @@
 	<!-- cursor -->
 
 	<!--Header-->
-	<header class="z-50 bg-black">
+	<header class="z-50 bg-[#0f0f0f]">
 
 		<a href="index.html" class="ml-5 md:ml-8">
 			<div class="flex items-center flex-shrink-0 text-white">
@@ -151,7 +151,7 @@
 			<div class="menu-container-footer">
 				<ul>
 					<li><span> <a href="mailto:dostuff@thesmallgreenstudio.com"> Email us</a></span></li>
-					<li><span> <a href="tel:+447897 616938"> Give us a ring </a></span></li>
+					<li><span> <a href="tel:07897 616938"> Give us a ring </a></span></li>
 					<li><span><a
 								href="https://www.youtube.com/channel/UCWl_P2Jdn0SPFJvH2aHpaLw/featured">Youtube</a></span>
 					</li>
@@ -217,12 +217,12 @@
 			<!-- video -->
 			<div class="panel orangeWrapper">
 				<!-- hero content -->
-				<section class="panel orange">
+				<div class="panel orange">
 
 					<video class="scale-110 rounded-lg  object-cover h-full z-10 " autoplay loop playsinline muted>
-						<source src="/dist/assets/videos/hero_reel.mp4" type="video/mp4">
+						<source src="/dist/assets/images/SiteLoop_1.webm" type="video/mp4">
 					</video>
-				</section>
+				</div>
 
 			</div>
 			<!-- marquee -->
@@ -446,7 +446,7 @@
 
 			<!--SVG-->
 			<div class="h-full overflow-hidden">
-				<img class="object-fill w-full	h-screen" src="app\assets\images\background_img.png" alt="">
+				<img class="object-fill w-full	h-screen" src="\dist\assets\images\background_img.png" alt="">
 				<div class="absolute bottom-3/4 left-2/4 hidden lg:block h-17 w-12">
 					<svg width="610" height="72" viewBox="0 0 610 72" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
@@ -536,11 +536,10 @@
 				<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
 					<video class="rounded-lg hidden md:block w-[50vw] max-w-[1000px]" width="600" height="338" autoplay
 						loop playsinline muted>
-						<source src="app/assets/videos/SiteLoop_2.webm" type="video/webm">
+						<source src="/dist/assets/images/SiteLoop_2.webm" type="video/webm">
 						Your browser does not support the video tag.
 					</video>
-					<img class="block md:hidden rounded-2xl" src="app\assets\images\CASE STUDY CYCLE EVENT\P1433878.jpg"
-						alt="">
+					<img class="block md:hidden rounded-2xl" src="\dist\assets\images\cycle\P1433878.jpg" alt="">
 				</div>
 			</div>
 
@@ -687,7 +686,7 @@
 									more <i class="align-middle fa-solid fa-arrow-right"></i>
 								</span>
 								<img class="rounded-lg object-cover h-full w-full"
-									src="/app/assets/images/GALLERY/content_1.jpg" alt="" srcset="">
+									src="/app/assets/images/GALLERY/7-0.webp" alt="" srcset="">
 							</div>
 
 
@@ -1198,7 +1197,7 @@ bg-deep-green
 					<h2 class="text-7xl md:text-8xl font-semibold flex flex-wrap ">
 						<span>That's it for now,</span>
 						<span class="hidden md:inline-block"><img class="object-cover w-[400px] h-28"
-								src="app/assets/images/EVENT_CAPTURE.jpg" alt=""></span>
+								src="app/assets/images/GALLERY/4-1.webp" alt=""></span>
 						<span>so have</span>
 						<span class="hidden md:block mx-8"><img class="object-cover  w-[200px] h-[150%]"
 								src="app/assets/images/CASE STUDY ICEBERGS/P1023196.jpg" alt=""></span>
@@ -1217,11 +1216,11 @@ bg-deep-green
 
 
 				<!-- call to action -->
-				<div class="cta__blob flex justify-end relative md:-mt-20">
+				<div class="cta__blob flex justify-end relative md:mt-20">
 					<a class="absolute z-10" href="mailto:dostuff@thesmallgreenstudio.com">
 						<svg width="216" height="224" viewBox="0 0 216 224" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
-							<path class="hover:fill-green-700 ease-in-out duration-200" fill-rule="evenodd"
+							<path class="hover:fill-green-700 ease-in-out duration-300" fill-rule="evenodd"
 								clip-rule="evenodd"
 								d="M103.136 0.620796C132.552 -0.935111 164.334 -1.04249 186.201 18.695C208.832 39.1218 216.778 71.3156 215.188 101.76C213.677 130.68 197.6 155.303 177.953 176.577C157.241 199.004 133.568 220.677 103.136 223.093C70.6862 225.668 36.2564 214.485 15.4183 189.478C-4.26522 165.856 -0.42015 132.41 2.03238 101.76C4.22255 74.389 9.0033 46.4604 28.4161 27.0407C47.8318 7.61801 75.7111 2.07135 103.136 0.620796Z"
 								fill="#D9B138" />
@@ -1261,21 +1260,7 @@ bg-deep-green
 					<div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
 						<div class="carousel-inner relative w-full overflow-hidden">
 							<!-- insert images/videos here -->
-							<!-- <div class="carousel-item active relative float-left w-full">
-								<img class="rounded-lg shadow-lg mb-6 mx-auto"
-									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" alt="avatar" />
-							</div>
-							<div class="carousel-item relative float-left w-full">
-								<img class="rounded-lg shadow-lg mb-6 mx-auto"
-									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" alt="avatar" />
-							</div>
-							<div class="carousel-item relative float-left w-full">
-								<img class="rounded-lg shadow-lg mb-6 mx-auto"
-									src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" alt="avatar" />
-							</div> -->
 						</div>
-
-
 						<!--back button-->
 						<button
 							class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
