@@ -332,11 +332,11 @@ function hoverEffect(desktop) {
 		teambtn.addEventListener('mousemove', () => {
 			bgreveal.style.display = "none";
 		})
-		$(window).resize(function () {
+		// $(window).resize(function () {
 
-			window.location.href = window.location.href;
+		// 	window.location.href = window.location.href;
 
-		});
+		// });
 	}
 }
 
