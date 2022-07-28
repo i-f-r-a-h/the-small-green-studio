@@ -171,7 +171,7 @@ function aboutCursor(desktop) {
 
 var desktop = window.matchMedia("(min-width: 900px)");
 aboutCursor(desktop);
-desktop.addEventListener(aboutCursor);
+
 
 
 

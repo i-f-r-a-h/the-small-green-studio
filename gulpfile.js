@@ -54,7 +54,7 @@ function scssTask() {
 
 // JavaScript Task
 function jsTask() {
-	return src('app/js/script.js', {
+	return src('app/js/*.js', {
 			sourcemaps: true
 		})
 		.pipe(babel({

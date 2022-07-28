@@ -36,14 +36,12 @@
 	<meta name="twitter:image" content="/dist/favicon_io/large-icon.png">
 
 
-	<link rel="icon" type="image/png" href="/app/favicon_io/favicon-32X32.png" />
+	<link rel="icon" type="image/png" href="/dist/favicon_io/favicon-32X32.png" />
 	<link rel="canonical" href="https://thesmallgreenstudio.com/">
 	<script src="https://kit.fontawesome.com/20f93d43bc.js" crossorigin="anonymous"></script>
 	<meta property="og:locale" content="en-gb">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
-
 	<link rel="stylesheet" href="/dist/style.css" />
 
 
@@ -80,8 +78,7 @@
 						d="M12.3173 22.0456C12.5309 21.7893 17.2272 24.3374 17.2272 24.3374L15.235 27.819C15.235 27.819 15.315 24.1389 12.8088 23.1901C10.3025 22.2413 12.1038 22.3019 12.3173 22.0456Z"
 						fill="#D77706" />
 				</svg>
-				<img loading="eager" class="max-w-none w-24 md:block hidden " src="\dist\assets\images\logo_text.svg"
-					alt="logo_text" srcset="">
+				<img class="max-w-none w-24 md:block hidden " src="/dist/assets/images/logo_text.svg" alt="logo text">
 
 			</div>
 		</a>
@@ -119,9 +116,9 @@
 			<div></div>
 			<div class="menu-container-header">
 				<ul>
+					<li><a href="index.html"><span>Home</span></a></li>
 					<li><a href="about.html"><span>Who are we</span></a></li>
 					<li class="menu-close"><span> <a href="#how_we_can_help"> How we can help</a></span></li>
-					<li class="menu-close"><a href="#purpose_led"><span> Purpose led projects </span></a></li>
 					<li class="md:hidden"><span> <a href="mailto:dostuff@thesmallgreenstudio.com"> contact</a></span>
 					</li>
 				</ul>
@@ -152,7 +149,7 @@
 			<div class="menu-container-footer">
 				<ul>
 					<li><span> <a href="mailto:dostuff@thesmallgreenstudio.com"> Email us</a></span></li>
-					<li><span> <a href="tel:07897 616938"> Give us a ring </a></span></li>
+					<li><span> <a href="tel:07897616938"> Give us a ring </a></span></li>
 					<li><span><a
 								href="https://www.youtube.com/channel/UCWl_P2Jdn0SPFJvH2aHpaLw/featured">Youtube</a></span>
 					</li>
@@ -165,15 +162,16 @@
 	</nav>
 
 
-	<main class="overflow-hidden lg:overflow-auto">
+	<main class="overflow-hidden lg:overflow-visible">
 
 		<!-- hero section -->
-		<section class="relative w-full h-full">
+		<section>
 
 			<!-- hero content -->
-			<div class="hero__content container  px-0 h-screen opacity-0  z-20 flex flex-row align-bottom w-full">
+			<div
+				class="hero__content container  px-0 h-screen lg:opacity-0 sticky z-20 flex flex-row align-bottom w-full">
 
-				<div class="flex flex-col basis-1/2 justify-center md:ml-0 ml-8">
+				<div class="flex flex-col basis-1/2 justify-center md:ml-0 ml-2">
 					<h1 class="hero__title lg:text-7xl max-w-0"><span class="block">The</span><span
 							class="uppercase">Purpose</span>led Production Collective
 					</h1>
@@ -192,7 +190,7 @@
 				</div>
 
 				<!-- get in touch -->
-				<a href="mailto:dostuff@thesmallgreenstudio.com" class="lg:flex hidden ml-auto mr-[10%] w-72">
+				<a href="mailto:dostuff@thesmallgreenstudio.com" class="md:flex hidden ml-auto mr-[10%] w-72">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%"
 						id="blobSvg" style="opacity: 1;">
 						<path id="blob" class="hover:fill-yellow-300 ease-in-out duration-300" fill="url(#gradient)"
@@ -220,15 +218,15 @@
 				<!-- hero content -->
 				<div class="panel orange">
 
-					<video class="scale-110 rounded-lg  object-cover h-full z-10 " loading="eager" autoplay loop
-						playsinline muted>
+					<video class="lg:scale-110 rounded-lg block object-cover h-full z-10 hero-video" autoplay loop
+						playsinline muted poster="/dist/assets/images/icebergs/P1023338.jpg">
 						<source src="/dist/assets/images/SiteLoop_1.webm" type="video/mp4">
 					</video>
 				</div>
 
 			</div>
 			<!-- marquee -->
-			<div class="marquee h-screen -z-10">
+			<div class="marquee h-screen -z-10 lg:flex hidden">
 				<div class="track">
 					<div class="content_1 text-7xl lg:text-9xl font-bold py-5 text-green-700 opacity-[0.59]">films for
 						good — pictures
@@ -249,10 +247,9 @@
 		</section>
 
 
-
 		<!-- introduction -->
 
-		<section name="introduction" class="relative bg-[#155000] w-full rounded-3xl flex items-center flex-col ">
+		<section class="relative lg:mt-8 bg-[#155000] w-full rounded-3xl flex items-center flex-col ">
 			<div class="mt-24 mx-auto">
 
 				<p class="text-center text-[#30ffa9]">Hello, Happy <span class="intro__date-js">{insert
@@ -260,12 +257,12 @@
 				<div
 					class="text-center max-w-5xl mt-11 text-3xl px-8 md:mt-10 md:text-5xl uppercase relative md:leading-[5rem] leading-[3.5rem]   ">
 					<h2>We are a small studio <span class="absolute right-[25%] md:right-auto -top-32 md:-top-12"><img
-								loading="lazy" class="absolute max-w-none inline" src="/dist/assets/images/intro.svg"
-								alt="intro" srcset=""></span></h2>
+								class="absolute max-w-none inline" src="/dist/assets/images/intro.svg"
+								alt="intro"></span></h2>
 					<h2>which means we can respond to your brief <span
 							class="link link--helike"><span>quickly</span></span>-or
 						write one with you to get
-						<span href="#" class="link link--carme">
+						<span class="link link--carme">
 							<span>cracking</span>
 							<svg class="link__graphic link__graphic--stroke link__graphic--scribble" width="100%"
 								height="95">
@@ -279,7 +276,7 @@
 
 				<a class="flex mt-[-8%] ml-[-4%] w-60">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%"
-						id="blobSvg" style="opacity: 1;">
+						id="blobSVG2" style="opacity: 1;">
 						<path id="blob" class="hover:fill-green-700 ease-in-out duration-200" fill="#eab308"
 							style="opacity: 1;">
 							<animate attributeName="d" dur="15300ms" repeatCount="indefinite"
@@ -287,7 +284,8 @@
 							</animate>
 						</path>
 						<text class="text-4xl" fill="white" x="50%" y="45%" dominant-baseline="middle"
-							text-anchor="middle">Not good enough,</text>
+							text-anchor="middle">Not
+							good enough,</text>
 						<text class="text-4xl underline" fill="##155000" x="50%" y="55%" dominant-baseline="middle"
 							text-anchor="middle">Learn more</text>
 					</svg>
@@ -322,15 +320,16 @@
 				<input type="radio" name="slider" id="s4">
 				<input type="radio" name="slider" id="s5">
 
-				<label for="s1" class="slide1 grid lg:grid-flow-col md:auto-cols-fr px-16 justify-items-center">
+				<label for="s1" class="slide1 grid lg:grid-flow-col md:auto-cols-fr sm:px-16 px-5 justify-items-center">
 					<!-- index -->
 					<span class="absolute hidden md:block top-6 right-16 text-lg">1/5</span>
 					<!-- image -->
-					<img loading="lazy" src="app/assets/images/how-we-can-help/1.svg">
+					<img src="/dist/assets/images/how-we-can-help/1.svg" alt="character typing on laptop">
 					<!-- content -->
 					<div>
-						<h3 class="text-xl lg:text-4xl font-normal max-w-[23rem]">Our working mantra is <span
-								class="different-font">"do
+						<h3 class="text-base md:text-xl lg:text-4xl font-normal max-w-[23rem]">Our working
+							mantra is
+							<span class="different-font">"do
 								good, start
 								small”</span>. Slide through
 							some examples,
@@ -345,7 +344,8 @@
 					<span class="absolute hidden md:block top-6 right-16 text-lg">2/5</span>
 					<!-- content -->
 					<div class="h-[60%]">
-						<h3 class="text-2xl md:text-5xl different-font uppercase mb-8">Our Workspaces.</h3>
+						<h3 class="text-xl sm:text-2xl md:text-5xl different-font uppercase mb-2 sm:mb-8">Our
+							Workspaces.</h3>
 						<ul class="text-sm md:text-base font-normal list-disc flex flex-col gap-3 ml-4">
 							<li>We don’t print in our workspaces. We just don’t. There’s no need. And, if there’s a
 								digital option to doing
@@ -354,18 +354,20 @@
 						</ul>
 					</div>
 					<!-- image -->
-					<img loading="lazy" class="hidden lg:block  w-24 lg:w-auto"
-						src="app/assets/images/how-we-can-help/2.svg">
+					<img class="hidden lg:block  w-24 lg:w-auto" src="/dist/assets/images/how-we-can-help/2.svg"
+						alt="character typing on laptop">
 				</label>
 				<label for="s3"
 					class="slide3 grid lg:grid-cols-[1fr,1.3fr] lg:px-24 px-8 md:px-14 justify-items-center">
 					<!-- index -->
 					<span class="absolute hidden md:block top-6 right-16 text-lg">3/5</span>
 					<!-- image -->
-					<img loading="lazy" class="hidden lg:block md:w-full" src="app/assets/images/how-we-can-help/3.svg">
+					<img class="hidden lg:block md:w-full" src="/dist/assets/images/how-we-can-help/3.svg"
+						alt="character typing on laptop">
 					<!-- content -->
 					<div>
-						<h3 class="text-2xl md:text-5xl  different-font uppercase mb-8">Our operations.</h3>
+						<h3 class="text-xl sm:text-2xl md:text-5xl  different-font uppercase mb-2 sm:mb-8">Our
+							operations.</h3>
 						<ul class="text-sm md:text-base font-normal list-disc flex flex-col gap-2 ml-4">
 							<li>We use ecosia as our search engine. They plant trees the more you use it.<a
 									href="https://info.ecosia.org/" class="underline">Make one change today and search
@@ -389,7 +391,9 @@
 					<span class="absolute hidden md:block top-6 right-16 text-lg">4/5</span>
 					<!-- content -->
 					<div>
-						<h3 class="text-2xl md:text-5xl different-font uppercase mb-8">Our Production.</h3>
+						<h3 class="text-xl sm:text-2xl md:text-5xl  different-font uppercase mb-2 sm:mb-8">
+							Our
+							Production.</h3>
 						<ul class="text-sm md:text-base font-normal list-disc flex flex-col gap-3 ml-4">
 							<li>Traditional set lighting uses huge amounts of power. When we’re scaling up productions,
 								we use <a href="https://www.greenkit.london/" class="underline">Greenkit</a></li>
@@ -403,7 +407,8 @@
 						</ul>
 					</div>
 					<!-- image -->
-					<img loading="lazy" class="hidden lg:block" src="app/assets/images/how-we-can-help/4.svg">
+					<img class="hidden lg:block" src="/dist/assets/images/how-we-can-help/4.svg"
+						alt="character typing on laptop">
 
 
 				</label>
@@ -415,7 +420,8 @@
 
 					<!-- content -->
 					<div>
-						<h3 class="text-2xl md:text-5xl different-font uppercase mb-8 text-black">Our Travels.</h3>
+						<h3 class="text-xl sm:text-2xl md:text-5xl  different-font uppercase mb-2 sm:mb-8 text-black">
+							Our Travels.</h3>
 						<ul class="text-sm md:text-base font-normal list-disc flex flex-col gap-3 ml-4 text-black">
 							<li>We always travel on public transport around London and major European cities. Or on two
 								wheels if the weather
@@ -434,7 +440,8 @@
 					</div>
 
 					<!-- image -->
-					<img loading="lazy" class="hidden lg:block" src="app/assets/images/how-we-can-help/5.svg">
+					<img class="hidden lg:block" src="/dist/assets/images/how-we-can-help/5.svg"
+						alt="character typing on laptop">
 
 
 				</label>
@@ -444,94 +451,24 @@
 
 
 		<!--Video Reel-->
-		<section name="video_reel"
-			class="w-full h-screen relative mb-40 md:mb-[20rem] mt-96 md:mt-0 max-h-[25rem] md:max-h-[70rem] overflow-hidden">
+		<section class="w-full h-screen relative mb-40 md:mb-[20rem] mt-96 md:mt-0 max-h-[25rem] md:max-h-[70rem]">
 
 			<!--SVG-->
 			<div class="h-full overflow-hidden">
-				<img loading="lazy" class="object-fill w-full	h-screen" src="\dist\assets\images\background_img.png"
+				<img class="object-fill w-full	h-screen" src="/dist/assets/images/background_img.png"
 					alt="mountain road">
 				<div class="absolute bottom-3/4 left-2/4 hidden lg:block h-17 w-12">
-					<svg width="610" height="72" viewBox="0 0 610 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M13.0448 50C13.0448 43.7945 12.4688 36.387 15.4468 31.1062C20.885 21.4627 33.116 19.7158 41.2499 18.5428C53.5873 16.7635 66.4571 15.759 78.5898 19.9062C81.2803 20.8259 89.8935 22.7691 91 27.2106"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M2 44.6614C3.97995 47.3956 8.7037 57.0373 13.3832 54.924C20.4888 51.715 27.0492 46.424 33.8494 42.5381"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M533 18.4385C534.666 22.1672 536.405 25.8579 538.223 29.5154C538.846 30.7688 539.459 32.0009 540.261 33.1457"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M541.936 39.289C541.397 39.3735 540.335 39.2789 540.074 39.8889C539.346 41.588 542.773 41.2504 543.435 41.1197C544.919 40.8271 546.41 40.2971 547.79 39.6821C548.017 39.5807 549.04 39.1884 548.245 39.0201C545.264 38.3896 541.97 38.7622 538.957 38.9167"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path d="M563.809 17C567.894 21.2898 571.768 24.8487 576.916 27.6805" stroke="white"
-							stroke-width="3" stroke-linecap="round" />
-						<path d="M578.859 22.3398C582.483 24.5207 586.05 26.72 590.025 28.1656" stroke="white"
+					<svg width="610" height="72" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13 50c0-6-1-14 2-19 6-10 18-11 26-12 13-2 25-3 38 1 2 1 11 3 12 7" stroke="#fff"
 							stroke-width="3" stroke-linecap="round" />
 						<path
-							d="M607.502 27.6807C606.035 35.382 600.543 37.1901 593.1 38.1993C581.553 39.765 569.406 39.77 557.983 37.3902"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
+							d="M2 45c2 2 7 12 11 10l21-12m499-25a298 298 0 0 0 7 15m2 6-2 1c-1 2 3 1 3 1l5-1v-1h-9m25-22 13 11m2-6c3 3 7 5 11 6m18 0c-2 7-7 9-15 10-11 2-24 2-35-1M271 20c0-1-1-3-3-3s-15 6-9 7c4 1 13-1 16 4 2 4-7 7-10 7s-11-2-6-5m18-12c-2-1 1 4 1 5l3 11c2 5 4-5 5-7 2-4 5-5 8 0 1 2-1 10 2 10m8-15c0-2 2-2-2 1-3 2-4 8-2 11 4 9 16 1 15-7s-8-9-13-5m22 4c-1-1-1-3-2-2-4 2-2 12 1 13 4 2 10-6 7-9v5c3 7 20 0 16-6-2-3-11-8-8-2m14 1c-2-2 0 3 0 4l2 6-2-11c0-5 5-4 8-2m6 6c-4 0 3 1 4 2 3 0 8-3 7-6-2-7-11-4-12 2-2 6 3 9 9 10 2 0 7 2 9 0m3-8v2l6-1c1-1 8-4 6-6-1-3-5-3-7-3-5 1-6 8-4 11 1 4 12 10 14 3m4-19s0-5 1-4l1 5 3 11s2 14 4 9m18-23-1-4c0 6 2 11 3 17v5c1 1 1-2 1-4 1-2 3-9 7-7 4 1 7 5 7 9 0 3-5 5-7 6-3 1-11-2-8-6m20-5c-1 0 3 16 0 5-3-7 1-14 9-10m12 6v-3c-1-3-6-1-7 0-3 3-3 9 1 11 3 1 6 0 7-3l1-8c0-2 0-3 0 0s1 5 4 8c2 1 7 6 9 4m13-14c0-1-1-2-4-2s-4 3-5 5c-1 3-1 6 2 9 2 2 5 4 8 1 2-3 1-10-1-13l6 14c4 9 7 22 3 32-3 8-20-4-24-7M102 10l3 19v2"
+							stroke="#fff" stroke-width="3" stroke-linecap="round" />
 						<path
-							d="M271.126 20.3298C270.544 18.6488 269.866 16.7027 267.656 17.0815C265.72 17.4134 252.836 23.3118 258.511 24.1774C262.956 24.8555 272.114 22.6526 274.847 27.7096C277.382 32.3997 267.913 35.0893 264.881 35.0893C262.144 35.0893 254.25 33.2706 258.637 29.9802"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M276.569 18.3385C274.805 16.5751 277.681 22.216 277.956 23.416C278.725 26.7723 279.257 30.3271 280.542 33.5395C282.672 38.8635 284.663 29.4961 285.777 27.4213C287.992 23.2985 291.427 22.2539 293.599 26.8536C294.62 29.0169 293.485 36.504 296.437 36.504"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M303.615 21.9733C303.615 20.1089 305.795 20.2305 302.03 22.9195C299.062 25.0398 298.254 30.5802 299.696 33.7052C304.006 43.043 316.257 34.9574 315.15 26.5147C314.214 19.382 307.249 18.494 302.03 21.9733"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M323.92 26.007C323.226 25.2357 322.905 23.1713 321.523 23.8624C317.937 25.6556 320.071 36.1177 323.478 37.2973C327.077 38.5431 332.7 30.9732 330.164 27.9623C329.741 27.4599 329.615 32.0546 329.912 32.819C332.583 39.6884 350.149 32.874 345.964 26.8585C344.303 24.4696 335 19.217 338.112 25.4393"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M352.303 26.0067C350.331 24.0347 351.638 29.4383 351.862 30.4219C352.241 32.0907 353.153 34.0985 353.88 35.6571C355.425 38.9685 352.303 28.4626 352.303 24.8083C352.303 19.8046 357.252 21.3157 360.251 22.6007"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M366.495 28.8449C362.442 29.0138 369.365 30.3824 370.437 30.5164C373.497 30.8989 377.565 28.3926 376.587 24.8713C374.656 17.9208 366.09 21.0398 364.634 26.6373C363.024 32.8301 368.248 36.0615 373.591 37.0131C375.989 37.4402 381.021 38.7289 382.958 36.7923"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M386.363 29.4127C385.623 29.5053 385.579 30.5045 386.363 30.5481C388.261 30.6535 390.092 30.4976 391.85 29.7281C393.499 29.007 399.848 26.3695 398.284 23.6099C396.803 20.9962 393.436 20.6137 390.747 20.9607C385.99 21.5744 385.397 28.6219 386.678 31.9988C388.315 36.3132 398.714 41.6435 400.5 34.5"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M405 16.3562C405 15.8695 405.325 10.9783 406.135 12.1933C406.925 13.3771 407.032 15.2647 407.271 16.6085C407.924 20.2897 408.72 23.9294 409.51 27.5835C409.675 28.3477 412.059 41.7286 413.515 37.36"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M431.568 13.8468C431.568 12.9609 431 8.96941 431 10.2516C431 15.8507 432.582 21.2173 433.712 26.651C434.081 28.4231 434.256 30.1546 434.406 31.9492C434.508 33.1742 434.874 29.5316 435.226 28.354C436.067 25.5424 438.244 19.059 442.353 20.9112C445.722 22.4294 448.913 25.9454 448.913 29.8047C448.913 32.8602 444.252 34.9291 441.912 35.7337C438.597 36.8733 430.534 33.6139 434.406 29.7416"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M453.773 24.754C452.554 24.9063 456.672 41.3698 453.521 30.1153C451.409 22.5752 454.966 16.2676 462.856 20.2126"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M475.316 26.0415C474.503 25.0254 474.885 23.9488 474.748 22.7617C474.448 20.1626 469.01 22.0711 467.999 23.0455C465.305 25.6435 464.977 31.8426 468.535 33.7997C471.52 35.4415 474.79 34.2513 475.883 31.0244C476.794 28.335 477.019 25.8318 477.019 23.014C477.019 21.1426 477.019 19.7777 477.019 22.667C477.019 26.1998 478.41 28.4365 481.087 30.8352C482.582 32.1742 488.299 37.2202 490.075 34.5566"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M503.265 21C503.369 19.9554 502.32 19 498.96 19C496.481 19 494.546 21.8115 493.945 23.9829C493.087 27.086 493.243 30.4907 495.554 32.9395C497.564 35.0688 501.337 36.9327 503.564 34.0748C506.016 30.9296 504.899 24.0262 503.375 20.6399C501.267 15.9542 506.587 30.4456 508.926 35.0209C513.434 43.8411 515.745 57.0974 511.953 66.6528C508.664 74.9414 492.335 63.0879 487.922 60.44"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M102.078 9.63781C102.134 9.58873 105.118 25.9378 105.358 29.0017C105.534 31.2447 105.484 35.1063 105.484 30.6416"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M103.214 21.5588C101.976 23.3594 108.504 22.6967 109.585 22.568C111.775 22.3072 117.657 21.9396 118.415 19.2881C119.013 17.1967 118.302 14.5898 117.974 12.5391C117.449 9.26883 116.838 -0.644122 116.838 2.66796C116.838 14.1764 123.083 24.9949 123.083 36.3182"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M127.036 25.3672C126.72 22.8365 128.591 28.1893 128.615 28.7384C128.868 34.6515 136.392 34.6035 140.725 34.4151C148.57 34.074 137.445 20.7116 137.445 24.7647"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M148.06 24.9648C146.525 24.9648 146.96 24.5997 147.618 26.794C148.37 29.3006 148.837 30.9857 151.119 32.5653C154.424 34.8535 152.747 23.3177 154.935 22.5365C156.814 21.8655 156.558 29.2079 159.476 29.6639C164.049 30.3784 164.787 23.8295 168.622 23.8295C174.486 23.8295 169.761 32.9122 175.308 32.9122"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M178.146 18.153C177.682 17.5146 177.542 15.1319 178.43 16.5131C179.139 17.6165 179.707 18.7022 179.975 19.9822C180.428 22.1446 180.233 24.3702 180.732 26.5104C181.312 28.9942 183.993 25.6759 185.242 25.0282C187.915 23.6422 192.676 24.1529 195.491 24.6497C199.489 25.3552 200.893 29.4943 197.573 32.2187C194.111 35.0593 188.155 34.6108 184.201 33.354C180.882 32.2991 178.532 30.9888 182.12 28.9388"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M202.557 19.2885C202.628 17.9235 202.821 16.0475 203.44 14.8102C204.485 12.7203 204.26 18.71 204.26 19.0362C204.26 21.7287 205.586 35.9395 210.504 33.4802"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M213.014 28.3944C212.755 28.3944 216.132 28.4516 217.019 28.3628C221.439 27.9208 229.62 26.0586 229.319 20.1947C228.983 13.6478 217.136 18.3795 216.799 23.5376C216.228 32.2579 229.3 33.8314 235.153 32.3681"
-							stroke="white" stroke-width="3" stroke-linecap="round" />
-						<path
-							d="M96 32.7836C97.9789 31.0094 101.659 31.4181 104.117 31.3946C106.525 31.3717 108.933 31.4332 111.34 31.3329C117.946 31.0577 124.537 30.5732 131.124 30.0057C141.834 29.0831 152.555 28.6115 163.285 27.9995C179.534 27.0729 195.784 26.5554 212.051 27.5057C220.74 28.0133 229.306 28.8184 237.947 29.728"
-							stroke="#FFC700" stroke-width="2" stroke-linecap="square" />
+							d="M103 22c-1 1 6 1 7 1 2-1 8-1 8-4v-6l-1-10c0 11 6 22 6 33m4-11 2 4c0 6 7 6 12 5 8 0-4-13-4-9m11 0v2l3 6c3 2 2-10 4-10 2-1 2 6 4 7 5 0 6-6 10-6 5 0 1 9 6 9m3-15v-1l2 3 1 7c0 2 3-1 4-2h10c4 0 6 4 3 7-4 3-10 3-14 1-3-1-5-2-2-4m21-10v-4c1-2 1 4 1 4 0 3 2 17 7 14m2-5h4c4 0 13-2 12-8 0-6-12-2-12 4-1 8 12 10 18 8"
+							stroke="#fff" stroke-width="3" stroke-linecap="round" />
+						<path d="M96 33c2-2 6-2 8-2h7l20-1 32-2a423 423 0 0 1 75 2" stroke="#FFC700" stroke-width="2"
+							stroke-linecap="square" />
 					</svg>
 
 				</div>
@@ -543,28 +480,22 @@
 						<source src="/dist/assets/images/SiteLoop_2.webm" type="video/webm">
 						Your browser does not support the video tag.
 					</video>
-					<img loading="lazy" class="block md:hidden rounded-2xl" src="\dist\assets\images\cycle\P1433878.jpg"
-						alt="cycling">
+					<img class="block md:hidden rounded-2xl" src="/dist/assets/images/cycle/P1433878.jpg" alt="cycling">
 				</div>
 			</div>
 
 			<!--Image in text-->
-			<div class="w-screen overflow-hidden">
-				<div class="w-[3000px] -mt-20 md:-mt-32 absolute -left-2.5">
-					<div
-						class="w-[3000px] h-20 md:h-40 overflow-hidden relative bg-[#2A4D4C] -rotate-2 xl:w-screen flex items-center">
-						<div class="track">
-							<div class="content_1  lg:text-6xl font-['Kdam Thmor Pro'] !text-white ">Video — photography
-								—
-								event capture — photography — social media — broadcast — video — photography — social
-								media
-								— broadcast —Video
-								—social media
-							</div>
+			<div class="w-[3000px] -mt-20 md:-mt-32 absolute -left-2.5">
+				<div
+					class="w-[3000px] h-20 md:h-40 overflow-hidden relative bg-[#2A4D4C] -rotate-2 xl:w-screen flex items-center">
+					<div class="track">
+						<div class="content_1  lg:text-6xl font-['Kdam Thmor Pro'] !text-white ">Video — photography —
+							event capture — photography — social media — broadcast — video — photography — social media
+							— broadcast —Video
+							—social media
 						</div>
 					</div>
 				</div>
-
 
 
 				<!--Image in text-->
@@ -594,8 +525,7 @@
 
 					<div class="principles__scroll pt-8" id="how_we_can_help">
 						<!-- title -->
-						<h2 class="title text-4xl md:text-5xl lg:text-6xl font-bold pb-10  xl:pt-6"
-							id="how_we_can_help">
+						<h2 class="title text-4xl md:text-5xl lg:text-6xl font-bold pb-10  xl:pt-6">
 							How
 							we can help
 						</h2>
@@ -614,7 +544,7 @@
 									more <i class="align-middle fa-solid fa-arrow-right"></i>
 								</span>
 								<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
-									<source src="/app/assets/images/GALLERY/0-0-0.mp4" type="video/mp4">
+									<source src="/dist/assets/images/GALLERY/0-0-0.mp4" type="video/mp4">
 								</video>
 							</div>
 
@@ -627,7 +557,7 @@
 									more <i class="align-middle fa-solid fa-arrow-right"></i>
 								</span>
 								<video class="rounded-lg object-cover h-full w-full" loop autoplay muted>
-									<source src="/app/assets/images/GALLERY/1-0-0.mp4" type="video/mp4">
+									<source src="/dist/assets/images/GALLERY/1-0-0.mp4" type="video/mp4">
 								</video>
 							</div>
 
@@ -638,8 +568,8 @@
 								-top-4">view
 									more <i class="align-middle fa-solid fa-arrow-right"></i>
 								</span>
-								<img loading="lazy" class="rounded-lg object-cover h-full w-full w-"
-									src="/app/assets/images/GALLERY/2-0.webp" alt="" srcset="">
+								<img class="rounded-lg object-cover h-full w-full w-"
+									src="/dist/assets/images/GALLERY/2-0.webp" alt="women with waving hair smiling">
 							</div>
 
 
@@ -649,8 +579,9 @@
 								-top-4">view
 									more <i class="align-middle fa-solid fa-arrow-right"></i>
 								</span>
-								<img loading="lazy" class="rounded-lg object-cover h-full w-full"
-									src="/app/assets/images/GALLERY/3-0.webp" alt="" srcset="">
+								<img class="rounded-lg object-cover h-full w-full"
+									src="/dist/assets/images/GALLERY/3-0.webp"
+									alt="man sitting on a chair with a dog laying next to him">
 							</div>
 
 
@@ -660,8 +591,8 @@
 								-top-4">view
 									more <i class="align-middle fa-solid fa-arrow-right"></i>
 								</span>
-								<img loading="lazy" class="rounded-lg object-cover h-full w-full"
-									src="/app/assets/images/GALLERY/4-0.webp" alt="" srcset="">
+								<img class="rounded-lg object-cover h-full w-full"
+									src="/dist/assets/images/GALLERY/4-0.webp" alt="conference room with people">
 							</div>
 
 
@@ -673,8 +604,9 @@
 								-top-4">view
 									more <i class="align-middle fa-solid fa-arrow-right"></i>
 								</span>
-								<img loading="lazy" class="rounded-lg object-cover h-full w-full"
-									src="/app/assets/images/GALLERY/5-0.webp" alt="" srcset="">
+								<img class="rounded-lg object-cover h-full w-full"
+									src="/dist/assets/images/GALLERY/5-0.webp"
+									alt="cyclist wearing headgear and sunglasses">
 							</div>
 
 
@@ -684,8 +616,9 @@
 								-top-4">view
 									more <i class="align-middle fa-solid fa-arrow-right"></i>
 								</span>
-								<img loading="lazy" class="rounded-lg object-cover h-full w-full"
-									src="/app/assets/images/GALLERY/6-0.webp" alt="" srcset="">
+								<img class="rounded-lg object-cover h-full w-full"
+									src="/dist/assets/images/GALLERY/6-0.webp"
+									alt="man scrolling through phone with open laptop on desk">
 							</div>
 
 
@@ -695,8 +628,9 @@
 								-top-4">view
 									more <i class="align-middle fa-solid fa-arrow-right"></i>
 								</span>
-								<img loading="lazy" class="rounded-lg object-cover h-full w-full"
-									src="/app/assets/images/GALLERY/7-0.webp" alt="" srcset="">
+								<img class="rounded-lg object-cover h-full w-full"
+									src="/dist/assets/images/GALLERY/7-0.webp"
+									alt="phone held to skyline with social media app open">
 							</div>
 
 
@@ -706,8 +640,8 @@
 								-top-4">view
 									more <i class="align-middle fa-solid fa-arrow-right"></i>
 								</span>
-								<img loading="lazy" class="rounded-lg object-cover h-full w-full"
-									src="/app/assets/images/GALLERY/8-0.webp" alt="" srcset="">
+								<img class="rounded-lg object-cover h-full w-full"
+									src="/dist/assets/images/GALLERY/8-0.webp" alt="two women creating a podcast">
 							</div>
 
 
@@ -717,8 +651,9 @@
 								-top-4">view
 									more <i class="align-middle fa-solid fa-arrow-right"></i>
 								</span>
-								<img loading="lazy" class="rounded-lg object-cover h-full w-full"
-									src="/app/assets/images/GALLERY/9-0.webp" alt="" srcset="">
+								<img class="rounded-lg object-cover h-full w-full"
+									src="/dist/assets/images/GALLERY/9-0.webp"
+									alt="camera with out of focus background">
 							</div>
 						</div>
 
@@ -916,14 +851,14 @@
 
 
 				<!-- Purpose Projects -->
-				<section name="purpose_projects" class="pt-96 py-36 container" id="purpose_led">
+				<section class="pt-96 py-36 container">
 
 					<div class="flex flex-wrap flex-col text-center mb-12">
 						<h3 class="text-5xl font-bold max-w-xs mx-auto md:max-w-none" id="purpose_led">Purpose Led
 							Projects
 						</h3>
 					</div>
-					<div class="accordion max-w-3xl mx-auto md:px-8" id="accordionExample">
+					<div class="accordion accordion-flush max-w-3xl mx-auto md:px-8" id="accordionExample">
 
 
 
@@ -973,8 +908,7 @@ bg-light-green
 								</div>
 							</div>
 							<div class="hover-reveal">
-								<img loading="lazy" class="hidden-img" src="app/assets/images/purpose-1.webp"
-									alt="bird wild">
+								<img class="hidden-img" src="/dist/assets/images/purpose-1.webp" alt="bird wild">
 							</div>
 						</div>
 
@@ -1024,8 +958,7 @@ bg-light-green
 								</div>
 							</div>
 							<div class="hover-reveal">
-								<img loading="lazy" class="hidden-img" src="app/assets/images/purpose-5.png"
-									alt="zero waste shop">
+								<img class="hidden-img" src="/dist/assets/images/purpose-5.png" alt="zero waste shop">
 							</div>
 						</div>
 
@@ -1075,7 +1008,7 @@ bg-light-green
 								</div>
 							</div>
 							<div class="hover-reveal">
-								<img loading="lazy" class="hidden-img" src="app/assets/images/purpose-2.png">
+								<img class="hidden-img" src="/dist/assets/images/purpose-2.png" alt="zero waste shop">
 							</div>
 						</div>
 
@@ -1120,7 +1053,7 @@ bg-light-green
 								</div>
 							</div>
 							<div class="hover-reveal">
-								<img loading="lazy" class="hidden-img" src="app/assets/images/purpose-3.png">
+								<img class="hidden-img" src="/dist/assets/images/purpose-3.png" alt="earth law center">
 							</div>
 						</div>
 						<!-- Fairborn Snacks - Dorset -->
@@ -1162,7 +1095,7 @@ bg-deep-green
 								</div>
 							</div>
 							<div class="hover-reveal">
-								<img loading="lazy" class="hidden-img" src="app/assets/images/pupose-4.jpeg">
+								<img class="hidden-img" src="/dist/assets/images/pupose-4.jpeg" alt="fairborn snacks">
 							</div>
 						</div>
 					</div>
@@ -1180,10 +1113,12 @@ bg-deep-green
 			<section
 				class="team bg-[#2A4D4C] h-screen max-h-[50rem] w-full relative overflow-hidden flex flex-col justify-center items-center">
 				<div class="team-content text-center">
-					<h2 class="text-4xl md:text-6xl font-bold max-w-[80%] md:max-w-xl mx-auto mb-7">Who’s behind The
+					<h2 class="text-4xl md:text-6xl font-bold max-w-[80%] md:max-w-xl mx-auto mb-7">Who’s behind
+						The
 						Small Green
 						Studio?</h2>
-					<p class="mb-4 max-w-[22rem] mx-auto">find out more about the amazing team at The Small Green
+					<p class="mb-4 max-w-[22rem] mx-auto">find out more about the amazing team at The Small
+						Green
 						Studio.</p>
 					<p class="px-6 py-2.5 bg-yellow-500 text-black rounded-full max-w-[12rem] mx-auto">Click
 						anywhere to
@@ -1194,7 +1129,7 @@ bg-deep-green
 
 				<!--image effect for drop down boxes when cursor is on the box-->
 				<div class="bgreveal hidden absolute w-52 h-52 top-[calc(50%-100px)] left-[calc(50%-100px)] rounded-full
-				bg-[url('/app/assets/images/team-bg.jpg')] shadow-[inset_0_0_10px_10px_rgba(0,0,0,0.2)] bg-cover bg-fixed">
+				bg-[url('/dist/assets/images/team-bg.jpg')] shadow-[inset_0_0_10px_10px_rgba(0,0,0,0.2)] bg-cover bg-fixed">
 				</div>
 			</section>
 		</a>
@@ -1208,19 +1143,19 @@ bg-deep-green
 				<div class="cta__text">
 					<h2 class="text-7xl md:text-8xl font-semibold flex flex-wrap ">
 						<span>That's it for now,</span>
-						<span class="hidden md:inline-block"><img loading="lazy" class="object-cover w-[400px] h-28"
-								src="app/assets/images/GALLERY/4-1.webp" alt=""></span>
+						<span class="hidden md:inline-block"><img class="object-cover w-[400px] h-28"
+								src="/dist/assets/images/GALLERY/4-1.webp" alt=""></span>
 						<span>so have</span>
-						<span class="hidden md:block mx-8"><img loading="lazy" class="object-cover  w-[200px] h-[150%]"
+						<span class="hidden md:block mx-8"><img class="object-cover  w-[200px] h-[150%]"
 								src="/dist/assets/images/icebergs/P1023196.jpg" alt=""></span>
 						<span class="ml-auto sm:ml-0">we sparked</span>
-						<span> your</span>
+						<span class="z-10"> your</span>
 						<span class="flex">
-							<img loading="lazy" class="object-cover  w-[200px] h-full rotate-[20deg]"
+							<img class="object-cover  w-[200px] h-full rotate-[20deg]"
 								src="/dist/assets/images/brewery/SamBrook.jpg" alt="brewery_sambrook">
-							<img loading="lazy" class="object-cover  w-[300px] h-full -ml-20"
+							<img class="object-cover  w-[300px] h-full -ml-20"
 								src="/dist/assets/images/cycle/IMG_1882.jpg" alt="man with helmet from back">
-							<img loading="lazy" class="object-cover  w-[200px] h-full rotate-[-30deg] -ml-8 "
+							<img class="object-cover  w-[200px] h-full rotate-[-30deg] -ml-8 "
 								src="/dist/assets/images/icebergs/P1023338.jpg" alt=""></span>
 						<span class="ml-auto sm:ml-0">curiosity?</span>
 					</h2>
@@ -1331,7 +1266,7 @@ bg-deep-green
 				<!--Email-->
 				<div class="flex flex-wrap flex-col justify-between ">
 					<div class="mb-7">
-						<p class="font-bold mb-1">Send a not so serious email</p>
+						<p class="font-bold mb-1">Send a <span class="line-through">not so</span> serious email</p>
 						<a class="font-light"
 							href="mailto:dostuff@thesmallgreenstudio.com">dostuff@thesmallgreenstudio.com</a>
 					</div>
@@ -1363,7 +1298,7 @@ bg-deep-green
 				<div class="flex flex-wrap flex-col justify-between">
 					<div class="mb-7">
 						<p class="font-bold mb-1">Give us a ring</p>
-						<a href="tel:+447897 616938">07397616938</a>
+						<a href="tel:07897616938">07397616938</a>
 					</div>
 
 
@@ -1375,8 +1310,6 @@ bg-deep-green
 					</div>
 				</div>
 			</div>
-		</div>
-		</div>
 		</div>
 	</footer>
 
@@ -1398,7 +1331,7 @@ bg-deep-green
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 	<script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
