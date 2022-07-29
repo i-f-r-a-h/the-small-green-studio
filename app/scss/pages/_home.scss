@@ -588,3 +588,15 @@ opacity: 0;
     text-decoration: none !important;
   }
 }
+.cta__text{
+    @media(max-width:420px){
+        span{
+            &:nth-child(1){
+                text-align: center;
+            }
+             &:nth-child(6){
+                margin-left: auto;
+            }
+        }
+    }
+}

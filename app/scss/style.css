@@ -1433,6 +1433,15 @@ input[type=radio]:focus {
   text-decoration: none !important;
 }
 
+@media (max-width: 420px) {
+  .cta__text span:nth-child(1) {
+    text-align: center;
+  }
+  .cta__text span:nth-child(6) {
+    margin-left: auto;
+  }
+}
+
 html,
 body {
   margin: 0;
